@@ -34,3 +34,119 @@ ok   iOS/pii-icons-full/02gs (3477219 B)
 ok   iOS/pii-icons-full/03rs (4920694 B)
 retry1 (276527/4822512) iOS/pii-icons-full/04dp
 retry2 (276527/4822512) iOS/pii-icons-full/04dp
+ok   iOS/pii-icons-full/04dp (4822512 B)
+ok   iOS/pii-icons-full/05bw (5132329 B)
+retry1 (1585803/4070228) iOS/pii-icons-full/06xy
+ok   iOS/pii-icons-full/06xy (4070228 B)
+ok   iOS/pii-icons-full/07sm (983498 B)
+ok   iOS/pii/01rg (4051927 B)
+ok   iOS/pii/02gs (2877722 B)
+retry1 (63790/4273313) iOS/pii/03rs
+ok   iOS/pii/03rs (4273313 B)
+ok   iOS/pii/04dp (3774189 B)
+ok   iOS/pii/05bw (5558877 B)
+ok   iOS/pii/06xy (3815877 B)
+retry1 (0/2493666) iOS/pii/07sm
+ok   iOS/pii/07sm (2493666 B)
+ok   iOS/pii/animations (86195 B)
+ok   iOS/scene-assets/adventurerslist (493769 B)
+ok   iOS/scene-assets/aftertutorialstage (1618453 B)
+ok   iOS/scene-assets/ageselector (42848 B)
+retry1 (702031/1259322) iOS/scene-assets/battle
+retry2 (814867/1259322) iOS/scene-assets/battle
+ok   iOS/scene-assets/battle (1259322 B)
+ok   iOS/scene-assets/battleresult (391064 B)
+ok   iOS/scene-assets/chestselector (328988 B)
+ok   iOS/scene-assets/equnitselector (120126 B)
+ok   iOS/scene-assets/gift (71165 B)
+ok   iOS/scene-assets/headerbar (45150 B)
+ok   iOS/scene-assets/homemenu (664336 B)
+ok   iOS/scene-assets/messagebox (121551 B)
+ok   iOS/scene-assets/missionlist (80304 B)
+ok   iOS/scene-assets/naconfig (5072 B)
+ok   iOS/scene-assets/option (94449 B)
+retry1 (0/575890) iOS/scene-assets/piiselector
+retry2 (0/575890) iOS/scene-assets/piiselector
+retry3 (0/575890) iOS/scene-assets/piiselector
+ok   iOS/scene-assets/piiselector (575890 B)
+ok   iOS/scene-assets/shop (222489 B)
+retry1 (0/554264) iOS/scene-assets/stagedetail
+ok   iOS/scene-assets/stagedetail (554264 B)
+retry1 (0/140427) iOS/scene-assets/stampcard
+ok   iOS/scene-assets/stampcard (140427 B)
+ok   iOS/scene-assets/tutorialwindow (10627 B)
+ok   iOS/scene-assets/webview (15365 B)
+ok   iOS/scenes/aftertutorialstage (552096 B)
+ok   iOS/scenes/battle (57244 B)
+ok   iOS/scenes/battleresult (123923 B)
+ok   iOS/scenes/beforefirstbattle (365989 B)
+ok   iOS/scenes/camp (2178377 B)
+ok   iOS/scenes/endofservice (36874 B)
+ok   iOS/scenes/globe (1587111 B)
+ok   iOS/scenes/totemrushresult (172104 B)
+ok   iOS/se/01rg (846263 B)
+retry1 (0/457449) iOS/se/02gs
+ok   iOS/se/02gs (457449 B)
+ok   iOS/se/03rs (729563 B)
+ok   iOS/se/04dp (709476 B)
+ok   iOS/se/05bw (861201 B)
+ok   iOS/se/06xy (451422 B)
+ok   iOS/se/07sm (668973 B)
+ok   iOS/se/20 (4968800 B)
+ok   iOS/se/common (2197456 B)
+ok   iOS/shaders (882053 B)
+ok   iOS/shop-icons (510558 B)
+ok   iOS/size_manifest.json (6937 B)
+ok   iOS/sky (485896 B)
+ok   iOS/spwaza (6527 B)
+ok   iOS/stage/battleruin (858281 B)
+ok   iOS/stage/beach (513397 B)
+retry1 (0/791311) iOS/stage/cave
+retry2 (0/791311) iOS/stage/cave
+retry3 (702052/791311) iOS/stage/cave
+ok   iOS/stage/cave (791311 B)
+ok   iOS/stage/forest (1183810 B)
+ok   iOS/stage/grassland (582478 B)
+retry1 (0/313656) iOS/stage/tower
+ok   iOS/stage/tower (313656 B)
+ok   iOS/stage/ui (18311 B)
+have iOS/tables
+ok   iOS/text-debug/en (5441 B)
+ok   iOS/text-debug/ja (5734 B)
+ok   iOS/text/de (89617 B)
+ok   iOS/text/en-us (86605 B)
+ok   iOS/text/es (86733 B)
+ok   iOS/text/fr (87886 B)
+ok   iOS/text/it (86789 B)
+ok   iOS/text/ja (81092 B)
+ok   iOS/text/ko (81753 B)
+ok   iOS/text/zh-tw (81835 B)
+ok   iOS/ui (2883336 B)
+retry1 (0/13509) iOS/utensil
+ok   iOS/utensil (13509 B)
+ok   iOS/welcal/bosp (1992436 B)
+retry1 (0/573449) iOS/z-evedef/001
+ok   iOS/z-evedef/001 (573449 B)
+ok   iOS/z-evedef/008 (578614 B)
+ok   iOS/z-evedef/021 (616517 B)
+ok   iOS/z-evedef/022 (566835 B)
+ok   iOS/z-evedef/023 (544578 B)
+retry1 (96515/593013) iOS/z-evedef/024
+retry2 (96515/593013) iOS/z-evedef/024
+ok   iOS/z-evedef/024 (593013 B)
+retry1 (0/574790) iOS/z-evedef/025
+ok   iOS/z-evedef/025 (574790 B)
+retry1 (96517/578528) iOS/z-evedef/026
+retry2 (96517/578528) iOS/z-evedef/026
+ok   iOS/z-evedef/026 (578528 B)
+ok   iOS/z-evedef/027 (552836 B)
+ok   iOS/z-evedef/028 (568557 B)
+retry1 (0/568763) iOS/z-evedef/029
+ok   iOS/z-evedef/029 (568763 B)
+have iOS/z-evedef/030
+have iOS/z-evedef/031
+have iOS/z-evedef/032
+retry1 (0/584513) iOS/z-evedef/033
+ok   iOS/z-evedef/033 (584513 B)
+ok   iOS/z-evedef/034 (574481 B)
+DONE 1.6.0 verified=123 failed=0

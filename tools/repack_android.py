@@ -67,6 +67,26 @@ def convert(src, dst):
     return converted
 
 
+def write_size_manifest():
+    sizes = {}
+    for dirpath, _, files in os.walk(DST_ROOT):
+        for f in files:
+            if f == 'size_manifest.json':
+                continue
+            full = os.path.join(dirpath, f)
+            rel = os.path.relpath(full, DST_ROOT)
+            sizes[f'Android/{rel}'] = os.path.getsize(full)
+    manifest = {'AssetSizeInfos': [{
+        'AssetSizeItems': [{'Name': k, 'Size': v} for k, v in sorted(sizes.items())],
+        'AssetVer': '',
+    }]}
+    os.makedirs(DST_ROOT, exist_ok=True)
+    with open(os.path.join(DST_ROOT, 'size_manifest.json'), 'w') as fh:
+        json.dump(manifest, fh, separators=(',', ':'))
+    print(f'size_manifest: {len(sizes)} entries, '
+          f'{sum(sizes.values()) / 1048576:.1f} MB')
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     force = '--force' in sys.argv
@@ -82,19 +102,17 @@ def main():
                 names.append(os.path.relpath(os.path.join(dirpath, f), SRC_ROOT))
         names.sort()
 
-    sizes, ok, failed, skipped = {}, 0, 0, 0
+    ok, failed, skipped = 0, 0, 0
     for name in names:
         src, dst = os.path.join(SRC_ROOT, name), os.path.join(DST_ROOT, name)
         if not os.path.exists(src):
             print(f'miss  {name}'); continue
         if os.path.exists(dst) and not force:
-            sizes[f'Android/{name}'] = os.path.getsize(dst)
             print(f'have  {name}'); skipped += 1; continue
         try:
             t0 = time.time()
             n = convert(src, dst)
             size = os.path.getsize(dst)
-            sizes[f'Android/{name}'] = size
             grew = size / max(os.path.getsize(src), 1)
             print(f'ok    {name}  {n} tex  {size:,} B  ({grew:.2f}x)  {time.time()-t0:.1f}s')
             ok += 1
@@ -103,15 +121,11 @@ def main():
             failed += 1
 
     # The client reads size_manifest.json to size its download, so it has to
-    # describe the Android tree we just produced, not the iOS one.
-    if sizes:
-        manifest = {'AssetSizeInfos': [{
-            'AssetSizeItems': [{'Name': k, 'Size': v} for k, v in sorted(sizes.items())],
-            'AssetVer': '',
-        }]}
-        os.makedirs(DST_ROOT, exist_ok=True)
-        with open(os.path.join(DST_ROOT, 'size_manifest.json'), 'w') as fh:
-            json.dump(manifest, fh, separators=(',', ':'))
+    # describe the Android tree we just produced, not the iOS one. Always built
+    # by walking the whole destination tree - deriving it from just the bundles
+    # this run touched would truncate the manifest whenever the tool is given an
+    # explicit bundle list.
+    write_size_manifest()
 
     print(f'\nconverted={ok} skipped={skipped} failed={failed}')
 

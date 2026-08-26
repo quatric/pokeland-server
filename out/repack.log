@@ -1,0 +1,124 @@
+have  bgm/01
+have  bgm/02
+have  bgm/common
+have  chest
+have  cubemap
+have  effects/eff
+have  effects/waza
+have  eqbit-icons
+have  equnit-icons
+have  equnit-models
+have  equnit-prefab-icons
+have  evedef/tut
+have  fonts/common
+have  fonts/sourcehansans.fontsjp
+have  gift-icons
+have  globaldata
+have  iOS
+have  illustrations/common
+have  illustrations/l10n.en-us
+have  lightpreset
+have  mii
+have  pdeco-icons
+have  pii-icons-face/01rg
+have  pii-icons-face/02gs
+have  pii-icons-face/03rs
+have  pii-icons-face/04dp
+have  pii-icons-face/05bw
+have  pii-icons-face/06xy
+have  pii-icons-face/07sm
+have  pii-icons-full/01rg
+have  pii-icons-full/02gs
+have  pii-icons-full/03rs
+ok    pii-icons-full/04dp  0 tex  4,490,678 B  (0.93x)  5.8s
+ok    pii-icons-full/05bw  0 tex  5,029,275 B  (0.98x)  6.1s
+ok    pii-icons-full/06xy  3 tex  3,746,453 B  (0.92x)  5.1s
+ok    pii-icons-full/07sm  150 tex  2,068,252 B  (2.10x)  1.7s
+ok    pii/01rg  914 tex  6,533,048 B  (1.61x)  7.6s
+ok    pii/02gs  609 tex  4,611,422 B  (1.60x)  5.1s
+ok    pii/03rs  938 tex  6,944,307 B  (1.63x)  8.0s
+ok    pii/04dp  775 tex  5,678,809 B  (1.50x)  6.5s
+ok    pii/05bw  814 tex  8,976,644 B  (1.61x)  11.3s
+ok    pii/06xy  526 tex  6,035,972 B  (1.58x)  8.1s
+ok    pii/07sm  302 tex  3,660,901 B  (1.47x)  4.1s
+ok    pii/animations  0 tex  82,168 B  (0.95x)  0.1s
+ok    scene-assets/adventurerslist  9 tex  741,082 B  (1.50x)  1.2s
+ok    scene-assets/aftertutorialstage  0 tex  1,609,390 B  (0.99x)  1.2s
+ok    scene-assets/ageselector  0 tex  42,738 B  (1.00x)  0.0s
+ok    scene-assets/battle  81 tex  1,466,185 B  (1.16x)  1.3s
+ok    scene-assets/battleresult  12 tex  404,863 B  (1.04x)  0.6s
+ok    scene-assets/chestselector  9 tex  384,114 B  (1.17x)  0.5s
+ok    scene-assets/equnitselector  8 tex  145,788 B  (1.21x)  0.2s
+ok    scene-assets/gift  1 tex  70,023 B  (0.98x)  0.2s
+ok    scene-assets/headerbar  4 tex  54,105 B  (1.20x)  0.1s
+ok    scene-assets/homemenu  12 tex  887,844 B  (1.34x)  1.4s
+ok    scene-assets/messagebox  4 tex  179,381 B  (1.48x)  0.2s
+ok    scene-assets/missionlist  3 tex  93,388 B  (1.16x)  0.1s
+ok    scene-assets/naconfig  0 tex  5,063 B  (1.00x)  0.0s
+ok    scene-assets/option  1 tex  94,241 B  (1.00x)  0.1s
+ok    scene-assets/piiselector  20 tex  637,681 B  (1.11x)  1.0s
+ok    scene-assets/shop  9 tex  354,197 B  (1.59x)  0.4s
+ok    scene-assets/stagedetail  13 tex  588,623 B  (1.06x)  0.7s
+ok    scene-assets/stampcard  3 tex  215,503 B  (1.53x)  0.2s
+ok    scene-assets/tutorialwindow  0 tex  10,630 B  (1.00x)  0.0s
+ok    scene-assets/webview  0 tex  15,392 B  (1.00x)  0.1s
+ok    scenes/aftertutorialstage  0 tex  546,581 B  (0.99x)  0.4s
+ok    scenes/battle  1 tex  57,611 B  (1.01x)  0.2s
+ok    scenes/battleresult  5 tex  105,888 B  (0.85x)  0.3s
+ok    scenes/beforefirstbattle  5 tex  374,712 B  (1.02x)  0.7s
+ok    scenes/camp  48 tex  2,066,008 B  (0.95x)  1.7s
+ok    scenes/endofservice  1 tex  35,856 B  (0.97x)  0.1s
+ok    scenes/globe  52 tex  1,610,285 B  (1.01x)  2.4s
+ok    scenes/totemrushresult  2 tex  156,034 B  (0.91x)  0.4s
+ok    se/01rg  0 tex  846,348 B  (1.00x)  0.1s
+ok    se/02gs  0 tex  457,502 B  (1.00x)  0.1s
+ok    se/03rs  0 tex  729,489 B  (1.00x)  0.1s
+ok    se/04dp  0 tex  709,465 B  (1.00x)  0.1s
+ok    se/05bw  0 tex  861,134 B  (1.00x)  0.1s
+ok    se/06xy  0 tex  451,430 B  (1.00x)  0.1s
+ok    se/07sm  0 tex  668,944 B  (1.00x)  0.1s
+ok    se/20  0 tex  4,902,021 B  (0.99x)  1.9s
+ok    se/common  0 tex  2,190,382 B  (1.00x)  0.8s
+ok    shaders  0 tex  863,865 B  (0.98x)  0.4s
+ok    shop-icons  13 tex  594,020 B  (1.16x)  0.4s
+ok    sky  6 tex  816,260 B  (1.68x)  0.4s
+ok    spwaza  0 tex  6,510 B  (1.00x)  0.0s
+ok    stage/battleruin  9 tex  866,662 B  (1.01x)  0.6s
+ok    stage/beach  33 tex  744,041 B  (1.45x)  0.5s
+ok    stage/cave  32 tex  1,017,336 B  (1.29x)  0.6s
+ok    stage/forest  38 tex  1,531,310 B  (1.29x)  0.9s
+ok    stage/grassland  30 tex  814,450 B  (1.40x)  0.6s
+ok    stage/tower  28 tex  430,050 B  (1.37x)  0.5s
+ok    stage/ui  5 tex  35,059 B  (1.91x)  0.0s
+have  tables
+ok    text-debug/en  0 tex  5,437 B  (1.00x)  0.0s
+ok    text-debug/ja  0 tex  5,733 B  (1.00x)  0.0s
+ok    text/de  0 tex  89,766 B  (1.00x)  0.1s
+ok    text/en-us  0 tex  86,501 B  (1.00x)  0.1s
+ok    text/es  0 tex  87,196 B  (1.01x)  0.1s
+ok    text/fr  0 tex  88,130 B  (1.00x)  0.1s
+ok    text/it  0 tex  86,815 B  (1.00x)  0.1s
+ok    text/ja  0 tex  81,225 B  (1.00x)  0.0s
+ok    text/ko  0 tex  82,527 B  (1.01x)  0.0s
+ok    text/zh-tw  0 tex  81,912 B  (1.00x)  0.0s
+ok    ui  15 tex  1,970,810 B  (0.68x)  2.9s
+ok    utensil  3 tex  27,846 B  (2.06x)  0.0s
+ok    welcal/bosp  57 tex  2,302,597 B  (1.16x)  1.7s
+ok    z-evedef/001  4 tex  671,752 B  (1.17x)  0.3s
+ok    z-evedef/008  4 tex  687,497 B  (1.19x)  0.3s
+ok    z-evedef/021  5 tex  740,205 B  (1.20x)  0.3s
+ok    z-evedef/022  5 tex  701,869 B  (1.24x)  0.3s
+ok    z-evedef/023  5 tex  643,688 B  (1.18x)  0.3s
+ok    z-evedef/024  5 tex  715,512 B  (1.21x)  0.4s
+ok    z-evedef/025  4 tex  673,274 B  (1.17x)  0.3s
+ok    z-evedef/026  4 tex  687,837 B  (1.19x)  0.3s
+ok    z-evedef/027  4 tex  657,343 B  (1.19x)  0.4s
+ok    z-evedef/028  4 tex  661,324 B  (1.16x)  0.4s
+ok    z-evedef/029  4 tex  671,162 B  (1.18x)  0.3s
+ok    z-evedef/030  4 tex  610,623 B  (1.15x)  0.3s
+ok    z-evedef/031  4 tex  638,566 B  (1.16x)  0.3s
+ok    z-evedef/032  4 tex  641,819 B  (1.19x)  0.3s
+ok    z-evedef/033  4 tex  729,300 B  (1.25x)  0.3s
+ok    z-evedef/034  4 tex  699,919 B  (1.22x)  0.3s
+
+converted=89 skipped=33 failed=0

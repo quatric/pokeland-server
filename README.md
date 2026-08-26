@@ -97,7 +97,8 @@ bundle-load time rather than at the network layer.
 
 This was solved by repacking rather than by finding Android assets; see below.
 
-**2. Archive coverage is 122 of 155 assets (~79%).**
+**2. Archive coverage is 122 of 155 assets (~79%).** (All 122 are now mirrored and
+converted; the 33 that follow were never captured at all.)
 
 Cross-checking the retail `size_manifest.json` against the CDX index, 33 bundles
 were never captured — mostly past event definitions (`z-evedef/002`–`020`),
@@ -193,9 +194,14 @@ Every step exercised against the running server with the real request shapes:
 | `POST /1.600/game` `Login` + `Authorization: Bearer` | SessionID + valid envelope |
 | `GET /pokeland/<AssetVer>/Android/equnit-icons` | UnityFS bundle, Android-targeted |
 
+The asset tree is complete: all 123 archived files SHA1-verified against the CDX
+digests, all 122 bundles converted (202.8 MB), every serialized file reporting
+`target_platform` 13, no PVRTC left anywhere, and all 122 served over HTTP at the
+exact sizes the regenerated manifest advertises.
+
 **Not yet done:** no Android device or emulator was available here, so this is
-verified at the protocol level, not by booting the game. The mirror is also still
-running, so only part of the tree is converted so far.
+verified at the protocol level - every request the client makes gets a correct
+response - not by booting the game and rendering a frame.
 
 ## iOS client
 
