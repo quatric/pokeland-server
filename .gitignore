@@ -1,0 +1,8 @@
+apk/
+out/dump/
+cdn/
+.venv/
+tools/Il2CppDumper/
+tools/il2cppdumper.zip
+**/bin/
+**/obj/

@@ -1,0 +1,5268 @@
+{
+ "Uskumru.Proto": {
+  "Endpoint": {
+   "decl": "public class Endpoint",
+   "fields": [
+    {
+     "type": "string",
+     "name": "Default",
+     "offset": "0x0"
+    },
+    {
+     "type": "string",
+     "name": "Base",
+     "offset": "0x8"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReqTZOffsetMin": {
+   "decl": "public interface IAutoReqTZOffsetMin",
+   "fields": [],
+   "enum": {}
+  },
+  "AutoRes": {
+   "decl": "public class AutoRes",
+   "fields": [
+    {
+     "type": "AutoResValidField",
+     "name": "ValidFields",
+     "offset": "0x10"
+    },
+    {
+     "type": "AnnouncementState",
+     "name": "AnnouncementState",
+     "offset": "0x18"
+    },
+    {
+     "type": "int[]",
+     "name": "DiamondFreePaid",
+     "offset": "0x20"
+    },
+    {
+     "type": "ChestsDiff",
+     "name": "ChestsDiff",
+     "offset": "0x28"
+    },
+    {
+     "type": "ChestSummary",
+     "name": "ChestSummary",
+     "offset": "0x30"
+    },
+    {
+     "type": "int[]",
+     "name": "Exp",
+     "offset": "0x38"
+    },
+    {
+     "type": "EvedefSummary",
+     "name": "EvedefSummary",
+     "offset": "0x40"
+    },
+    {
+     "type": "int[]",
+     "name": "GuestTotalVisitCount",
+     "offset": "0x48"
+    },
+    {
+     "type": "EqunitsDiff",
+     "name": "EqunitsDiff",
+     "offset": "0x50"
+    },
+    {
+     "type": "EventScheduleSet",
+     "name": "EventScheduleSet",
+     "offset": "0x58"
+    },
+    {
+     "type": "Bool[]",
+     "name": "IsGiftArrived",
+     "offset": "0x60"
+    },
+    {
+     "type": "LoginBonusInfo",
+     "name": "LoginBonusInfo",
+     "offset": "0x68"
+    },
+    {
+     "type": "MissionSummary",
+     "name": "MissionSummary",
+     "offset": "0x70"
+    },
+    {
+     "type": "int[]",
+     "name": "Money",
+     "offset": "0x78"
+    },
+    {
+     "type": "int[]",
+     "name": "PaidNormalSpEqunitStoreSize",
+     "offset": "0x80"
+    },
+    {
+     "type": "int[]",
+     "name": "PaidPPEStoreSize",
+     "offset": "0x88"
+    },
+    {
+     "type": "PokedexSummary",
+     "name": "PokedexSummary",
+     "offset": "0x90"
+    },
+    {
+     "type": "PPEsDiff",
+     "name": "PPEsDiff",
+     "offset": "0x98"
+    },
+    {
+     "type": "Bool[]",
+     "name": "PurchaseProcessing",
+     "offset": "0xA0"
+    },
+    {
+     "type": "SeldomInfoUser",
+     "name": "SeldomInfo",
+     "offset": "0xA8"
+    },
+    {
+     "type": "Subscription",
+     "name": "Subscription",
+     "offset": "0xB0"
+    },
+    {
+     "type": "TmbtlOpponentsDiff",
+     "name": "TmbtlOpponentsDiff",
+     "offset": "0xB8"
+    },
+    {
+     "type": "List<Announcement>",
+     "name": "UpdatedAnnouncements",
+     "offset": "0xC0"
+    },
+    {
+     "type": "List<Eqbit>",
+     "name": "UpdatedEqbits",
+     "offset": "0xC8"
+    },
+    {
+     "type": "List<Evedef>",
+     "name": "UpdatedEvedefs",
+     "offset": "0xD0"
+    },
+    {
+     "type": "List<Evepot>",
+     "name": "UpdatedEvepots",
+     "offset": "0xD8"
+    },
+    {
+     "type": "List<EvepotReward>",
+     "name": "UpdatedEvepotRewards",
+     "offset": "0xE0"
+    },
+    {
+     "type": "List<GuestUserProfileSerialized>",
+     "name": "UpdatedGUPs",
+     "offset": "0xE8"
+    },
+    {
+     "type": "Honors",
+     "name": "UpdatedHonors",
+     "offset": "0xF0"
+    },
+    {
+     "type": "List<Island>",
+     "name": "UpdatedIslands",
+     "offset": "0xF8"
+    },
+    {
+     "type": "MyslandSummary",
+     "name": "MyslandSummary",
+     "offset": "0x100"
+    },
+    {
+     "type": "List<Mysland>",
+     "name": "UpdatedMyslands",
+     "offset": "0x108"
+    },
+    {
+     "type": "MyUserProfile",
+     "name": "UpdatedMyUserProfile",
+     "offset": "0x110"
+    },
+    {
+     "type": "List<Pdeco>",
+     "name": "UpdatedPdecos",
+     "offset": "0x118"
+    },
+    {
+     "type": "PokedexDetails",
+     "name": "UpdatedPokedexDetails",
+     "offset": "0x120"
+    },
+    {
+     "type": "List<Stage>",
+     "name": "UpdatedStages",
+     "offset": "0x128"
+    },
+    {
+     "type": "List<Utensil>",
+     "name": "UpdatedUtensils",
+     "offset": "0x130"
+    },
+    {
+     "type": "List<Welcal>",
+     "name": "UpdatedWelcals",
+     "offset": "0x138"
+    }
+   ],
+   "enum": {}
+  },
+  "AutoResValidField": {
+   "decl": "public enum AutoResValidField",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "EqunitsDiff": "1",
+    "EventScheduleSet": "2",
+    "AnnouncementState": "4",
+    "EvedefSummary": "8",
+    "MissionSummary": "16",
+    "LoginBonusInfo": "32",
+    "Subscription": "64",
+    "MyslandSummary": "128",
+    "UpdatedMyUserProfile": "256",
+    "UpdatedPokedexDetails": "512",
+    "ChestsDiff": "1024",
+    "ChestSummary": "2048",
+    "SeldomInfo": "4096",
+    "PokedexSummary": "8192",
+    "PPEsDiff": "16384",
+    "TmbtlOpponentsDiff": "32768",
+    "UpdatedHonors": "65536"
+   }
+  },
+  "GuardedAutoRes": {
+   "decl": "public class GuardedAutoRes : AutoRes",
+   "fields": [],
+   "enum": {}
+  },
+  "BattleResult": {
+   "decl": "public enum BattleResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Lose": "0",
+    "Clear": "1",
+    "Cancel": "2",
+    "MinValue": "0",
+    "MaxValue": "2"
+   }
+  },
+  "PokedexDiffs": {
+   "decl": "public class PokedexDiffs",
+   "fields": [
+    {
+     "type": "List<PokedexID>",
+     "name": "DefeatedPokedexIDs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<int>",
+     "name": "DefeatedCounts",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "DiscoveredPokedexIDs",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "DoneFlagDiff": {
+   "decl": "public class DoneFlagDiff",
+   "fields": [
+    {
+     "type": "List<DoneFlag>",
+     "name": "Ons",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<DoneFlag>",
+     "name": "Offs",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "EvedefDiff": {
+   "decl": "public class EvedefDiff",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x10"
+    },
+    {
+     "type": "IslandRankID",
+     "name": "MarkedAsReadEPDIRID",
+     "offset": "0x14"
+    }
+   ],
+   "enum": {}
+  },
+  "EqunitMountInfo": {
+   "decl": "public struct EqunitMountInfo",
+   "fields": [
+    {
+     "type": "SocketNo",
+     "name": "SocketNo",
+     "offset": "0x0"
+    },
+    {
+     "type": "long",
+     "name": "EqunitId",
+     "offset": "0x8"
+    },
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "Favid": {
+   "decl": "public struct Favid",
+   "fields": [
+    {
+     "type": "long",
+     "name": "Value",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {}
+  },
+  "KpiDiff": {
+   "decl": "public class KpiDiff",
+   "fields": [
+    {
+     "type": "List<KpiID>",
+     "name": "IDs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<int>",
+     "name": "Diffs",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "Favidstr": {
+   "decl": "public struct Favidstr",
+   "fields": [
+    {
+     "type": "string",
+     "name": "Value",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {}
+  },
+  "MissionCommit": {
+   "decl": "public class MissionCommit : BaseMissionSummary",
+   "fields": [],
+   "enum": {}
+  },
+  "PurchaseResult": {
+   "decl": "public enum PurchaseResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Failed": "0",
+    "Success": "1",
+    "SuccessButNoWallets": "2"
+   }
+  },
+  "TmbtlResult": {
+   "decl": "public enum TmbtlResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Lose": "0",
+    "Win": "1",
+    "Cancel": "2",
+    "Draw": "3",
+    "MinValue": "0",
+    "MaxValue": "3"
+   }
+  },
+  "DiamondConsumeInfo": {
+   "decl": "public struct DiamondConsumeInfo",
+   "fields": [
+    {
+     "type": "int[]",
+     "name": "X",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "E": "3"
+   }
+  },
+  "Announcement": {
+   "decl": "public class Announcement : BaseAnnouncement, IProtoEntity",
+   "fields": [
+    {
+     "type": "int",
+     "name": "AnnouncementId",
+     "offset": "0x48"
+    },
+    {
+     "type": "List<string>",
+     "name": "Image",
+     "offset": "0x50"
+    }
+   ],
+   "enum": {}
+  },
+  "AnnouncementState": {
+   "decl": "public class AnnouncementState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "HeadMarkedAsReadAnnouncementId",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "HeadAnnouncementId",
+     "offset": "0x14"
+    },
+    {
+     "type": "int",
+     "name": "HeadValidAnnouncementId",
+     "offset": "0x18"
+    },
+    {
+     "type": "int[]",
+     "name": "EmergencyInfoAnnouncementIds",
+     "offset": "0x20"
+    },
+    {
+     "type": "int[]",
+     "name": "PopupAnnouncementIds",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "AnnouncementType": {
+   "decl": "public enum AnnouncementType",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Superseded": "0",
+    "Info": "1",
+    "EmergencyInfo": "2",
+    "Popup": "3",
+    "CommandDelete": "4",
+    "EndOfService": "5",
+    "_Missing": "-1"
+   }
+  },
+  "AppManifest": {
+   "decl": "public class AppManifest",
+   "fields": [
+    {
+     "type": "AppManifestItem[]",
+     "name": "AppManifestItems",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Version",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "AppManifestItem": {
+   "decl": "public class AppManifestItem",
+   "fields": [
+    {
+     "type": "string",
+     "name": "AppVer",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "AssetVer",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {
+    "AppVerMaxLength": "32",
+    "AssetVerMaxLength": "64"
+   }
+  },
+  "SizeManifest": {
+   "decl": "public class SizeManifest",
+   "fields": [
+    {
+     "type": "AssetSizeInfo[]",
+     "name": "AssetSizeInfos",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "AssetSizeInfo": {
+   "decl": "public class AssetSizeInfo",
+   "fields": [
+    {
+     "type": "AssetSizeItem[]",
+     "name": "AssetSizeItems",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "AssetVer",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "AssetSizeItem": {
+   "decl": "public class AssetSizeItem",
+   "fields": [
+    {
+     "type": "string",
+     "name": "Name",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Size",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "BanFlag": {
+   "decl": "public enum BanFlag",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Deleted": "1",
+    "Banned": "2"
+   }
+  },
+  "BaseAnnouncement": {
+   "decl": "public class BaseAnnouncement",
+   "fields": [
+    {
+     "type": "int",
+     "name": "SupersedingAnnouncementId",
+     "offset": "0x10"
+    },
+    {
+     "type": "AnnouncementType",
+     "name": "Type",
+     "offset": "0x14"
+    },
+    {
+     "type": "List<string>",
+     "name": "Title",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "CreatedUTCStr",
+     "offset": "0x20"
+    },
+    {
+     "type": "string",
+     "name": "PopupEndUTCStr",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<string>",
+     "name": "Message0",
+     "offset": "0x30"
+    },
+    {
+     "type": "List<string>",
+     "name": "Message1",
+     "offset": "0x38"
+    },
+    {
+     "type": "string",
+     "name": "CCmFilter",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "BaseEqunit": {
+   "decl": "public class BaseEqunit : IBaseEqunit",
+   "fields": [
+    {
+     "type": "int[]",
+     "name": "X",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "XOffset",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {
+    "E": "4"
+   }
+  },
+  "BaseGuestUserProfile": {
+   "decl": "public class BaseGuestUserProfile : BaseUserProfile",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x68"
+    },
+    {
+     "type": "string",
+     "name": "LastUpdatedUTCStr",
+     "offset": "0x70"
+    },
+    {
+     "type": "short",
+     "name": "LastUpdatedOffset",
+     "offset": "0x78"
+    },
+    {
+     "type": "BasePPE",
+     "name": "BasePPE",
+     "offset": "0x80"
+    },
+    {
+     "type": "List<BaseEqunit>",
+     "name": "BaseEqunits",
+     "offset": "0x88"
+    },
+    {
+     "type": "IslandCodeX[]",
+     "name": "MyslandFavorite",
+     "offset": "0x90"
+    },
+    {
+     "type": "int",
+     "name": "Exp",
+     "offset": "0x98"
+    }
+   ],
+   "enum": {}
+  },
+  "BaseGift": {
+   "decl": "public class BaseGift : ILocalizedMessage, IBaseEqunit",
+   "fields": [
+    {
+     "type": "GiftTypeID",
+     "name": "GiftTypeID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Quantity",
+     "offset": "0x14"
+    },
+    {
+     "type": "int[]",
+     "name": "Params",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "BeginUTCStr",
+     "offset": "0x20"
+    },
+    {
+     "type": "string",
+     "name": "EndUTCStr",
+     "offset": "0x28"
+    },
+    {
+     "type": "GiftMessageID",
+     "name": "GiftMessageID",
+     "offset": "0x30"
+    },
+    {
+     "type": "GiftMessageParamType",
+     "name": "GiftMessageParamType",
+     "offset": "0x34"
+    },
+    {
+     "type": "long",
+     "name": "GiftMessageParam",
+     "offset": "0x38"
+    },
+    {
+     "type": "List<string>",
+     "name": "Messages",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {
+    "ParamsCount": "4"
+   }
+  },
+  "BaseMissionSummary": {
+   "decl": "public class BaseMissionSummary",
+   "fields": [
+    {
+     "type": "string",
+     "name": "DailyUTCStr",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<MissionID>",
+     "name": "IDs",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<int>",
+     "name": "Progresses",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "BasePPE": {
+   "decl": "public class BasePPE",
+   "fields": [
+    {
+     "type": "int[]",
+     "name": "X",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {
+    "E": "12"
+   }
+  },
+  "BasePPEAndEqunits": {
+   "decl": "public class BasePPEAndEqunits : BasePPE",
+   "fields": [],
+   "enum": {
+    "E": "24"
+   }
+  },
+  "BaseTmbtlOpponent": {
+   "decl": "public class BaseTmbtlOpponent",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x18"
+    },
+    {
+     "type": "byte[]",
+     "name": "MiiCoreData",
+     "offset": "0x20"
+    },
+    {
+     "type": "HonorID",
+     "name": "HonorID",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "HonorParam",
+     "offset": "0x2C"
+    },
+    {
+     "type": "List<BasePPEAndEqunits>",
+     "name": "BPAEs",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  },
+  "BaseUserProfile": {
+   "decl": "public class BaseUserProfile",
+   "fields": [
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x10"
+    },
+    {
+     "type": "byte[]",
+     "name": "MiiCoreData",
+     "offset": "0x18"
+    },
+    {
+     "type": "LangID",
+     "name": "LangID",
+     "offset": "0x20"
+    },
+    {
+     "type": "GreetingMessageID",
+     "name": "Greeting0",
+     "offset": "0x24"
+    },
+    {
+     "type": "GreetingMessageID",
+     "name": "Greeting1",
+     "offset": "0x28"
+    },
+    {
+     "type": "short",
+     "name": "GreetingParam0",
+     "offset": "0x2C"
+    },
+    {
+     "type": "short",
+     "name": "GreetingParam1",
+     "offset": "0x2E"
+    },
+    {
+     "type": "float[]",
+     "name": "LatLng",
+     "offset": "0x30"
+    },
+    {
+     "type": "GenerationID",
+     "name": "Generation",
+     "offset": "0x38"
+    },
+    {
+     "type": "HonorID",
+     "name": "HonorID",
+     "offset": "0x3C"
+    },
+    {
+     "type": "int",
+     "name": "HonorParam",
+     "offset": "0x40"
+    },
+    {
+     "type": "Bool",
+     "name": "SealedLatLng",
+     "offset": "0x44"
+    },
+    {
+     "type": "EvedefID",
+     "name": "LatestRankingEvedefID",
+     "offset": "0x48"
+    },
+    {
+     "type": "int",
+     "name": "LatestRankingRank",
+     "offset": "0x4C"
+    },
+    {
+     "type": "int",
+     "name": "LatestRankingTieRank",
+     "offset": "0x50"
+    },
+    {
+     "type": "int",
+     "name": "LatestRankingScore",
+     "offset": "0x54"
+    },
+    {
+     "type": "EvedefID",
+     "name": "BestRankingEvedefID",
+     "offset": "0x58"
+    },
+    {
+     "type": "int",
+     "name": "BestRankingRank",
+     "offset": "0x5C"
+    },
+    {
+     "type": "int",
+     "name": "BestRankingTieRank",
+     "offset": "0x60"
+    },
+    {
+     "type": "int",
+     "name": "BestRankingScore",
+     "offset": "0x64"
+    }
+   ],
+   "enum": {}
+  },
+  "Bool": {
+   "decl": "public enum Bool",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "False": "0",
+    "True": "1"
+   }
+  },
+  "DoneFlagSummary": {
+   "decl": "public class DoneFlagSummary",
+   "fields": [
+    {
+     "type": "byte[]",
+     "name": "DoneFlagVec",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "Chest": {
+   "decl": "public class Chest : IProtoEntity",
+   "fields": [
+    {
+     "type": "long",
+     "name": "ChestId",
+     "offset": "0x10"
+    },
+    {
+     "type": "ChestState",
+     "name": "State",
+     "offset": "0x18"
+    },
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x20"
+    },
+    {
+     "type": "IslandRankID",
+     "name": "IslandRankID",
+     "offset": "0x28"
+    },
+    {
+     "type": "ChestTypeID",
+     "name": "ChestTypeID",
+     "offset": "0x2C"
+    },
+    {
+     "type": "int",
+     "name": "UsedJitanTicketCount",
+     "offset": "0x30"
+    },
+    {
+     "type": "string",
+     "name": "UnlockUTCStr",
+     "offset": "0x38"
+    },
+    {
+     "type": "ChestContent",
+     "name": "Content",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "ChestContent": {
+   "decl": "public class ChestContent",
+   "fields": [
+    {
+     "type": "float",
+     "name": "SpEqunitCount",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "NormalEqunitCount",
+     "offset": "0x14"
+    },
+    {
+     "type": "int",
+     "name": "PierreCount",
+     "offset": "0x18"
+    },
+    {
+     "type": "int",
+     "name": "Money",
+     "offset": "0x1C"
+    },
+    {
+     "type": "List<UnitPrefix>",
+     "name": "NotableEqunits",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<UnitPrefix>",
+     "name": "FixedEqunits",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<UnitPrefix>",
+     "name": "StageEqunits",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  },
+  "ChestContentRatio": {
+   "decl": "public class ChestContentRatio",
+   "fields": [
+    {
+     "type": "List<UnitPrefix>",
+     "name": "SpEqunits",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<float>",
+     "name": "SpEqunitRatios",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<UnitPrefix>",
+     "name": "NormalEqunits",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<float>",
+     "name": "NormalEqunitRatios",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "ChestsDiff": {
+   "decl": "public class ChestsDiff",
+   "fields": [
+    {
+     "type": "List<Chest>",
+     "name": "UpdatedChests",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<long>",
+     "name": "RemovedChestIds",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "ChestState": {
+   "decl": "public enum ChestState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Temporary": "0",
+    "Locked": "1",
+    "Unlocking": "2",
+    "Unlocked": "3",
+    "Removed": "4"
+   }
+  },
+  "ChestSummary": {
+   "decl": "public class ChestSummary",
+   "fields": [
+    {
+     "type": "int",
+     "name": "StoreSize",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "DailyGoodbyeCount",
+     "offset": "0x14"
+    }
+   ],
+   "enum": {}
+  },
+  "Evedef": {
+   "decl": "public class Evedef : IProtoEntity",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x10"
+    },
+    {
+     "type": "PokedexSummary",
+     "name": "PokedexSummary",
+     "offset": "0x18"
+    },
+    {
+     "type": "EvedefPokedexFlag",
+     "name": "PokedexFlags",
+     "offset": "0x20"
+    },
+    {
+     "type": "int",
+     "name": "JourneyCondMaxBP",
+     "offset": "0x24"
+    },
+    {
+     "type": "short",
+     "name": "Progress",
+     "offset": "0x28"
+    },
+    {
+     "type": "Bool",
+     "name": "IsVisited",
+     "offset": "0x2C"
+    },
+    {
+     "type": "string",
+     "name": "LastBattleUTCStr",
+     "offset": "0x30"
+    },
+    {
+     "type": "IslandRankID",
+     "name": "MarkedAsReadEPDIRID",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "DiamondConsumed",
+     "offset": "0x3C"
+    },
+    {
+     "type": "int",
+     "name": "DiamondConsumedExtra",
+     "offset": "0x40"
+    },
+    {
+     "type": "int",
+     "name": "PierreCount",
+     "offset": "0x44"
+    },
+    {
+     "type": "Bool",
+     "name": "PierreCountAdded",
+     "offset": "0x48"
+    },
+    {
+     "type": "IslandRankID",
+     "name": "JourneyIslandRankID",
+     "offset": "0x4C"
+    },
+    {
+     "type": "StageCodeX[]",
+     "name": "ChstgStageCode",
+     "offset": "0x50"
+    }
+   ],
+   "enum": {}
+  },
+  "EvedefPokedexDistribution": {
+   "decl": "public class EvedefPokedexDistribution",
+   "fields": [
+    {
+     "type": "List<PokeWazaType>",
+     "name": "AttrPWTs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<int>",
+     "name": "Counts",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "PokedexIDs",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<IslandRankID>",
+     "name": "MinIslandRankIDs",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "EvedefPokedexFlag": {
+   "decl": "public enum EvedefPokedexFlag",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "CompleteRewardDone": "1",
+    "BondCompleteRewardDone": "2"
+   }
+  },
+  "EvedefSchedule": {
+   "decl": "public class EvedefSchedule",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "EndUTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "RedeemEndUTCStr",
+     "offset": "0x20"
+    },
+    {
+     "type": "string",
+     "name": "PickUpBeginUTCStr",
+     "offset": "0x28"
+    },
+    {
+     "type": "string",
+     "name": "PickUpEndUTCStr",
+     "offset": "0x30"
+    },
+    {
+     "type": "string",
+     "name": "RankingFixedEndUTCStr",
+     "offset": "0x38"
+    },
+    {
+     "type": "EvedefPokedexDistribution",
+     "name": "PokedexDist",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "EventScheduleSet": {
+   "decl": "public class EventScheduleSet",
+   "fields": [
+    {
+     "type": "List<EvedefSchedule>",
+     "name": "Evedefs",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "ExpireUTCStr",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "Eqbit": {
+   "decl": "public class Eqbit : IProtoEntity",
+   "fields": [
+    {
+     "type": "PrefixMaterial",
+     "name": "PrefixMaterial",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x14"
+    }
+   ],
+   "enum": {}
+  },
+  "Equnit": {
+   "decl": "public class Equnit : BaseEqunit, IProtoEntity",
+   "fields": [],
+   "enum": {
+    "E": "12"
+   }
+  },
+  "EqunitsDiff": {
+   "decl": "public class EqunitsDiff",
+   "fields": [
+    {
+     "type": "List<Equnit>",
+     "name": "UpdatedEqunits",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<long>",
+     "name": "RemovedEqunitIds",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "EqunitDrop": {
+   "decl": "public class EqunitDrop : BaseEqunit",
+   "fields": [],
+   "enum": {
+    "E": "6"
+   }
+  },
+  "EqunitDropGot": {
+   "decl": "public class EqunitDropGot",
+   "fields": [
+    {
+     "type": "long",
+     "name": "EqunitDropId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "GotUTCStr",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "EvedefSummary": {
+   "decl": "public class EvedefSummary",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "CurrentEvedefID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "NrushDailyPlayCountLeft",
+     "offset": "0x14"
+    },
+    {
+     "type": "int",
+     "name": "TmbtlDailyPlayCountLeft",
+     "offset": "0x18"
+    },
+    {
+     "type": "int",
+     "name": "ChstgDailyPlayCountLeft",
+     "offset": "0x1C"
+    }
+   ],
+   "enum": {}
+  },
+  "Evepot": {
+   "decl": "public class Evepot : IProtoEntity",
+   "fields": [
+    {
+     "type": "EvepotID",
+     "name": "EvepotID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x14"
+    },
+    {
+     "type": "int",
+     "name": "TotalCount",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "TmbtlEndEvepotResult": {
+   "decl": "public class TmbtlEndEvepotResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "TbpParticipationPoint",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "TbpWinningPoint",
+     "offset": "0x14"
+    },
+    {
+     "type": "int",
+     "name": "TbpBonusPoint",
+     "offset": "0x18"
+    },
+    {
+     "type": "int",
+     "name": "DrawCount",
+     "offset": "0x1C"
+    },
+    {
+     "type": "int",
+     "name": "DefeatCount",
+     "offset": "0x20"
+    },
+    {
+     "type": "Bool",
+     "name": "IsPickedUp",
+     "offset": "0x24"
+    },
+    {
+     "type": "int",
+     "name": "WinningPoint",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "Coeff",
+     "offset": "0x2C"
+    }
+   ],
+   "enum": {}
+  },
+  "EvepotRankingParticipant": {
+   "decl": "public class EvepotRankingParticipant",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x18"
+    },
+    {
+     "type": "byte[]",
+     "name": "MiiCoreData",
+     "offset": "0x20"
+    },
+    {
+     "type": "EvepotID",
+     "name": "EvepotID",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "EvepotTotalCount",
+     "offset": "0x2C"
+    },
+    {
+     "type": "string",
+     "name": "LastUpdatedUTCStr",
+     "offset": "0x30"
+    },
+    {
+     "type": "int",
+     "name": "Rank",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "TieRank",
+     "offset": "0x3C"
+    }
+   ],
+   "enum": {}
+  },
+  "EvepotReward": {
+   "decl": "public class EvepotReward : IProtoEntity",
+   "fields": [
+    {
+     "type": "EvepotRewardID",
+     "name": "EvepotRewardID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x14"
+    },
+    {
+     "type": "string",
+     "name": "LastRedeemedUTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "int",
+     "name": "LastRedeemedTzOffsetMin",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "FindMyslandBy": {
+   "decl": "public enum FindMyslandBy",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Pierre": "0",
+    "Diamond": "1"
+   }
+  },
+  "Gift": {
+   "decl": "public class Gift : BaseGift",
+   "fields": [
+    {
+     "type": "long",
+     "name": "GiftId",
+     "offset": "0x48"
+    },
+    {
+     "type": "Bool",
+     "name": "IsReceived",
+     "offset": "0x50"
+    },
+    {
+     "type": "string",
+     "name": "LastUpdatedUTCStr",
+     "offset": "0x58"
+    }
+   ],
+   "enum": {}
+  },
+  "GiftStatus": {
+   "decl": "public enum GiftStatus",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "NotArrived": "0",
+    "Arrived": "1",
+    "Received": "2",
+    "Expired": "3"
+   }
+  },
+  "GuestUserProfile": {
+   "decl": "public class GuestUserProfile : BaseGuestUserProfile",
+   "fields": [
+    {
+     "type": "string",
+     "name": "LastVisitUTCStr",
+     "offset": "0xA0"
+    },
+    {
+     "type": "short",
+     "name": "LastVisitOffset",
+     "offset": "0xA8"
+    },
+    {
+     "type": "string",
+     "name": "PreviousVisitUTCStr",
+     "offset": "0xB0"
+    },
+    {
+     "type": "short",
+     "name": "PreviousVisitOffset",
+     "offset": "0xB8"
+    },
+    {
+     "type": "int",
+     "name": "VisitCount",
+     "offset": "0xBC"
+    },
+    {
+     "type": "Bool",
+     "name": "IsFavorite",
+     "offset": "0xC0"
+    },
+    {
+     "type": "string",
+     "name": "Memo",
+     "offset": "0xC8"
+    },
+    {
+     "type": "Bool",
+     "name": "StageInvitationAccepted",
+     "offset": "0xD0"
+    }
+   ],
+   "enum": {}
+  },
+  "GuestUserProfileSerialized": {
+   "decl": "public class GuestUserProfileSerialized",
+   "fields": [
+    {
+     "type": "string",
+     "name": "J",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Mac",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "GuestUserProfileMemo": {
+   "decl": "public class GuestUserProfileMemo",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Memo",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "Honor": {
+   "decl": "public class Honor",
+   "fields": [
+    {
+     "type": "HonorID",
+     "name": "HonorID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Param",
+     "offset": "0x14"
+    }
+   ],
+   "enum": {}
+  },
+  "Honors": {
+   "decl": "public class Honors",
+   "fields": [
+    {
+     "type": "List<HonorID>",
+     "name": "IDs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<int>",
+     "name": "Params",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "ILocalizedMessage": {
+   "decl": "public interface ILocalizedMessage",
+   "fields": [],
+   "enum": {}
+  },
+  "InitializeTag": {
+   "decl": "public enum InitializeTag",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {}
+  },
+  "IProtoEntity": {
+   "decl": "public interface IProtoEntity",
+   "fields": [],
+   "enum": {}
+  },
+  "Island": {
+   "decl": "public class Island : IProtoEntity",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x10"
+    },
+    {
+     "type": "IslandState",
+     "name": "State",
+     "offset": "0x18"
+    },
+    {
+     "type": "IslandAnimState",
+     "name": "AnimState",
+     "offset": "0x1C"
+    },
+    {
+     "type": "string",
+     "name": "CreatedUTCStr",
+     "offset": "0x20"
+    },
+    {
+     "type": "float",
+     "name": "X",
+     "offset": "0x28"
+    },
+    {
+     "type": "float",
+     "name": "Y",
+     "offset": "0x2C"
+    }
+   ],
+   "enum": {}
+  },
+  "IslandAnimState": {
+   "decl": "public enum IslandAnimState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Future": "0",
+    "NextNotReady": "1",
+    "NextReady": "2",
+    "Done": "3"
+   }
+  },
+  "IslandDiff": {
+   "decl": "public class IslandDiff",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x10"
+    },
+    {
+     "type": "IslandAnimState",
+     "name": "AnimState",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "IslandCodeX": {
+   "decl": "public enum IslandCodeX",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {}
+  },
+  "IslandState": {
+   "decl": "public enum IslandState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Ready": "1",
+    "Expired": "2",
+    "DailyReady": "3",
+    "DailyExpired": "4",
+    "DailyReadyFree": "5"
+   }
+  },
+  "JissionState": {
+   "decl": "public enum JissionState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "NotAchieved": "0",
+    "Achieved": "1"
+   }
+  },
+  "JourneyWinner": {
+   "decl": "public class JourneyWinner : BaseGuestUserProfile",
+   "fields": [
+    {
+     "type": "int",
+     "name": "ChangeCount",
+     "offset": "0x9C"
+    },
+    {
+     "type": "float",
+     "name": "DPS",
+     "offset": "0xA0"
+    }
+   ],
+   "enum": {}
+  },
+  "LoginBonusCStopResult": {
+   "decl": "public enum LoginBonusCStopResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "GiftDiamond": "4",
+    "GiftMoney": "2",
+    "DiscardTicket": "8"
+   }
+  },
+  "LoginBonusInfo": {
+   "decl": "public class LoginBonusInfo",
+   "fields": [
+    {
+     "type": "string",
+     "name": "LastDailyProcessUTCStr",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "TotalLoginDays",
+     "offset": "0x18"
+    },
+    {
+     "type": "StampCardDays",
+     "name": "StampCardDays",
+     "offset": "0x1C"
+    },
+    {
+     "type": "StampCardDays",
+     "name": "LastResult_StampCardDays",
+     "offset": "0x20"
+    },
+    {
+     "type": "int",
+     "name": "LastResult_DiffDiamond",
+     "offset": "0x24"
+    },
+    {
+     "type": "int",
+     "name": "LastResult_DiffMoney",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "LastResult_DiffTicket",
+     "offset": "0x2C"
+    },
+    {
+     "type": "LoginBonusCStopResult",
+     "name": "LastResult_CStop",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  },
+  "MaintenanceHerald": {
+   "decl": "public class MaintenanceHerald",
+   "fields": [
+    {
+     "type": "string",
+     "name": "MaintenanceBeginUTCStr",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "MaintenanceEndUTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "PopupBeginUTCStr",
+     "offset": "0x20"
+    },
+    {
+     "type": "string",
+     "name": "PopupEndUTCStr",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "AnnouncementId",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  },
+  "MaintenanceState": {
+   "decl": "public class MaintenanceState : ILocalizedMessage",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BeginUTCStr",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "EndUTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "Bool",
+     "name": "EndAutomatically",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<string>",
+     "name": "LTMessages",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "MissionState": {
+   "decl": "public enum MissionState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "InProgress": "0",
+    "CanRedeem": "1",
+    "Redeemed": "2"
+   }
+  },
+  "MissionSummary": {
+   "decl": "public class MissionSummary : BaseMissionSummary",
+   "fields": [
+    {
+     "type": "List<MissionState>",
+     "name": "States",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "MyHabitatMap": {
+   "decl": "public class MyHabitatMap",
+   "fields": [
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x10"
+    },
+    {
+     "type": "IslandRankID",
+     "name": "IslandRankID",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<EnemyDesc>",
+     "name": "EnemyDescs",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<EnemyBossDesc>",
+     "name": "EnemyBossDescs",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "MaxDropMoney",
+     "offset": "0x30"
+    },
+    {
+     "type": "int",
+     "name": "MaxDropPierreCount",
+     "offset": "0x34"
+    },
+    {
+     "type": "ChestTypeID",
+     "name": "DropChestTypeID",
+     "offset": "0x38"
+    },
+    {
+     "type": "Bool",
+     "name": "IsSubscriptionDropActive",
+     "offset": "0x3C"
+    },
+    {
+     "type": "Bool",
+     "name": "IsSubscriptionUnlockActive",
+     "offset": "0x40"
+    },
+    {
+     "type": "Bool",
+     "name": "IsFeverStage",
+     "offset": "0x44"
+    }
+   ],
+   "enum": {}
+  },
+  "Mysland": {
+   "decl": "public class Mysland : BaseUserProfile, IProtoEntity",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x68"
+    },
+    {
+     "type": "string",
+     "name": "Name",
+     "offset": "0x70"
+    },
+    {
+     "type": "string",
+     "name": "DiscovererBaaSUserId",
+     "offset": "0x78"
+    },
+    {
+     "type": "float",
+     "name": "X",
+     "offset": "0x80"
+    },
+    {
+     "type": "float",
+     "name": "Y",
+     "offset": "0x84"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "Capturables",
+     "offset": "0x88"
+    },
+    {
+     "type": "PokedexID",
+     "name": "Boss",
+     "offset": "0x90"
+    }
+   ],
+   "enum": {}
+  },
+  "MyslandDiscoverer": {
+   "decl": "public class MyslandDiscoverer",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "BaaSUserMac",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x20"
+    },
+    {
+     "type": "byte[]",
+     "name": "MiiCoreData",
+     "offset": "0x28"
+    },
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x30"
+    },
+    {
+     "type": "PokeWazaType",
+     "name": "ColorHint",
+     "offset": "0x38"
+    },
+    {
+     "type": "string",
+     "name": "LastUpdatedUTCStr",
+     "offset": "0x40"
+    },
+    {
+     "type": "float",
+     "name": "X",
+     "offset": "0x48"
+    },
+    {
+     "type": "float",
+     "name": "Y",
+     "offset": "0x4C"
+    },
+    {
+     "type": "PokedexID",
+     "name": "Boss",
+     "offset": "0x50"
+    }
+   ],
+   "enum": {}
+  },
+  "MyslandSummary": {
+   "decl": "public class MyslandSummary",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "Favorite",
+     "offset": "0x10"
+    },
+    {
+     "type": "IslandCodeX[]",
+     "name": "LastVisited",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "MyUserProfile": {
+   "decl": "public class MyUserProfile : BaseUserProfile",
+   "fields": [],
+   "enum": {}
+  },
+  "OpenChestBy": {
+   "decl": "public enum OpenChestBy",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "None": "0",
+    "Diamond": "1",
+    "JitanTicket": "2"
+   }
+  },
+  "OpenChestResult": {
+   "decl": "public enum OpenChestResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Success": "0",
+    "ErrorNotYetUnlocked": "1",
+    "ErrorInconsistentQuantity": "2"
+   }
+  },
+  "PartyMember": {
+   "decl": "public enum PartyMember",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "NONE": "0",
+    "IsPlayer": "1",
+    "MemberIndex0": "2",
+    "MemberIndex1": "4",
+    "MemberIndex2": "6",
+    "_MemberIndex_shift": "1"
+   }
+  },
+  "Pdeco": {
+   "decl": "public class Pdeco : IProtoEntity",
+   "fields": [
+    {
+     "type": "PdecoID",
+     "name": "PdecoID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x14"
+    }
+   ],
+   "enum": {}
+  },
+  "PokedexDetail": {
+   "decl": "public class PokedexDetail",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x10"
+    },
+    {
+     "type": "PokedexID",
+     "name": "PokedexID",
+     "offset": "0x14"
+    },
+    {
+     "type": "int",
+     "name": "MaxPlainBP",
+     "offset": "0x18"
+    },
+    {
+     "type": "int",
+     "name": "DefeatedCount",
+     "offset": "0x1C"
+    },
+    {
+     "type": "int",
+     "name": "CapturedCount",
+     "offset": "0x20"
+    },
+    {
+     "type": "int",
+     "name": "CapturedSexVec",
+     "offset": "0x24"
+    }
+   ],
+   "enum": {}
+  },
+  "PokedexDetails": {
+   "decl": "public class PokedexDetails",
+   "fields": [
+    {
+     "type": "List<EvedefID>",
+     "name": "EvedefIDs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "PokedexIDs",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<int>",
+     "name": "MaxPlainBPs",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<int>",
+     "name": "DefeatedCounts",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<int>",
+     "name": "CapturedCounts",
+     "offset": "0x30"
+    },
+    {
+     "type": "List<int>",
+     "name": "CapturedSexVecs",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "PokedexSummary": {
+   "decl": "public class PokedexSummary",
+   "fields": [
+    {
+     "type": "byte[]",
+     "name": "DiscoveredVec",
+     "offset": "0x10"
+    },
+    {
+     "type": "byte[]",
+     "name": "CapturedVec",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "PPE": {
+   "decl": "public class PPE : BasePPE, IProtoEntity",
+   "fields": [
+    {
+     "type": "string",
+     "name": "N",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {
+    "E": "21"
+   }
+  },
+  "PPEsDiff": {
+   "decl": "public class PPEsDiff",
+   "fields": [
+    {
+     "type": "List<PPE>",
+     "name": "UpdatedPPEs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<long>",
+     "name": "RemovedPPEIds",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "PPEDrop": {
+   "decl": "public class PPEDrop : BasePPEAndEqunits",
+   "fields": [],
+   "enum": {
+    "E": "26"
+   }
+  },
+  "PPEDropGot": {
+   "decl": "public class PPEDropGot",
+   "fields": [
+    {
+     "type": "long",
+     "name": "PPEDropFavidValue",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "GotUTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "PPENickname": {
+   "decl": "public class PPENickname",
+   "fields": [
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "PPESummary": {
+   "decl": "public class PPESummary",
+   "fields": [
+    {
+     "type": "List<long>",
+     "name": "PartyPPEIds",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "PPEUpdate": {
+   "decl": "public class PPEUpdate",
+   "fields": [
+    {
+     "type": "long",
+     "name": "PPEDropId",
+     "offset": "0x10"
+    },
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<long>",
+     "name": "EqunitIds",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "RankingParticipant": {
+   "decl": "public class RankingParticipant",
+   "fields": [
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "Nickname",
+     "offset": "0x18"
+    },
+    {
+     "type": "byte[]",
+     "name": "MiiCoreData",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "PokedexIDs",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<int>",
+     "name": "MaxPlainBPs",
+     "offset": "0x30"
+    },
+    {
+     "type": "string",
+     "name": "LastUpdatedUTCStr",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Rank",
+     "offset": "0x40"
+    },
+    {
+     "type": "int",
+     "name": "TieRank",
+     "offset": "0x44"
+    }
+   ],
+   "enum": {}
+  },
+  "Reset": {
+   "decl": "public class Reset",
+   "fields": [
+    {
+     "type": "long",
+     "name": "SupportNumber",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Money",
+     "offset": "0x18"
+    },
+    {
+     "type": "int",
+     "name": "DiamondFree",
+     "offset": "0x1C"
+    },
+    {
+     "type": "int",
+     "name": "DiamondPaid",
+     "offset": "0x20"
+    },
+    {
+     "type": "int",
+     "name": "DiamondConsumed",
+     "offset": "0x24"
+    },
+    {
+     "type": "int",
+     "name": "DiamondConsumedExtra",
+     "offset": "0x28"
+    },
+    {
+     "type": "Bool",
+     "name": "IsGiftArrived",
+     "offset": "0x2C"
+    },
+    {
+     "type": "int",
+     "name": "Exp",
+     "offset": "0x30"
+    },
+    {
+     "type": "int",
+     "name": "GuestTotalVisitCount",
+     "offset": "0x34"
+    },
+    {
+     "type": "AnnouncementState",
+     "name": "AnnouncementState",
+     "offset": "0x38"
+    },
+    {
+     "type": "ChestSummary",
+     "name": "ChestSummary",
+     "offset": "0x40"
+    },
+    {
+     "type": "DoneFlagSummary",
+     "name": "DoneFlagSummary",
+     "offset": "0x48"
+    },
+    {
+     "type": "EvedefSummary",
+     "name": "EvedefSummary",
+     "offset": "0x50"
+    },
+    {
+     "type": "List<Eqbit>",
+     "name": "Eqbits",
+     "offset": "0x58"
+    },
+    {
+     "type": "List<Equnit>",
+     "name": "Equnits",
+     "offset": "0x60"
+    },
+    {
+     "type": "int",
+     "name": "PaidNormalEqunitStoreSize",
+     "offset": "0x68"
+    },
+    {
+     "type": "int",
+     "name": "PaidSpEqunitStoreSize",
+     "offset": "0x6C"
+    },
+    {
+     "type": "List<Evedef>",
+     "name": "Evedefs",
+     "offset": "0x70"
+    },
+    {
+     "type": "EventScheduleSet",
+     "name": "EventScheduleSet",
+     "offset": "0x78"
+    },
+    {
+     "type": "List<Evepot>",
+     "name": "Evepots",
+     "offset": "0x80"
+    },
+    {
+     "type": "List<GuestUserProfileSerialized>",
+     "name": "GUPs",
+     "offset": "0x88"
+    },
+    {
+     "type": "Honors",
+     "name": "Honors",
+     "offset": "0x90"
+    },
+    {
+     "type": "List<Island>",
+     "name": "Islands",
+     "offset": "0x98"
+    },
+    {
+     "type": "LoginBonusInfo",
+     "name": "LoginBonusInfo",
+     "offset": "0xA0"
+    },
+    {
+     "type": "MissionSummary",
+     "name": "MissionSummary",
+     "offset": "0xA8"
+    },
+    {
+     "type": "MyslandSummary",
+     "name": "MyslandSummary",
+     "offset": "0xB0"
+    },
+    {
+     "type": "List<Mysland>",
+     "name": "Myslands",
+     "offset": "0xB8"
+    },
+    {
+     "type": "MyUserProfile",
+     "name": "MyUserProfile",
+     "offset": "0xC0"
+    },
+    {
+     "type": "PokedexDetails",
+     "name": "PokedexDetails",
+     "offset": "0xC8"
+    },
+    {
+     "type": "PokedexSummary",
+     "name": "PokedexSummary",
+     "offset": "0xD0"
+    },
+    {
+     "type": "List<PPE>",
+     "name": "PPEs",
+     "offset": "0xD8"
+    },
+    {
+     "type": "int",
+     "name": "PaidPPEStoreSize",
+     "offset": "0xE0"
+    },
+    {
+     "type": "List<Stage>",
+     "name": "Stages",
+     "offset": "0xE8"
+    },
+    {
+     "type": "int",
+     "name": "TotalSec",
+     "offset": "0xF0"
+    },
+    {
+     "type": "List<Chest>",
+     "name": "Chests",
+     "offset": "0xF8"
+    },
+    {
+     "type": "List<Pdeco>",
+     "name": "Pdecos",
+     "offset": "0x100"
+    },
+    {
+     "type": "List<Utensil>",
+     "name": "Utensils",
+     "offset": "0x108"
+    },
+    {
+     "type": "List<Welcal>",
+     "name": "Welcals",
+     "offset": "0x110"
+    },
+    {
+     "type": "Subscription",
+     "name": "Subscription",
+     "offset": "0x118"
+    },
+    {
+     "type": "Bool",
+     "name": "PurchaseProcessing",
+     "offset": "0x120"
+    },
+    {
+     "type": "SeldomInfoUser",
+     "name": "SeldomInfo",
+     "offset": "0x128"
+    }
+   ],
+   "enum": {}
+  },
+  "SeldomInfo": {
+   "decl": "public class SeldomInfo",
+   "fields": [
+    {
+     "type": "int",
+     "name": "EulaRev",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "EndOfServiceCCmFilter",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "EndOfShopCCmFilter",
+     "offset": "0x20"
+    },
+    {
+     "type": "MaintenanceHerald",
+     "name": "MaintenanceHerald",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "SeldomInfoUser": {
+   "decl": "public class SeldomInfoUser : SeldomInfo",
+   "fields": [
+    {
+     "type": "BanFlag",
+     "name": "BanFlag",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError": {
+   "decl": "public abstract class ServerError",
+   "fields": [
+    {
+     "type": "string",
+     "name": "Message",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "ExceptionMessage",
+     "offset": "0x18"
+    },
+    {
+     "type": "string",
+     "name": "ExceptionType",
+     "offset": "0x20"
+    },
+    {
+     "type": "string",
+     "name": "StackTrace",
+     "offset": "0x28"
+    },
+    {
+     "type": "string",
+     "name": "ExceptionId",
+     "offset": "0x30"
+    },
+    {
+     "type": "string",
+     "name": "BadRequestId",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError1": {
+   "decl": "public class ServerError1 : ServerError",
+   "fields": [
+    {
+     "type": "ServerError2",
+     "name": "InnerException",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError2": {
+   "decl": "public class ServerError2 : ServerError",
+   "fields": [
+    {
+     "type": "ServerError3",
+     "name": "InnerException",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError3": {
+   "decl": "public class ServerError3 : ServerError",
+   "fields": [
+    {
+     "type": "ServerError4",
+     "name": "InnerException",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError4": {
+   "decl": "public class ServerError4 : ServerError",
+   "fields": [
+    {
+     "type": "ServerError5",
+     "name": "InnerException",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError5": {
+   "decl": "public class ServerError5 : ServerError",
+   "fields": [
+    {
+     "type": "ServerError6",
+     "name": "InnerException",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "ServerError6": {
+   "decl": "public class ServerError6 : ServerError",
+   "fields": [],
+   "enum": {}
+  },
+  "ServiceUnavailableReason": {
+   "decl": "public enum ServiceUnavailableReason",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "None": "0",
+    "TryAgainSomeTimeLater": "1",
+    "Maintenance0": "2",
+    "Maintenance1": "3",
+    "Maintenance2": "4"
+   }
+  },
+  "Stage": {
+   "decl": "public class Stage : IProtoEntity",
+   "fields": [
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x10"
+    },
+    {
+     "type": "StageState",
+     "name": "State",
+     "offset": "0x18"
+    },
+    {
+     "type": "PokedexSummary",
+     "name": "PokedexSummary",
+     "offset": "0x20"
+    },
+    {
+     "type": "Bool",
+     "name": "CollectionRewarded",
+     "offset": "0x28"
+    },
+    {
+     "type": "int",
+     "name": "ClearCount",
+     "offset": "0x2C"
+    },
+    {
+     "type": "List<JissionState>",
+     "name": "JissionStates",
+     "offset": "0x30"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "Bosses",
+     "offset": "0x38"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "Capturables",
+     "offset": "0x40"
+    },
+    {
+     "type": "List<PokedexID>",
+     "name": "Prizes",
+     "offset": "0x48"
+    }
+   ],
+   "enum": {}
+  },
+  "StageCodeX": {
+   "decl": "public enum StageCodeX",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {}
+  },
+  "StageState": {
+   "decl": "public enum StageState",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Ready": "0",
+    "Visited": "1",
+    "Cleared": "2"
+   }
+  },
+  "StartStageMode": {
+   "decl": "public enum StartStageMode",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "StageCode": "0",
+    "GUP": "1",
+    "NrushOrChstgByDiamond": "2"
+   }
+  },
+  "StartStageResult": {
+   "decl": "public enum StartStageResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Success": "0",
+    "ErrorNotInEvent": "1",
+    "ErrorGUPExpired": "2"
+   }
+  },
+  "TmbtlCodeX": {
+   "decl": "public enum TmbtlCodeX",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {}
+  },
+  "TmbtlOpponent": {
+   "decl": "public class TmbtlOpponent : BaseTmbtlOpponent, IProtoEntity",
+   "fields": [
+    {
+     "type": "long",
+     "name": "TmbtlOpponentId",
+     "offset": "0x38"
+    },
+    {
+     "type": "TmbtlCodeX[]",
+     "name": "TmbtlCode",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "TmbtlOpponentsDiff": {
+   "decl": "public class TmbtlOpponentsDiff",
+   "fields": [
+    {
+     "type": "List<TmbtlOpponent>",
+     "name": "UpdatedTmbtlOpponents",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<long>",
+     "name": "RemovedTmbtlOpponentIds",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "TmbtlStartBy": {
+   "decl": "public enum TmbtlStartBy",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "DailyPlayCount": "0",
+    "Diamond": "1"
+   }
+  },
+  "TmbtlStartResult": {
+   "decl": "public enum TmbtlStartResult",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "Success": "0",
+    "ErrorNotInEvent": "1"
+   }
+  },
+  "TimeSpanSecond": {
+   "decl": "public struct TimeSpanSecond",
+   "fields": [
+    {
+     "type": "int",
+     "name": "Low",
+     "offset": "0x0"
+    },
+    {
+     "type": "int",
+     "name": "High",
+     "offset": "0x4"
+    }
+   ],
+   "enum": {}
+  },
+  "UnauthorizedReason": {
+   "decl": "public enum UnauthorizedReason",
+   "fields": [
+    {
+     "type": "int",
+     "name": "value__",
+     "offset": "0x0"
+    }
+   ],
+   "enum": {
+    "None": "0",
+    "NewUserButNotLoggedIn": "2",
+    "NotLoggedIn": "3",
+    "InvalidSession": "4",
+    "ExpiredClient": "5",
+    "InvalidAppVer": "6",
+    "InvalidAssetVer": "7"
+   }
+  },
+  "Utensil": {
+   "decl": "public class Utensil : IProtoEntity",
+   "fields": [
+    {
+     "type": "UtensilID",
+     "name": "UtensilID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x14"
+    }
+   ],
+   "enum": {}
+  },
+  "Welcal": {
+   "decl": "public class Welcal : IProtoEntity",
+   "fields": [
+    {
+     "type": "WelcalID",
+     "name": "WelcalID",
+     "offset": "0x10"
+    },
+    {
+     "type": "int",
+     "name": "DayDone",
+     "offset": "0x14"
+    },
+    {
+     "type": "string",
+     "name": "LastRedeemedUTCStr",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "Subscription": {
+   "decl": "public class Subscription",
+   "fields": [
+    {
+     "type": "List<SKUID>",
+     "name": "UnlockSKUIDs",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<string>",
+     "name": "UnlockExpireUTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "SKUID",
+     "name": "DropSKUID",
+     "offset": "0x20"
+    },
+    {
+     "type": "string",
+     "name": "DropExpireUTCStr",
+     "offset": "0x28"
+    },
+    {
+     "type": "SKUID",
+     "name": "LoginBonusSKUID",
+     "offset": "0x30"
+    },
+    {
+     "type": "string",
+     "name": "LoginBonusExpireUTCStr",
+     "offset": "0x38"
+    },
+    {
+     "type": "List<SKUID>",
+     "name": "WaitingSKUIDs",
+     "offset": "0x40"
+    },
+    {
+     "type": "Bool",
+     "name": "IsBonusSetSoldOut",
+     "offset": "0x48"
+    }
+   ],
+   "enum": {}
+  },
+  "Util": {
+   "decl": "public static class Util",
+   "fields": [],
+   "enum": {
+    "Ver4CoreDataLength": "48"
+   }
+  },
+  "IslandStateStr": {
+   "decl": "public class IslandStateStr : EnumString<IslandState>",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.AddNormalSocketCount": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x68"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.AddPPELevel": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x68"
+    },
+    {
+     "type": "int",
+     "name": "AddLevel",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Base": {
+  "Req": {
+   "decl": "public abstract class Req",
+   "fields": [
+    {
+     "type": "int",
+     "name": "Rev",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "SessionID",
+     "offset": "0x18"
+    },
+    {
+     "type": "int[]",
+     "name": "DCI",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "BaseRes": {
+   "decl": "public class BaseRes",
+   "fields": [
+    {
+     "type": "int",
+     "name": "Rev",
+     "offset": "0x10"
+    },
+    {
+     "type": "string",
+     "name": "UTCStr",
+     "offset": "0x18"
+    },
+    {
+     "type": "AutoRes[]",
+     "name": "A",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.BaseDF": {
+  "Req": {
+   "decl": "public abstract class Req : Req, IAutoReq, IAutoReq",
+   "fields": [
+    {
+     "type": "AutoReq",
+     "name": "SetDoneFlag",
+     "offset": "0x28"
+    },
+    {
+     "type": "AutoReq",
+     "name": "RecordMissions",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes, IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.BuyStoreSize": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "int",
+     "name": "PPEStoreSizeBuyUnit",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "NormalEqunitStoreSizeBuyUnit",
+     "offset": "0x3C"
+    },
+    {
+     "type": "int",
+     "name": "SpEqunitStoreSizeBuyUnit",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.BuyUtensil": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "UtensilID",
+     "name": "UtensilID",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x3C"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ChestStartUnlock": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "long",
+     "name": "ChestId",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "Bool",
+     "name": "Success",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ChestUseJitanTicket": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "long",
+     "name": "ChestId",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ChstgGetStage": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x68"
+    },
+    {
+     "type": "Bool",
+     "name": "Refresh",
+     "offset": "0x6C"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitHome": {
+  "BaseAutoReq": {
+   "decl": "public abstract class BaseAutoReq : Req, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq",
+   "fields": [
+    {
+     "type": "AutoReq",
+     "name": "CommitKpi",
+     "offset": "0x38"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitNonActiveSec",
+     "offset": "0x40"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedEqunit",
+     "offset": "0x48"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedEvedef",
+     "offset": "0x50"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedPPE",
+     "offset": "0x58"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedIsland",
+     "offset": "0x60"
+    }
+   ],
+   "enum": {}
+  },
+  "BaseAutoRes": {
+   "decl": "public class BaseAutoRes : Res, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes",
+   "fields": [
+    {
+     "type": "AutoRes",
+     "name": "CommitNonActiveSec",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq : IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes : IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitKpi": {
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "KpiDiff",
+     "name": "KpiDiff",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitNonActiveSec": {
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "int",
+     "name": "NonActiveSec",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "AutoRes": {
+   "decl": "public class AutoRes",
+   "fields": [
+    {
+     "type": "int",
+     "name": "TotalSec",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitUpdatedEqunit": {
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "List<long>",
+     "name": "UpdatedEqunitFavidValues",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<long>",
+     "name": "EMIs",
+     "offset": "0x18"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitUpdatedEvedef": {
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "List<EvedefDiff>",
+     "name": "EvedefDiffs",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  },
+  "IProcess": {
+   "decl": "public interface IProcess",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitUpdatedGuestUserProfile": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "List<string>",
+     "name": "UpdatedGUPFavidstrValues",
+     "offset": "0x68"
+    },
+    {
+     "type": "List<GuestUserProfileMemo>",
+     "name": "UpdatedGUPMemos",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitUpdatedIsland": {
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "List<IslandDiff>",
+     "name": "IslandDiffs",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  },
+  "IProcess": {
+   "decl": "public interface IProcess",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.CommitUpdatedPPE": {
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "long",
+     "name": "PlayerPPEId",
+     "offset": "0x10"
+    },
+    {
+     "type": "List<long>",
+     "name": "PartyPPEIds",
+     "offset": "0x18"
+    },
+    {
+     "type": "List<long>",
+     "name": "UpdatedPPEFavidValues",
+     "offset": "0x20"
+    },
+    {
+     "type": "List<PPENickname>",
+     "name": "UpdatedPPENicknames",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.DoDailyProcess": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.EndStage": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq",
+   "fields": [
+    {
+     "type": "BattleResult",
+     "name": "BattleResult",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "GotMoney",
+     "offset": "0x3C"
+    },
+    {
+     "type": "int",
+     "name": "GotPierreCount",
+     "offset": "0x40"
+    },
+    {
+     "type": "long",
+     "name": "PlayerPPEDropId",
+     "offset": "0x48"
+    },
+    {
+     "type": "List<PPEDropGot>",
+     "name": "GotPPEDrops",
+     "offset": "0x50"
+    },
+    {
+     "type": "List<EqunitDropGot>",
+     "name": "GotEqunitDrops",
+     "offset": "0x58"
+    },
+    {
+     "type": "Bool",
+     "name": "GotChest",
+     "offset": "0x60"
+    },
+    {
+     "type": "PokedexDiffs",
+     "name": "PokedexDiffs",
+     "offset": "0x68"
+    },
+    {
+     "type": "PokedexDiffs",
+     "name": "StagePokedexDiffs",
+     "offset": "0x70"
+    },
+    {
+     "type": "int",
+     "name": "ChangeCount",
+     "offset": "0x78"
+    },
+    {
+     "type": "float",
+     "name": "DPS",
+     "offset": "0x7C"
+    },
+    {
+     "type": "int",
+     "name": "JissionResults",
+     "offset": "0x80"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedEqunit",
+     "offset": "0x88"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedPPE",
+     "offset": "0x90"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes",
+   "fields": [
+    {
+     "type": "List<PPEUpdate>",
+     "name": "PPEUpdates",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<int>",
+     "name": "JissionDiamonds",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.EnterHome": {
+  "IAutoReq": {
+   "decl": "public interface IAutoReq : IAutoReq, IAutoReq, IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes : IAutoRes, IAutoRes, IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.EqunitMount": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "SocketNo",
+     "name": "SocketNo",
+     "offset": "0x68"
+    },
+    {
+     "type": "long",
+     "name": "EqunitId",
+     "offset": "0x70"
+    },
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x78"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.EqunitUpgrade": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "long",
+     "name": "TargetEqunitId",
+     "offset": "0x68"
+    },
+    {
+     "type": "Bool",
+     "name": "UseMulti",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Ex": {
+  "ProtoEx": {
+   "decl": "public static class ProtoEx",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.FindMysland": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x68"
+    },
+    {
+     "type": "float",
+     "name": "X",
+     "offset": "0x6C"
+    },
+    {
+     "type": "float",
+     "name": "Y",
+     "offset": "0x70"
+    },
+    {
+     "type": "FindMyslandBy",
+     "name": "By",
+     "offset": "0x74"
+    },
+    {
+     "type": "IslandCodeX[]",
+     "name": "PriorityIslandCode",
+     "offset": "0x78"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "Found",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetAnnouncements": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq",
+   "fields": [
+    {
+     "type": "int",
+     "name": "Skip",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Take",
+     "offset": "0x3C"
+    },
+    {
+     "type": "int",
+     "name": "MinAnnouncementId",
+     "offset": "0x40"
+    },
+    {
+     "type": "int",
+     "name": "MaxAnnouncementId",
+     "offset": "0x44"
+    },
+    {
+     "type": "List<int>",
+     "name": "AnnouncementIds",
+     "offset": "0x48"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetArrivedGifts": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes",
+   "fields": [
+    {
+     "type": "List<Gift>",
+     "name": "Gifts",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetChestContentRatio": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "long",
+     "name": "ChestId",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "ChestContentRatio",
+     "name": "ChestContentRatio",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetEndOfServiceInfos": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "string",
+     "name": "CountryCode",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "int",
+     "name": "EndOfServiceAnnouncementId",
+     "offset": "0x30"
+    },
+    {
+     "type": "int",
+     "name": "EndOfShopAnnouncementId",
+     "offset": "0x34"
+    },
+    {
+     "type": "string",
+     "name": "RefundCode",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetEvepotRanking": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "EvepotID",
+     "name": "EvepotID",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x3C"
+    },
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "List<EvepotRankingParticipant>",
+     "name": "EvepotRankingParticipants",
+     "offset": "0x28"
+    },
+    {
+     "type": "string",
+     "name": "TimestampUTCStr",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetGuestMyslands": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "List<IslandCodeX>",
+     "name": "GuestIslandCodes",
+     "offset": "0x68"
+    },
+    {
+     "type": "Bool",
+     "name": "InEventOnly",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetJourneyWinners": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<JourneyWinner>",
+     "name": "JWs",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetMyUserProfile": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetMyslandDiscoverers": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x68"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x6C"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<MyslandDiscoverer>",
+     "name": "MyslandDiscoverers",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetMyslands": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetRanking": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x3C"
+    },
+    {
+     "type": "string",
+     "name": "BaaSUserId",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "List<RankingParticipant>",
+     "name": "RankingParticipants",
+     "offset": "0x28"
+    },
+    {
+     "type": "string",
+     "name": "TimestampUTCStr",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetReceivedGifts": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "int",
+     "name": "Skip",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "Take",
+     "offset": "0x3C"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "List<Gift>",
+     "name": "Gifts",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GetSeldomInfo": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Goodbye": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "List<long>",
+     "name": "GoodbyePPEIds",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GoodbyeChests": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "List<long>",
+     "name": "GoodbyeChestIds",
+     "offset": "0x68"
+    },
+    {
+     "type": "List<long>",
+     "name": "GetChestIds",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GoodbyeEqunits": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "List<long>",
+     "name": "GoodbyeEqunitIds",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "Bool",
+     "name": "HaveCStopGifts",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.GreetGuestUsers": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x68"
+    },
+    {
+     "type": "int",
+     "name": "Count",
+     "offset": "0x6C"
+    },
+    {
+     "type": "List<string>",
+     "name": "BaaSUserIds",
+     "offset": "0x70"
+    },
+    {
+     "type": "List<string>",
+     "name": "BaaSUserMacs",
+     "offset": "0x78"
+    },
+    {
+     "type": "List<GuestUserProfileSerialized>",
+     "name": "GUPs",
+     "offset": "0x80"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<string>",
+     "name": "GreetedBaaSUserIds",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.IsGiftArrived": {
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.LinkNA": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "string",
+     "name": "NintendoAccountId",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ListEvepotRewards": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq, IAutoReqTZOffsetMin",
+   "fields": [
+    {
+     "type": "int",
+     "name": "TZOffsetMin",
+     "offset": "0x68"
+    },
+    {
+     "type": "List<EvepotID>",
+     "name": "EvepotIDs",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<EvepotRankingParticipant>",
+     "name": "MyEvepotRankings",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ListMissions": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ListStageChestContent": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "Bool",
+     "name": "HaveChest",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<UnitPrefix>",
+     "name": "NotableSpEqunits",
+     "offset": "0x30"
+    },
+    {
+     "type": "List<UnitPrefix>",
+     "name": "StageEqunits",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Login": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReqTZOffsetMin",
+   "fields": [
+    {
+     "type": "string",
+     "name": "Market",
+     "offset": "0x28"
+    },
+    {
+     "type": "string",
+     "name": "AppVer",
+     "offset": "0x30"
+    },
+    {
+     "type": "string",
+     "name": "AssetVer",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "TZOffsetMin",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes, IAutoRes, IAutoRes, IAutoRes",
+   "fields": [
+    {
+     "type": "Reset[]",
+     "name": "Reset",
+     "offset": "0x28"
+    },
+    {
+     "type": "string",
+     "name": "SessionID",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.OpenChest": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "long",
+     "name": "ChestId",
+     "offset": "0x38"
+    },
+    {
+     "type": "OpenChestBy",
+     "name": "By",
+     "offset": "0x40"
+    },
+    {
+     "type": "int",
+     "name": "Quantity",
+     "offset": "0x44"
+    },
+    {
+     "type": "string",
+     "name": "NintendoAccountId",
+     "offset": "0x48"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "OpenChestResult",
+     "name": "Result",
+     "offset": "0x28"
+    },
+    {
+     "type": "Bool",
+     "name": "HaveCStopGifts",
+     "offset": "0x2C"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.PdecoMount": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "PdecoID",
+     "name": "PdecoID",
+     "offset": "0x68"
+    },
+    {
+     "type": "long",
+     "name": "PPEId",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.PurchaseActivate": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "SKUID",
+     "name": "SKUID",
+     "offset": "0x38"
+    },
+    {
+     "type": "long",
+     "name": "Magic",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.PurchaseBegin": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "SKUID",
+     "name": "SKUID",
+     "offset": "0x38"
+    },
+    {
+     "type": "long",
+     "name": "Magic",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.PurchaseEnd": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "long",
+     "name": "Magic",
+     "offset": "0x38"
+    },
+    {
+     "type": "PurchaseResult",
+     "name": "Success",
+     "offset": "0x40"
+    },
+    {
+     "type": "int",
+     "name": "ErrorType",
+     "offset": "0x44"
+    },
+    {
+     "type": "int",
+     "name": "ErrorCode",
+     "offset": "0x48"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [
+    {
+     "type": "List<SKUID>",
+     "name": "ProcessedSKUIDs",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.PurchaseRecovered": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "PurchaseResult",
+     "name": "Success",
+     "offset": "0x68"
+    },
+    {
+     "type": "int",
+     "name": "ErrorType",
+     "offset": "0x6C"
+    },
+    {
+     "type": "int",
+     "name": "ErrorCode",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<SKUID>",
+     "name": "ProcessedSKUIDs",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ReceiveEvepotRewards": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq, IAutoReqTZOffsetMin",
+   "fields": [
+    {
+     "type": "int",
+     "name": "TZOffsetMin",
+     "offset": "0x68"
+    },
+    {
+     "type": "List<EvepotRewardID>",
+     "name": "EvepotRewardIDs",
+     "offset": "0x70"
+    },
+    {
+     "type": "List<EvepotID>",
+     "name": "EvepotIDs",
+     "offset": "0x78"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<EvepotRewardID>",
+     "name": "ReceivedEvepotRewardIDs",
+     "offset": "0x30"
+    },
+    {
+     "type": "List<EvepotRankingParticipant>",
+     "name": "MyEvepotRankings",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ReceiveGifts": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq",
+   "fields": [
+    {
+     "type": "Bool",
+     "name": "ReceiveAll",
+     "offset": "0x38"
+    },
+    {
+     "type": "List<long>",
+     "name": "GiftIds",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes",
+   "fields": [
+    {
+     "type": "List<long>",
+     "name": "ReceivedGiftIds",
+     "offset": "0x28"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ReceiveMissionRewards": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "List<MissionID>",
+     "name": "MissionIDs",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.RecordMissions": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  },
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "MissionCommit",
+     "name": "MissionCommit",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.RedeemWelcal": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "WelcalStepID",
+     "name": "WelcalStepID",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "Bool",
+     "name": "Success",
+     "offset": "0x30"
+    },
+    {
+     "type": "Bool",
+     "name": "HaveGifts",
+     "offset": "0x34"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.ServiceUnavailable": {
+  "Res": {
+   "decl": "public class Res",
+   "fields": [
+    {
+     "type": "ServiceUnavailableReason",
+     "name": "Reason",
+     "offset": "0x10"
+    },
+    {
+     "type": "MaintenanceState",
+     "name": "MaintenanceState",
+     "offset": "0x18"
+    },
+    {
+     "type": "MaintenanceHerald",
+     "name": "MaintenanceHerald",
+     "offset": "0x20"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetAnnouncementState": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq",
+   "fields": [
+    {
+     "type": "int",
+     "name": "HeadMarkedAsReadAnnouncementId",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetCurrentEvent": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq, IAutoReq",
+   "fields": [
+    {
+     "type": "EvedefID",
+     "name": "EvedefID",
+     "offset": "0x38"
+    },
+    {
+     "type": "Bool",
+     "name": "SetVisited",
+     "offset": "0x3C"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedEqunit",
+     "offset": "0x40"
+    },
+    {
+     "type": "AutoReq",
+     "name": "CommitUpdatedPPE",
+     "offset": "0x48"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes, IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetDoneFlag": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  },
+  "AutoReq": {
+   "decl": "public class AutoReq",
+   "fields": [
+    {
+     "type": "DoneFlagDiff",
+     "name": "DoneFlagDiff",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetFavoriteMysland": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x68"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetLoginBonusState": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetMyUserProfile": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "MyUserProfile",
+     "name": "MyUserProfile",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetMyslandName": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "IslandCodeX[]",
+     "name": "IslandCode",
+     "offset": "0x68"
+    },
+    {
+     "type": "string",
+     "name": "Name",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.SetStageCollectionCompleted": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x38"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.StartStage": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq, IAutoReqTZOffsetMin",
+   "fields": [
+    {
+     "type": "StartStageMode",
+     "name": "Mode",
+     "offset": "0x68"
+    },
+    {
+     "type": "StageCodeX[]",
+     "name": "StageCode",
+     "offset": "0x70"
+    },
+    {
+     "type": "GuestUserProfileSerialized",
+     "name": "GUP",
+     "offset": "0x78"
+    },
+    {
+     "type": "int",
+     "name": "TZOffsetMin",
+     "offset": "0x80"
+    },
+    {
+     "type": "long",
+     "name": "MaxBPPPEId",
+     "offset": "0x88"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "StartStageResult",
+     "name": "Result",
+     "offset": "0x30"
+    },
+    {
+     "type": "MyHabitatMap",
+     "name": "MHM",
+     "offset": "0x38"
+    },
+    {
+     "type": "List<PPEDrop>",
+     "name": "PPEDrops",
+     "offset": "0x40"
+    },
+    {
+     "type": "List<EqunitDrop>",
+     "name": "EqunitDrops",
+     "offset": "0x48"
+    },
+    {
+     "type": "string",
+     "name": "MLABaaSUserId",
+     "offset": "0x50"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.TmbtlEnd": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq, IAutoReq, IAutoReq, IAutoReq",
+   "fields": [
+    {
+     "type": "TmbtlResult",
+     "name": "TmbtlResult",
+     "offset": "0x38"
+    },
+    {
+     "type": "int",
+     "name": "DefeatCount",
+     "offset": "0x3C"
+    },
+    {
+     "type": "int",
+     "name": "DrawCount",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes, IAutoRes, IAutoRes, IAutoRes",
+   "fields": [
+    {
+     "type": "TmbtlEndEvepotResult",
+     "name": "EvepotResult",
+     "offset": "0x28"
+    },
+    {
+     "type": "List<EvepotRankingParticipant>",
+     "name": "MyEvepotRankings",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.TmbtlGetOpponents": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "TmbtlCodeX[]",
+     "name": "TmbtlCode",
+     "offset": "0x68"
+    },
+    {
+     "type": "Bool",
+     "name": "Refresh",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "List<EvepotRankingParticipant>",
+     "name": "MyEvepotRankings",
+     "offset": "0x30"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.TmbtlStart": {
+  "Req": {
+   "decl": "public class Req : BaseAutoReq",
+   "fields": [
+    {
+     "type": "TmbtlStartBy",
+     "name": "By",
+     "offset": "0x68"
+    },
+    {
+     "type": "TmbtlCodeX[]",
+     "name": "TmbtlCode",
+     "offset": "0x70"
+    }
+   ],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : BaseAutoRes",
+   "fields": [
+    {
+     "type": "TmbtlStartResult",
+     "name": "Result",
+     "offset": "0x30"
+    },
+    {
+     "type": "TmbtlCodeX[]",
+     "name": "TmbtlCode",
+     "offset": "0x38"
+    },
+    {
+     "type": "Bool",
+     "name": "IsPickedUp",
+     "offset": "0x40"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Unauthorized": {
+  "Res": {
+   "decl": "public class Res",
+   "fields": [
+    {
+     "type": "UnauthorizedReason",
+     "name": "Reason",
+     "offset": "0x10"
+    }
+   ],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Unregister": {
+  "Req": {
+   "decl": "public class Req : Req",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.UpdateAnnouncement": {
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.UpdateEvent": {
+  "Req": {
+   "decl": "public class Req : Req, IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "Res": {
+   "decl": "public class Res : Res, IAutoRes",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoReq": {
+   "decl": "public interface IAutoReq",
+   "fields": [],
+   "enum": {}
+  },
+  "IAutoRes": {
+   "decl": "public interface IAutoRes",
+   "fields": [],
+   "enum": {}
+  },
+  "IProcess": {
+   "decl": "public interface IProcess",
+   "fields": [],
+   "enum": {}
+  }
+ },
+ "Uskumru.Proto.Validations": {
+  "EqbitValidator": {
+   "decl": "public class EqbitValidator",
+   "fields": [],
+   "enum": {}
+  },
+  "BaseEqunitValidator": {
+   "decl": "public class BaseEqunitValidator",
+   "fields": [],
+   "enum": {}
+  },
+  "LocalizedMessagesAttribute": {
+   "decl": "public class LocalizedMessagesAttribute : ValidationAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "GiftValidator": {
+   "decl": "public class GiftValidator",
+   "fields": [],
+   "enum": {}
+  },
+  "EnumRangeAttribute": {
+   "decl": "public class EnumRangeAttribute : ValidationAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "EnumRange0Attribute": {
+   "decl": "public class EnumRange0Attribute : EnumRangeAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "EnumRange1Attribute": {
+   "decl": "public class EnumRange1Attribute : EnumRangeAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "IslandCodeAttribute": {
+   "decl": "public class IslandCodeAttribute : ValidationAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "StageCodeAttribute": {
+   "decl": "public class StageCodeAttribute : ValidationAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "TmbtlCodeAttribute": {
+   "decl": "public class TmbtlCodeAttribute : ValidationAttribute",
+   "fields": [],
+   "enum": {}
+  },
+  "MiiCoreDataAttribute": {
+   "decl": "public class MiiCoreDataAttribute : ValidationAttribute",
+   "fields": [],
+   "enum": {}
+  }
+ }
+}
