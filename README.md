@@ -80,7 +80,7 @@ while the surface is filled in.
 
 ## Two things that constrain the plan
 
-**1. The archived CDN is iOS-only, and iOS bundles will not load on Android.**
+**1. The archived CDN is iOS-only.** (Solved - see "Android" below.)
 
 
 This is worth being blunt about because it changes the approach. The Wayback copy
@@ -95,15 +95,7 @@ textures inside are PVRTC rather than ETC2/ASTC. So these files cannot be served
 to the Android APK as-is, and pointing the Android client at them will fail at
 bundle-load time rather than at the network layer.
 
-Realistic options, roughly in order of effort:
-
-- **Use the iOS client.** The assets match it exactly. See "iOS client" below —
-  the 1.6.1 IPA is available but FairPlay-encrypted, so it needs decrypting first.
-- **Repack.** Extract with UnityPy/AssetStudio and rebuild as Android bundles.
-  Mechanical for meshes/audio/text; the texture recompression is lossy and
-  shaders may need rebuilding. This is the actual "port", and it is real work.
-- **Find an Android mirror.** Nothing in Wayback, but the asset paths are
-  predictable, so other archives are worth checking.
+This was solved by repacking rather than by finding Android assets; see below.
 
 **2. Archive coverage is 122 of 155 assets (~79%).**
 
@@ -131,6 +123,79 @@ is not trustworthy.
 5. **Stub the BaaS dependency.** The client talks to `baas.nintendo.com` for its
    bearer token; a revival needs that redirected to a local stand-in or the login
    path patched out.
+
+## Android
+
+The Android client boots against this server with no DNS interception and no
+device-side certificate work. Three patches to the APK plus an asset conversion.
+
+```bash
+tools/build_apk.sh http://10.0.2.2:5199        # emulator -> host
+tools/build_apk.sh http://192.168.1.50:5199    # real device on the LAN
+adb install -r build/pokeland-1.6.0-patched.apk
+```
+
+### The three APK patches
+
+| file | change | why |
+|---|---|---|
+| `global-metadata.dat` | `https://prd.app.pokeland.jp` and `https://dl.app.pokeland.jp` rewritten to the server base | the hosts are IL2CPP string literals; rewriting them in place avoids DNS interception entirely |
+| `assets/npf.json` | `baasHost` -> server, `useHttp` -> `true` | the NPF SDK hard-codes `https` for the Nintendo account backend *unless* this flag is set, which would otherwise force a TLS stand-in and a device-installed CA |
+| `AndroidManifest.xml` | `targetSdkVersion` 28 -> 27 | restores the permissive cleartext-HTTP default. Adding `usesCleartextTraffic` would mean inserting an AXML attribute and resizing every enclosing chunk; the SDK level is a single in-place 4-byte edit |
+
+String literals live as (length, dataIndex) pairs over a flat blob, so a shorter
+replacement only needs its length field updated - nothing else in the file moves
+and every other metadata offset stays valid. The APK is re-signed with a local
+debug key (v1, which Android accepts below targetSdk 30).
+
+Two `https://…pokeland.jp` strings survive in `fieldAndParameterDefaultValueData`.
+Those are `const string` default-value blobs kept for reflection; the compiler
+already inlined those consts into the literals that were patched, so no traffic
+uses them.
+
+### Asset conversion
+
+`tools/repack_android.py` turns the archived iOS bundles into Android ones:
+
+- `target_platform` iOS (9) -> Android (13). Note `SerializedFile.save()` writes
+  the raw `_m_target_platform` int, not the `BuildTarget` property - setting only
+  the latter looks like it worked and silently changes nothing.
+- PVRTC textures re-encoded to ETC2_RGBA8. PVRTC is PowerVR-only; Adreno and Mali
+  cannot sample it. Most textures are already RGB24/RGBA32 and are left alone.
+
+Repacking with `packer='original'` keeps the source's LZMA, so the tree grows
+about 1.9x (ETC2 costs 1 byte/px against PVRTC's 0.5) rather than the ~5x that
+writing LZ4 would cost.
+
+### The BaaS stand-in
+
+The client will not call `Login` until the NPF SDK has authenticated a device
+account against Nintendo's BaaS. `Baas.cs` implements that gateway; the shapes
+came from decompiling `com.nintendo.npf.sdk` out of `classes.dex` (BaaSAuth,
+CoreHttpClient, BaasUserMapper):
+
+- `POST /core/v1/gateway/sdk/login` — mints a device account on first run and
+  returns it as `createdDeviceAccount`; later logins replay it and get a stable
+  user id back
+- `POST /core/v1/gateway/sdk/federation` — same, for a linked Nintendo Account
+- `/core/v1/users/{id}`, `/core/v1/analytics/*` — the SDK calls these and treats
+  a 404 as an `NPFError`
+
+### Verified boot chain
+
+Every step exercised against the running server with the real request shapes:
+
+| step | result |
+|---|---|
+| `GET /pre/AppManifest?market=GOOGLE&magic=…` | AppVer -> AssetVer mapping |
+| `POST /core/v1/gateway/sdk/login` | device account + `idToken` |
+| `GET /pokeland/<AssetVer>/Android/size_manifest.json` | regenerated for the converted tree |
+| `POST /1.600/game` `Login` + `Authorization: Bearer` | SessionID + valid envelope |
+| `GET /pokeland/<AssetVer>/Android/equnit-icons` | UnityFS bundle, Android-targeted |
+
+**Not yet done:** no Android device or emulator was available here, so this is
+verified at the protocol level, not by booting the game. The mirror is also still
+running, so only part of the tree is converted so far.
 
 ## iOS client
 

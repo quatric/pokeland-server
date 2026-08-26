@@ -1,32 +1,36 @@
 have iOS/bgm/01
 have iOS/bgm/02
-have iOS/bgm/common
+retry1 (6694286/12107575) iOS/bgm/common
+ok   iOS/bgm/common (12107575 B)
 have iOS/chest
-ok   iOS/cubemap (173445 B)
-ok   iOS/effects/eff (892551 B)
-ok   iOS/effects/waza (1211013 B)
-ok   iOS/eqbit-icons (153602 B)
-retry1 (0/1825932) iOS/equnit-icons
-ok   iOS/equnit-icons (1825932 B)
-ok   iOS/equnit-models (219210 B)
-ok   iOS/equnit-prefab-icons (3186576 B)
-retry1 (0/443140) iOS/evedef/tut
-ok   iOS/evedef/tut (443140 B)
-retry1 (47419/1076658) iOS/fonts/common
-ok   iOS/fonts/common (1076658 B)
-retry1 (0/20368345) iOS/fonts/sourcehansans.fontsjp
-ok   iOS/fonts/sourcehansans.fontsjp (20368345 B)
-ok   iOS/gift-icons (123696 B)
-ok   iOS/globaldata (56708 B)
-ok   iOS/illustrations/common (5276123 B)
-ok   iOS/illustrations/l10n.en-us (1353639 B)
-ok   iOS/iOS (5320 B)
-ok   iOS/lightpreset (669037 B)
-ok   iOS/mii (635643 B)
-ok   iOS/pdeco-icons (62818 B)
-ok   iOS/pii-icons-face/01rg (5075078 B)
-retry1 (0/3606565) iOS/pii-icons-face/02gs
-retry2 (0/3606565) iOS/pii-icons-face/02gs
-ok   iOS/pii-icons-face/02gs (3606565 B)
-retry1 (0/4355065) iOS/pii-icons-face/03rs
-retry2 (1340315/4355065) iOS/pii-icons-face/03rs
+have iOS/cubemap
+have iOS/effects/eff
+have iOS/effects/waza
+have iOS/eqbit-icons
+have iOS/equnit-icons
+have iOS/equnit-models
+have iOS/equnit-prefab-icons
+have iOS/evedef/tut
+have iOS/fonts/common
+have iOS/fonts/sourcehansans.fontsjp
+have iOS/gift-icons
+have iOS/globaldata
+have iOS/illustrations/common
+have iOS/illustrations/l10n.en-us
+have iOS/iOS
+have iOS/lightpreset
+have iOS/mii
+have iOS/pdeco-icons
+have iOS/pii-icons-face/01rg
+have iOS/pii-icons-face/02gs
+have iOS/pii-icons-face/03rs
+have iOS/pii-icons-face/04dp
+ok   iOS/pii-icons-face/05bw (4445847 B)
+ok   iOS/pii-icons-face/06xy (2870025 B)
+ok   iOS/pii-icons-face/07sm (2614721 B)
+retry1 (3599262/5381956) iOS/pii-icons-full/01rg
+ok   iOS/pii-icons-full/01rg (5381956 B)
+ok   iOS/pii-icons-full/02gs (3477219 B)
+ok   iOS/pii-icons-full/03rs (4920694 B)
+retry1 (276527/4822512) iOS/pii-icons-full/04dp
+retry2 (276527/4822512) iOS/pii-icons-full/04dp

@@ -1,0 +1,29 @@
+package com.deploygate.service;
+
+/* JADX INFO: loaded from: /Volumes/SSD/larsen/pokeland/apk/classes.dex */
+public interface DeployGateEvent {
+    public static final String ACTION_DISABLE_LOGCAT = "disableLogcat";
+    public static final String ACTION_ENABLE_LOGCAT = "enableLogcat";
+    public static final String ACTION_INIT = "init";
+    public static final String ACTION_ONESHOT_LOGCAT = "oneshotLogcat";
+    public static final String ACTION_SEND_CRASH_REPORT = "reportCrash";
+    public static final String ACTION_SEND_CUSTOM_LOG = "customLog";
+    public static final String ACTION_SEND_LOGCAT = "sendLogcat";
+    public static final String ACTION_UPDATE_AVAILABLE = "update";
+    public static final String EXTRA_AUTHOR = "author";
+    public static final String EXTRA_CAN_LOGCAT = "canLogCat";
+    public static final String EXTRA_EXCEPTION = "exception";
+    public static final String EXTRA_EXPECTED_AUTHOR = "expectedAuthor";
+    public static final String EXTRA_IS_AUTHORIZED = "isAuthorized";
+    public static final String EXTRA_IS_BOOT = "isBoot";
+    public static final String EXTRA_IS_MANAGED = "isManaged";
+    public static final String EXTRA_IS_STOP_REQUESTED = "isStopRequested";
+    public static final String EXTRA_LOG = "log";
+    public static final String EXTRA_LOGIN_USERNAME = "loginUsername";
+    public static final String EXTRA_LOG_TYPE = "logType";
+    public static final String EXTRA_SDK_VERSION = "sdkVersion";
+    public static final String EXTRA_SERIAL = "serial";
+    public static final String EXTRA_SERIAL_MESSAGE = "serialMessage";
+    public static final String EXTRA_VERSION_CODE = "versionCode";
+    public static final String EXTRA_VERSION_NAME = "versionName";
+}

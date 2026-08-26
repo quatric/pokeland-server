@@ -91,6 +91,11 @@ app.MapPost("/{version}/game", async (string version, HttpContext http) =>
     }
 });
 
+// -------------------------------------------------------------------- BaaS
+// Nintendo's account backend, which the NPF SDK must authenticate against
+// before the game will call Login at all.
+app.MapBaas(log);
+
 // --------------------------------------------------------------------- CDN
 // Stands in for dl.app.pokeland.jp. The client builds asset URLs as
 // <cdn>/pokeland/<AssetVer>/<Platform>/<bundle>, so serving the mirror tree at

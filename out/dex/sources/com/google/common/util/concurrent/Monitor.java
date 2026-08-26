@@ -1,0 +1,652 @@
+package com.google.common.util.concurrent;
+
+import com.google.common.annotations.Beta;
+import com.google.common.annotations.GwtIncompatible;
+import com.google.common.base.Preconditions;
+import com.google.common.base.Throwables;
+import com.google.j2objc.annotations.Weak;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+import javax.annotation.concurrent.GuardedBy;
+
+/* JADX INFO: loaded from: /Volumes/SSD/larsen/pokeland/apk/classes.dex */
+@Beta
+@GwtIncompatible
+public final class Monitor {
+
+    @GuardedBy("lock")
+    private Guard activeGuards;
+    private final boolean fair;
+    private final ReentrantLock lock;
+
+    @Beta
+    public static abstract class Guard {
+        final Condition condition;
+
+        @Weak
+        final Monitor monitor;
+
+        @GuardedBy("monitor.lock")
+        Guard next;
+
+        @GuardedBy("monitor.lock")
+        int waiterCount = 0;
+
+        protected Guard(Monitor monitor) {
+            this.monitor = (Monitor) Preconditions.checkNotNull(monitor, "monitor");
+            this.condition = monitor.lock.newCondition();
+        }
+
+        public abstract boolean isSatisfied();
+    }
+
+    public Monitor() {
+        this(false);
+    }
+
+    public Monitor(boolean z) {
+        this.activeGuards = null;
+        this.fair = z;
+        this.lock = new ReentrantLock(z);
+    }
+
+    /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
+    @GuardedBy("lock")
+    private void await(Guard guard, boolean z) throws InterruptedException {
+        if (z) {
+            signalNextWaiter();
+        }
+        beginWaitingFor(guard);
+        do {
+            try {
+                guard.condition.await();
+            } finally {
+                endWaitingFor(guard);
+            }
+        } while (!guard.isSatisfied());
+    }
+
+    /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
+    @GuardedBy("lock")
+    private boolean awaitNanos(Guard guard, long j, boolean z) throws InterruptedException {
+        boolean z2 = true;
+        while (j > 0) {
+            if (z2) {
+                if (z) {
+                    try {
+                        signalNextWaiter();
+                    } catch (Throwable th) {
+                        if (!z2) {
+                            endWaitingFor(guard);
+                        }
+                        throw th;
+                    }
+                }
+                beginWaitingFor(guard);
+                z2 = false;
+            }
+            j = guard.condition.awaitNanos(j);
+            if (guard.isSatisfied()) {
+                if (!z2) {
+                    endWaitingFor(guard);
+                }
+                return true;
+            }
+        }
+        if (!z2) {
+            endWaitingFor(guard);
+        }
+        return false;
+    }
+
+    /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
+    @GuardedBy("lock")
+    private void awaitUninterruptibly(Guard guard, boolean z) {
+        if (z) {
+            signalNextWaiter();
+        }
+        beginWaitingFor(guard);
+        do {
+            try {
+                guard.condition.awaitUninterruptibly();
+            } finally {
+                endWaitingFor(guard);
+            }
+        } while (!guard.isSatisfied());
+    }
+
+    @GuardedBy("lock")
+    private void beginWaitingFor(Guard guard) {
+        int i = guard.waiterCount;
+        guard.waiterCount = i + 1;
+        if (i == 0) {
+            guard.next = this.activeGuards;
+            this.activeGuards = guard;
+        }
+    }
+
+    @GuardedBy("lock")
+    private void endWaitingFor(Guard guard) {
+        int i = guard.waiterCount - 1;
+        guard.waiterCount = i;
+        if (i == 0) {
+            Guard guard2 = this.activeGuards;
+            Guard guard3 = null;
+            while (guard2 != guard) {
+                guard3 = guard2;
+                guard2 = guard2.next;
+            }
+            if (guard3 == null) {
+                this.activeGuards = guard2.next;
+            } else {
+                guard3.next = guard2.next;
+            }
+            guard2.next = null;
+        }
+    }
+
+    private static long initNanoTime(long j) {
+        if (j <= 0) {
+            return 0L;
+        }
+        long jNanoTime = System.nanoTime();
+        if (jNanoTime == 0) {
+            return 1L;
+        }
+        return jNanoTime;
+    }
+
+    @GuardedBy("lock")
+    private boolean isSatisfied(Guard guard) {
+        try {
+            return guard.isSatisfied();
+        } catch (Throwable th) {
+            signalAllWaiters();
+            throw Throwables.propagate(th);
+        }
+    }
+
+    private static long remainingNanos(long j, long j2) {
+        if (j2 <= 0) {
+            return 0L;
+        }
+        return j2 - (System.nanoTime() - j);
+    }
+
+    @GuardedBy("lock")
+    private void signalAllWaiters() {
+        for (Guard guard = this.activeGuards; guard != null; guard = guard.next) {
+            guard.condition.signalAll();
+        }
+    }
+
+    @GuardedBy("lock")
+    private void signalNextWaiter() {
+        for (Guard guard = this.activeGuards; guard != null; guard = guard.next) {
+            if (isSatisfied(guard)) {
+                guard.condition.signal();
+                return;
+            }
+        }
+    }
+
+    private static long toSafeNanos(long j, TimeUnit timeUnit) {
+        long nanos = timeUnit.toNanos(j);
+        if (nanos <= 0) {
+            return 0L;
+        }
+        if (nanos > 6917529027641081853L) {
+            return 6917529027641081853L;
+        }
+        return nanos;
+    }
+
+    public void enter() {
+        this.lock.lock();
+    }
+
+    /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
+    public boolean enter(long j, TimeUnit timeUnit) throws Throwable {
+        boolean zTryLock;
+        long safeNanos = toSafeNanos(j, timeUnit);
+        ReentrantLock reentrantLock = this.lock;
+        if (!this.fair && reentrantLock.tryLock()) {
+            return true;
+        }
+        boolean zInterrupted = Thread.interrupted();
+        try {
+            long jNanoTime = System.nanoTime();
+            long jRemainingNanos = safeNanos;
+            while (true) {
+                try {
+                    try {
+                        zTryLock = reentrantLock.tryLock(jRemainingNanos, TimeUnit.NANOSECONDS);
+                        break;
+                    } catch (Throwable th) {
+                        th = th;
+                        zInterrupted = true;
+                        if (zInterrupted) {
+                            Thread.currentThread().interrupt();
+                        }
+                        throw th;
+                    }
+                } catch (InterruptedException unused) {
+                    jRemainingNanos = remainingNanos(jNanoTime, safeNanos);
+                    zInterrupted = true;
+                }
+            }
+            if (zInterrupted) {
+                Thread.currentThread().interrupt();
+            }
+            return zTryLock;
+        } catch (Throwable th2) {
+            th = th2;
+        }
+    }
+
+    public boolean enterIf(Guard guard) {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        reentrantLock.lock();
+        try {
+            boolean zIsSatisfied = guard.isSatisfied();
+            if (!zIsSatisfied) {
+                reentrantLock.unlock();
+            }
+            return zIsSatisfied;
+        } catch (Throwable th) {
+            reentrantLock.unlock();
+            throw th;
+        }
+    }
+
+    public boolean enterIf(Guard guard, long j, TimeUnit timeUnit) {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        if (!enter(j, timeUnit)) {
+            return false;
+        }
+        try {
+            boolean zIsSatisfied = guard.isSatisfied();
+            if (!zIsSatisfied) {
+                this.lock.unlock();
+            }
+            return zIsSatisfied;
+        } catch (Throwable th) {
+            this.lock.unlock();
+            throw th;
+        }
+    }
+
+    public boolean enterIfInterruptibly(Guard guard) throws InterruptedException {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        reentrantLock.lockInterruptibly();
+        try {
+            boolean zIsSatisfied = guard.isSatisfied();
+            if (!zIsSatisfied) {
+                reentrantLock.unlock();
+            }
+            return zIsSatisfied;
+        } catch (Throwable th) {
+            reentrantLock.unlock();
+            throw th;
+        }
+    }
+
+    public boolean enterIfInterruptibly(Guard guard, long j, TimeUnit timeUnit) throws InterruptedException {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        if (!reentrantLock.tryLock(j, timeUnit)) {
+            return false;
+        }
+        try {
+            boolean zIsSatisfied = guard.isSatisfied();
+            if (!zIsSatisfied) {
+                reentrantLock.unlock();
+            }
+            return zIsSatisfied;
+        } catch (Throwable th) {
+            reentrantLock.unlock();
+            throw th;
+        }
+    }
+
+    public void enterInterruptibly() throws InterruptedException {
+        this.lock.lockInterruptibly();
+    }
+
+    public boolean enterInterruptibly(long j, TimeUnit timeUnit) throws InterruptedException {
+        return this.lock.tryLock(j, timeUnit);
+    }
+
+    public void enterWhen(Guard guard) throws InterruptedException {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        boolean zIsHeldByCurrentThread = reentrantLock.isHeldByCurrentThread();
+        reentrantLock.lockInterruptibly();
+        try {
+            if (guard.isSatisfied()) {
+                return;
+            }
+            await(guard, zIsHeldByCurrentThread);
+        } catch (Throwable th) {
+            leave();
+            throw th;
+        }
+    }
+
+    /* JADX WARN: Code duplicated, block: B:13:0x0029  */
+    /* JADX WARN: Code duplicated, block: B:15:0x0033 A[RETURN] */
+    /* JADX WARN: Code duplicated, block: B:24:0x0049  */
+    public boolean enterWhen(Guard guard, long j, TimeUnit timeUnit) throws InterruptedException {
+        long jInitNanoTime;
+        boolean z;
+        long safeNanos = toSafeNanos(j, timeUnit);
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        boolean zIsHeldByCurrentThread = reentrantLock.isHeldByCurrentThread();
+        if (this.fair) {
+            jInitNanoTime = initNanoTime(safeNanos);
+            if (!reentrantLock.tryLock(j, timeUnit)) {
+                return false;
+            }
+        } else {
+            if (Thread.interrupted()) {
+                throw new InterruptedException();
+            }
+            if (reentrantLock.tryLock()) {
+                jInitNanoTime = 0;
+            } else {
+                jInitNanoTime = initNanoTime(safeNanos);
+                if (!reentrantLock.tryLock(j, timeUnit)) {
+                    return false;
+                }
+            }
+        }
+        try {
+            if (!guard.isSatisfied()) {
+                if (jInitNanoTime != 0) {
+                    safeNanos = remainingNanos(jInitNanoTime, safeNanos);
+                }
+                z = awaitNanos(guard, safeNanos, zIsHeldByCurrentThread);
+            }
+            if (!z) {
+                reentrantLock.unlock();
+            }
+            return z;
+        } catch (Throwable th) {
+            if (!zIsHeldByCurrentThread) {
+                try {
+                    signalNextWaiter();
+                } finally {
+                    reentrantLock.unlock();
+                }
+            }
+            throw th;
+        }
+    }
+
+    public void enterWhenUninterruptibly(Guard guard) {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        boolean zIsHeldByCurrentThread = reentrantLock.isHeldByCurrentThread();
+        reentrantLock.lock();
+        try {
+            if (guard.isSatisfied()) {
+                return;
+            }
+            awaitUninterruptibly(guard, zIsHeldByCurrentThread);
+        } catch (Throwable th) {
+            leave();
+            throw th;
+        }
+    }
+
+    /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
+    public boolean enterWhenUninterruptibly(Guard guard, long j, TimeUnit timeUnit) throws Throwable {
+        long jInitNanoTime;
+        long jRemainingNanos;
+        long safeNanos = toSafeNanos(j, timeUnit);
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        boolean zIsHeldByCurrentThread = reentrantLock.isHeldByCurrentThread();
+        boolean zInterrupted = Thread.interrupted();
+        boolean zAwaitNanos = true;
+        try {
+            if (this.fair || !reentrantLock.tryLock()) {
+                jInitNanoTime = initNanoTime(safeNanos);
+                long jRemainingNanos2 = safeNanos;
+                while (true) {
+                    try {
+                        try {
+                            break;
+                        } catch (Throwable th) {
+                            th = th;
+                            zInterrupted = true;
+                            if (zInterrupted) {
+                                Thread.currentThread().interrupt();
+                            }
+                            throw th;
+                        }
+                    } catch (InterruptedException unused) {
+                        jRemainingNanos2 = remainingNanos(jInitNanoTime, safeNanos);
+                        zInterrupted = true;
+                    }
+                }
+                if (!reentrantLock.tryLock(jRemainingNanos2, TimeUnit.NANOSECONDS)) {
+                    if (zInterrupted) {
+                        Thread.currentThread().interrupt();
+                    }
+                    return false;
+                }
+            } else {
+                jInitNanoTime = 0;
+            }
+            while (!guard.isSatisfied()) {
+                try {
+                    if (jInitNanoTime == 0) {
+                        jInitNanoTime = initNanoTime(safeNanos);
+                        jRemainingNanos = safeNanos;
+                    } else {
+                        jRemainingNanos = remainingNanos(jInitNanoTime, safeNanos);
+                    }
+                    zAwaitNanos = awaitNanos(guard, jRemainingNanos, zIsHeldByCurrentThread);
+                } catch (InterruptedException unused2) {
+                    zIsHeldByCurrentThread = false;
+                    zInterrupted = true;
+                } catch (Throwable th2) {
+                    reentrantLock.unlock();
+                    throw th2;
+                }
+            }
+            if (!zAwaitNanos) {
+                reentrantLock.unlock();
+            }
+            if (zInterrupted) {
+                Thread.currentThread().interrupt();
+            }
+            return zAwaitNanos;
+        } catch (Throwable th3) {
+            th = th3;
+        }
+    }
+
+    public int getOccupiedDepth() {
+        return this.lock.getHoldCount();
+    }
+
+    public int getQueueLength() {
+        return this.lock.getQueueLength();
+    }
+
+    public int getWaitQueueLength(Guard guard) {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        this.lock.lock();
+        try {
+            return guard.waiterCount;
+        } finally {
+            this.lock.unlock();
+        }
+    }
+
+    public boolean hasQueuedThread(Thread thread) {
+        return this.lock.hasQueuedThread(thread);
+    }
+
+    public boolean hasQueuedThreads() {
+        return this.lock.hasQueuedThreads();
+    }
+
+    public boolean hasWaiters(Guard guard) {
+        return getWaitQueueLength(guard) > 0;
+    }
+
+    public boolean isFair() {
+        return this.fair;
+    }
+
+    public boolean isOccupied() {
+        return this.lock.isLocked();
+    }
+
+    public boolean isOccupiedByCurrentThread() {
+        return this.lock.isHeldByCurrentThread();
+    }
+
+    public void leave() {
+        ReentrantLock reentrantLock = this.lock;
+        try {
+            if (reentrantLock.getHoldCount() == 1) {
+                signalNextWaiter();
+            }
+        } finally {
+            reentrantLock.unlock();
+        }
+    }
+
+    public boolean tryEnter() {
+        return this.lock.tryLock();
+    }
+
+    public boolean tryEnterIf(Guard guard) {
+        if (guard.monitor != this) {
+            throw new IllegalMonitorStateException();
+        }
+        ReentrantLock reentrantLock = this.lock;
+        if (!reentrantLock.tryLock()) {
+            return false;
+        }
+        try {
+            boolean zIsSatisfied = guard.isSatisfied();
+            if (!zIsSatisfied) {
+                reentrantLock.unlock();
+            }
+            return zIsSatisfied;
+        } catch (Throwable th) {
+            reentrantLock.unlock();
+            throw th;
+        }
+    }
+
+    public void waitFor(Guard guard) throws InterruptedException {
+        if (!(guard.monitor == this) || !this.lock.isHeldByCurrentThread()) {
+            throw new IllegalMonitorStateException();
+        }
+        if (guard.isSatisfied()) {
+            return;
+        }
+        await(guard, true);
+    }
+
+    public boolean waitFor(Guard guard, long j, TimeUnit timeUnit) throws InterruptedException {
+        long safeNanos = toSafeNanos(j, timeUnit);
+        if (!(guard.monitor == this) || !this.lock.isHeldByCurrentThread()) {
+            throw new IllegalMonitorStateException();
+        }
+        if (guard.isSatisfied()) {
+            return true;
+        }
+        if (Thread.interrupted()) {
+            throw new InterruptedException();
+        }
+        return awaitNanos(guard, safeNanos, true);
+    }
+
+    public void waitForUninterruptibly(Guard guard) {
+        if (!(guard.monitor == this) || !this.lock.isHeldByCurrentThread()) {
+            throw new IllegalMonitorStateException();
+        }
+        if (guard.isSatisfied()) {
+            return;
+        }
+        awaitUninterruptibly(guard, true);
+    }
+
+    /* JADX WARN: Code duplicated, block: B:26:0x0051  */
+    /* JADX WARN: Unreachable blocks removed: 1, instructions: 1 */
+    public boolean waitForUninterruptibly(Guard guard, long j, TimeUnit timeUnit) throws Throwable {
+        long safeNanos = toSafeNanos(j, timeUnit);
+        boolean z = true;
+        if (!(guard.monitor == this) || !this.lock.isHeldByCurrentThread()) {
+            throw new IllegalMonitorStateException();
+        }
+        if (guard.isSatisfied()) {
+            return true;
+        }
+        long jInitNanoTime = initNanoTime(safeNanos);
+        long jRemainingNanos = safeNanos;
+        boolean zInterrupted = Thread.interrupted();
+        boolean z2 = true;
+        while (true) {
+            try {
+                try {
+                    boolean zAwaitNanos = awaitNanos(guard, jRemainingNanos, z2);
+                    if (zInterrupted) {
+                        Thread.currentThread().interrupt();
+                    }
+                    return zAwaitNanos;
+                } catch (Throwable th) {
+                    th = th;
+                    if (z) {
+                        Thread.currentThread().interrupt();
+                    }
+                    throw th;
+                }
+            } catch (InterruptedException unused) {
+                if (guard.isSatisfied()) {
+                    Thread.currentThread().interrupt();
+                    return true;
+                }
+                jRemainingNanos = remainingNanos(jInitNanoTime, safeNanos);
+                z2 = false;
+                zInterrupted = true;
+            } catch (Throwable th2) {
+                th = th2;
+                z = zInterrupted;
+                if (z) {
+                    Thread.currentThread().interrupt();
+                }
+                throw th;
+            }
+        }
+    }
+}
