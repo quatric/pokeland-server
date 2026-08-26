@@ -29,7 +29,8 @@ app.MapGet("/pre/AppManifest", (HttpContext http) =>
     var market = http.Request.Query["market"].ToString();
     var magic = http.Request.Query["magic"].ToString();
 
-    if (config.RequireMagic && magic != config.Magic)
+    if (config.RequireMagic &&
+        !(config.Magic.TryGetValue(market, out var want) && magic == want))
     {
         log.LogWarning("AppManifest: bad magic {Magic} from {Ip}", magic, http.Connection.RemoteIpAddress);
         return Results.StatusCode(StatusCodes.Status403Forbidden);

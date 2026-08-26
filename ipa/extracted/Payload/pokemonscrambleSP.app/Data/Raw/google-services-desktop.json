@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "services": {
+        "appinvite_service": {
+          "status": 1
+        }, 
+        "analytics_service": {
+          "status": 0
+        }
+      }, 
+      "oauth_client": [
+        {
+          "client_id": "499654768239-bvrkjm5cu2nv8l5m1lj0vqp8r4a6f4f5.apps.googleusercontent.com"
+        }
+      ], 
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-p5HJt54jtEgAhl1T0pVXflNO2-PHND8"
+        }
+      ], 
+      "client_info": {
+        "mobilesdk_app_id": "1:499654768239:ios:3d5bb298c0034dff", 
+        "android_client_info": {
+          "package_name": "jp.pokemon.pokemonscrambleSP"
+        }
+      }
+    }
+  ], 
+  "configuration_version": "1", 
+  "project_info": {
+    "storage_bucket": "npf-caviar-89feb80.appspot.com", 
+    "project_id": "npf-caviar-89feb80", 
+    "firebase_url": "https://npf-caviar-89feb80.firebaseio.com", 
+    "project_number": "499654768239"
+  }
+}

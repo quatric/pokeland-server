@@ -82,6 +82,7 @@ while the surface is filled in.
 
 **1. The archived CDN is iOS-only, and iOS bundles will not load on Android.**
 
+
 This is worth being blunt about because it changes the approach. The Wayback copy
 covers `.../1.6.0/740e9608db30b5f19e739442a779e2e2/iOS/...` only; there is no
 `Android/` tree in the archive, and the client picks its platform directory at
@@ -96,7 +97,8 @@ bundle-load time rather than at the network layer.
 
 Realistic options, roughly in order of effort:
 
-- **Use the iOS client.** The assets match it exactly. Needs the 1.6.0 IPA.
+- **Use the iOS client.** The assets match it exactly. See "iOS client" below —
+  the 1.6.1 IPA is available but FairPlay-encrypted, so it needs decrypting first.
 - **Repack.** Extract with UnityPy/AssetStudio and rebuild as Android bundles.
   Mechanical for meshes/audio/text; the texture recompression is lossy and
   shaders may need rebuilding. This is the actual "port", and it is real work.
@@ -129,6 +131,44 @@ is not trustworthy.
 5. **Stub the BaaS dependency.** The client talks to `baas.nintendo.com` for its
    bearer token; a revival needs that redirected to a local stand-in or the login
    path patched out.
+
+## iOS client
+
+`jp.pokemon.pokemonscrambleSP` **1.6.1** (build 1060101, arm64, `MinimumOSVersion`
+9.0) — the global "Pokémon Rumble Rush" build, which kept the JP bundle id.
+
+Its `global-metadata.dat` is not encrypted, so the protocol could be verified
+against it directly, and it is **identical to Android 1.6.0**:
+
+- same API version — the client still posts to `/1.600/game`
+- same hosts — `prd.app.pokeland.jp`, `dl.app.pokeland.jp`
+- all 63 `Uskumru.Proto` namespace names present, and 491 of 498 protocol field and
+  enum names (the 7 misses are 1–2 character names that the ≥3-char scan could not
+  test, not real differences)
+- the only iOS-exclusive identifiers are Unity GameCenter / local-notification APIs
+
+So the server speaks to both clients unmodified. The one client-visible difference
+is the AppManifest gate, which is per-store:
+
+| market | magic |
+|---|---|
+| `GOOGLE` | `798d799c0ec24e1f0d7ff1f5a1a74cd9` |
+| `APPLE` | `f388d2d02c48702efacde9ca0d977b45` |
+
+Both are configured, and AppVer `1.6.1` is mapped onto the archived 1.6.0 asset set.
+
+**The blocker: the IPA is still FairPlay-encrypted** (`LC_ENCRYPTION_INFO_64`,
+`cryptid = 1`, 39.8 MB of `__TEXT` encrypted). That has two consequences:
+
+1. Il2CppDumper cannot dump it — `CodeRegistration` lives in the encrypted range,
+   so the search finds plausible-looking addresses and then walks off the end of
+   the array. Only the metadata is readable.
+2. More importantly, it **cannot be sideloaded**. Re-signing requires a decrypted
+   binary, and FairPlay keys are per-Apple-ID for an app that is now delisted.
+
+A decrypted dump is needed — the usual route is `frida-ios-dump` or `flexdecrypt`
+on a jailbroken device that has the app installed, or finding an already-decrypted
+copy. Everything else on the iOS path is ready and waiting for that.
 
 ## Game data
 
