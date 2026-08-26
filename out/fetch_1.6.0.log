@@ -1,4 +1,5 @@
 have iOS/bgm/01
 have iOS/bgm/02
-retry1 (http=000 got=3125248 want=12107575) iOS/bgm/common
-retry2 (http=200 got=9613101 want=12107575) iOS/bgm/common
+have iOS/bgm/common
+have iOS/chest
+ok   iOS/cubemap (173445 B)

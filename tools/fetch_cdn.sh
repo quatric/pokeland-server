@@ -1,12 +1,19 @@
 #!/bin/bash
 # Mirror archived Pokeland CDN assets out of the Wayback Machine.
 #
-# Two things bite here, and both are handled:
+# Three things bite here, and all three are handled:
 #   * web.archive.org rate-limits aggressive clients into outright connection
 #     failures, so requests go one at a time with exponential backoff.
-#   * Wayback replay silently truncates large binaries, so every download is
-#     checked against the authoritative size in the game's size_manifest.json
-#     and re-fetched until it matches.
+#   * Wayback replay silently truncates large binaries - bgm/common comes back
+#     at 3 MB or 9 MB instead of 12 MB, with a clean HTTP 200 either way.
+#   * It does honour Range requests (verified: HTTP 206), so a truncated file is
+#     resumed with `curl -C -` rather than restarted, which is the only way the
+#     20 MB font bundles finish at all.
+#
+# Every file is checked against the authoritative size in the game's own
+# size_manifest.json, so a partial download can never be mistaken for a good one.
+#
+# Safe to re-run: verified files are skipped, partial ones resume.
 #
 # Usage: fetch_cdn.sh [assetver] [delay-seconds]
 set -u
@@ -14,7 +21,7 @@ ROOT=/Volumes/SSD/larsen/pokeland
 CDX=$ROOT/out/cdn_cdx.txt
 DEST=$ROOT/cdn
 VER="${1:-1.6.0}"
-DELAY="${2:-4}"
+DELAY="${2:-3}"
 
 SIZES=$(mktemp)
 trap 'rm -f "$SIZES"' EXIT
@@ -36,6 +43,7 @@ while read -r ts url mime status len; do
   name=$(printf '%s' "$rel" | sed -E "s|^pokeland/[^/]+/[0-9a-f]{32}/||")
   want=$(expected "$name")
   out="$DEST/$rel"
+  part="$out.part"
 
   if [ -s "$out" ]; then
     got=$(stat -f%z "$out")
@@ -48,20 +56,32 @@ while read -r ts url mime status len; do
 
   mkdir -p "$(dirname "$out")"
   good=0
-  for try in 1 2 3 4 5 6; do
-    code=$(curl -sL --compressed --max-time 900 --speed-time 60 --speed-limit 1024 \
-             -w '%{http_code}' -o "$out.part" "https://web.archive.org/web/${ts}id_/$url")
-    got=$(stat -f%z "$out.part" 2>/dev/null || echo 0)
-    if [ "$code" = 200 ] && [ "$got" -gt 0 ] && { [ -z "$want" ] || [ "$got" = "$want" ]; }; then
-      mv "$out.part" "$out"; good=1
+  for try in 1 2 3 4 5 6 7 8; do
+    # -C - resumes whatever the previous attempt managed to get.
+    curl -sL -C - --compressed --max-time 900 --speed-time 60 --speed-limit 1024 \
+         -o "$part" "https://web.archive.org/web/${ts}id_/$url" >/dev/null 2>&1
+    got=$(stat -f%z "$part" 2>/dev/null || echo 0)
+
+    if [ "$got" -gt 0 ] && { [ -z "$want" ] || [ "$got" = "$want" ]; }; then
+      mv "$part" "$out"; good=1
       echo "ok   $name ($got B)"; break
     fi
-    echo "retry$try (http=$code got=$got want=${want:-?}) $name"
-    sleep $((try * try * 20))
+    if [ -n "$want" ] && [ "$got" -gt "$want" ]; then
+      # Overshoot means the resume offset desynced; start this one over.
+      echo "reset $name (got=$got > want=$want)"
+      rm -f "$part"
+    fi
+    echo "retry$try ($got/${want:-?}) $name"
+    sleep $((try * try * 15))
   done
-  rm -f "$out.part"
 
-  if [ "$good" = 1 ]; then ok=$((ok+1)); else bad=$((bad+1)); echo "FAIL $name"; fi
+  if [ "$good" = 1 ]; then
+    ok=$((ok+1))
+  else
+    bad=$((bad+1))
+    # Leave the .part in place - a later run resumes instead of restarting.
+    echo "FAIL $name (partial kept)"
+  fi
   sleep "$DELAY"
 done < "$CDX"
 
