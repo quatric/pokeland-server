@@ -1,0 +1,2900 @@
+[
+ {
+  "m_description": "",
+  "m_group": 0,
+  "m_coeff": 0,
+  "m_performance": 0,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "防御力が{0}上がる",
+  "m_group": 1,
+  "m_coeff": 1,
+  "m_performance": 14,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "防御力が{0}上がる",
+  "m_group": 1,
+  "m_coeff": 1,
+  "m_performance": 15,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "防御力が{0}上がる",
+  "m_group": 1,
+  "m_coeff": 1,
+  "m_performance": 16,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "HPが{0}上がる",
+  "m_group": 2,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 2,
+  "m_coeff": 2,
+  "m_performance": 11,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "HPが{0}上がる",
+  "m_group": 2,
+  "m_coeff": 2,
+  "m_performance": 12,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "HPが{0}上がる",
+  "m_group": 2,
+  "m_coeff": 2,
+  "m_performance": 13,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "通常わざを出す速さが{0}上がる",
+  "m_group": 3,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 3,
+  "m_coeff": 3,
+  "m_performance": 20,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "通常わざを出す速さが{0}上がる",
+  "m_group": 3,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "通常わざを出す速さが{0}上がる",
+  "m_group": 3,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 4,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざの威力が{0}上がる",
+  "m_group": 4,
+  "m_coeff": 5,
+  "m_performance": 5,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "通常わざが急所に当たる確率が{0}上がる",
+  "m_group": 5,
+  "m_coeff": 7,
+  "m_performance": 17,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "通常わざが急所に当たる確率が{0}上がる",
+  "m_group": 5,
+  "m_coeff": 7,
+  "m_performance": 18,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "通常わざが急所に当たる確率が{0}上がる",
+  "m_group": 5,
+  "m_coeff": 7,
+  "m_performance": 19,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 26,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 27,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ノーマルタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "かくとうタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ひこうタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "どくタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "じめんタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "いわタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "むしタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ゴーストタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "はがねタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ほのおタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "みずタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "くさタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "でんきタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "エスパータイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "こおりタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ドラゴンタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "あくタイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "フェアリータイプの通常わざが急所に当たったときの威力が{0}上がる",
+  "m_group": 6,
+  "m_coeff": 8,
+  "m_performance": 28,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "タメわざの威力が{0}上がる",
+  "m_group": 8,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 8,
+  "m_coeff": 9,
+  "m_performance": 23,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "タメわざの威力が{0}上がる",
+  "m_group": 8,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "タメわざの威力が{0}上がる",
+  "m_group": 8,
+  "m_coeff": 4,
+  "m_performance": 3,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ポケモンが自動で攻撃する",
+  "m_group": 0,
+  "m_coeff": 10,
+  "m_performance": 6,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ポケモンのCPが上がる",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 1,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "遠くで当たると威力が高い",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 9,
+  "m_performance": 29,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "近くで当たると威力が高い",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 2,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 9,
+  "m_performance": 30,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 9,
+  "m_performance": 32,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 9,
+  "m_performance": 33,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 9,
+  "m_performance": 38,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "ミュウツーの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 36,
+  "m_monsNo": 150
+ },
+ {
+  "m_description": "グソクムシャ・コソクムシの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 768
+ },
+ {
+  "m_description": "フシギバナ・フシギソウ・フシギダネの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 3
+ },
+ {
+  "m_description": "リザードン・リザード・ヒトカゲの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 6
+ },
+ {
+  "m_description": "カメックス・カメール・ゼニガメの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 9
+ },
+ {
+  "m_description": "ゲッコウガ・ゲコガシラ・ケロマツの通常わざの威力が{0}足される",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 658
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 26
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 36,
+  "m_monsNo": 724
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 727
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 730
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 748
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 208
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 68
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 243
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 245
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 36,
+  "m_monsNo": 249
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 53
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 733
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 745
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 36,
+  "m_monsNo": 773
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 794
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 38
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 445
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 454
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 635
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 36,
+  "m_monsNo": 718
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 260
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 257
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 12
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 36,
+  "m_monsNo": 380
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 31,
+  "m_monsNo": 254
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 154
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 157
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 160
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 181
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 248
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 34
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 62
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 144
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 145
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 146
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 149
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 381
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 382
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 383
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 384
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 386
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 405
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 464
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 448
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 492
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 493
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 462
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 646
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 655
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 689
+ },
+ {
+  "m_description": "",
+  "m_group": 4,
+  "m_coeff": 4,
+  "m_performance": 37,
+  "m_monsNo": 706
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかえんほうしゃを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかえんほうしゃを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPうずしおを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPうずしおを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPボルテッカーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPボルテッカーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPはっぱカッターを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPはっぱカッターを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPばくれつパンチを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPばくれつパンチを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPだいばくはつを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPだいばくはつを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 10,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPヘドロウェーブを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPヘドロウェーブを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPつばさでうつを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPつばさでうつを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコキネシスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコキネシスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPマグニチュードを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPマグニチュードを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシグナルビームを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシグナルビームを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPロックブラストを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPロックブラストを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPれいとうビームを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPれいとうビームを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPこおりのつぶてを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPこおりのつぶてを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 8,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドラゴンダイブを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドラゴンダイブを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかみくだくを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかみくだくを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPラスターカノンを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPラスターカノンを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPムーンフォースを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPムーンフォースを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPチャームボイスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPチャームボイスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPめざましビンタを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPめざましビンタを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコカッターを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコカッターを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPだいちのちからを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPだいちのちからを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 8,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシャドーボールを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシャドーボールを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPクロスチョップを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPクロスチョップを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPなみのりを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPなみのりを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPみずのはどうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPみずのはどうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPスパークを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPスパークを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 8,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPリーフブレードを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPリーフブレードを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPきりさくを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPきりさくを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 10,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPどろばくだんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPどろばくだんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPヘドロこうげきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPヘドロこうげきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPじごくぐるまを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPじごくぐるまを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 10,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPでんこうせっかを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPでんこうせっかを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 10,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPエナジーボールを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPエナジーボールを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPほのおのキバを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPほのおのキバを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPマジカルシャインを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPマジカルシャインを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコショックを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコショックを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドリルくちばしを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドリルくちばしを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシャドーパンチを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシャドーパンチを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPであいがしらを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPワイルドボルトを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPワイルドボルトを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPいわなだれを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPいわなだれを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPトライアタックを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPトライアタックを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPとっしんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPとっしんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPだくりゅうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPだくりゅうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 10,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPほうでんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPほうでんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPふんえんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPふんえんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPあくのはどうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPあくのはどうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドラゴンクローを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドラゴンクローを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドラゴンハンマーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアームハンマーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 7,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアームハンマーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 8,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPメガホーンを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPメガホーンを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアクアテールを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 9,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアクアテールを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPみずしゅりけんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPみずしゅりけんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシザークロスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPシザークロスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドレインキッスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPドレインキッスを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPのしかかりを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPのしかかりを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPナイトバーストを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPナイトバーストを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかみなりを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかみなりを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPコメットパンチを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPコメットパンチを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPゴッドバードを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPゴッドバードを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPストーンエッジを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPストーンエッジを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPマジカルリーフを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPマジカルリーフを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPじしんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPじしんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアクアジェットを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアクアジェットを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPオーバーヒートを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPオーバーヒートを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPもろはのずつきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPもろはのずつきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかげうちを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPかげうちを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPふぶきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPふぶきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアイアンヘッドを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアイアンヘッドを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPであいがしらを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPベノムショックを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPベノムショックを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPぼうふうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPぼうふうを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPばかぢからを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPばかぢからを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPげきりんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPげきりんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアシストパワーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPアシストパワーを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPぎんいろのかぜを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPぎんいろのかぜを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPせいなるほのおを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPせいなるほのおを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPガリョウテンセイを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPガリョウテンセイを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコブーストを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPサイコブーストを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPさばきのつぶてを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPさばきのつぶてを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPはどうだんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPはどうだんを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPあおいほのおを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPあおいほのおを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPらいげきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPらいげきを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPデスウイングを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 34,
+  "m_monsNo": 0
+ },
+ {
+  "m_description": "{0}が出現して\r\nSPデスウイングを放つ",
+  "m_group": 9,
+  "m_coeff": 11,
+  "m_performance": 35,
+  "m_monsNo": 0
+ }
+]

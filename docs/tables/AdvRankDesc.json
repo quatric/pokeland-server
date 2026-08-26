@@ -1,0 +1,608 @@
+[
+ {
+  "m_exp": 0,
+  "m_PPEStoreSize": 0,
+  "m_NormalEqunitStoreSize": 0,
+  "m_SpEqunitStoreSize": 0
+ },
+ {
+  "m_exp": 0,
+  "m_PPEStoreSize": 100,
+  "m_NormalEqunitStoreSize": 100,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 20,
+  "m_PPEStoreSize": 110,
+  "m_NormalEqunitStoreSize": 100,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 50,
+  "m_PPEStoreSize": 110,
+  "m_NormalEqunitStoreSize": 110,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 100,
+  "m_PPEStoreSize": 120,
+  "m_NormalEqunitStoreSize": 110,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 150,
+  "m_PPEStoreSize": 120,
+  "m_NormalEqunitStoreSize": 120,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 200,
+  "m_PPEStoreSize": 130,
+  "m_NormalEqunitStoreSize": 120,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 270,
+  "m_PPEStoreSize": 130,
+  "m_NormalEqunitStoreSize": 130,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 410,
+  "m_PPEStoreSize": 140,
+  "m_NormalEqunitStoreSize": 130,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 580,
+  "m_PPEStoreSize": 140,
+  "m_NormalEqunitStoreSize": 140,
+  "m_SpEqunitStoreSize": 50
+ },
+ {
+  "m_exp": 800,
+  "m_PPEStoreSize": 150,
+  "m_NormalEqunitStoreSize": 140,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 1100,
+  "m_PPEStoreSize": 150,
+  "m_NormalEqunitStoreSize": 150,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 1400,
+  "m_PPEStoreSize": 160,
+  "m_NormalEqunitStoreSize": 150,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 1800,
+  "m_PPEStoreSize": 160,
+  "m_NormalEqunitStoreSize": 160,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 2200,
+  "m_PPEStoreSize": 170,
+  "m_NormalEqunitStoreSize": 160,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 2700,
+  "m_PPEStoreSize": 170,
+  "m_NormalEqunitStoreSize": 170,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 3300,
+  "m_PPEStoreSize": 180,
+  "m_NormalEqunitStoreSize": 170,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 3900,
+  "m_PPEStoreSize": 180,
+  "m_NormalEqunitStoreSize": 180,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 4700,
+  "m_PPEStoreSize": 190,
+  "m_NormalEqunitStoreSize": 180,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 5500,
+  "m_PPEStoreSize": 190,
+  "m_NormalEqunitStoreSize": 190,
+  "m_SpEqunitStoreSize": 100
+ },
+ {
+  "m_exp": 6400,
+  "m_PPEStoreSize": 200,
+  "m_NormalEqunitStoreSize": 190,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 7400,
+  "m_PPEStoreSize": 200,
+  "m_NormalEqunitStoreSize": 200,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 8500,
+  "m_PPEStoreSize": 210,
+  "m_NormalEqunitStoreSize": 200,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 9700,
+  "m_PPEStoreSize": 210,
+  "m_NormalEqunitStoreSize": 210,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 11000,
+  "m_PPEStoreSize": 220,
+  "m_NormalEqunitStoreSize": 210,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 13000,
+  "m_PPEStoreSize": 220,
+  "m_NormalEqunitStoreSize": 220,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 14000,
+  "m_PPEStoreSize": 230,
+  "m_NormalEqunitStoreSize": 220,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 16000,
+  "m_PPEStoreSize": 230,
+  "m_NormalEqunitStoreSize": 230,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 18000,
+  "m_PPEStoreSize": 240,
+  "m_NormalEqunitStoreSize": 230,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 20000,
+  "m_PPEStoreSize": 240,
+  "m_NormalEqunitStoreSize": 240,
+  "m_SpEqunitStoreSize": 150
+ },
+ {
+  "m_exp": 22000,
+  "m_PPEStoreSize": 250,
+  "m_NormalEqunitStoreSize": 240,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 24000,
+  "m_PPEStoreSize": 250,
+  "m_NormalEqunitStoreSize": 250,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 26000,
+  "m_PPEStoreSize": 260,
+  "m_NormalEqunitStoreSize": 250,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 29000,
+  "m_PPEStoreSize": 260,
+  "m_NormalEqunitStoreSize": 260,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 31000,
+  "m_PPEStoreSize": 270,
+  "m_NormalEqunitStoreSize": 260,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 34000,
+  "m_PPEStoreSize": 270,
+  "m_NormalEqunitStoreSize": 270,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 37000,
+  "m_PPEStoreSize": 280,
+  "m_NormalEqunitStoreSize": 270,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 41000,
+  "m_PPEStoreSize": 280,
+  "m_NormalEqunitStoreSize": 280,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 44000,
+  "m_PPEStoreSize": 290,
+  "m_NormalEqunitStoreSize": 280,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 47000,
+  "m_PPEStoreSize": 290,
+  "m_NormalEqunitStoreSize": 290,
+  "m_SpEqunitStoreSize": 200
+ },
+ {
+  "m_exp": 51000,
+  "m_PPEStoreSize": 300,
+  "m_NormalEqunitStoreSize": 290,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 55000,
+  "m_PPEStoreSize": 300,
+  "m_NormalEqunitStoreSize": 300,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 59000,
+  "m_PPEStoreSize": 310,
+  "m_NormalEqunitStoreSize": 300,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 64000,
+  "m_PPEStoreSize": 310,
+  "m_NormalEqunitStoreSize": 310,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 68000,
+  "m_PPEStoreSize": 320,
+  "m_NormalEqunitStoreSize": 310,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 73000,
+  "m_PPEStoreSize": 320,
+  "m_NormalEqunitStoreSize": 320,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 78000,
+  "m_PPEStoreSize": 330,
+  "m_NormalEqunitStoreSize": 320,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 83000,
+  "m_PPEStoreSize": 330,
+  "m_NormalEqunitStoreSize": 330,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 88000,
+  "m_PPEStoreSize": 340,
+  "m_NormalEqunitStoreSize": 330,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 94000,
+  "m_PPEStoreSize": 340,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 250
+ },
+ {
+  "m_exp": 100000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 100600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 101200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 101800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 102400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 103000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 103600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 104200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 104800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 105400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 106000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 106600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 107200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 107800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 108400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 109000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 109600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 110200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 110800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 111400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 112000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 112600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 113200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 113800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 114400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 115000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 115600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 116200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 116800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 117400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 118000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 118600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 119200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 119800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 120400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 121000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 121600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 122200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 122800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 123400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 124000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 124600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 125200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 125800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 126400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 127000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 127600,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 128200,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 128800,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 129400,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ },
+ {
+  "m_exp": 130000,
+  "m_PPEStoreSize": 350,
+  "m_NormalEqunitStoreSize": 340,
+  "m_SpEqunitStoreSize": 300
+ }
+]

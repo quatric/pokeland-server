@@ -1,0 +1,38 @@
+[
+ {
+  "m_name": "",
+  "m_maxCount": 0,
+  "m_priceDiamond": 0,
+  "m_assetBundleID": 0,
+  "m_assetName": "",
+  "m_gaiji": "",
+  "m_description": ""
+ },
+ {
+  "m_name": "時短チケット",
+  "m_maxCount": 10,
+  "m_priceDiamond": 0,
+  "m_assetBundleID": 64,
+  "m_assetName": "JitanTicket",
+  "m_gaiji": "",
+  "m_description": "時短チケット"
+ },
+ {
+  "m_name": "ソケット追加",
+  "m_maxCount": 999,
+  "m_priceDiamond": 0,
+  "m_assetBundleID": 64,
+  "m_assetName": "AddNormalEqunitSocket",
+  "m_gaiji": "ADD_NORMAL_EQUNIT_SOCKET",
+  "m_description": "ポケモン個体に対して使用することで、通常パワーギアのソケットを1つ増やせるアイテム"
+ },
+ {
+  "m_name": "ポケモン個体強化",
+  "m_maxCount": 999,
+  "m_priceDiamond": 0,
+  "m_assetBundleID": 64,
+  "m_assetName": "AddPPELevel",
+  "m_gaiji": "ADD_PPE_LEVEL",
+  "m_description": "ポケモン個体に対して使用することで、ポケモン個体の内部レベルを1上げられるアイテム"
+ }
+]

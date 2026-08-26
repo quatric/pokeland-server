@@ -1,0 +1,51 @@
+[
+ {
+  "m_description": "",
+  "m_spStat": [
+   0,
+   0
+  ]
+ },
+ {
+  "m_description": "攻撃力アップ",
+  "m_spStat": [
+   0,
+   0
+  ]
+ },
+ {
+  "m_description": "まひ無効",
+  "m_spStat": [
+   5,
+   0
+  ]
+ },
+ {
+  "m_description": "こおり無効",
+  "m_spStat": [
+   6,
+   0
+  ]
+ },
+ {
+  "m_description": "ねむり無効",
+  "m_spStat": [
+   7,
+   0
+  ]
+ },
+ {
+  "m_description": "ひるむ無効",
+  "m_spStat": [
+   13,
+   14
+  ]
+ },
+ {
+  "m_description": "こんらん無効",
+  "m_spStat": [
+   8,
+   0
+  ]
+ }
+]

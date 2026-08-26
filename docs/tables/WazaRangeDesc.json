@@ -1,0 +1,178 @@
+[
+ {
+  "m_circleType": 0,
+  "m_useCenter": 0,
+  "m_forwardType": 0,
+  "m_findObjInAutoAimType": 0,
+  "m_wazaHitTestType": 0,
+  "m_autoAttackRange": 0.0,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 1,
+  "m_forwardType": 1,
+  "m_findObjInAutoAimType": 1,
+  "m_wazaHitTestType": 1,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 1,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 1,
+  "m_forwardType": 1,
+  "m_findObjInAutoAimType": 1,
+  "m_wazaHitTestType": 1,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 1,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 2,
+  "m_findObjInAutoAimType": 2,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 0,
+  "m_findObjInAutoAimType": 0,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.30000001192092896
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 1,
+  "m_forwardType": 3,
+  "m_findObjInAutoAimType": 5,
+  "m_wazaHitTestType": 1,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 1,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 0,
+  "m_findObjInAutoAimType": 0,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 0,
+  "m_undrop": 1,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 2,
+  "m_findObjInAutoAimType": 2,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 4,
+  "m_findObjInAutoAimType": 4,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 1,
+  "m_forwardType": 0,
+  "m_findObjInAutoAimType": 8,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.20000000298023224
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 1,
+  "m_forwardType": 1,
+  "m_findObjInAutoAimType": 3,
+  "m_wazaHitTestType": 2,
+  "m_autoAttackRange": 1.0,
+  "m_followAttacker": 1,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 2,
+  "m_findObjInAutoAimType": 2,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.399999976158142,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 0,
+  "m_forwardType": 1,
+  "m_findObjInAutoAimType": 1,
+  "m_wazaHitTestType": 1,
+  "m_autoAttackRange": 1.399999976158142,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 1,
+  "m_useCenter": 0,
+  "m_forwardType": 2,
+  "m_findObjInAutoAimType": 10,
+  "m_wazaHitTestType": 3,
+  "m_autoAttackRange": 1.399999976158142,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 0,
+  "m_forwardType": 1,
+  "m_findObjInAutoAimType": 3,
+  "m_wazaHitTestType": 2,
+  "m_autoAttackRange": 1.399999976158142,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ },
+ {
+  "m_circleType": 0,
+  "m_useCenter": 0,
+  "m_forwardType": 2,
+  "m_findObjInAutoAimType": 9,
+  "m_wazaHitTestType": 0,
+  "m_autoAttackRange": 1.399999976158142,
+  "m_followAttacker": 0,
+  "m_undrop": 0,
+  "m_teamBattleExtraInterval": 0.0
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "m_isDefault": 0,
+  "m_isEnergySaving": 0,
+  "m_lowResoEffectFillMag": 1,
+  "m_lengthInvMulA": 1.0,
+  "m_lengthInvMulI": 1.0,
+  "m_minShortSide": 480
+ },
+ {
+  "m_isDefault": 1,
+  "m_isEnergySaving": 0,
+  "m_lowResoEffectFillMag": 2,
+  "m_lengthInvMulA": 1.0,
+  "m_lengthInvMulI": 1.0,
+  "m_minShortSide": 480
+ },
+ {
+  "m_isDefault": 0,
+  "m_isEnergySaving": 0,
+  "m_lowResoEffectFillMag": 3,
+  "m_lengthInvMulA": 1.0,
+  "m_lengthInvMulI": 1.0,
+  "m_minShortSide": 480
+ },
+ {
+  "m_isDefault": 0,
+  "m_isEnergySaving": 1,
+  "m_lowResoEffectFillMag": 4,
+  "m_lengthInvMulA": 1.5,
+  "m_lengthInvMulI": 1.0,
+  "m_minShortSide": 480
+ }
+]

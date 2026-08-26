@@ -1,0 +1,394 @@
+[
+ {
+  "m_assetBundleID": 0,
+  "m_assetName": ""
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_001"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_002"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "Illustration_003"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_004"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_004_COPPER"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_004_SILVER"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_004_GOLD"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_005"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_006"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_008"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_009"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_010"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_011"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_012"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_013"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_014"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_015"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_016"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_017"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_018"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_019"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_020"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_022"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_BtnHomeChest"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_BtnHomeChestCopper"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIllust1"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyNextIsland"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyGearWithPii"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyBoxWithPii"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyMysland"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustTame"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustYoke"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustType"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustAisyou"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnHomePokemon"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIllustNusiPin2"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustGradeUp"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnHomeEqunit"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIllustKit"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustSPPowerGear"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustSPSocket"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustSPButton"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIllustNusiPin3"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustEventTab"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnMenu"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnAdventurer"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustBtnShop"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIllustEvent"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnMyslandFinder"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustIsland2Pokemons"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustIsland3Pokemons"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustIsland4Pokemons"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIntroductionBattle"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustNormalPowerGear"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustNormalSocket"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustNewArea"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustNewAdventure"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "DummyIllustPierre"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnChallnege"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustAisyouIcon"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "Illustration_HokakuBonus"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnRecieve"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnStageSelector"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustStage"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustChart"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustNusiPin"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnStage"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustMineral2Gear"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustBtnStartUnlock"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnRecieveGear"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustSPWaza"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnNRush"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "IllustNusiPinReady"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustAttachGear"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustDiscoverer"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_02"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_03"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_04"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_05"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_06"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_07"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_08"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_09"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_10"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_11"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_12"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_13"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illustration_Doctor_14"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustShop"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustBtnMenuShop"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustDebutSet"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustNamingNewStage"
+ },
+ {
+  "m_assetBundleID": 14,
+  "m_assetName": "Illust_TipsBalloon"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustNormalSocket2"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustEvedefSelector"
+ },
+ {
+  "m_assetBundleID": 15,
+  "m_assetName": "IllustChartPokedex"
+ }
+]

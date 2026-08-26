@@ -1,0 +1,611 @@
+[
+ {
+  "m_name": "NONE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MONEY_MAX",
+  "m_type": 1,
+  "m_intValue": 999999999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DIAMOND_MAX",
+  "m_type": 1,
+  "m_intValue": 999999999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EQBIT_MAX",
+  "m_type": 1,
+  "m_intValue": 999999999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EVEPOT_MAX",
+  "m_type": 1,
+  "m_intValue": 999999999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PIERRE_MAX",
+  "m_type": 1,
+  "m_intValue": 5,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EXP_MAX",
+  "m_type": 1,
+  "m_intValue": 999999999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GUEST_VISIT_COUNT_MAX",
+  "m_type": 1,
+  "m_intValue": 999999999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidPPEStoreSizeMax",
+  "m_type": 1,
+  "m_intValue": 500,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidNormalEqunitStoreSizeMax",
+  "m_type": 1,
+  "m_intValue": 500,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidSpEqunitStoreSizeMax",
+  "m_type": 1,
+  "m_intValue": 500,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestStoreSizeGameStart",
+  "m_type": 1,
+  "m_intValue": 6,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestStoreSizeMax",
+  "m_type": 1,
+  "m_intValue": 6,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestUnlockJitanTicketHours",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestUnlockDiamondPerHours",
+  "m_type": 1,
+  "m_intValue": 18,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestEqbitCount",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestDailyGoodbyeCountMax",
+  "m_type": 1,
+  "m_intValue": 10,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestDailyGoodbyeCountFree",
+  "m_type": 1,
+  "m_intValue": 10,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChestDailyGoodbyeCostDiamondCoeff",
+  "m_type": 1,
+  "m_intValue": 1,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PierreDropExpected",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PierreTotemDrop",
+  "m_type": 1,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PierreDistributeCount",
+  "m_type": 1,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PPENicknameMaxLength",
+  "m_type": 1,
+  "m_intValue": 12,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MyslandNameMaxLength",
+  "m_type": 1,
+  "m_intValue": 12,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "UserProfileNicknameMaxLength",
+  "m_type": 1,
+  "m_intValue": 12,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GuestUserProfileMemoMaxLength",
+  "m_type": 1,
+  "m_intValue": 32,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CalcBPParam",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.004000000189989805,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LearningLevelWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8999999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LearningLevelWazaRare",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.699999988079071,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "Learning4StarWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05999999865889549,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "Learning5StarWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.004000000189989805,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BaseAPConversion2StarWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BaseAPConversion3StarWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 10.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BaseAPConversion4StarWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 15.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BaseAPConversion5StarWaza",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 20.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BPRangeRateUnderTargetBP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BPRangeUnderTargetBPIfOverTargetBP",
+  "m_type": 1,
+  "m_intValue": 5,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_DELAY_FRAME",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_RAPID_REFERENCE_FRAME",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 40.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TUKEAGARU_DAMAGE_MAGNIFICATION",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8999999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BPUpValuePerGrade",
+  "m_type": 1,
+  "m_intValue": 1,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BY_S_LEVEL_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FractionFormulaCoeff",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PowerFormulaCoeff",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.800000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PowerFormulaUpwardShift",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ProtoGetMyslandsMaxCount",
+  "m_type": 1,
+  "m_intValue": 20,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FindMyslandCostDiamond",
+  "m_type": 1,
+  "m_intValue": 10,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GetMyslandDiscoverersMaxCount",
+  "m_type": 1,
+  "m_intValue": 12,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GetTutorialMyslandDiscoverersMaxCount",
+  "m_type": 1,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GuestUserProfileBoxFavoritesMax",
+  "m_type": 1,
+  "m_intValue": 500,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GuestUserProfileBoxNonFavoritesMax",
+  "m_type": 1,
+  "m_intValue": 500,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GuestUserProfileStageInvitaionTimeLimitMinutes",
+  "m_type": 1,
+  "m_intValue": 60,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ZakoDropUpNum",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.5499999523162842,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LeaderDropUpRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BossDropUpRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LoginBonusBoostDiamond",
+  "m_type": 1,
+  "m_intValue": 80,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LoginBonusBoostTicket",
+  "m_type": 1,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AddNormalEqunitSocketCountMax",
+  "m_type": 1,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PPEAddLevelCountMax",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "StampCardDistributedDay",
+  "m_type": 1,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TutorialAntiTotemBpRange",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "NrushDailyPlayCountMax",
+  "m_type": 1,
+  "m_intValue": 1,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DailyProcessUTCOclock",
+  "m_type": 1,
+  "m_intValue": 6,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AddSocketCountRate_Start2",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AddSocketCountRate_Start3",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AddSocketCountRate_Start4",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AddSocketCountRate_Start5",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EvalServerSecret",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "32e6960c6390eb45d4d54905061b0526"
+ },
+ {
+  "m_name": "PaidPPEStoreSizeExtendStep",
+  "m_type": 1,
+  "m_intValue": 20,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidPPEStoreSizeExtendPriceDiamond",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidNormalEqunitStoreSizeExtendStep",
+  "m_type": 1,
+  "m_intValue": 20,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidNormalEqunitStoreSizeExtendPriceDiamond",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidSpEqunitStoreSizeExtendStep",
+  "m_type": 1,
+  "m_intValue": 20,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PaidSpEqunitStoreSizeExtendPriceDiamond",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "StyleGearBPUpRateByPokePlus",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "Learning4StarWazaFeverStage",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "Learning5StarWazaFeverStage",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.019999999552965164,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "StageFeverRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.0011111110216006637,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TmbtlDailyPlayCountMax",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TEAM_MEMBERS_NUM",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TmbtlEvepotPickedUpCoeff",
+  "m_type": 1,
+  "m_intValue": 4,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RareBossAppearanceRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MILEAGE_MAX",
+  "m_type": 1,
+  "m_intValue": 2000,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TmbtlExtraBattleCostDiamond",
+  "m_type": 1,
+  "m_intValue": 50,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "NrushExtraBattleCostDiamond",
+  "m_type": 1,
+  "m_intValue": 50,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChstgDailyPlayCountMax",
+  "m_type": 1,
+  "m_intValue": 1,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ChstgExtraBattleCostDiamond",
+  "m_type": 1,
+  "m_intValue": 10,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ }
+]

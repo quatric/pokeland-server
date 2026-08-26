@@ -1,0 +1,542 @@
+[
+ {
+  "m_msLabel": "",
+  "m_message": "",
+  "m_greetingType": 0,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "GreetingMessage_0001",
+  "m_message": "こんにちは",
+  "m_greetingType": 1,
+  "m_onStartup": 1,
+  "m_messages": [
+   "",
+   "こんにちは",
+   "Hello.",
+   "Bonjour.",
+   "Ciao.",
+   "Hallo!",
+   "Jelou",
+   "안녕하세요",
+   "你好",
+   "你好"
+  ]
+ },
+ {
+  "m_msLabel": "GreetingMessage_0002",
+  "m_message": "はじめまして",
+  "m_greetingType": 1,
+  "m_onStartup": 1,
+  "m_messages": [
+   "",
+   "はじめまして",
+   "Nice to meet you.",
+   "Enchanté.",
+   "Piacere.",
+   "Schön, dich zu treffen!",
+   "Hola, qué hase",
+   "만나서 반가워요",
+   "初次見面",
+   "初次见面"
+  ]
+ },
+ {
+  "m_msLabel": "GreetingMessage_0003",
+  "m_message": "また会いましょう",
+  "m_greetingType": 1,
+  "m_onStartup": 1,
+  "m_messages": [
+   "",
+   "また会いましょう",
+   "See you again.",
+   "À plus tard.",
+   "Arrivederci.",
+   "Bis bald!",
+   "Ta lué",
+   "또 만나요",
+   "再見",
+   "再见"
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "だいすき！",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "もう夢中",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "私のご主人様",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "趣味です",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "楽しい",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "うーん",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "いそがしい",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "すごく眠い",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "おなか空いた",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "わあ",
+  "m_greetingType": 2,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "助けて！",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "ちょっといいですか",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "どうですか",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "どんな気分？",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "見つけた",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "集まれ",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "おねがい",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "見てみて！",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "がんばれ",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "あわてないで",
+  "m_greetingType": 3,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "どこでも",
+  "m_greetingType": 4,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "みなさん",
+  "m_greetingType": 4,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "あっち",
+  "m_greetingType": 4,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "こっち",
+  "m_greetingType": 4,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "お金",
+  "m_greetingType": 4,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ },
+ {
+  "m_msLabel": "",
+  "m_message": "ポケモン",
+  "m_greetingType": 5,
+  "m_onStartup": 0,
+  "m_messages": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ]
+ }
+]

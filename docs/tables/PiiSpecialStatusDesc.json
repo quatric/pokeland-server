@@ -1,0 +1,1858 @@
+[
+ {
+  "m_priority": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 0,
+  "m_statusContents": [
+   0,
+   0,
+   0
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 0,
+  "m_statusContents": [
+   1,
+   0,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 673,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 453
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "どく",
+  "m_or": 0,
+  "m_statusContents": [
+   2,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.8999999761581421,
+  "m_teamBattleParam": 54.0,
+  "m_effectID1": 681,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "もうどく",
+  "m_or": 0,
+  "m_statusContents": [
+   3,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.8999999761581421,
+  "m_teamBattleParam": 54.0,
+  "m_effectID1": 668,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "やけど",
+  "m_or": 0,
+  "m_statusContents": [
+   4,
+   10,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.800000011920929,
+  "m_teamBattleParam": 24.0,
+  "m_effectID1": 683,
+  "m_effectID2": 669,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "まひ",
+  "m_or": 0,
+  "m_statusContents": [
+   5,
+   0,
+   0
+  ],
+  "m_endSec": 2.0,
+  "m_teamBattleEndSec": 2.200000047683716,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 676,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 452
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "こおり",
+  "m_or": 0,
+  "m_statusContents": [
+   6,
+   0,
+   0
+  ],
+  "m_endSec": 2.0,
+  "m_teamBattleEndSec": 3.4000000953674316,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 675,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "ねむり",
+  "m_or": 0,
+  "m_statusContents": [
+   7,
+   0,
+   0
+  ],
+  "m_endSec": 2.0,
+  "m_teamBattleEndSec": 3.4000000953674316,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 678,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 477
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "こんらん",
+  "m_or": 0,
+  "m_statusContents": [
+   8,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 2.5999999046325684,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 674,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "こんらん＋攻撃力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   8,
+   25,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 2.5999999046325684,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 674,
+  "m_effectID2": 682,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "攻撃力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   10,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "防御力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   11,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "攻撃力↓防御力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   10,
+   11,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "ひるむ",
+  "m_or": 0,
+  "m_statusContents": [
+   13,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 1.100000023841858,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 671,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 423
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "ひるむ",
+  "m_or": 0,
+  "m_statusContents": [
+   14,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 1.100000023841858,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 671,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 440
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 0,
+  "m_statusContents": [
+   15,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 1.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 440
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "こうげきふのう",
+  "m_or": 0,
+  "m_statusContents": [
+   16,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 1.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "いどうふのう",
+  "m_or": 0,
+  "m_statusContents": [
+   17,
+   0,
+   0
+  ],
+  "m_endSec": 2.0,
+  "m_teamBattleEndSec": 2.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "HPきゅうしゅう",
+  "m_or": 0,
+  "m_statusContents": [
+   18,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.699999988079071,
+  "m_teamBattleParam": 2.799999952316284,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "みずびたし",
+  "m_or": 0,
+  "m_statusContents": [
+   19,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "のろい",
+  "m_or": 0,
+  "m_statusContents": [
+   20,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.8999999761581421,
+  "m_teamBattleParam": 72.0,
+  "m_effectID1": 680,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 0,
+  "m_statusContents": [
+   21,
+   0,
+   0
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "ハロウィン",
+  "m_or": 0,
+  "m_statusContents": [
+   22,
+   0,
+   0
+  ],
+  "m_endSec": 40.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "もりののろい",
+  "m_or": 0,
+  "m_statusContents": [
+   23,
+   0,
+   0
+  ],
+  "m_endSec": 40.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "攻撃力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   24,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "攻撃力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   25,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "防御力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   26,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "攻撃力↑防御力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   25,
+   26,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "攻撃力↑防御力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   25,
+   11,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 15.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "ばいがえし",
+  "m_or": 0,
+  "m_statusContents": [
+   29,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "HPかいふく",
+  "m_or": 0,
+  "m_statusContents": [
+   30,
+   0,
+   0
+  ],
+  "m_endSec": 30.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.5,
+  "m_teamBattleParam": 0.5,
+  "m_effectID1": 672,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "ねむる＋HPかいふく",
+  "m_or": 0,
+  "m_statusContents": [
+   30,
+   7,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.25,
+  "m_teamBattleParam": 0.25,
+  "m_effectID1": 672,
+  "m_effectID2": 678,
+  "m_isStun": 1,
+  "m_stunMotion": 477
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "いどうふのう＋HPかいふく",
+  "m_or": 0,
+  "m_statusContents": [
+   30,
+   17,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.5,
+  "m_teamBattleParam": 0.5,
+  "m_effectID1": 679,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "いじょうむこう",
+  "m_or": 0,
+  "m_statusContents": [
+   33,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "ダメージはんげん",
+  "m_or": 0,
+  "m_statusContents": [
+   34,
+   0,
+   0
+  ],
+  "m_endSec": 2.0,
+  "m_teamBattleEndSec": 2.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "こらえる",
+  "m_or": 0,
+  "m_statusContents": [
+   35,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 1.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "わざうけない",
+  "m_or": 0,
+  "m_statusContents": [
+   36,
+   0,
+   0
+  ],
+  "m_endSec": 1.0,
+  "m_teamBattleEndSec": 1.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "マジックコート",
+  "m_or": 0,
+  "m_statusContents": [
+   37,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "防御力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   26,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 677,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "",
+  "m_or": 0,
+  "m_statusContents": [
+   39,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "",
+  "m_or": 1,
+  "m_statusContents": [
+   25,
+   26,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 1,
+  "m_statusContents": [
+   5,
+   4,
+   6
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 1,
+  "m_statusContents": [
+   5,
+   13,
+   0
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 1,
+  "m_statusContents": [
+   6,
+   13,
+   0
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 1,
+  "m_statusContents": [
+   4,
+   13,
+   0
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "XXX",
+  "m_or": 0,
+  "m_statusContents": [
+   45,
+   0,
+   0
+  ],
+  "m_endSec": 20.0,
+  "m_teamBattleEndSec": 20.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 0,
+  "m_statusContents": [
+   0,
+   0,
+   0
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "m_message": "ダメージアップ！",
+  "m_or": 0,
+  "m_statusContents": [
+   47,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "m_message": "無敵！",
+  "m_or": 0,
+  "m_statusContents": [
+   48,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "やけど",
+  "m_or": 0,
+  "m_statusContents": [
+   49,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 683,
+  "m_effectID2": 669,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "どく",
+  "m_or": 0,
+  "m_statusContents": [
+   50,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 681,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "バインド",
+  "m_or": 0,
+  "m_statusContents": [
+   51,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "まひ",
+  "m_or": 0,
+  "m_statusContents": [
+   52,
+   0,
+   0
+  ],
+  "m_endSec": 2.5,
+  "m_teamBattleEndSec": 2.5,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 676,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 452
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "ひるむ",
+  "m_or": 0,
+  "m_statusContents": [
+   53,
+   0,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 671,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 423
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "こおり",
+  "m_or": 0,
+  "m_statusContents": [
+   54,
+   0,
+   0
+  ],
+  "m_endSec": 2.5,
+  "m_teamBattleEndSec": 2.5,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 675,
+  "m_effectID2": 0,
+  "m_isStun": 1,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "こんらん",
+  "m_or": 0,
+  "m_statusContents": [
+   55,
+   0,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 674,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "攻撃力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   56,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "防御力↓",
+  "m_or": 0,
+  "m_statusContents": [
+   57,
+   0,
+   0
+  ],
+  "m_endSec": 3.0,
+  "m_teamBattleEndSec": 3.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "攻撃力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   58,
+   0,
+   0
+  ],
+  "m_endSec": 3.0,
+  "m_teamBattleEndSec": 3.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "急所率↑",
+  "m_or": 0,
+  "m_statusContents": [
+   59,
+   0,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "SPわざメーター↑",
+  "m_or": 0,
+  "m_statusContents": [
+   60,
+   0,
+   0
+  ],
+  "m_endSec": 3.0,
+  "m_teamBattleEndSec": 3.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "m_message": "攻撃力↑",
+  "m_or": 0,
+  "m_statusContents": [
+   61,
+   0,
+   0
+  ],
+  "m_endSec": 10.0,
+  "m_teamBattleEndSec": 10.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 682,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "いどうふのう",
+  "m_or": 0,
+  "m_statusContents": [
+   62,
+   0,
+   0
+  ],
+  "m_endSec": 5.0,
+  "m_teamBattleEndSec": 5.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 669,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ },
+ {
+  "m_priority": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_overwrite": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_message": "",
+  "m_or": 1,
+  "m_statusContents": [
+   52,
+   49,
+   54
+  ],
+  "m_endSec": 0.0,
+  "m_teamBattleEndSec": 0.0,
+  "m_param": 0.0,
+  "m_teamBattleParam": 0.0,
+  "m_effectID1": 0,
+  "m_effectID2": 0,
+  "m_isStun": 0,
+  "m_stunMotion": 0
+ }
+]

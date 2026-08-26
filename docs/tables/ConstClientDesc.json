@@ -1,0 +1,2060 @@
+[
+ {
+  "m_name": "NONE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "HURAHURA_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.029999999329447746,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_RATE_ZAKO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.15000000596046448,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_RATE_LEADER",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.8999999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EQUNIT_DROP_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.07999999821186066,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LEADER_POP_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FORMATION_POP_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SURROUND_POP_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_STOP_SEC_AT_PEAK",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_SLOW_RATE_LIGHT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.8500000238418579,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_SLOW_RATE_MIDDLE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.6499999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_SLOW_RATE_HEAVY",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_DETECTION_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 9.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ENEMY_DETECTION_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 6.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LOCATOR_DETECTION_DISTANCE_FIXED_ENEMY",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 18.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LOCATOR_DETECTION_DISTANCE_FIXED_BOSS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 21.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LOCATOR_DETECTION_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 7.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SHOW_RARE_APPEAR_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 9.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "INTERCEPT_POP_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "INTERCEPT_POS_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "COMBO_BREAK_TIME",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "COMBO_MIN",
+  "m_type": 1,
+  "m_intValue": 4,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FORCE_DROP_ENEMY_COUNTER",
+  "m_type": 1,
+  "m_intValue": 10,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FORCE_DROP_ENEMY_COUNTER_SUBSCRIPTION",
+  "m_type": 1,
+  "m_intValue": 7,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FORCE_DROP_COUNTER",
+  "m_type": 1,
+  "m_intValue": 1,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FORCE_DROP_COUNTER_SUBSCRIPTION",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FIRST_ATTACK_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.3499999940395355,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLAYER_SCALE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.1799999475479126,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LEADER_SCALE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.399999976158142,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RIVAL_SCALE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.399999976158142,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_NUSI_SCALE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_COMMON_SCALE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.200000047683716,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DROP_SCALE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.6000000238418579,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "HOME_FLIER_YPOS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BATTLE_FLIER_YPOS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ENEMY_SHOOT_SPEED_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_WAZA_CUTIN_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.800000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_HITSTOP_SEC",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05000000074505806,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_HITSTOP_SEC_LIGHT",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.009999999776482582,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "STOP_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "STOP_DISTANCE_BOSS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "NEAR_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.2000000476837158,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_HIT_INTERVAL_PLAYER",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.16666670143604279,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_HIT_INTERVAL_ENEMY",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0833333432674408,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CRITICAL_DAMAGE_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_CRITICAL_UP_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.05000000074505806,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DURING_TAME_DAMAGE_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TAME_NOTICE_NUM",
+  "m_type": 1,
+  "m_intValue": 1,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AUTO_ATTACK_FIRST_INTERVAL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.800000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AUTO_ATTACK_INTERVAL_MAX",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.4000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AUTO_ATTACK_ADDITIONAL_INTERVAL_AFTER_TAP",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.699999988079071,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AUTO_ATTACK_DELAY_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AUTO_ATTACK_LINK_NUM_MAX",
+  "m_type": 0,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FELLOW_ATTACK_INTERVAL_OFFSET",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DEG_PER_SEC_BEFORE_ATTACK",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 45.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "STOP_SEC_AFTER_WAZA",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.07999999821186066,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BASE_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.04500000178813934,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BASE_SPD",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLAYER_NONCOMBAT_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.399999976158142,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FELLOW_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.699999988079071,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ENEMY_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LEADER_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.550000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.6499999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PARTY_SUBSCRIPTION_SPD_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.2000000476837158,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLAYER_SPD_MAX_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.16666670143604279,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLAYER_ACCEL_START",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 13.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WALK_ANIM_MULTI",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.2000000476837158,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLAYER_WALK_EFFECT_INTERVAL_MIN",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLAYER_WALK_EFFECT_INTERVAL_MAX",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EMEMY_WALK_EFFECT_INTERVAL_MIN",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EMEMY_WALK_EFFECT_INTERVAL_MAX",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_ORBITAL_RADIUS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_WAIT_PLAYER_TAMETIME",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 6.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_WAIT_PLAYER_TURNSPEED_MIN",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 90.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_WAIT_PLAYER_TURNSPEED_MAX",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 180.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_FINISH_HIM_TIME",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_OFFENSE_BREAK_METER_RECOVER_SPEED",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CHEST_DROP_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CHEST_DROP_UP_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "KNOCKBACK_ACCEL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": -14.399999618530273,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "KNOCKBACK_BASE_WEIGHT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 50.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "KNOCKBACK_DIST_FELLOW",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_DIST_MIN",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_DIST_MAX",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_SEARCH_UNIT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_SPACE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_SPACE_BOSS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.600000023841858,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.4000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_ROLL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.100000023841858,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_SUBERI_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DODGE_IMMOBILIZE_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RUSH_DIST_MAX_ANCHOR_TEST",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RUSH_SPD",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 6.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RUSH_MARGINE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CHARGE_MOVE_DAMAGE_MAGNIFICATION_LEVEL1",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CHARGE_MOVE_DAMAGE_MAGNIFICATION_LEVEL2",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 6.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CHARGE_MOVE_DAMAGE_MAGNIFICATION_LEVEL3",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 9.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BGM_FADEOUT_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAZA_SE_FADEOUT_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SOUND_3D_MIN_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 19.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SOUND_3D_MAX_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 35.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_RECOVER_REMAIN_SEC_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BOSS_RECOVER_HP_AMOUNT_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.019999999552965164,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CONTINUAL_HEAL_OR_DAMAGE_FREQ",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FETCH_EXECUTE_DISTANCE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.4000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MAX_CAPSULE_ICONS",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CAPSULE_ICON_DISP_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "CIRCLE_SHADOW_DEFAULT_RADIUS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.4000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WORLDOBJ_SHADOW_Y_POS",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.019999999552965164,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MaxGoodbyeCount",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BulkSelectPiiCount",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MaxGoodbyeEqunitCount",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BulkSelectEqunitCount",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AsHightBPRatio",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "HardIslandRankID",
+  "m_type": 4,
+  "m_intValue": 6,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FinishHimTutorialIslandRankID",
+  "m_type": 4,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FinishHimTutorialRate",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GiftSelectorReceivedPageSize",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AfterTamePrefixAdditionWorkingMaxSec",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GUPMyslandFavoriteExpireHours",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 24.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SecondAutoAttackGearEffectCoeff",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MyslandFinderGuestTargetCount",
+  "m_type": 1,
+  "m_intValue": 5,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TipsMinSec",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GetMyslandDiscoverersExpireHours",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GuestUserPassByBoxMax",
+  "m_type": 1,
+  "m_intValue": 9999,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GetAnnouncementPageSize",
+  "m_type": 1,
+  "m_intValue": 100,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "GlobeGuestBalloonMaxCount",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MonthlyPtLimit",
+  "m_type": 1,
+  "m_intValue": 1000,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AppStoreIdDevelopment",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "1163136323"
+ },
+ {
+  "m_name": "AppStoreIdProduction",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "1453000198"
+ },
+ {
+  "m_name": "IntermissionPollingMinutes",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RESULT_WAITSEC_SHORT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RESULT_WAITSEC_LONG",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 4.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "StageDetailTotemExchangeSec",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 3.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "COPYRIGHT_URL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "https://www.apppokemon.com/pokemon-scramblesp/webview/copy.html"
+ },
+ {
+  "m_name": "USER_TERMS_URL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "https://www.apppokemon.com/pokemon-scramblesp/webview/kiyaku/kiyaku001/rule/EULA.html"
+ },
+ {
+  "m_name": "PRIVACY_POLICY_URL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "https://www.apppokemon.com/pokemon-scramblesp/webview/kiyaku/kiyaku001/policy/PP.html"
+ },
+ {
+  "m_name": "LEGAL_INFO_URL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "https://www.apppokemon.com/pokemon-scramblesp/webview/asct.html"
+ },
+ {
+  "m_name": "LAW_INFO_URL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "https://www.apppokemon.com/pokemon-scramblesp/webview/asct.html"
+ },
+ {
+  "m_name": "STAFF_CREDITS_URL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": "https://www.apppokemon.com/pokemon-scramblesp/webview/credit.html"
+ },
+ {
+  "m_name": "ChestNotableSpEqunitCount",
+  "m_type": 1,
+  "m_intValue": 3,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WEAKMONS_AP_ADJUST_VALUE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 200.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WEAKWAZA_DAMAGE_MUL_VALUE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.350000023841858,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AssocStun2PlayerReduceRate",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MOUDOKU_RATE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_YAKEDO_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_DOKU_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_BIND_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AP_DOWN_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MOETUKIRU_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AP_UP_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PLACED_AP_UP_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_YAKEDO_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -2.059999942779541,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_AP_DOWN_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -3.2699999809265137,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_AP_UP_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DP_DOWN_DP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DP_UP_DP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_DP_DOWN_DP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BAIGAESI_DAMAGE_RATIO_ENEMY",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BAIGAESI_DAMAGE_RATIO_PLAYER",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BAIGAESI_MAX_RATIO_TO_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.33000001311302185,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PRESENT_HEAL_RATIO_TO_MAXHP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_AP_INCREASE_RATE_UP_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_AP_INCREASE_RATE_UP_MAX_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_CHARGE_UP_UP_NUM",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BY_O_WEIGHT_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.9100000262260437,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BY_S_HP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "KOROGARU_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MAGUNITYUUDO_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "KARAGENKI_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8999999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DOUBLE_BY_O_HP_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "HEBIIBONBAA_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8500000238418579,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "EREKIBOORU_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8500000238418579,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "ZYAIROBOORU_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8500000238418579,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BY_O_ABILITY_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TATARIME_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.800000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "PRESENT_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "IKASAMA_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DigitsToUseSIPrefix",
+  "m_type": 1,
+  "m_intValue": 6,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "DropCountToUseDisplayBP",
+  "m_type": 1,
+  "m_intValue": 10,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LONG_RANGE_EFFECT_START_DIST",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "LONG_RANGE_EFFECT_MAX_DIST",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.7999999523162842,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SHORT_RANGE_EFFECT_MAX_DIST",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.4000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SHORT_RANGE_EFFECT_END_DIST",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FindMyslandDiscovererBoostDistancePixel",
+  "m_type": 1,
+  "m_intValue": 45,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WAIT_SEC_BEFORE_TOSSIN",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "STOP_SEC_AFTER_DODGE_WHILE_TOSSING",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiHayawazaSatelliteNum",
+  "m_type": 1,
+  "m_intValue": 4,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiHayawazaSatelliteOrbitalRadius",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.7999999523162842,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiHayawazaSatelliteAltitude",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiHayawazaSatelliteAngularVelocity",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.7999999523162842,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiHayawazaSatelliteShootSpeed",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 12.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiHayawazaSatelliteDamageRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05000000074505806,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameSatelliteNum",
+  "m_type": 1,
+  "m_intValue": 2,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameSatelliteOrbitalRadius",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameSatelliteAltitude",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameSatelliteAngularVelocity",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.2000000476837158,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameSatelliteShootSpeed",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 20.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameSatelliteDamageRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiTameDelaySec",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiLongRangeRadiusOffset",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiLongRangeRange",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiLongRangeDamageRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.07500000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiShortRangeRadiusOffset",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiShortRangeRange",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AntiShortRangeDamageRate",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.07500000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "AnnouncementWebFileCacheSize",
+  "m_type": 1,
+  "m_intValue": 4000000,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SP_TOTAL_DAMAGE_POPUP_SEC",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TOURNAMENT_ENTERABLE_RANK",
+  "m_type": 0,
+  "m_intValue": 5,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "MAX_TEAM_NUM",
+  "m_type": 0,
+  "m_intValue": 5,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_CALC_UL_DIST",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 4.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_CALC_INTERCEPT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_CALC_COEFFICIENT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_CALC_EXPONENT",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "WARNING_HP_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.44999998807907104,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_OFFSET",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.22499999403953552,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_OFFSET_RANDOM_RANGE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.07500000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_SHOW_HP_BAR_RATE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.9900000095367432,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_CHANGE_OPPONENT_SPEED",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_CHANGE_OPPONENT_INTERVAL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RareBossSEPlaySec",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 5.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RareBossPopTiming",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "RareBossCaptionTiming",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_HAYAWAZA_DAMAGE_ADJUSTER_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_TAME_DAMAGE_ADJUSTER_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.100000023841858,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SHORT_DAMAGE_ADJUSTER_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_LONG_DAMAGE_ADJUSTER_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.5499999523162842,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_TOUGHNESS_DAMAGE_ADJUSTER_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.8999999761581421,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_TAME_CHARGETIME_INC_RATIO",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.8600000143051147,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_DP_ADJUSTER_RATIO_AT_LEVEL_0",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_DP_ADJUSTER_RATIO_AT_LEVEL_CEIL",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 2.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_DP_ADJUSTER_CEIL_LEVEL",
+  "m_type": 0,
+  "m_intValue": 210,
+  "m_floatValue": 0.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_MOUDOKU_RATE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.1200000047683716,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_YAKEDO_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.25999999046325684,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_DOKU_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.4000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_BIND_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.18000000715255737,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_AP_DOWN_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -1.2000000476837158,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_MOETUKIRU_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_AP_UP_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_PLACED_AP_UP_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_YAKEDO_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -1.399999976158142,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_AP_DOWN_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -2.4000000953674316,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_AP_UP_AP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_DP_DOWN_DP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -1.399999976158142,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_DP_UP_DP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.800000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_DP_DOWN_DP_CHANGE_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -2.5999999046325684,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BAIGAESI_DAMAGE_RATIO_ENEMY",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BAIGAESI_DAMAGE_RATIO_PLAYER",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BAIGAESI_MAX_RATIO_TO_DAMAGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.33000001311302185,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_PRESENT_HEAL_RATIO_TO_MAXHP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.03999999910593033,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_AP_INCREASE_RATE_UP_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_AP_INCREASE_RATE_UP_MAX_VALUE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.30000001192092896,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_CHARGE_UP_UP_NUM",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BY_O_WEIGHT_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8500000238418579,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BY_S_HP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.14000000059604645,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_KOROGARU_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_MAGUNITYUUDO_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_KARAGENKI_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.949999988079071,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_DOUBLE_BY_O_HP_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_HEBIIBONBAA_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8799999952316284,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_EREKIBOORU_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8799999952316284,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_ZYAIROBOORU_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.8799999952316284,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BY_O_ABILITY_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_TATARIME_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.800000011920929,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_PRESENT_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_IKASAMA_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "FRIEND_HP_REVOCER_RATIO_TO_MAXHP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_FRIEND_HP_REVOCER_RATIO_TO_MAXHP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05999999865889549,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "IYASINOHADOU_RATIO_TO_MAXHP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_IYASINOHADOU_RATIO_TO_MAXHP",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05999999865889549,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "BY_O_HP_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_BY_O_HP_SCALE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SELF_HEALING",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05000000074505806,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SELF_HEALING",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.10000000149011612,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "SELF_HEALING_STRONG",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.07500000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SELF_HEALING_STRONG",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.20000000298023224,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SELF_DAMAGE_MAXHP_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SELF_DAMAGE_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.15000000596046448,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_HAZURE_DAMAGE_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.15000000596046448,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_ITAMIWAKE_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.15000000596046448,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_OFFSET_STAR4",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.15000000596046448,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_OFFSET_STAR4_RANDOM_RANGE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.07000000029802322,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_OFFSET_STAR5",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.09000000357627869,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_WAZA_INTEREVAL_OFFSET_STAR5_RANDOM_RANGE",
+  "m_type": 0,
+  "m_intValue": 0,
+  "m_floatValue": 0.07000000029802322,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_DAMAGE_INCREASE_MAX_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.5,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_SELF_DAMAGE_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.05000000074505806,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_SELF_DAMAGE_AND_MAHI_DAMAGE_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.07000000029802322,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_SELF_DAMAGE_AND_MAHI_MAHI_RATIO",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.25,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_HP_RECOVER_RANGE_BASE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_HP_RECOVER_RANGE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_HAYAWAZA_UP_DECREASE_RATE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 0.949999988079071,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_TAME_UP_INCREASE_RATE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 1.399999976158142,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_HOMING_UP_RATE",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": 2.0,
+  "m_stringValue": ""
+ },
+ {
+  "m_name": "TB_SP_LONG_RANGE_UP_DIST_MARGIN",
+  "m_type": 2,
+  "m_intValue": 0,
+  "m_floatValue": -0.2800000011920929,
+  "m_stringValue": ""
+ }
+]

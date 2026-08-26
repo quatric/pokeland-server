@@ -1,0 +1,135 @@
+[
+ {
+  "m_name": "",
+  "m_gaiji": "",
+  "m_colorR": 255,
+  "m_colorG": 255,
+  "m_colorB": 255
+ },
+ {
+  "m_name": "ノーマル",
+  "m_gaiji": "TYPE_NORMAL",
+  "m_colorR": 255,
+  "m_colorG": 255,
+  "m_colorB": 255
+ },
+ {
+  "m_name": "かくとう",
+  "m_gaiji": "TYPE_BATTLE",
+  "m_colorR": 240,
+  "m_colorG": 55,
+  "m_colorB": 28
+ },
+ {
+  "m_name": "ひこう",
+  "m_gaiji": "TYPE_HIKOU",
+  "m_colorR": 99,
+  "m_colorG": 198,
+  "m_colorB": 255
+ },
+ {
+  "m_name": "どく",
+  "m_gaiji": "TYPE_POISON",
+  "m_colorR": 161,
+  "m_colorG": 129,
+  "m_colorB": 195
+ },
+ {
+  "m_name": "じめん",
+  "m_gaiji": "TYPE_JIMEN",
+  "m_colorR": 189,
+  "m_colorG": 140,
+  "m_colorB": 92
+ },
+ {
+  "m_name": "いわ",
+  "m_gaiji": "TYPE_IWA",
+  "m_colorR": 158,
+  "m_colorG": 160,
+  "m_colorB": 161
+ },
+ {
+  "m_name": "むし",
+  "m_gaiji": "TYPE_MUSHI",
+  "m_colorR": 88,
+  "m_colorG": 204,
+  "m_colorB": 143
+ },
+ {
+  "m_name": "ゴースト",
+  "m_gaiji": "TYPE_GHOST",
+  "m_colorR": 165,
+  "m_colorG": 90,
+  "m_colorB": 168
+ },
+ {
+  "m_name": "はがね",
+  "m_gaiji": "TYPE_METAL",
+  "m_colorR": 124,
+  "m_colorG": 124,
+  "m_colorB": 124
+ },
+ {
+  "m_name": "ほのお",
+  "m_gaiji": "TYPE_FIRE",
+  "m_colorR": 252,
+  "m_colorG": 130,
+  "m_colorB": 0
+ },
+ {
+  "m_name": "みず",
+  "m_gaiji": "TYPE_WATER",
+  "m_colorR": 114,
+  "m_colorG": 166,
+  "m_colorB": 228
+ },
+ {
+  "m_name": "くさ",
+  "m_gaiji": "TYPE_KUSA",
+  "m_colorR": 141,
+  "m_colorG": 198,
+  "m_colorB": 63
+ },
+ {
+  "m_name": "でんき",
+  "m_gaiji": "TYPE_ELECTRIC",
+  "m_colorR": 255,
+  "m_colorG": 252,
+  "m_colorB": 0
+ },
+ {
+  "m_name": "エスパー",
+  "m_gaiji": "TYPE_SP",
+  "m_colorR": 247,
+  "m_colorG": 132,
+  "m_colorB": 182
+ },
+ {
+  "m_name": "こおり",
+  "m_gaiji": "TYPE_KOORI",
+  "m_colorR": 118,
+  "m_colorG": 228,
+  "m_colorB": 255
+ },
+ {
+  "m_name": "ドラゴン",
+  "m_gaiji": "TYPE_DRAGON",
+  "m_colorR": 22,
+  "m_colorG": 149,
+  "m_colorB": 139
+ },
+ {
+  "m_name": "あく",
+  "m_gaiji": "TYPE_AKU",
+  "m_colorR": 112,
+  "m_colorG": 130,
+  "m_colorB": 197
+ },
+ {
+  "m_name": "フェアリー",
+  "m_gaiji": "TYPE_FAIRY",
+  "m_colorR": 255,
+  "m_colorG": 208,
+  "m_colorB": 255
+ }
+]

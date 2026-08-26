@@ -1,0 +1,123 @@
+[
+ {
+  "m_SKU": "",
+  "m_title": "",
+  "m_detail": "",
+  "m_assetBundleID": 0,
+  "m_assetName": "",
+  "m_pt": 0,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 0
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.stone01",
+  "m_title": "ポケダイヤ（100個）",
+  "m_detail": "",
+  "m_assetBundleID": 44,
+  "m_assetName": "Diamond_Small",
+  "m_pt": 12,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 1
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.stone02",
+  "m_title": "ポケダイヤ（300個）",
+  "m_detail": "",
+  "m_assetBundleID": 44,
+  "m_assetName": "Diamond_Medium",
+  "m_pt": 37,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 1
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.stone03",
+  "m_title": "ポケダイヤ（1,000個）",
+  "m_detail": "",
+  "m_assetBundleID": 44,
+  "m_assetName": "Diamond_Large",
+  "m_pt": 122,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 1
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.stone04",
+  "m_title": "ポケダイヤ（2,500個）",
+  "m_detail": "",
+  "m_assetBundleID": 44,
+  "m_assetName": "Diamond_ExtraLarge",
+  "m_pt": 306,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 1
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.set03",
+  "m_title": "ギア加工マシマシセット",
+  "m_detail": "有償ダイヤが600個もらえます！\nさらに、ギア加工枠が3日間限定で1枠増加でギア加工がはかどります！",
+  "m_assetBundleID": 44,
+  "m_assetName": "Subscriptions_MasiMasi",
+  "m_pt": 73,
+  "m_subscriptionType": 3,
+  "m_subscriptionMinutes": 4320,
+  "m_skuType": 2
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.set02",
+  "m_title": "ポケモンざくざくセット",
+  "m_detail": "有償ダイヤが400個もらえます！\n3日間限定でステージクリアで手に入るポケモンが2枠増加！\nランクアップがはかどります！",
+  "m_assetBundleID": 44,
+  "m_assetName": "Subscriptions_ZakuZaku",
+  "m_pt": 49,
+  "m_subscriptionType": 1,
+  "m_subscriptionMinutes": 4320,
+  "m_skuType": 2
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.set04",
+  "m_title": "ポケダイヤとくとくセット",
+  "m_detail": "有償ポケダイヤが800個もらえます！\nさらに、毎日80個のポケダイヤが30日間貰えちゃう！超お得なセット！\nステージの移動スピードもアップするよ！",
+  "m_assetBundleID": 44,
+  "m_assetName": "Subscriptions_TokuToku",
+  "m_pt": 98,
+  "m_subscriptionType": 2,
+  "m_subscriptionMinutes": 43200,
+  "m_skuType": 2
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.set01",
+  "m_title": "【1回限定】\n冒険者デビューセット",
+  "m_detail": "有償ポケダイヤ400個と、限定のミラーギアが貰えます。\nさらに！！ギア加工枠が1枠1日間限定で増えます！",
+  "m_assetBundleID": 44,
+  "m_assetName": "BonusSet",
+  "m_pt": 49,
+  "m_subscriptionType": 3,
+  "m_subscriptionMinutes": 1440,
+  "m_skuType": 3
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.stone05",
+  "m_title": "ポケダイヤ（4,000個）",
+  "m_detail": "",
+  "m_assetBundleID": 44,
+  "m_assetName": "Diamond_XXL",
+  "m_pt": 480,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 1
+ },
+ {
+  "m_SKU": "jp.pokemon.pokemonscramblesp.stone06",
+  "m_title": "ポケダイヤ（7,000個）",
+  "m_detail": "",
+  "m_assetBundleID": 44,
+  "m_assetName": "Diamond_XXXL",
+  "m_pt": 840,
+  "m_subscriptionType": 0,
+  "m_subscriptionMinutes": 0,
+  "m_skuType": 1
+ }
+]

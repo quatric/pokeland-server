@@ -1,0 +1,5375 @@
+[
+ {
+  "m_name": "",
+  "m_boneType": 0,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_bird",
+  "m_boneType": 0,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_bound_kamae",
+  "m_boneType": 1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_butterfly_kamae",
+  "m_boneType": 2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fish_kamae",
+  "m_boneType": 3,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_float_kamae",
+  "m_boneType": 4,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fourleg_kamae",
+  "m_boneType": 5,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_glide_kamae",
+  "m_boneType": 6,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fourleg_kamae",
+  "m_boneType": 7,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_nomove_kamae",
+  "m_boneType": 8,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_rolling_kamae",
+  "m_boneType": 9,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_seal_kamae",
+  "m_boneType": 10,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_slime_kamae",
+  "m_boneType": 11,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_twoleg_kamae",
+  "m_boneType": 12,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kamae",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_bird",
+  "m_boneType": 0,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_bound_run",
+  "m_boneType": 1,
+  "m_transName": "Pii_anim_bound_run_root",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_butterfly_kamae",
+  "m_boneType": 2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fish_kamae",
+  "m_boneType": 3,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_float_kamae",
+  "m_boneType": 4,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fourleg_run",
+  "m_boneType": 5,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_glide_kamae",
+  "m_boneType": 6,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_insect_run",
+  "m_boneType": 7,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_nomove_kamae",
+  "m_boneType": 8,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_rolling_run",
+  "m_boneType": 9,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_seal_run",
+  "m_boneType": 10,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_slime_run",
+  "m_boneType": 11,
+  "m_transName": "Pii_anim_slime_run_root",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_twoleg_run",
+  "m_boneType": 12,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Walk",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_bird",
+  "m_boneType": 0,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_bound_run",
+  "m_boneType": 1,
+  "m_transName": "Pii_anim_bound_run_root",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_butterfly_kamae",
+  "m_boneType": 2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fish_kamae",
+  "m_boneType": 3,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_float_kamae",
+  "m_boneType": 4,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_fourleg_run",
+  "m_boneType": 5,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_glide_kamae",
+  "m_boneType": 6,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_insect_run_half",
+  "m_boneType": 7,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_nomove_kamae",
+  "m_boneType": 8,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_rolling_run",
+  "m_boneType": 9,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_seal_run",
+  "m_boneType": 10,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_slime_run",
+  "m_boneType": 11,
+  "m_transName": "Pii_anim_slime_run_root",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_twoleg_run_half",
+  "m_boneType": 12,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Walk",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_attack_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_left_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_left__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_left__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_left__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_left__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_left__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_left_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_left__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_left__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_left__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_left__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kaiten_left__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tail_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tail__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tail__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tail__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tail__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tail__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sora_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sora__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sora__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sora__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sora__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sora__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_b_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_b__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_b__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_b__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_b__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ana_b__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_head_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_head__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_head__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_head__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_head__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_head__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_zutuki",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_zutuki_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_zutuki_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_zutuki_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_zutuki_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_zutuki_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_left_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_left__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_left__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_left__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_left__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_left__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tame_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tame__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tame__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tame__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tame__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_tame__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_dance_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_dance__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_dance__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_dance__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_dance__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_dance__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_korogaru_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_korogaru__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_korogaru__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_korogaru__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_korogaru__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_korogaru__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_drill_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_drill__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_drill__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_drill__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_drill__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_drill__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sekizo_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sekizo__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sekizo__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sekizo__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sekizo__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sekizo__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_center_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_center__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_center__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_center__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_center__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_kick_center__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_kick_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sinsoku_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sinsoku__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sinsoku__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sinsoku__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sinsoku__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_sinsoku__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_haneru_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_haneru__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_haneru__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_haneru__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_haneru__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_haneru__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_KAGEBUNSIN_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_KAGEBUNSIN__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_KAGEBUNSIN__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_KAGEBUNSIN__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_KAGEBUNSIN__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_KAGEBUNSIN__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_OSAKINIDOUZO_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_OSAKINIDOUZO__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_OSAKINIDOUZO__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_OSAKINIDOUZO__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_OSAKINIDOUZO__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_OSAKINIDOUZO__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TOMOENAGE_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TOMOENAGE__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TOMOENAGE__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TOMOENAGE__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TOMOENAGE__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TOMOENAGE__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_2_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_2__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_2__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_2__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_2__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_2__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TUNODORIRU_",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TUNODORIRU__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TUNODORIRU__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TUNODORIRU__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TUNODORIRU__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_TUNODORIRU__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ghostdive",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ghostdive__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ghostdive__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ghostdive__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ghostdive__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_ghostdive__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_berserk",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_berserk_tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_berserk_tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_berserk_attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_berserk_attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_berserk_back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_zigzag",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_zigzag__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_zigzag__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_zigzag__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_zigzag__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_zigzag__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_upper",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_upper__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_upper__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_upper__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_upper__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_upper__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_DDRARIATTO",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_DDRARIATTO__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_DDRARIATTO__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_DDRARIATTO__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_DDRARIATTO__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_DDRARIATTO__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_JUMP",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_JUMP__tame",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_JUMP__tame_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_JUMP__attack",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_JUMP__attack_loop",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_attack_JUMP__back",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_tame_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_attack_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Mii_punch_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_ido_",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_ido__tame",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_ido__tame_loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_ido__attack",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_ido__attack_loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_ido__back",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_tyusin_",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_tyusin__tame",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_tyusin__tame_loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_tyusin__attack",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_tyusin__attack_loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_tyusin__back",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_normal_",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_normal__tame",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_normal__tame_loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_normal__attack",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_normal__attack_loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_ROOT_boss_normal__back",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 1
+ },
+ {
+  "m_name": "Pii_motion_SRT_angry",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_angry",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_furue",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_furue",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_happy",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_happy_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_happy_start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_happy_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_ikaku",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_ikaku",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_ikaku_oneshot",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_ikaku",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_ikaku_happy",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_ikaku",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_landing",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_piyori",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_piyori",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_surprise",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_suprise",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_tubure",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_tubure",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_sad",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_sad",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_hatena",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_hatena",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_SRT_angry_ZEKUROMU",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_defend__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_defend__loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_defend__end",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_hit",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_hit",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_mahi",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_kizetu",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_born",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_born",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_generator",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_die",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_die_boss",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_die_br",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_falldown__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_falldown__loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_fall__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_fall__end",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_otamesi_out",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_die",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump__loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump__end",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump__off",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_catapult__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_catapult__loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_catapult__end",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_neji__in",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_neji__screw",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_boss_teisi",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_boss_saikai",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_sleep",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_talk",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_talk",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_syoukan",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_lift__down",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_lift__down",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_lift__down_arrival",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_lift__down_arrival",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_lift__up",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_lift__up",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_lift__up_arrival",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_lift__up_arrival",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_lasttower_otiru",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_lasttower_otiru",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_fall",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_fall",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_fall_world",
+  "m_boneType": -1,
+  "m_transName": "Pii_ROOT_fall_world",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump_enemy__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump_enemy__loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump_enemy__tyakuti",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_jump_enemy__end",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_kakure",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_jump_0",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_jump_1",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_jump_2",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_warp_hole_in",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_warp_hole_out",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_stage_start",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Pos",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_Clear_Balloon_POS",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Clear_Balloon_POS",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_pop_ground",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_pop_kemuri",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_hirumu_right",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_hirumu_left",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_boss_defence__begin",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_boss_defence__loop",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_boss_defence__end",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_pos_zero",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_advent_spwaza_test",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_pop_forestcave",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_pop_grasslandbeach",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim__op7_nejimaku",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim__op7_tenitoru",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim__op7_ugoku",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_OP_Atyamo",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_anim_OP_Pikatyuu",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_OP_Chara",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "pii_ROOT_Makuai_Idou",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Makuai_Idou",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Mega_Sinka",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_ResultCapsule",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_change_screw",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_change_jump",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_change_back",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Change_Screw",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_TuneUp",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_head_drink",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_head_kasige",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kashige",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_head_kyorokyoro",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kyorokyoro",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_head_laugh",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_laugh",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_motion_head_ojigi",
+  "m_boneType": -2,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 1,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_ojigi",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_dogeza",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_korobu",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_run",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_suberu",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_suwaru_start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_suwaru_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_suwaru_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_motsu_start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_motsu_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_motsu_dasu_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_motsu_walk_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_motsu_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_naderu_start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_naderu_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_naderu_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_sleep_start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_sleep_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_sleep_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_batabata_start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_batabata_loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_batabata_back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_disappear",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_chair",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_newspaper_pose",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_king_unazuki",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_king_nikkori",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_king_erai",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kamae_hand",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_walk_hand",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_run_hand",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kamae_visitor",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kamae_hand_visitor",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Telescope",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Telescope_Kamae",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Telescope_Get__Start",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Telescope_Get__Loop",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_Telescope_Get__Back",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_kamae",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Mii_wave",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 0,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Bow",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Glico",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Ina Bauer",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Jump",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Kick",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Kiss",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Lie",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Model Standing",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "One knee Standing",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pointing",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pointing Sky",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Right Hand",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Running",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Safe",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Sit",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Small Guts",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Stand",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Supine",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Winner",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Yankee Sitting",
+  "m_boneType": 13,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ },
+ {
+  "m_name": "Pii_ROOT_advent_spwaza_test2",
+  "m_boneType": -1,
+  "m_transName": "",
+  "m_filename": "",
+  "m_inhibitRotateHead": 1,
+  "m_haveEyeAnm": 0,
+  "m_isAttackSequence": 0
+ }
+]

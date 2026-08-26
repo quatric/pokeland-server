@@ -1,0 +1,47 @@
+[
+ {
+  "m_idStr": "NONE",
+  "m_name": "",
+  "m_notificationBodyNormal": "",
+  "m_notificationBodyPokemon": "",
+  "m_assetBundleID": 0,
+  "m_assetName": "",
+  "m_succeedingWelcalID": 0
+ },
+ {
+  "m_idStr": "BOSP",
+  "m_name": "X冒険者応援スペシャルプレゼント",
+  "m_notificationBodyNormal": "X「ミュウツーもらえる」スペシャルプレゼント、本日分ももらおう",
+  "m_notificationBodyPokemon": "X「ミュウツーもらえる」スペシャルプレゼント、今日は[{0}]！",
+  "m_assetBundleID": 167,
+  "m_assetName": "WelcalButton",
+  "m_succeedingWelcalID": 2
+ },
+ {
+  "m_idStr": "BOSPW2",
+  "m_name": "X冒険者応援スペシャルプレゼント(2週目)",
+  "m_notificationBodyNormal": "X「グラードンもらえる」スペシャルプレゼント、本日分ももらおう",
+  "m_notificationBodyPokemon": "X「グラードンもらえる」スペシャルプレゼント、今日は[{0}]！",
+  "m_assetBundleID": 169,
+  "m_assetName": "WelcalButton",
+  "m_succeedingWelcalID": 3
+ },
+ {
+  "m_idStr": "BOSPW3",
+  "m_name": "X冒険者応援スペシャルプレゼント(3週目)",
+  "m_notificationBodyNormal": "X「ブラッキーもらえる」スペシャルプレゼント、本日分ももらおう",
+  "m_notificationBodyPokemon": "X「ブラッキーもらえる」スペシャルプレゼント、今日は[{0}]！",
+  "m_assetBundleID": 170,
+  "m_assetName": "WelcalButton",
+  "m_succeedingWelcalID": 4
+ },
+ {
+  "m_idStr": "BOSPW4",
+  "m_name": "X冒険者応援スペシャルプレゼント(4週目)",
+  "m_notificationBodyNormal": "X「ミュウもらえる」スペシャルプレゼント、本日分ももらおう",
+  "m_notificationBodyPokemon": "X「ミュウもらえる」スペシャルプレゼント、今日は[{0}]！",
+  "m_assetBundleID": 171,
+  "m_assetName": "WelcalButton",
+  "m_succeedingWelcalID": 0
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "m_name": "(未設定)",
+  "m_onStartup": 1
+ },
+ {
+  "m_name": "あいさつ",
+  "m_onStartup": 1
+ },
+ {
+  "m_name": "気分",
+  "m_onStartup": 0
+ },
+ {
+  "m_name": "呼びかけ",
+  "m_onStartup": 0
+ },
+ {
+  "m_name": "対象語",
+  "m_onStartup": 0
+ },
+ {
+  "m_name": "ポケモン",
+  "m_onStartup": 0
+ }
+]

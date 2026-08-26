@@ -1,0 +1,119 @@
+[
+ {
+  "m_name": "",
+  "m_minCP": 0,
+  "m_maxCP": 0,
+  "m_winningPoint": 0,
+  "m_participationPoint": 0,
+  "m_bonusPoint": 0,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "モンスターボール級E",
+  "m_minCP": 70,
+  "m_maxCP": 140,
+  "m_winningPoint": 200,
+  "m_participationPoint": 60,
+  "m_bonusPoint": 40,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "モンスターボール級D",
+  "m_minCP": 140,
+  "m_maxCP": 300,
+  "m_winningPoint": 300,
+  "m_participationPoint": 90,
+  "m_bonusPoint": 60,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "モンスターボール級C",
+  "m_minCP": 300,
+  "m_maxCP": 500,
+  "m_winningPoint": 400,
+  "m_participationPoint": 120,
+  "m_bonusPoint": 80,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "モンスターボール級B",
+  "m_minCP": 500,
+  "m_maxCP": 700,
+  "m_winningPoint": 500,
+  "m_participationPoint": 150,
+  "m_bonusPoint": 100,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "モンスターボール級A",
+  "m_minCP": 700,
+  "m_maxCP": 1000,
+  "m_winningPoint": 600,
+  "m_participationPoint": 180,
+  "m_bonusPoint": 120,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "スーパーボール級C",
+  "m_minCP": 1000,
+  "m_maxCP": 1500,
+  "m_winningPoint": 1000,
+  "m_participationPoint": 300,
+  "m_bonusPoint": 200,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "スーパーボール級B",
+  "m_minCP": 1500,
+  "m_maxCP": 2000,
+  "m_winningPoint": 1400,
+  "m_participationPoint": 400,
+  "m_bonusPoint": 280,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "スーパーボール級A",
+  "m_minCP": 2000,
+  "m_maxCP": 2500,
+  "m_winningPoint": 1800,
+  "m_participationPoint": 500,
+  "m_bonusPoint": 360,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "ハイパーボール級C",
+  "m_minCP": 2500,
+  "m_maxCP": 3000,
+  "m_winningPoint": 2500,
+  "m_participationPoint": 700,
+  "m_bonusPoint": 500,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "ハイパーボール級B",
+  "m_minCP": 3000,
+  "m_maxCP": 4000,
+  "m_winningPoint": 3000,
+  "m_participationPoint": 900,
+  "m_bonusPoint": 600,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "ハイパーボール級A",
+  "m_minCP": 4000,
+  "m_maxCP": 5000,
+  "m_winningPoint": 3500,
+  "m_participationPoint": 1100,
+  "m_bonusPoint": 700,
+  "m_hideDetail": 0
+ },
+ {
+  "m_name": "マスターボール級",
+  "m_minCP": 5000,
+  "m_maxCP": 20000,
+  "m_winningPoint": 6000,
+  "m_participationPoint": 1500,
+  "m_bonusPoint": 2000,
+  "m_hideDetail": 1
+ }
+]

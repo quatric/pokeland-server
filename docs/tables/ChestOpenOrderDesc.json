@@ -1,0 +1,30 @@
+[
+ {
+  "m_pickup": 0,
+  "m_sortNo": 99
+ },
+ {
+  "m_pickup": 1,
+  "m_sortNo": 1
+ },
+ {
+  "m_pickup": 1,
+  "m_sortNo": 2
+ },
+ {
+  "m_pickup": 0,
+  "m_sortNo": 3
+ },
+ {
+  "m_pickup": 0,
+  "m_sortNo": 4
+ },
+ {
+  "m_pickup": 0,
+  "m_sortNo": 5
+ },
+ {
+  "m_pickup": 0,
+  "m_sortNo": 6
+ }
+]

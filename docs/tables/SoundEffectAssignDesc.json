@@ -1,0 +1,430 @@
+[
+ {
+  "m_idStr": "NONE",
+  "m_se": 0
+ },
+ {
+  "m_idStr": "DECIDE",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "CANCEL",
+  "m_se": 31
+ },
+ {
+  "m_idStr": "CANT_SELECT",
+  "m_se": 298
+ },
+ {
+  "m_idStr": "CONTINUE",
+  "m_se": 5
+ },
+ {
+  "m_idStr": "FAV",
+  "m_se": 282
+ },
+ {
+  "m_idStr": "UNFAV",
+  "m_se": 31
+ },
+ {
+  "m_idStr": "CHECK",
+  "m_se": 2
+ },
+ {
+  "m_idStr": "UNCHECK",
+  "m_se": 31
+ },
+ {
+  "m_idStr": "DESELECT",
+  "m_se": 69
+ },
+ {
+  "m_idStr": "TUNE_UP",
+  "m_se": 280
+ },
+ {
+  "m_idStr": "TUNE_UP_FINISH",
+  "m_se": 332
+ },
+ {
+  "m_idStr": "APPEAR_PIN",
+  "m_se": 68
+ },
+ {
+  "m_idStr": "DISAPPEAR_PIN",
+  "m_se": 69
+ },
+ {
+  "m_idStr": "TAP_STAGE_PIN",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "START_BATTLE",
+  "m_se": 84
+ },
+ {
+  "m_idStr": "TAP_BR_PIN",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_TUNE_UP_PIN",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_GOODBYE_PIN",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_CHANCE_POINT",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_SUB_MENU_OPEN",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_SUB_MENU_CLOSE",
+  "m_se": 31
+ },
+ {
+  "m_idStr": "TAP_OPTION",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "MOVE_AFTER_TAP_PIN",
+  "m_se": 324
+ },
+ {
+  "m_idStr": "LEAVE_NUSHI",
+  "m_se": 302
+ },
+ {
+  "m_idStr": "SEARCH_CHANCE_POINT",
+  "m_se": 65
+ },
+ {
+  "m_idStr": "DETECT_STAGE",
+  "m_se": 336
+ },
+ {
+  "m_idStr": "TAP_PII_SELECTOR",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_MII_SELECTOR",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_SHOP",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "SELECT_AT_THE_SHOP",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "BUY_AT_THE_SHOP",
+  "m_se": 15
+ },
+ {
+  "m_idStr": "CHANGE_ISLAND",
+  "m_se": 324
+ },
+ {
+  "m_idStr": "GROW_ISLAND",
+  "m_se": 89
+ },
+ {
+  "m_idStr": "GET_DIAMOND",
+  "m_se": 328
+ },
+ {
+  "m_idStr": "MESSAGE_BOX_OK",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "BOSS_HAJIKI",
+  "m_se": 287
+ },
+ {
+  "m_idStr": "HIT_RARITY_1",
+  "m_se": 27
+ },
+ {
+  "m_idStr": "HIT_RARITY_2",
+  "m_se": 27
+ },
+ {
+  "m_idStr": "HIT_RARITY_3",
+  "m_se": 28
+ },
+ {
+  "m_idStr": "HIT_RARITY_4",
+  "m_se": 333
+ },
+ {
+  "m_idStr": "HIT_RARITY_5",
+  "m_se": 334
+ },
+ {
+  "m_idStr": "HIT_RARITY_6",
+  "m_se": 334
+ },
+ {
+  "m_idStr": "DROP_RARITY_1",
+  "m_se": 288
+ },
+ {
+  "m_idStr": "DROP_RARITY_2",
+  "m_se": 288
+ },
+ {
+  "m_idStr": "DROP_RARITY_3",
+  "m_se": 289
+ },
+ {
+  "m_idStr": "DROP_RARITY_4",
+  "m_se": 290
+ },
+ {
+  "m_idStr": "DROP_RARITY_5",
+  "m_se": 291
+ },
+ {
+  "m_idStr": "DROP_RARITY_6",
+  "m_se": 291
+ },
+ {
+  "m_idStr": "DROP_CHEST_1",
+  "m_se": 290
+ },
+ {
+  "m_idStr": "DROP_CHEST_2",
+  "m_se": 291
+ },
+ {
+  "m_idStr": "GET_CAPSULE_LV1",
+  "m_se": 41
+ },
+ {
+  "m_idStr": "GET_CAPSULE_LV2",
+  "m_se": 41
+ },
+ {
+  "m_idStr": "GET_CAPSULE_LV3",
+  "m_se": 279
+ },
+ {
+  "m_idStr": "GET_CAPSULE_LV4",
+  "m_se": 280
+ },
+ {
+  "m_idStr": "GET_CAPSULE_LV5",
+  "m_se": 280
+ },
+ {
+  "m_idStr": "GET_CAPSULE_LV6",
+  "m_se": 280
+ },
+ {
+  "m_idStr": "OPEN_CAPSULE_LV1",
+  "m_se": 85
+ },
+ {
+  "m_idStr": "OPEN_CAPSULE_LV2",
+  "m_se": 86
+ },
+ {
+  "m_idStr": "OPEN_CAPSULE_LV3",
+  "m_se": 87
+ },
+ {
+  "m_idStr": "OPEN_CAPSULE_LV4",
+  "m_se": 88
+ },
+ {
+  "m_idStr": "EXPAND_EXP_GAUGE",
+  "m_se": 273
+ },
+ {
+  "m_idStr": "GET_EXP",
+  "m_se": 41
+ },
+ {
+  "m_idStr": "GET_CHEST_LV1",
+  "m_se": 41
+ },
+ {
+  "m_idStr": "GET_CHEST_LV2",
+  "m_se": 279
+ },
+ {
+  "m_idStr": "GET_CHEST_LV3",
+  "m_se": 280
+ },
+ {
+  "m_idStr": "OPEN_CHEST",
+  "m_se": 15
+ },
+ {
+  "m_idStr": "COMBO_BONUS",
+  "m_se": 90
+ },
+ {
+  "m_idStr": "CHALLENGE_CLEAR",
+  "m_se": 282
+ },
+ {
+  "m_idStr": "PV_PLAYER_PIKACHU_APPEAR",
+  "m_se": 1119
+ },
+ {
+  "m_idStr": "PV_PLAYER_PIKACHU_DYING",
+  "m_se": 1120
+ },
+ {
+  "m_idStr": "PV_ENEMY_PIKACHU_DYING",
+  "m_se": 1121
+ },
+ {
+  "m_idStr": "PV_BOSS_PIKACHU_APPEAR",
+  "m_se": 1122
+ },
+ {
+  "m_idStr": "PV_BOSS_PIKACHU_DYING",
+  "m_se": 1123
+ },
+ {
+  "m_idStr": "STAMP",
+  "m_se": 15
+ },
+ {
+  "m_idStr": "FALL_CHEST",
+  "m_se": 82
+ },
+ {
+  "m_idStr": "NEW_RANK_FANFARE",
+  "m_se": 10
+ },
+ {
+  "m_idStr": "HIT_NOEFFECT",
+  "m_se": 3
+ },
+ {
+  "m_idStr": "TAP_KUREFFI",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_MISSIONLIST",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TAP_TOURNAMENT",
+  "m_se": 24
+ },
+ {
+  "m_idStr": "TIMER_ANIM",
+  "m_se": 68
+ },
+ {
+  "m_idStr": "GRADEUP_POWERGEAR",
+  "m_se": 336
+ },
+ {
+  "m_idStr": "COMPLETE_GRADEUP_POWERGEAR",
+  "m_se": 1125
+ },
+ {
+  "m_idStr": "CHECK_BALLOON",
+  "m_se": 336
+ },
+ {
+  "m_idStr": "FIND_STAGE_NAME",
+  "m_se": 282
+ },
+ {
+  "m_idStr": "THROW_HANE",
+  "m_se": 6
+ },
+ {
+  "m_idStr": "TAP_BOUKEN_BUTTON",
+  "m_se": 6
+ },
+ {
+  "m_idStr": "CHANGE_POKEMON",
+  "m_se": 6
+ },
+ {
+  "m_idStr": "UNLOCK_ORE",
+  "m_se": 6
+ },
+ {
+  "m_idStr": "MOUNT_POWERGEAR",
+  "m_se": 1125
+ },
+ {
+  "m_idStr": "UNMOUNT_POWERGEAR",
+  "m_se": 1127
+ },
+ {
+  "m_idStr": "APPEARING_TOTEM",
+  "m_se": 89
+ },
+ {
+  "m_idStr": "TOTEM_PIN_TO_NEXT_NOT_READY",
+  "m_se": 156
+ },
+ {
+  "m_idStr": "TOTEM_PIN_TO_NEXT_READY",
+  "m_se": 282
+ },
+ {
+  "m_idStr": "TOTEM_PIN_TO_DONE",
+  "m_se": 330
+ },
+ {
+  "m_idStr": "TAP_MIRROR_MOVE_BUTTON",
+  "m_se": 1131
+ },
+ {
+  "m_idStr": "APPEAR_MIRROR_MOVE_POKEMON",
+  "m_se": 280
+ },
+ {
+  "m_idStr": "RESULT_FOCUS_OTHERS",
+  "m_se": 306
+ },
+ {
+  "m_idStr": "COIL_CARRY_ORE",
+  "m_se": 92
+ },
+ {
+  "m_idStr": "TOTEM_RUSH_APPLAUSE",
+  "m_se": 67
+ },
+ {
+  "m_idStr": "DISCARD_ORE",
+  "m_se": 1127
+ },
+ {
+  "m_idStr": "ACHIEVE_STAGE_MISSION",
+  "m_se": 38
+ },
+ {
+  "m_idStr": "GET_WELCAL",
+  "m_se": 282
+ },
+ {
+  "m_idStr": "COMPLETE_AREA",
+  "m_se": 10
+ },
+ {
+  "m_idStr": "COMPLETE_MCHART",
+  "m_se": 10
+ },
+ {
+  "m_idStr": "COMPLETE_FULL",
+  "m_se": 10
+ }
+]

@@ -1,0 +1,17 @@
+[
+ {
+  "m_isDefault": 0,
+  "m_isEnergySaving": 0,
+  "m_fps": 60
+ },
+ {
+  "m_isDefault": 1,
+  "m_isEnergySaving": 0,
+  "m_fps": 30
+ },
+ {
+  "m_isDefault": 0,
+  "m_isEnergySaving": 1,
+  "m_fps": 20
+ }
+]

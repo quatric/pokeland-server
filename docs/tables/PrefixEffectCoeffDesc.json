@@ -1,0 +1,50 @@
+[
+ {
+  "m_name": "",
+  "m_dispCoeff": 0.0
+ },
+ {
+  "m_name": "防御力係数",
+  "m_dispCoeff": 40.0
+ },
+ {
+  "m_name": "HP係数",
+  "m_dispCoeff": 1.0
+ },
+ {
+  "m_name": "はやわざ係数",
+  "m_dispCoeff": 100.0
+ },
+ {
+  "m_name": "攻撃力加算数",
+  "m_dispCoeff": 1.0
+ },
+ {
+  "m_name": "攻撃力係数",
+  "m_dispCoeff": 10.0
+ },
+ {
+  "m_name": "攻撃力係数",
+  "m_dispCoeff": 100.0
+ },
+ {
+  "m_name": "急所率係数",
+  "m_dispCoeff": 1000.0
+ },
+ {
+  "m_name": "攻撃力係数",
+  "m_dispCoeff": 20.0
+ },
+ {
+  "m_name": "タメわざダメージ係数",
+  "m_dispCoeff": 100.0
+ },
+ {
+  "m_name": "効率係数",
+  "m_dispCoeff": 20.0
+ },
+ {
+  "m_name": "SPパワー係数",
+  "m_dispCoeff": 2000.0
+ }
+]

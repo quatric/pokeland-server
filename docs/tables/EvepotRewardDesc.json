@@ -1,0 +1,6862 @@
+[
+ {
+  "m_sortOrder": 0,
+  "m_evepotID": 0,
+  "m_cost": [
+   0,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 0,
+  "m_quantity": 0,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 100,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 5,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 102,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 6,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 104,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 7,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 106,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 8,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 108,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 9,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 110,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 10,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 112,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 11,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 114,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 12,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 116,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 13,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 118,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 14,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 120,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 15,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 122,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 16,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 124,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 17,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 126,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 18,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 128,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 19,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 130,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 20,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 132,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 21,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 134,
+  "m_evepotID": 0,
+  "m_cost": [
+   1000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 22,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 50,
+  "m_evepotID": 0,
+  "m_cost": [
+   1500,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 4,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 52,
+  "m_evepotID": 0,
+  "m_cost": [
+   1500,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 61,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 54,
+  "m_evepotID": 0,
+  "m_cost": [
+   1500,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 64,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 56,
+  "m_evepotID": 0,
+  "m_cost": [
+   1500,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 65,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 58,
+  "m_evepotID": 0,
+  "m_cost": [
+   1500,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 20,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 3,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 1,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 27,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 1,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 19,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 1,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 1,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 255,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 2,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 37,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 2,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 11,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 2,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 2,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 2,
+  "m_cost": [
+   1200000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 150,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 3,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 38,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 3,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 21,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 3,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 3,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 3,
+  "m_cost": [
+   1500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 382,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 4,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 26,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 4,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 19,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 4,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 4,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 4,
+  "m_cost": [
+   1200000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 25,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 200,
+  "m_evepotID": 4,
+  "m_cost": [
+   9,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 3,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 201,
+  "m_evepotID": 4,
+  "m_cost": [
+   9,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 1,
+  "m_quantity": 100,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 202,
+  "m_evepotID": 4,
+  "m_cost": [
+   9,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 2,
+  "m_quantity": 100,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 203,
+  "m_evepotID": 4,
+  "m_cost": [
+   9,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 3,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 25,
+  "m_level": 100,
+  "m_wazaID1": 97,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 3,
+  "m_spSocketCount": 1,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 204,
+  "m_evepotID": 4,
+  "m_cost": [
+   9,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   21,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 5,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 38,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 5,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 19,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 5,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 5,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 350,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 6,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 14,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 6,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 23,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 6,
+  "m_evepotID": 4,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 6,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 285,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 7,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 33,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 7,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 9,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 7,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 7,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 7,
+  "m_cost": [
+   1500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 492,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 8,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 18,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 8,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 22,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 8,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 8,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 8,
+  "m_cost": [
+   1500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 718,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 101,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 5,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 103,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 6,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 105,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 7,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 107,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 8,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 109,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 9,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 111,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 10,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 113,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 11,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 115,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 12,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 117,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 13,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 119,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 14,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 121,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 15,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 123,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 16,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 125,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 17,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 127,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 18,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 129,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 19,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 131,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 20,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 133,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 21,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 135,
+  "m_evepotID": 0,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 22,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 51,
+  "m_evepotID": 0,
+  "m_cost": [
+   15000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 4,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 53,
+  "m_evepotID": 0,
+  "m_cost": [
+   15000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 61,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 55,
+  "m_evepotID": 0,
+  "m_cost": [
+   15000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 64,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 57,
+  "m_evepotID": 0,
+  "m_cost": [
+   15000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 65,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 59,
+  "m_evepotID": 0,
+  "m_cost": [
+   15000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 8,
+  "m_quantity": 200,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 3,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 20,
+  "m_evepotID": 0,
+  "m_cost": [
+   100000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 2,
+  "m_quantity": 500000,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 9,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 34,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 9,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 17,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 9,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 19,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 9,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   333,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 9,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   347,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 6,
+  "m_evepotID": 9,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 7,
+  "m_evepotID": 9,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 638,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 10,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 31,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 10,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 14,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 10,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   359,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 10,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 10,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 383,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 11,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 16,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 11,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 29,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 11,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 22,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 11,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   394,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 11,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   315,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 6,
+  "m_evepotID": 11,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 7,
+  "m_evepotID": 11,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 717,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 12,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 26,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 12,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 21,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 12,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   380,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 12,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 12,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 644,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 13,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 24,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 13,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 30,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 13,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 9,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 13,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   337,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 13,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   382,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 6,
+  "m_evepotID": 13,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 7,
+  "m_evepotID": 13,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 719,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 14,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 35,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 14,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 23,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 14,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   401,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 14,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 14,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 795,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 15,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 28,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 15,
+  "m_cost": [
+   10000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 37,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 15,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 22,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 15,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   345,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 15,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   373,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 6,
+  "m_evepotID": 15,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 7,
+  "m_evepotID": 15,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 792,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 1,
+  "m_evepotID": 16,
+  "m_cost": [
+   20000,
+   0,
+   0
+  ],
+  "m_limitID": 0,
+  "m_limitCount": 0,
+  "m_typeID": 6,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 11,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 2,
+  "m_evepotID": 16,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   397,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 3,
+  "m_evepotID": 16,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   392,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 4,
+  "m_evepotID": 16,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   351,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 5,
+  "m_evepotID": 16,
+  "m_cost": [
+   60000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 5,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   367,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   5,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 6,
+  "m_evepotID": 16,
+  "m_cost": [
+   150000,
+   0,
+   0
+  ],
+  "m_limitID": 2,
+  "m_limitCount": 1,
+  "m_typeID": 4,
+  "m_quantity": 1,
+  "m_utensilID": 2,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 0,
+  "m_honorParamMonsNo": 0,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ },
+ {
+  "m_sortOrder": 7,
+  "m_evepotID": 16,
+  "m_cost": [
+   500000,
+   0,
+   0
+  ],
+  "m_limitID": 3,
+  "m_limitCount": 1,
+  "m_typeID": 7,
+  "m_quantity": 1,
+  "m_utensilID": 0,
+  "m_prefixMaterial": 0,
+  "m_pdecoID": 0,
+  "m_honorID": 9,
+  "m_honorParamMonsNo": 493,
+  "m_monsNo": 0,
+  "m_level": 0,
+  "m_wazaID1": 0,
+  "m_wazaID2": 0,
+  "m_formNo": 0,
+  "m_paraSex": 0,
+  "m_isRareColor": 0,
+  "m_rnd": 0,
+  "m_socketCount": 0,
+  "m_spSocketCount": 0,
+  "m_equnitUnitPrefix": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixGrade": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition0": [
+   0,
+   0,
+   0
+  ],
+  "m_equnitPrefixAddition1": [
+   0,
+   0,
+   0
+  ],
+  "m_nickname": ""
+ }
+]

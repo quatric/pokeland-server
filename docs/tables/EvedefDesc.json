@@ -1,0 +1,2303 @@
+[
+ {
+  "m_name": "",
+  "m_idStr": "NONE",
+  "m_evedefType": 0,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 0,
+  "m_bannerAssetName": "",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 0,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   0,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "チュートリアル",
+  "m_idStr": "Tutorial",
+  "m_evedefType": 1,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 10,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "チュートリアル",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 1,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 5,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   0,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "リザードンのすむ島",
+  "m_idStr": "_1",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "リザードン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 35.657588958740234,
+  "m_mchartCenterLng": 139.6929931640625,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   3,
+   9,
+   6
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "カイリューの暴風の島",
+  "m_idStr": "_2",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 66,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "カイリュー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 3,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   149,
+   282,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ぬしラッシュ予選",
+  "m_idStr": "TotemRush_Tutorial",
+  "m_evedefType": 2,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   0,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "くいしんぼうカビゴン",
+  "m_idStr": "_3",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 67,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "カビゴン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   143,
+   68,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ジラーチと星空",
+  "m_idStr": "_4",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 68,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ジラーチ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4510,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   385,
+   131,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "カイロスがヒーロー！？",
+  "m_idStr": "_5",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 69,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "カイロス海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   571,
+   127,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "サンダー、飛来！",
+  "m_idStr": "_6",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 70,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "サンダー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4510,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   145,
+   51,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ゲンガーのひそむ大洞窟",
+  "m_idStr": "_7",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 71,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ゲンガー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 5152,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   94,
+   65,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "セレビィの大密林",
+  "m_idStr": "_8",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 72,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "セレビィ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   251,
+   89,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ポワルンと伝説の島々",
+  "m_idStr": "_9",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 73,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ポワルン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   146,
+   248,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ガブリアス、音速の激闘！",
+  "m_idStr": "_10",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 74,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ガブリアス海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   445,
+   395,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "Pラッシュ",
+  "m_idStr": "P_Rush",
+  "m_evedefType": 2,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   0,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "エンテイと謎解きの島",
+  "m_idStr": "_11",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 75,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "エンテイ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 4,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   244,
+   185,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ミミッキュのハロウィンパーティ",
+  "m_idStr": "_12",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 76,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ミミッキュ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 5,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   778,
+   89,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "",
+  "m_idStr": "Intermission",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 10,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 5,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   0,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ギルガルド、王剣と鉄壁",
+  "m_idStr": "_13",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 77,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ギルガルド海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   144,
+   681,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "グソクムシャと超遺伝の洞窟",
+  "m_idStr": "_14",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 78,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ミュウツー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   150,
+   768,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "モクローとアローラのクリスマス",
+  "m_idStr": "_15",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 79,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "モクロー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   724,
+   748,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ルギアと伝説の幕開け",
+  "m_idStr": "_16",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 80,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ルギア海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   249,
+   243,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "シルヴァディ V.S. マッシブーン",
+  "m_idStr": "_17",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 81,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "マッシブーン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   794,
+   773,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ニンフィアと監視者Z",
+  "m_idStr": "_18",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 82,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ジガルデ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 3703,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   718,
+   700,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ラティアスとふたごの島",
+  "m_idStr": "_19",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 83,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "バタフリー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 3803,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   380,
+   12,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "リザードンとルギアのすむ島",
+  "m_idStr": "_20",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 84,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "リザードン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 4,
+  "m_noRanking": 0,
+  "m_capCP": 3803,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   3,
+   9,
+   6
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "アチャモ杯",
+  "m_idStr": "TeamBattle_001",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   1,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   255,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 25,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ミュウツー杯",
+  "m_idStr": "TeamBattle_002",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   2,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   150,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 26,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "カイオーガ杯",
+  "m_idStr": "TeamBattle_003",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   3,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   382,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 27,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "フシギダネ杯",
+  "m_idStr": "TeamBattle_DUMMY1",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   4,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   1,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 1,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ヒトカゲ杯",
+  "m_idStr": "TeamBattle_DUMMY2",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   4,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   4,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 2,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ゼニガメ杯",
+  "m_idStr": "TeamBattle_DUMMY3",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   4,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   7,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 3,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "シルヴァディ杯",
+  "m_idStr": "TeamBattle_TEST",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   4,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   773,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 23,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ミロカロス杯",
+  "m_idStr": "TeamBattle_TEST2",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   5,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   350,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 24,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ホウオウと151！",
+  "m_idStr": "_21",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 85,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "フシギダネ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 6,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   250,
+   25,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "天空のレックウザ、降臨！",
+  "m_idStr": "_22",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 86,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "レックウザ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   384,
+   386,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "パラセクト杯",
+  "m_idStr": "TeamBattle_004",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   6,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   47,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 28,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "シェイミ杯",
+  "m_idStr": "TeamBattle_005",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   7,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   492,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 29,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ジガルデ杯",
+  "m_idStr": "TeamBattle_006",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   8,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   718,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 30,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "アルセウスと神話の島",
+  "m_idStr": "_23",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 87,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "アルセウス海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 7,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   493,
+   448,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ゲッコウガとカロスの伝説",
+  "m_idStr": "_24",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 88,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ゲッコウガ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   658,
+   717,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "コラッタ杯",
+  "m_idStr": "TeamBattle_DUMMY4",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   4,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   19,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 31,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "リザードンのすむ島",
+  "m_idStr": "_25",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 89,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "リザードン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   3,
+   9,
+   6
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 1,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "セレビィの大密林",
+  "m_idStr": "_26",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 90,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "セレビィ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   251,
+   89,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 20,
+  "m_bondOpenMessageDone": 147,
+  "m_bondOpenNoticeDone": 142
+ },
+ {
+  "m_name": "エンテイと謎解きの島",
+  "m_idStr": "_27",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 91,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "エンテイ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 4,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   244,
+   185,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 25,
+  "m_bondOpenMessageDone": 149,
+  "m_bondOpenNoticeDone": 148
+ },
+ {
+  "m_name": "ガブリアス、音速の激闘！",
+  "m_idStr": "_28",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 92,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ガブリアス海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   445,
+   395,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 12,
+  "m_bondOpenMessageDone": 151,
+  "m_bondOpenNoticeDone": 150
+ },
+ {
+  "m_name": "コバルオン杯",
+  "m_idStr": "TeamBattle_007",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   9,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   638,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 35,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "グラードン杯",
+  "m_idStr": "TeamBattle_008",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   10,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   383,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 34,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "イベルタル杯",
+  "m_idStr": "TeamBattle_009",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   11,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   717,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 33,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ゼクロム杯",
+  "m_idStr": "TeamBattle_010",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   12,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   644,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 32,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ディアンシー杯",
+  "m_idStr": "TeamBattle_011",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   13,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   719,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 36,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "フェローチェ杯",
+  "m_idStr": "TeamBattle_012",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   14,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   795,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 38,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "ルナアーラ杯",
+  "m_idStr": "TeamBattle_013",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   15,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   792,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 39,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "アルセウス杯",
+  "m_idStr": "TeamBattle_014",
+  "m_evedefType": 3,
+  "m_isTutorial": 1,
+  "m_evepotIDs": [
+   16,
+   0
+  ],
+  "m_assetBundleID": 65,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "",
+  "m_mchartSizeMeter": 0.0,
+  "m_mchartCenterLat": 0.0,
+  "m_mchartCenterLng": 0.0,
+  "m_mchartAssetName": "",
+  "m_mchartCloudAssetName": "",
+  "m_mchartEffOcean": 0,
+  "m_noRanking": 0,
+  "m_capCP": 0,
+  "m_totemStunAttackOpenRank": 1,
+  "m_mainPokemonIllustAssetName": "",
+  "m_mainPokemonMonsNo": [
+   493,
+   0,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 40,
+  "m_bond": 0,
+  "m_bondOpenRank": 0,
+  "m_bondOpenMessageDone": 0,
+  "m_bondOpenNoticeDone": 0
+ },
+ {
+  "m_name": "シルヴァディ V.S. マッシブーン",
+  "m_idStr": "_29",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 93,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "マッシブーン海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   794,
+   773,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 8,
+  "m_bondOpenMessageDone": 153,
+  "m_bondOpenNoticeDone": 152
+ },
+ {
+  "m_name": "ジラーチと星空",
+  "m_idStr": "_30",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 94,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ジラーチ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   385,
+   131,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 16,
+  "m_bondOpenMessageDone": 155,
+  "m_bondOpenNoticeDone": 154
+ },
+ {
+  "m_name": "ミミッキュのハロウィンパーティ",
+  "m_idStr": "_31",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 95,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ミミッキュ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 5,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   778,
+   89,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 20,
+  "m_bondOpenMessageDone": 157,
+  "m_bondOpenNoticeDone": 156
+ },
+ {
+  "m_name": "ニンフィアと監視者Z",
+  "m_idStr": "_32",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 96,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ジガルデ海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   718,
+   700,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 25,
+  "m_bondOpenMessageDone": 159,
+  "m_bondOpenNoticeDone": 158
+ },
+ {
+  "m_name": "グソクムシャと超遺伝の洞窟",
+  "m_idStr": "_33",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 97,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "ミュウツー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 1,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   150,
+   768,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 25,
+  "m_bondOpenMessageDone": 161,
+  "m_bondOpenNoticeDone": 160
+ },
+ {
+  "m_name": "モクローとアローラのクリスマス",
+  "m_idStr": "_34",
+  "m_evedefType": 1,
+  "m_isTutorial": 0,
+  "m_evepotIDs": [
+   0,
+   0
+  ],
+  "m_assetBundleID": 98,
+  "m_bannerAssetName": "Banner",
+  "m_mchartName": "モクロー海域",
+  "m_mchartSizeMeter": 10000.0,
+  "m_mchartCenterLat": 19.896770477294922,
+  "m_mchartCenterLng": -155.58279418945312,
+  "m_mchartAssetName": "MyslandChart",
+  "m_mchartCloudAssetName": "Cloud{0:D2}",
+  "m_mchartEffOcean": 2,
+  "m_noRanking": 0,
+  "m_capCP": 4103,
+  "m_totemStunAttackOpenRank": 12,
+  "m_mainPokemonIllustAssetName": "IllustMainPokemon",
+  "m_mainPokemonMonsNo": [
+   724,
+   748,
+   0
+  ],
+  "m_secretPokeMonsNo": [
+   0
+  ],
+  "m_secretPokeFormNo": [
+   0
+  ],
+  "m_teamBattleID": 0,
+  "m_bond": 1,
+  "m_bondOpenRank": 25,
+  "m_bondOpenMessageDone": 163,
+  "m_bondOpenNoticeDone": 162
+ }
+]

@@ -1,0 +1,210 @@
+[
+ {
+  "m_category": "NONE",
+  "m_name": ""
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "App First Time Start"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Term of service"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Name Input"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "First Stage"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Stage 1"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Stage 2"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Stage 3"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Stage 4"
+ },
+ {
+  "m_category": "Tutorial",
+  "m_name": "Stage 5"
+ },
+ {
+  "m_category": "App Running",
+  "m_name": "App Start"
+ },
+ {
+  "m_category": "App Running",
+  "m_name": "Pokemon Menu"
+ },
+ {
+  "m_category": "App Running",
+  "m_name": "Shop Menu"
+ },
+ {
+  "m_category": "App Running",
+  "m_name": "Zukan Menu"
+ },
+ {
+  "m_category": "App Running",
+  "m_name": "Challenge Menu"
+ },
+ {
+  "m_category": "Main Stage",
+  "m_name": "Challenge"
+ },
+ {
+  "m_category": "Main Stage",
+  "m_name": "Clear"
+ },
+ {
+  "m_category": "Nusi Stage",
+  "m_name": "Challenge"
+ },
+ {
+  "m_category": "Nusi Stage",
+  "m_name": "Clear"
+ },
+ {
+  "m_category": "Gear",
+  "m_name": "Synthesis Gear"
+ },
+ {
+  "m_category": "Box Get",
+  "m_name": "Copper_Mysland"
+ },
+ {
+  "m_category": "Box Get",
+  "m_name": "Silver_Mysland"
+ },
+ {
+  "m_category": "Box Get",
+  "m_name": "Gold_Mysland"
+ },
+ {
+  "m_category": "Box Open",
+  "m_name": "Copper_Mysland"
+ },
+ {
+  "m_category": "Box Open",
+  "m_name": "Silver_Mysland"
+ },
+ {
+  "m_category": "Box Open",
+  "m_name": "Gold_Mysland"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Use paid Dia"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Use free Dia"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Use Total Dia"
+ },
+ {
+  "m_category": "GetCoin",
+  "m_name": "Get Stage"
+ },
+ {
+  "m_category": "GetCoin",
+  "m_name": "Get Box Coin"
+ },
+ {
+  "m_category": "GetCoin",
+  "m_name": "Get Coin"
+ },
+ {
+  "m_category": "ConsumeCoin",
+  "m_name": "Consume Coin"
+ },
+ {
+  "m_category": "Free Diamond",
+  "m_name": "Get by Stage"
+ },
+ {
+  "m_category": "Free Diamond",
+  "m_name": "Get by Challenge"
+ },
+ {
+  "m_category": "Free Diamond",
+  "m_name": "Get by Present"
+ },
+ {
+  "m_category": "Free Diamond",
+  "m_name": "Get all"
+ },
+ {
+  "m_category": "Time Ticket",
+  "m_name": "Get Time Ticket"
+ },
+ {
+  "m_category": "Time Ticket",
+  "m_name": "Use Time Ticket"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Ore (paid)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Ore (free)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Ore (total)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Stage (paid)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Stage (free)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Stage (total)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Storage (paid)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Storage (free)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Storage (total)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Search (paid)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Search (free)"
+ },
+ {
+  "m_category": "Total Diamond",
+  "m_name": "Search (total)"
+ },
+ {
+  "m_category": "Total Purchase x100",
+  "m_name": ""
+ }
+]

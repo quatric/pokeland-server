@@ -1,0 +1,1493 @@
+[
+ {
+  "m_evedefID": 0,
+  "m_minTieRank": 0,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 0,
+  "m_quantity": 0
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 2,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 3,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 5,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 6,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 7,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 8,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 9,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 10,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 11,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 12,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 14,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 15,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 17,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 2,
+  "m_giftTypeID": 1,
+  "m_quantity": 200
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 3,
+  "m_maxTieRank": 3,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 4,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 100
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 18,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 19,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 20,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 21,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 22,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 23,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 24,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 33,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 34,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 38,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 1,
+  "m_maxTieRank": 1,
+  "m_giftTypeID": 1,
+  "m_quantity": 250
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 2,
+  "m_maxTieRank": 10,
+  "m_giftTypeID": 1,
+  "m_quantity": 150
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 11,
+  "m_maxTieRank": 100,
+  "m_giftTypeID": 1,
+  "m_quantity": 50
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 101,
+  "m_maxTieRank": 1000,
+  "m_giftTypeID": 1,
+  "m_quantity": 40
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 1001,
+  "m_maxTieRank": 2000,
+  "m_giftTypeID": 1,
+  "m_quantity": 35
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 2001,
+  "m_maxTieRank": 3000,
+  "m_giftTypeID": 1,
+  "m_quantity": 30
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 3001,
+  "m_maxTieRank": 5000,
+  "m_giftTypeID": 1,
+  "m_quantity": 25
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 5001,
+  "m_maxTieRank": 10000,
+  "m_giftTypeID": 1,
+  "m_quantity": 20
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 10001,
+  "m_maxTieRank": 30000,
+  "m_giftTypeID": 1,
+  "m_quantity": 15
+ },
+ {
+  "m_evedefID": 39,
+  "m_minTieRank": 30001,
+  "m_maxTieRank": 0,
+  "m_giftTypeID": 1,
+  "m_quantity": 10
+ }
+]

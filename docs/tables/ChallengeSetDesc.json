@@ -1,0 +1,310 @@
+[
+ {
+  "m_challengeType": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue1": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue4": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeRewardDiamond": [
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ {
+  "m_challengeType": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue1": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue4": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeRewardDiamond": [
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ {
+  "m_challengeType": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "m_challengeValue1": [
+   90.0,
+   0.0,
+   18.0,
+   3.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   24.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   0,
+   3,
+   0,
+   0
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue4": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeRewardDiamond": [
+   2,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "m_challengeType": [
+   2,
+   5,
+   6,
+   7
+  ],
+  "m_challengeValue1": [
+   0.0,
+   100.0,
+   200.0,
+   0.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   -1,
+   0,
+   0,
+   1
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue4": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeRewardDiamond": [
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "m_challengeType": [
+   1,
+   8,
+   9,
+   10
+  ],
+  "m_challengeValue1": [
+   10.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   19,
+   16
+  ],
+  "m_challengeValue4": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeRewardDiamond": [
+   2,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "m_challengeType": [
+   1,
+   11,
+   12,
+   13
+  ],
+  "m_challengeValue1": [
+   90.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue4": [
+   0,
+   0,
+   0,
+   21
+  ],
+  "m_challengeRewardDiamond": [
+   2,
+   1,
+   1,
+   1
+  ]
+ },
+ {
+  "m_challengeType": [
+   1,
+   14,
+   0,
+   0
+  ],
+  "m_challengeValue1": [
+   90.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue15": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "m_challengeValue2": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue3": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "m_challengeValue4": [
+   0,
+   21,
+   0,
+   0
+  ],
+  "m_challengeRewardDiamond": [
+   2,
+   1,
+   0,
+   0
+  ]
+ }
+]

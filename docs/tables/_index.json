@@ -1,0 +1,1318 @@
+{
+ "JissionDesc": {
+  "rows": 100,
+  "fields": [
+   "m_jissionType",
+   "m_reward",
+   "m_subParamFormNo",
+   "m_subParamInt",
+   "m_subParamMonsNo"
+  ],
+  "file": "JissionDesc.json"
+ },
+ "PiiDesc": {
+  "rows": 1108,
+  "fields": [
+   "m_CameraDistance",
+   "m_FormName",
+   "m_Formno",
+   "m_InitialCN",
+   "m_MegaStoneID",
+   "m_ModelOffsetX",
+   "m_ModelOffsetY",
+   "m_ModelOffsetZ",
+   "m_MonsName",
+   "m_Monsno",
+   "m_SortIndex",
+   "m_adventType",
+   "m_ap",
+   "m_appearanceSize",
+   "m_attackerBehaviorType",
+   "m_basename",
+   "m_beforeEvoMonsNo",
+   "m_boneType",
+   "m_bossWaza",
+   "m_bossWaza2",
+   "m_bpAdjust",
+   "m_categoryGeneration",
+   "m_categorySize",
+   "m_categoryWeight",
+   "m_dp",
+   "m_exclusiveBGM",
+   "m_form1ID",
+   "m_formFullLabel",
+   "m_generation",
+   "m_headElevMax",
+   "m_headElevMin",
+   "m_isFlier",
+   "m_isForbidden",
+   "m_kamaeAnmRate",
+   "m_limitHeadRotation",
+   "m_maxHP",
+   "m_megasinkaType",
+   "m_modelAssetBundleID",
+   "m_modelDiffSex",
+   "m_modelSizeCorrection",
+   "m_officialArtSexIsMale",
+   "m_partyAdventType",
+   "m_piiGradeUpType",
+   "m_pokeVoice",
+   "m_pokedexID_",
+   "m_rivalWaza",
+   "m_sexVector",
+   "m_spd",
+   "m_spdEnemy",
+   "m_testForCampaign",
+   "m_type1",
+   "m_type2",
+   "m_walkAnmRate",
+   "m_weight",
+   "m_zakoWaza"
+  ],
+  "file": "PiiDesc.json"
+ },
+ "StampCardDesc": {
+  "rows": 8,
+  "fields": [
+   "m_bonus",
+   "m_value"
+  ],
+  "file": "StampCardDesc.json"
+ },
+ "GenerationDesc": {
+  "rows": 10,
+  "fields": [
+   "m_chihoName",
+   "m_detail",
+   "m_isGeneration",
+   "m_name"
+  ],
+  "file": "GenerationDesc.json"
+ },
+ "MissionTypeDesc": {
+  "rows": 19,
+  "fields": [],
+  "file": "MissionTypeDesc.json"
+ },
+ "IslandDesc": {
+  "rows": 6220,
+  "fields": [
+   "m_capCP",
+   "m_dailyEntranceFee",
+   "m_groundType",
+   "m_idStr",
+   "m_isMilestone",
+   "m_islandFormNo",
+   "m_islandMonsNo",
+   "m_islandType",
+   "m_jissionID",
+   "m_journeyAreaPWT",
+   "m_journeyCloudMax",
+   "m_journeyCloudMin",
+   "m_journeyCondChartType",
+   "m_journeyCondFormNo",
+   "m_journeyCondMonsNo",
+   "m_journeyCondParam",
+   "m_journeyCondType",
+   "m_journeyDispProgressOrder",
+   "m_journeyNextRank",
+   "m_journeyProgressOrder",
+   "m_myslandChartType",
+   "m_name",
+   "m_nrushBigCoinPriceMultiple",
+   "m_nrushBonus",
+   "m_nrushCoinNumMultiple",
+   "m_nrushProgressOrder",
+   "m_nrushRank",
+   "m_nrushReward",
+   "m_star",
+   "m_targetBP",
+   "m_totemDifficulty"
+  ],
+  "file": "IslandDesc.json"
+ },
+ "PrefixEffectDesc": {
+  "rows": 414,
+  "fields": [
+   "m_coeff",
+   "m_description",
+   "m_group",
+   "m_monsNo",
+   "m_performance"
+  ],
+  "file": "PrefixEffectDesc.json"
+ },
+ "CategoryGenerationDesc": {
+  "rows": 9,
+  "fields": [
+   "m_name"
+  ],
+  "file": "CategoryGenerationDesc.json"
+ },
+ "UtensilDesc": {
+  "rows": 4,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName",
+   "m_description",
+   "m_gaiji",
+   "m_maxCount",
+   "m_name",
+   "m_priceDiamond"
+  ],
+  "file": "UtensilDesc.json"
+ },
+ "RankingRewardDesc": {
+  "rows": 213,
+  "fields": [
+   "m_evedefID",
+   "m_giftTypeID",
+   "m_maxTieRank",
+   "m_minTieRank",
+   "m_quantity"
+  ],
+  "file": "RankingRewardDesc.json"
+ },
+ "GroundDesc": {
+  "rows": 7,
+  "fields": [
+   "m_bgmAssign",
+   "m_cameraTargetLimit",
+   "m_idStr",
+   "m_mapPartsID",
+   "m_name",
+   "m_noticeMap",
+   "m_reflection",
+   "m_resultMap",
+   "m_reverb",
+   "m_scale",
+   "m_sceneParamID",
+   "m_stageAssetBundleID",
+   "m_totemReflection"
+  ],
+  "file": "GroundDesc.json"
+ },
+ "WazaRangeDesc": {
+  "rows": 16,
+  "fields": [
+   "m_autoAttackRange",
+   "m_circleType",
+   "m_findObjInAutoAimType",
+   "m_followAttacker",
+   "m_forwardType",
+   "m_teamBattleExtraInterval",
+   "m_undrop",
+   "m_useCenter",
+   "m_wazaHitTestType"
+  ],
+  "file": "WazaRangeDesc.json"
+ },
+ "GreetingMessageDesc": {
+  "rows": 30,
+  "fields": [
+   "m_greetingType",
+   "m_message",
+   "m_messages",
+   "m_msLabel",
+   "m_onStartup"
+  ],
+  "file": "GreetingMessageDesc.json"
+ },
+ "PrefixEffectCoeffDesc": {
+  "rows": 12,
+  "fields": [
+   "m_dispCoeff",
+   "m_name"
+  ],
+  "file": "PrefixEffectCoeffDesc.json"
+ },
+ "PdecoDesc": {
+  "rows": 39,
+  "fields": [
+   "m_effectID",
+   "m_formNo",
+   "m_iconAssetBundleID",
+   "m_iconAssetName",
+   "m_idStr",
+   "m_isValid",
+   "m_monsNo",
+   "m_name",
+   "m_pdecoType"
+  ],
+  "file": "PdecoDesc.json"
+ },
+ "EvepotDesc": {
+  "rows": 17,
+  "fields": [
+   "m_idStr",
+   "m_name"
+  ],
+  "file": "EvepotDesc.json"
+ },
+ "EvepotRewardLimitDesc": {
+  "rows": 4,
+  "fields": [],
+  "file": "EvepotRewardLimitDesc.json"
+ },
+ "EffectDesc": {
+  "rows": 1126,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName",
+   "m_emitterNode",
+   "m_followAngle",
+   "m_followPos",
+   "m_idStr",
+   "m_onMemory"
+  ],
+  "file": "EffectDesc.json"
+ },
+ "CombineChartDesc": {
+  "rows": 5,
+  "fields": [
+   "m_matchupType",
+   "m_type"
+  ],
+  "file": "CombineChartDesc.json"
+ },
+ "TeamBattleStageDesc": {
+  "rows": 8,
+  "fields": [
+   "m_bgmAssign",
+   "m_cubemap",
+   "m_evedefID",
+   "m_groundType",
+   "m_lightPreset",
+   "m_teamBattlePoint",
+   "m_timeLimit",
+   "m_weather"
+  ],
+  "file": "TeamBattleStageDesc.json"
+ },
+ "EvepotRewardDesc": {
+  "rows": 140,
+  "fields": [
+   "m_cost",
+   "m_equnitPrefixAddition0",
+   "m_equnitPrefixAddition1",
+   "m_equnitPrefixGrade",
+   "m_equnitUnitPrefix",
+   "m_evepotID",
+   "m_formNo",
+   "m_honorID",
+   "m_honorParamMonsNo",
+   "m_isRareColor",
+   "m_level",
+   "m_limitCount",
+   "m_limitID",
+   "m_monsNo",
+   "m_nickname",
+   "m_paraSex",
+   "m_pdecoID",
+   "m_prefixMaterial",
+   "m_quantity",
+   "m_rnd",
+   "m_socketCount",
+   "m_sortOrder",
+   "m_spSocketCount",
+   "m_typeID",
+   "m_utensilID",
+   "m_wazaID1",
+   "m_wazaID2"
+  ],
+  "file": "EvepotRewardDesc.json"
+ },
+ "GreetingTypeDesc": {
+  "rows": 6,
+  "fields": [
+   "m_name",
+   "m_onStartup"
+  ],
+  "file": "GreetingTypeDesc.json"
+ },
+ "MatchupDesc": {
+  "rows": 7,
+  "fields": [
+   "m_boss",
+   "m_player",
+   "m_ratio",
+   "m_teamBattle"
+  ],
+  "file": "MatchupDesc.json"
+ },
+ "TeamBattleRestrictionDesc": {
+  "rows": 3,
+  "fields": [
+   "m_name"
+  ],
+  "file": "TeamBattleRestrictionDesc.json"
+ },
+ "PiiGradeUpTypeDesc": {
+  "rows": 3,
+  "fields": [
+   "m_gradeMax",
+   "m_required"
+  ],
+  "file": "PiiGradeUpTypeDesc.json"
+ },
+ "WazaGetDesc": {
+  "rows": 1054,
+  "fields": [
+   "m_formNo",
+   "m_getLevel",
+   "m_monsNo"
+  ],
+  "file": "WazaGetDesc.json"
+ },
+ "AreaColorDesc": {
+  "rows": 7,
+  "fields": [
+   "m_b",
+   "m_g",
+   "m_r"
+  ],
+  "file": "AreaColorDesc.json"
+ },
+ "TeamBattleFormatDesc": {
+  "rows": 4,
+  "fields": [],
+  "file": "TeamBattleFormatDesc.json"
+ },
+ "SoundEffectAssignDesc": {
+  "rows": 107,
+  "fields": [
+   "m_idStr",
+   "m_se"
+  ],
+  "file": "SoundEffectAssignDesc.json"
+ },
+ "TrackInfoDesc": {
+  "rows": 52,
+  "fields": [
+   "m_category",
+   "m_name"
+  ],
+  "file": "TrackInfoDesc.json"
+ },
+ "MyslandDifficultyDesc": {
+  "rows": 2,
+  "fields": [
+   "m_islandRankOffset"
+  ],
+  "file": "MyslandDifficultyDesc.json"
+ },
+ "ConstClientDesc": {
+  "rows": 294,
+  "fields": [
+   "m_floatValue",
+   "m_intValue",
+   "m_name",
+   "m_stringValue",
+   "m_type"
+  ],
+  "file": "ConstClientDesc.json"
+ },
+ "PartyAdventTypeDesc": {
+  "rows": 6,
+  "fields": [
+   "m_ReactDist"
+  ],
+  "file": "PartyAdventTypeDesc.json"
+ },
+ "EvedefDesc": {
+  "rows": 59,
+  "fields": [
+   "m_assetBundleID",
+   "m_bannerAssetName",
+   "m_bond",
+   "m_bondOpenMessageDone",
+   "m_bondOpenNoticeDone",
+   "m_bondOpenRank",
+   "m_capCP",
+   "m_evedefType",
+   "m_evepotIDs",
+   "m_idStr",
+   "m_isTutorial",
+   "m_mainPokemonIllustAssetName",
+   "m_mainPokemonMonsNo",
+   "m_mchartAssetName",
+   "m_mchartCenterLat",
+   "m_mchartCenterLng",
+   "m_mchartCloudAssetName",
+   "m_mchartEffOcean",
+   "m_mchartName",
+   "m_mchartSizeMeter",
+   "m_name",
+   "m_noRanking",
+   "m_secretPokeFormNo",
+   "m_secretPokeMonsNo",
+   "m_teamBattleID",
+   "m_totemStunAttackOpenRank"
+  ],
+  "file": "EvedefDesc.json"
+ },
+ "IslandRankDesc": {
+  "rows": 101,
+  "fields": [
+   "m_RequiredPierreNum",
+   "m_areaUnlock",
+   "m_baseDropMoney",
+   "m_bossAPScale",
+   "m_bossDropBigMoney",
+   "m_bossDropMoney",
+   "m_bossHPScale",
+   "m_displayBP",
+   "m_dropCount2ExceedTargetBP",
+   "m_dropLevelUB",
+   "m_dropMaxStar",
+   "m_enemyAPScale",
+   "m_enemyDamageScale",
+   "m_enemyHPScale",
+   "m_enemyLevelLB",
+   "m_enemyLevelUB",
+   "m_forceDrop",
+   "m_leaderAPScale",
+   "m_leaderHPScale",
+   "m_maxSocketCount",
+   "m_minBP",
+   "m_name",
+   "m_partsNum",
+   "m_totemAPScale",
+   "m_totemHPScale"
+  ],
+  "file": "IslandRankDesc.json"
+ },
+ "TipsDesc": {
+  "rows": 9,
+  "fields": [
+   "m_illustrationID",
+   "m_text"
+  ],
+  "file": "TipsDesc.json"
+ },
+ "DoneFlagDesc": {
+  "rows": 164,
+  "fields": [
+   "m_canSetOff",
+   "m_name"
+  ],
+  "file": "DoneFlagDesc.json"
+ },
+ "MissionGroupDesc": {
+  "rows": 7,
+  "fields": [],
+  "file": "MissionGroupDesc.json"
+ },
+ "SpWazaDesc": {
+  "rows": 168,
+  "fields": [
+   "m_additionalCharge",
+   "m_assetName",
+   "m_chargeNum",
+   "m_effectID_Advent",
+   "m_effectID_Evacuate",
+   "m_effectID_Waza_Finish",
+   "m_effectID_Waza_Pii",
+   "m_effectID_Waza_Waza",
+   "m_formNo",
+   "m_gravitationalAcceleration",
+   "m_invincibleSec",
+   "m_monsNo",
+   "m_moveWazaEffect",
+   "m_scale",
+   "m_se_Advent",
+   "m_startCameraWithWaza",
+   "m_totalAtp",
+   "m_turnCameraSec",
+   "m_turnCameraTowardShooterDir",
+   "m_wazaID",
+   "m_xiiMotion_Advent",
+   "m_xiiMotion_Evacuate"
+  ],
+  "file": "SpWazaDesc.json"
+ },
+ "PrefixTypeDesc": {
+  "rows": 3,
+  "fields": [
+   "m_additionNum",
+   "m_dropEffectID",
+   "m_dropSE",
+   "m_name",
+   "m_sortOrder"
+  ],
+  "file": "PrefixTypeDesc.json"
+ },
+ "CategorySizeDesc": {
+  "rows": 6,
+  "fields": [
+   "m_name"
+  ],
+  "file": "CategorySizeDesc.json"
+ },
+ "StageDesc": {
+  "rows": 6396,
+  "fields": [
+   "m_TypeEfficacyRatioE2P",
+   "m_TypeEfficacyRatioP2E",
+   "m_X",
+   "m_Z",
+   "m_antiStyleType",
+   "m_cubemap",
+   "m_dropNumTypeID",
+   "m_formationType",
+   "m_groundType",
+   "m_isTutorial",
+   "m_leaderStaySec",
+   "m_lightPreset",
+   "m_stageType",
+   "m_targetCP",
+   "m_totemTimeLimit",
+   "m_unitPrefix",
+   "m_weakMonsNo",
+   "m_weakSpWazaID",
+   "m_weakStyleGear",
+   "m_weather"
+  ],
+  "file": "StageDesc.json"
+ },
+ "PiiSortTypeDesc": {
+  "rows": 11,
+  "fields": [
+   "m_isDefault",
+   "m_isValid",
+   "m_name",
+   "m_sortOrder"
+  ],
+  "file": "PiiSortTypeDesc.json"
+ },
+ "TeamBattleRuleDesc": {
+  "rows": 1,
+  "fields": [],
+  "file": "TeamBattleRuleDesc.json"
+ },
+ "PresetDesc": {
+  "rows": 7041,
+  "fields": [
+   "m_apOffset",
+   "m_doneFlag",
+   "m_eqbitCount",
+   "m_eqbitID",
+   "m_equnitPrefixAddition0",
+   "m_equnitPrefixAddition1",
+   "m_equnitPrefixGrade",
+   "m_equnitUnitPrefix",
+   "m_evedefID",
+   "m_formNo",
+   "m_isCurrentEvent",
+   "m_isRareColor",
+   "m_level",
+   "m_missionID",
+   "m_missionProgress",
+   "m_missionRewarded",
+   "m_monsNo",
+   "m_name",
+   "m_paraSex",
+   "m_pdecoBoxCount",
+   "m_pdecoBoxID",
+   "m_pdecoID",
+   "m_pierreCount",
+   "m_piiGrade",
+   "m_ppeEvedefID",
+   "m_presetIntType",
+   "m_presetIntTypeValue",
+   "m_progressIslandID",
+   "m_rnd",
+   "m_socketCount",
+   "m_spSocketCount",
+   "m_utensilCount",
+   "m_utensilID",
+   "m_wazaID1",
+   "m_wazaID2"
+  ],
+  "file": "PresetDesc.json"
+ },
+ "TitleDesc": {
+  "rows": 1,
+  "fields": [],
+  "file": "TitleDesc.json"
+ },
+ "PrefixGradeDesc": {
+  "rows": 255,
+  "fields": [
+   "m_name"
+  ],
+  "file": "PrefixGradeDesc.json"
+ },
+ "PrizeTypeDesc": {
+  "rows": 6,
+  "fields": [
+   "m_giftTypeID"
+  ],
+  "file": "PrizeTypeDesc.json"
+ },
+ "WazaDesc": {
+  "rows": 1028,
+  "fields": [
+   "m_LeadOneshotEffectID",
+   "m_Leanable_DEBUGMENU",
+   "m_OneshotEffectID",
+   "m_atp",
+   "m_atpSp",
+   "m_atpStageEnemy",
+   "m_atpsettei_DEBUGMENU",
+   "m_beatNum",
+   "m_beforeSp",
+   "m_blowNum",
+   "m_changeWID",
+   "m_chargeTime",
+   "m_criticalRate",
+   "m_debugTeamBattleTest",
+   "m_degAttacking",
+   "m_effectHeightAdjustToPlayer",
+   "m_effectID",
+   "m_fAfter",
+   "m_fAfterEnemy",
+   "m_fAttacking",
+   "m_fAttackingPose",
+   "m_fBefore",
+   "m_fBeforeEnemy",
+   "m_fNext",
+   "m_fixedDamage",
+   "m_fixedScale",
+   "m_friendlyFire",
+   "m_hitSE",
+   "m_hukitobasi",
+   "m_intervalDirDeg",
+   "m_knockPower",
+   "m_knockTime",
+   "m_learningDifficulty",
+   "m_lungeExecuting",
+   "m_lungeSpeed",
+   "m_motion",
+   "m_name",
+   "m_nextWID",
+   "m_noneHit",
+   "m_notChainByTap",
+   "m_rangeHWidth",
+   "m_rangeLength",
+   "m_rangeSpeed",
+   "m_rangeType",
+   "m_rangeVWidth",
+   "m_rotateEffectNum",
+   "m_rotateEndDeg",
+   "m_rotateStartDeg",
+   "m_rushDistance",
+   "m_shootNum",
+   "m_shootSE",
+   "m_sketchedWID",
+   "m_spStatAfterSelf",
+   "m_spStatObj",
+   "m_spStatRate",
+   "m_spStatRateSelf",
+   "m_spStatType",
+   "m_spStatTypeSelf",
+   "m_spWazaID",
+   "m_stamina",
+   "m_star",
+   "m_teamBattleDamageAdjuster",
+   "m_teamBattlePetrifiedMotionBefore",
+   "m_teamBattlePetrifiedSecAfter",
+   "m_teamBattlePetrifiedSecBefore",
+   "m_totalFrame",
+   "m_type"
+  ],
+  "file": "WazaDesc.json"
+ },
+ "ChestRarityDesc": {
+  "rows": 15,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName",
+   "m_assetNameOpened",
+   "m_assetRibbon",
+   "m_dropChestSE",
+   "m_getChestSE",
+   "m_idStr",
+   "m_name",
+   "m_tipsIconName",
+   "m_unlockHours"
+  ],
+  "file": "ChestRarityDesc.json"
+ },
+ "TutorialDiscovererDesc": {
+  "rows": 10,
+  "fields": [
+   "m_centerX",
+   "m_centerY",
+   "m_formNo",
+   "m_monsNo",
+   "m_radius"
+  ],
+  "file": "TutorialDiscovererDesc.json"
+ },
+ "GiftMessageDesc": {
+  "rows": 22,
+  "fields": [
+   "m_message",
+   "m_paramType"
+  ],
+  "file": "GiftMessageDesc.json"
+ },
+ "IllustrationDesc": {
+  "rows": 98,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName"
+  ],
+  "file": "IllustrationDesc.json"
+ },
+ "HonorDesc": {
+  "rows": 13,
+  "fields": [
+   "m_category",
+   "m_paramType",
+   "m_title"
+  ],
+  "file": "HonorDesc.json"
+ },
+ "PPEBattleParamMemberDesc": {
+  "rows": 6,
+  "fields": [
+   "m_forEqunitSelectorDetail",
+   "m_forPiiSelectorDetail",
+   "m_sortOrder"
+  ],
+  "file": "PPEBattleParamMemberDesc.json"
+ },
+ "EqunitSortTypeDesc": {
+  "rows": 12,
+  "fields": [
+   "m_isDefault",
+   "m_isDefaultM",
+   "m_isDefaultSp",
+   "m_isDefaultSpM",
+   "m_isValidNormal",
+   "m_isValidSp",
+   "m_name",
+   "m_onlyForMountTo",
+   "m_sortOrder"
+  ],
+  "file": "EqunitSortTypeDesc.json"
+ },
+ "TotemDifficultyDesc": {
+  "rows": 5,
+  "fields": [
+   "m_name"
+  ],
+  "file": "TotemDifficultyDesc.json"
+ },
+ "MissionBonusDesc": {
+  "rows": 9,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName",
+   "m_name"
+  ],
+  "file": "MissionBonusDesc.json"
+ },
+ "PrefixAdditionDesc": {
+  "rows": 175,
+  "fields": [
+   "m_description",
+   "m_ratioRare",
+   "m_ratioSuperRare",
+   "m_spStat",
+   "m_value",
+   "m_weight"
+  ],
+  "file": "PrefixAdditionDesc.json"
+ },
+ "CategoryShapeDesc": {
+  "rows": 1,
+  "fields": [],
+  "file": "CategoryShapeDesc.json"
+ },
+ "CategorySexDesc": {
+  "rows": 4,
+  "fields": [
+   "m_name",
+   "m_sex"
+  ],
+  "file": "CategorySexDesc.json"
+ },
+ "PrefixEffectGroupDesc": {
+  "rows": 10,
+  "fields": [],
+  "file": "PrefixEffectGroupDesc.json"
+ },
+ "QualityOfFpsDesc": {
+  "rows": 3,
+  "fields": [
+   "m_fps",
+   "m_isDefault",
+   "m_isEnergySaving"
+  ],
+  "file": "QualityOfFpsDesc.json"
+ },
+ "EqunitCategoryDesc": {
+  "rows": 5,
+  "fields": [
+   "m_gaiji"
+  ],
+  "file": "EqunitCategoryDesc.json"
+ },
+ "MiiPoseDesc": {
+  "rows": 11,
+  "fields": [
+   "m_animationClipName",
+   "m_assetBundleID",
+   "m_basename",
+   "m_name"
+  ],
+  "file": "MiiPoseDesc.json"
+ },
+ "ChestOpenOrderDesc": {
+  "rows": 7,
+  "fields": [
+   "m_pickup",
+   "m_sortNo"
+  ],
+  "file": "ChestOpenOrderDesc.json"
+ },
+ "DropNumTypeDesc": {
+  "rows": 3,
+  "fields": [
+   "m_boss"
+  ],
+  "file": "DropNumTypeDesc.json"
+ },
+ "CategoryColorDesc": {
+  "rows": 1,
+  "fields": [],
+  "file": "CategoryColorDesc.json"
+ },
+ "SKUDesc": {
+  "rows": 11,
+  "fields": [
+   "m_SKU",
+   "m_assetBundleID",
+   "m_assetName",
+   "m_detail",
+   "m_pt",
+   "m_skuType",
+   "m_subscriptionMinutes",
+   "m_subscriptionType",
+   "m_title"
+  ],
+  "file": "SKUDesc.json"
+ },
+ "AdvRankDesc": {
+  "rows": 101,
+  "fields": [
+   "m_NormalEqunitStoreSize",
+   "m_PPEStoreSize",
+   "m_SpEqunitStoreSize",
+   "m_exp"
+  ],
+  "file": "AdvRankDesc.json"
+ },
+ "TabDesc": {
+  "rows": 19,
+  "fields": [
+   "m_name"
+  ],
+  "file": "TabDesc.json"
+ },
+ "CategoryWeightDesc": {
+  "rows": 6,
+  "fields": [
+   "m_name"
+  ],
+  "file": "CategoryWeightDesc.json"
+ },
+ "TeamBattlePointDesc": {
+  "rows": 13,
+  "fields": [
+   "m_bonusPoint",
+   "m_hideDetail",
+   "m_maxCP",
+   "m_minCP",
+   "m_name",
+   "m_participationPoint",
+   "m_winningPoint"
+  ],
+  "file": "TeamBattlePointDesc.json"
+ },
+ "WelcalDesc": {
+  "rows": 5,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName",
+   "m_idStr",
+   "m_name",
+   "m_notificationBodyNormal",
+   "m_notificationBodyPokemon",
+   "m_succeedingWelcalID"
+  ],
+  "file": "WelcalDesc.json"
+ },
+ "EqunitFilterTypeDesc": {
+  "rows": 6,
+  "fields": [
+   "m_name",
+   "m_sortOrder"
+  ],
+  "file": "EqunitFilterTypeDesc.json"
+ },
+ "XiiMotionDesc": {
+  "rows": 597,
+  "fields": [
+   "m_boneType",
+   "m_filename",
+   "m_haveEyeAnm",
+   "m_inhibitRotateHead",
+   "m_isAttackSequence",
+   "m_name",
+   "m_transName"
+  ],
+  "file": "XiiMotionDesc.json"
+ },
+ "ConstDesc": {
+  "rows": 87,
+  "fields": [
+   "m_floatValue",
+   "m_intValue",
+   "m_name",
+   "m_stringValue",
+   "m_type"
+  ],
+  "file": "ConstDesc.json"
+ },
+ "ChallengeSetDesc": {
+  "rows": 7,
+  "fields": [
+   "m_challengeRewardDiamond",
+   "m_challengeType",
+   "m_challengeValue1",
+   "m_challengeValue15",
+   "m_challengeValue2",
+   "m_challengeValue3",
+   "m_challengeValue4"
+  ],
+  "file": "ChallengeSetDesc.json"
+ },
+ "TypeChartDesc": {
+  "rows": 19,
+  "fields": [
+   "m_matchupType",
+   "m_type"
+  ],
+  "file": "TypeChartDesc.json"
+ },
+ "EvepotRewardTypeDesc": {
+  "rows": 9,
+  "fields": [
+   "m_iconAssetBundleID",
+   "m_iconAssetName"
+  ],
+  "file": "EvepotRewardTypeDesc.json"
+ },
+ "JissionTypeDesc": {
+  "rows": 7,
+  "fields": [
+   "m_message"
+  ],
+  "file": "JissionTypeDesc.json"
+ },
+ "PrefixMaterialDesc": {
+  "rows": 253,
+  "fields": [
+   "m_assetBundleID",
+   "m_assetName",
+   "m_monsNo",
+   "m_name",
+   "m_piiIconAssetBundleID",
+   "m_piiIconAssetName",
+   "m_sortOrder"
+  ],
+  "file": "PrefixMaterialDesc.json"
+ },
+ "BGMDesc": {
+  "rows": 22,
+  "fields": [
+   "m_addVolume",
+   "m_assetName",
+   "m_idStr",
+   "m_loop"
+  ],
+  "file": "BGMDesc.json"
+ },
+ "GiftTypeDesc": {
+  "rows": 7,
+  "fields": [
+   "m_iconAssetBundleID",
+   "m_iconAssetName"
+  ],
+  "file": "GiftTypeDesc.json"
+ },
+ "PiiSpecialStatusDesc": {
+  "rows": 64,
+  "fields": [
+   "m_effectID1",
+   "m_effectID2",
+   "m_endSec",
+   "m_isStun",
+   "m_message",
+   "m_or",
+   "m_overwrite",
+   "m_param",
+   "m_priority",
+   "m_statusContents",
+   "m_stunMotion",
+   "m_teamBattleEndSec",
+   "m_teamBattleParam"
+  ],
+  "file": "PiiSpecialStatusDesc.json"
+ },
+ "SpWazaAdditionalChargeDesc": {
+  "rows": 2,
+  "fields": [
+   "m_levelMax",
+   "m_num"
+  ],
+  "file": "SpWazaAdditionalChargeDesc.json"
+ },
+ "SocketDesc": {
+  "rows": 3,
+  "fields": [
+   "m_dropRate"
+  ],
+  "file": "SocketDesc.json"
+ },
+ "TeamBattleDummyOpponentDesc": {
+  "rows": 561,
+  "fields": [],
+  "file": "TeamBattleDummyOpponentDesc.json"
+ },
+ "UnitPrefixDesc": {
+  "rows": 542,
+  "fields": [
+   "m_additionalPrefixEffect",
+   "m_chestOpenOrder",
+   "m_dropRatioChest",
+   "m_effectiveUnitPrefix",
+   "m_equnitCategory",
+   "m_equnitFilterType",
+   "m_hasDispBPCoeff",
+   "m_iconAssetBundleID",
+   "m_iconAssetName",
+   "m_iconScale",
+   "m_modelAssetBundleID",
+   "m_modelAssetName",
+   "m_name",
+   "m_piiIconAssetBundleID",
+   "m_piiIconAssetName",
+   "m_prefabIconAssetBundleID",
+   "m_prefabIconAssetName",
+   "m_prefixAddition",
+   "m_prefixAdditionTB",
+   "m_prefixEffect",
+   "m_prefixGradeUp",
+   "m_prefixMaterial",
+   "m_prefixType",
+   "m_sortOrder",
+   "m_spWazaID",
+   "m_wazaType"
+  ],
+  "file": "UnitPrefixDesc.json"
+ },
+ "MissionDesc": {
+  "rows": 2264,
+  "fields": [
+   "m_disclosureCondition",
+   "m_eqbitID",
+   "m_equnitPrefixAddition0",
+   "m_equnitPrefixAddition1",
+   "m_equnitPrefixGrade",
+   "m_equnitUnitPrefix",
+   "m_evedefID",
+   "m_group",
+   "m_message",
+   "m_missionType",
+   "m_num",
+   "m_pdecoID",
+   "m_reward",
+   "m_showAreaName",
+   "m_subParam",
+   "m_subParamFormNo",
+   "m_subParamMonsNo",
+   "m_subParamPokeWazaType",
+   "m_subParamStageID",
+   "m_subParamUnitPrefix",
+   "m_subParamWazaID",
+   "m_tabID",
+   "m_type",
+   "m_utensilID"
+  ],
+  "file": "MissionDesc.json"
+ },
+ "PiiAdditionalAbilityDesc": {
+  "rows": 7,
+  "fields": [
+   "m_description",
+   "m_spStat"
+  ],
+  "file": "PiiAdditionalAbilityDesc.json"
+ },
+ "PokeWazaTypeDesc": {
+  "rows": 19,
+  "fields": [
+   "m_colorB",
+   "m_colorG",
+   "m_colorR",
+   "m_gaiji",
+   "m_name"
+  ],
+  "file": "PokeWazaTypeDesc.json"
+ },
+ "SceneParamDesc": {
+  "rows": 17,
+  "fields": [
+   "m_LinearFogEnd",
+   "m_LinearFogStart",
+   "m_ambientEquatorColorA",
+   "m_ambientEquatorColorB",
+   "m_ambientEquatorColorG",
+   "m_ambientEquatorColorR",
+   "m_ambientGroundColorA",
+   "m_ambientGroundColorB",
+   "m_ambientGroundColorG",
+   "m_ambientGroundColorR",
+   "m_ambientIntensity",
+   "m_ambientMode",
+   "m_ambientSkyColorA",
+   "m_ambientSkyColorB",
+   "m_ambientSkyColorG",
+   "m_ambientSkyColorR",
+   "m_fog",
+   "m_fogColorA",
+   "m_fogColorB",
+   "m_fogColorG",
+   "m_fogColorR",
+   "m_fogDensity",
+   "m_fogMode",
+   "m_skyAssetBundleID",
+   "m_skyAssetName"
+  ],
+  "file": "SceneParamDesc.json"
+ },
+ "MapPartsDesc": {
+  "rows": 37,
+  "fields": [
+   "m_groundType",
+   "m_name",
+   "m_partsType",
+   "m_popRatio"
+  ],
+  "file": "MapPartsDesc.json"
+ },
+ "MissionMessageDesc": {
+  "rows": 45,
+  "fields": [
+   "m_hint",
+   "m_target"
+  ],
+  "file": "MissionMessageDesc.json"
+ },
+ "ChestTypeDesc": {
+  "rows": 559,
+  "fields": [
+   "m_chestRarity",
+   "m_evedefID"
+  ],
+  "file": "ChestTypeDesc.json"
+ },
+ "QualityOfResolutionDesc": {
+  "rows": 4,
+  "fields": [
+   "m_isDefault",
+   "m_isEnergySaving",
+   "m_lengthInvMulA",
+   "m_lengthInvMulI",
+   "m_lowResoEffectFillMag",
+   "m_minShortSide"
+  ],
+  "file": "QualityOfResolutionDesc.json"
+ },
+ "TeamBattleDesc": {
+  "rows": 41,
+  "fields": [
+   "m_generation",
+   "m_restrictionGeneration",
+   "m_restrictionSex",
+   "m_restrictionSize",
+   "m_restrictionWeight",
+   "m_sex",
+   "m_size",
+   "m_sortIndex",
+   "m_teamBattleFormat",
+   "m_teamNum",
+   "m_typeEfficacyRatio",
+   "m_wazaTypeAttackRatio",
+   "m_wazaTypeDefenceRatio",
+   "m_weight"
+  ],
+  "file": "TeamBattleDesc.json"
+ },
+ "SoundEffectDesc": {
+  "rows": 1231,
+  "fields": [
+   "m_addVolume",
+   "m_assetName",
+   "m_idStr",
+   "m_loop",
+   "m_threeD"
+  ],
+  "file": "SoundEffectDesc.json"
+ },
+ "BGMAssignDesc": {
+  "rows": 15,
+  "fields": [
+   "m_bgm"
+  ],
+  "file": "BGMAssignDesc.json"
+ },
+ "PrefixPerformanceDesc": {
+  "rows": 39,
+  "fields": [
+   "m_upRatio"
+  ],
+  "file": "PrefixPerformanceDesc.json"
+ },
+ "PrefixGradeUpDesc": {
+  "rows": 16,
+  "fields": [
+   "m_equivalentMaterial",
+   "m_levelMax",
+   "m_upgradeMaterial",
+   "m_upgradeMoney"
+  ],
+  "file": "PrefixGradeUpDesc.json"
+ },
+ "WelcalStepDesc": {
+  "rows": 29,
+  "fields": [
+   "m_WelcalID",
+   "m_chestTypeID",
+   "m_day",
+   "m_diamond",
+   "m_equnitPrefixGrade",
+   "m_equnitQuantity",
+   "m_equnitUnitPrefix",
+   "m_formNo",
+   "m_money",
+   "m_monsNo"
+  ],
+  "file": "WelcalStepDesc.json"
+ }
+}

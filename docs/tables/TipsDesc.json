@@ -1,0 +1,38 @@
+[
+ {
+  "m_illustrationID": 0,
+  "m_text": ""
+ },
+ {
+  "m_illustrationID": 32,
+  "m_text": "タップ長押しして離すと強力なタメ攻撃を撃てる"
+ },
+ {
+  "m_illustrationID": 33,
+  "m_text": "タイミングよくスワイプすると敵の攻撃をよけられる"
+ },
+ {
+  "m_illustrationID": 43,
+  "m_text": "SPパワーギアを装備して敵を倒しゲージがたまったら超強力なSP技を撃てる"
+ },
+ {
+  "m_illustrationID": 38,
+  "m_text": "パワーギアに対応した強化キットを使うことでパワーギアを強化できる"
+ },
+ {
+  "m_illustrationID": 62,
+  "m_text": "ポケモンを捕まえるほど、その種族が強くなっていく"
+ },
+ {
+  "m_illustrationID": 35,
+  "m_text": "技のタイプと技を受けるポケモンのタイプの相性によってダメージが変わる"
+ },
+ {
+  "m_illustrationID": 93,
+  "m_text": "自分が見つけたステージには、名前をつけることができる"
+ },
+ {
+  "m_illustrationID": 94,
+  "m_text": "海域の気球をタップすると、他の冒険者を見ることができる"
+ }
+]

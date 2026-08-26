@@ -3,3 +3,26 @@ have iOS/bgm/02
 have iOS/bgm/common
 have iOS/chest
 ok   iOS/cubemap (173445 B)
+ok   iOS/effects/eff (892551 B)
+ok   iOS/effects/waza (1211013 B)
+ok   iOS/eqbit-icons (153602 B)
+retry1 (0/1825932) iOS/equnit-icons
+ok   iOS/equnit-icons (1825932 B)
+ok   iOS/equnit-models (219210 B)
+ok   iOS/equnit-prefab-icons (3186576 B)
+retry1 (0/443140) iOS/evedef/tut
+ok   iOS/evedef/tut (443140 B)
+retry1 (47419/1076658) iOS/fonts/common
+ok   iOS/fonts/common (1076658 B)
+retry1 (0/20368345) iOS/fonts/sourcehansans.fontsjp
+ok   iOS/fonts/sourcehansans.fontsjp (20368345 B)
+ok   iOS/gift-icons (123696 B)
+ok   iOS/globaldata (56708 B)
+ok   iOS/illustrations/common (5276123 B)
+ok   iOS/illustrations/l10n.en-us (1353639 B)
+ok   iOS/iOS (5320 B)
+ok   iOS/lightpreset (669037 B)
+ok   iOS/mii (635643 B)
+ok   iOS/pdeco-icons (62818 B)
+ok   iOS/pii-icons-face/01rg (5075078 B)
+retry1 (0/3606565) iOS/pii-icons-face/02gs

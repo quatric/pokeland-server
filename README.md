@@ -120,9 +120,7 @@ is not trustworthy.
 ## Suggested next steps
 
 1. **Finish the mirror** (`tools/fetch_cdn.sh 1.6.0` — resumable, size-verified).
-2. **Crack open `iOS/tables`** (244 KB). It holds the stage/pokémon/drop tables the
-   server needs in order to answer `StartStage`, `EndStage` and `ChstgGetStage`
-   with real content instead of stubs. This is the highest-value single asset.
+2. ~~Crack open `iOS/tables`.~~ **Done** — see "Game data" below.
 3. **Implement the boot path** in order: `Login` → `EnterHome` → `CommitHome` →
    `GetMyUserProfile` → `ChstgGetStage` → `StartStage` → `EndStage`. That chain is
    what gets a client from the title screen into a battle.
@@ -131,6 +129,35 @@ is not trustworthy.
 5. **Stub the BaaS dependency.** The client talks to `baas.nintendo.com` for its
    bearer token; a revival needs that redirected to a local stand-in or the login
    path patched out.
+
+## Game data
+
+`iOS/tables` (244 KB) turned out to hold the entire master database: 103
+ScriptableObjects, one per table. The iOS build kept its serialized **type trees**,
+so the rows deserialize directly — no need to reconstruct type info from the IL2CPP
+dump. `tools/extract_tables.py` dumps all of them to `docs/tables/*.json` (26 MB),
+with `docs/tables/_index.json` listing row counts and field names.
+
+| table | rows | |
+|---|---|---|
+| `PresetDesc` | 7041 | |
+| `StageDesc` | 6396 | 1311 populated - stage layout, target CP, weather, weak type |
+| `IslandDesc` | 6220 | |
+| `MissionDesc` | 2264 | |
+| `PiiDesc` | 1108 | pokémon: types, HP/AP/DP, size/weight, evolution, moves |
+| `WazaDesc` | 1028 | moves |
+| `ChestTypeDesc` | 559 | |
+| `TypeChartDesc` | 19 | full 19x19 type-effectiveness matrix |
+| `ConstDesc` | 87 | global tuning constants |
+
+Spot-checked against real Pokémon data and correct: `m_Monsno` 1 = フシギダネ
+(Grass/Poison), 4 = ヒトカゲ, 25 = ピカチュウ, 150 = ミュウツー. Type ids are the
+game's own ordering (12 = Grass, 10 = Fire, 11 = Water, 13 = Electric,
+14 = Psychic); `TypeChartDesc` is authoritative, with `m_matchupType` 1..4 for
+immune / resisted / neutral / super-effective.
+
+This is what `StartStage`, `EndStage` and `ChstgGetStage` need to answer with real
+content instead of stubs.
 
 ## Notes on the Dragalia Lost comparison
 

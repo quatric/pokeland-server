@@ -1,0 +1,658 @@
+[
+ {
+  "m_canSetOff": 0,
+  "m_name": "NONE"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "LinkNAFirst"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstBattleDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstChallengeDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstClearedMessageDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstDropDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AttachGearDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NusiTargetBPDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ChallengeButtonEnabled"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "BtnHomeChestDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "StampCardDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ChallengeDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NusiTameDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Island2DescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ChangeIsland"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstFellowDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstFellowReunionDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstChestDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": ""
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FellowBattleReleased"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "MyslandPierreDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ByeToGearedPoke"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AttachGear"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "DetachGear"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstGoodbyeDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "PokemonButtonEnabled"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TameDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "YokeDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NusiTimeDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NextIslandDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "GearWithPiiDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "PowerGearForceDropDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "PowerGearDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "PowerGearGradeUpDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "KeyDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ChestDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Island3DescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "SPPowerGearAttachDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "SPPowerGearUsageDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "SPPowerGearNecessityDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "EventTabDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "BtnAdventurerDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "EventDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "MyslandDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialBattleResult"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialTopPokemon"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialNewPokemon"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ToIsland3Nusi"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Island4DescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialCopperSet"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialCopperGot"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "SPPowerGearDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ChestOpenDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TotemRush1_Opened"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstChangePiiDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NusiTargetBPDescriptionDone_2"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TypeMatchUpDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TicketDistributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AddNormalEqunitSocketButtonEnabled"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AddPPELevelEnabled"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Get5PokesDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterFirstBattleDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "BtnStageDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "BtnFinderDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TapChartDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "MyslandFinderDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterMyslandFinderDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TotemDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "CheckTotemDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TutorialDefeatLastTotem"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "DropChest"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "GoToTotemDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterFirstNusiBattleDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterSecondNusiBattleDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "UnlockDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_1_Stage_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_1_Stage_2_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_2_Stage_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_2_Stage_2_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_Stage_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_Stage_2_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_Stage_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_Stage_2_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_Stage_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_Stage_2_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_1_Pierre_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_1_Pierre_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_2_Pierre_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_2_Pierre_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_Pierre_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_Pierre_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_Pierre_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_Pierre_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_Pierre_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_Pierre_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_Mineral_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_Mineral_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_Mineral_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_Mineral_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_Mineral_1_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_Mineral_1_Distributed"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_1_AntiTotemDrop_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_2_AntiTotemDrop_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_3_AntiTotemDrop_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_4_AntiTotemDrop_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "IslandRank_5_AntiTotemDrop_Ready"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "CheckChallengeDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterFourthNusiBattleDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterLastNusiBattleDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NRushDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "EventNRushUnlocked"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "FirstNRushDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "SecondMyslandFinderDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "RevisitStageDone"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_1_1_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_1_2_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_2_1_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_2_2_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_3_1_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_3_2_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_4_1_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_4_2_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_5_1_BossDrop"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "Tutorial_5_2_BossDrop"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "DiscovererDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "ShopDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AutoAttackDescriptionDone"
+ },
+ {
+  "m_canSetOff": 1,
+  "m_name": "TutorialUpdateMyslandDiscoverers"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "LoopStageDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "MyslandFinderMessageDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Bug27441AutoRecoveryDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AfterUnlockedMessageDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Bug28114Compensate20190904Done01"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Bug28114Compensate20190904Done02"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Bug28114Compensate20190904Done03"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "Bug28114Compensate20190904Done04"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "PiiResetDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NormalSocketShapeDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TournamentUnlocked"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TmbtlDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "CompleteAllMchartMsgDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_26"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "EvedefSelectorFirstCheckDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "EvedefSelectorDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "AreaOpenDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "TmbtlSPEffectDescriptionDone"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_26"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_27"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_27"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_28"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_28"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_29"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_29"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_30"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_30"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_31"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_31"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_32"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_32"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_33"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_33"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenNoticed_34"
+ },
+ {
+  "m_canSetOff": 0,
+  "m_name": "NewAreaOpenMessageDone_34"
+ }
+]

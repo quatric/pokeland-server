@@ -1,0 +1,70 @@
+[
+ {
+  "m_idStr": "NONE",
+  "m_name": ""
+ },
+ {
+  "m_idStr": "TeamBattle_001",
+  "m_name": "Lアチャモ杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_002",
+  "m_name": "Lミュウツー杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_003",
+  "m_name": "Lカイオーガ杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_DUMMY",
+  "m_name": "Lダミーポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_DUMMY2",
+  "m_name": "Lダミーポイント2"
+ },
+ {
+  "m_idStr": "TeamBattle_004",
+  "m_name": "Lパラセクト杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_005",
+  "m_name": "Lシェイミ杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_006",
+  "m_name": "Lジガルデ杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_007",
+  "m_name": "Lコバルオン杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_008",
+  "m_name": "Lグラードン杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_009",
+  "m_name": "Lイベルタル杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_010",
+  "m_name": "Lゼクロム杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_011",
+  "m_name": "Lディアンシー杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_012",
+  "m_name": "Lアーゴヨン杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_013",
+  "m_name": "Lルナアーラ杯のポイント"
+ },
+ {
+  "m_idStr": "TeamBattle_014",
+  "m_name": "Lアルセウス杯のポイント"
+ }
+]

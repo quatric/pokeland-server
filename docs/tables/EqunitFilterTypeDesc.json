@@ -1,0 +1,26 @@
+[
+ {
+  "m_name": "",
+  "m_sortOrder": 0
+ },
+ {
+  "m_name": "攻撃力アップ一覧",
+  "m_sortOrder": 1
+ },
+ {
+  "m_name": "タイプアップ一覧",
+  "m_sortOrder": 2
+ },
+ {
+  "m_name": "種族ブースト一覧",
+  "m_sortOrder": 3
+ },
+ {
+  "m_name": "SP技一覧",
+  "m_sortOrder": 4
+ },
+ {
+  "m_name": "バトル補助一覧",
+  "m_sortOrder": 5
+ }
+]

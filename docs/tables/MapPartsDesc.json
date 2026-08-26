@@ -1,0 +1,224 @@
+[
+ {
+  "m_groundType": 0,
+  "m_partsType": 0,
+  "m_popRatio": 0.0,
+  "m_name": ""
+ },
+ {
+  "m_groundType": 1,
+  "m_partsType": 1,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_Start"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_LeftLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_RightLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_StraightMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 3,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_BossMini"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 4,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_Boss"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 5,
+  "m_popRatio": 1.0,
+  "m_name": "Beach_End"
+ },
+ {
+  "m_groundType": 2,
+  "m_partsType": 1,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_Start"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_LeftLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_RightLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_StraightMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 3,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_BossMini"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 4,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_Boss"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 5,
+  "m_popRatio": 1.0,
+  "m_name": "Cave_End"
+ },
+ {
+  "m_groundType": 3,
+  "m_partsType": 1,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_Start"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_LeftLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_RightLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_StraightMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 3,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_BossMini"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 4,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_Boss"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 5,
+  "m_popRatio": 1.0,
+  "m_name": "Forest_End"
+ },
+ {
+  "m_groundType": 4,
+  "m_partsType": 1,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_Start"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_LeftLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_RightLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_StraightMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 3,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_BossMini"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 4,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_Boss"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 5,
+  "m_popRatio": 1.0,
+  "m_name": "Grassland_End"
+ },
+ {
+  "m_groundType": 5,
+  "m_partsType": 1,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_Start"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_LeftLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_RightLooseCurveMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 2,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_StraightMiddle"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 3,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_BossMini"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 4,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_Boss"
+ },
+ {
+  "m_groundType": 0,
+  "m_partsType": 5,
+  "m_popRatio": 1.0,
+  "m_name": "Tower_End"
+ },
+ {
+  "m_groundType": 6,
+  "m_partsType": 1,
+  "m_popRatio": 1.0,
+  "m_name": "BattleRuin_01"
+ }
+]

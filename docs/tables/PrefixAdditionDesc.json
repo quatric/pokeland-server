@@ -1,0 +1,1402 @@
+[
+ {
+  "m_description": "",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ポケモンの自動攻撃時の連射性能が上がる",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 2.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "敵を倒すとHPが回復する(小)",
+  "m_weight": 60,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.5,
+  "m_value": 0.009999999776482582,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ばつぐん時に与えるダメージが上がる(小)",
+  "m_weight": 60,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.5,
+  "m_value": 0.019999999552965164,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "★が2以下のわざの与えるダメージが上がる(小)",
+  "m_weight": 60,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.5,
+  "m_value": 1.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "攻撃で飛ばされる効果を、ときどき無効化する(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "動きの止められる効果を、ときどき無効化する(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "回避動作時の硬直時間が短くなる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "回避動作時の移動距離が長くなる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "攻撃力が上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.009999999776482582,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "急所ダメージが上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.05000000074505806,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "急所率が上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.009999999776482582,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "わざが早く出る(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざの与えるダメージが上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.019999999552965164,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "HPが増加する(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 500.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "被ダメージを軽減する(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 5.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく与えるダメージが上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.05000000074505806,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく急所ダメージが上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.25,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく急所率が上がる(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.05000000074505806,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらくHPが回復する(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく被ダメージを軽減する(小)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 1.0,
+  "m_value": 0.25,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "敵を倒すとHPが回復する(中)",
+  "m_weight": 60,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.019999999552965164,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ばつぐん時に与えるダメージが上がる(中)",
+  "m_weight": 60,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.03999999910593033,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "★が2以下のわざの与えるダメージが上がる(中)",
+  "m_weight": 60,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.4000000059604645,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "攻撃で飛ばされる効果を、ときどき無効化する(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.4000000059604645,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "動きの止められる効果を、ときどき無効化する(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.4000000059604645,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "回避動作時の硬直時間が短くなる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "回避動作時の移動距離が長くなる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "攻撃力が上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.019999999552965164,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "急所ダメージが上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "急所率が上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.019999999552965164,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "わざが早く出る(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざの与えるダメージが上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.03999999910593033,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "HPが増加する(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 1000.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "被ダメージを軽減する(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 10.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく与えるダメージが上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく急所ダメージが上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.5,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく急所率が上がる(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらくHPが回復する(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タメわざ後、しばらく被ダメージを軽減する(中)",
+  "m_weight": 10,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.5,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダミー",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "一定時間、敵の攻撃力を下げて、ダメージを与えつづける",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 49
+ },
+ {
+  "m_description": "一定時間、敵にダメージを与えつづける",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 50
+ },
+ {
+  "m_description": "一定時間、敵を移動できなくして、ダメージを与えつづける",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 51
+ },
+ {
+  "m_description": "一定時間、敵の行動をとめる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 52
+ },
+ {
+  "m_description": "一定時間、敵の行動をとめる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 53
+ },
+ {
+  "m_description": "一定時間、敵の行動をとめる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 54
+ },
+ {
+  "m_description": "一定時間、敵を混乱させる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 55
+ },
+ {
+  "m_description": "一定時間、敵の攻撃力を下げる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 56
+ },
+ {
+  "m_description": "一定時間、敵の防御力を下げる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 57
+ },
+ {
+  "m_description": "一定時間、攻撃力が上がる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 58
+ },
+ {
+  "m_description": "一定時間、急所率が上がる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 59
+ },
+ {
+  "m_description": "一定時間、SPわざのメーターがたまりやすくなる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 60
+ },
+ {
+  "m_description": "一定時間、敵に与えるダメージが増えつづける",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 61
+ },
+ {
+  "m_description": "ステージ開始時からSPわざが使える",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ランダムな大きさのダメージを与える",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.5,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "眠っている敵に大ダメージを与えるが、敵を起こしてしまう",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 2.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "大ダメージを与えるが、自分のHPが減ってしまう",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "特大ダメージを与えるが、自分のHPが1になってしまう",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "大ダメージを与えるが、一定時間、移動できなくなってしまう",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 62
+ },
+ {
+  "m_description": "敵を「まひ」「やけど」「こおり」いずれかの状態にする",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.0,
+  "m_spStat": 63
+ },
+ {
+  "m_description": "やけど",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 49
+ },
+ {
+  "m_description": "やけど",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 49
+ },
+ {
+  "m_description": "どく",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 50
+ },
+ {
+  "m_description": "どく",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 50
+ },
+ {
+  "m_description": "いどうふのう",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 51
+ },
+ {
+  "m_description": "いどうふのう",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 51
+ },
+ {
+  "m_description": "まひ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 52
+ },
+ {
+  "m_description": "まひ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 52
+ },
+ {
+  "m_description": "ひるみ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.07999999821186066,
+  "m_spStat": 53
+ },
+ {
+  "m_description": "ひるみ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.23999999463558197,
+  "m_spStat": 53
+ },
+ {
+  "m_description": "こおり",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.07999999821186066,
+  "m_spStat": 54
+ },
+ {
+  "m_description": "こおり",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.23999999463558197,
+  "m_spStat": 54
+ },
+ {
+  "m_description": "混乱",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 55
+ },
+ {
+  "m_description": "混乱",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 55
+ },
+ {
+  "m_description": "攻撃力ダウン",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 56
+ },
+ {
+  "m_description": "攻撃力ダウン",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 56
+ },
+ {
+  "m_description": "防御力ダウン",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 57
+ },
+ {
+  "m_description": "防御力ダウン",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 57
+ },
+ {
+  "m_description": "相手数でダメージ増加",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.07999999821186066,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "相手数でダメージ増加",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.23999999463558197,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "１回目の攻撃がタメ時間の短いタメ攻撃になる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "１回目の攻撃がタメ時間の短いタメ攻撃になる",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.07999999821186066,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "当たるたびに敵に与えるダメージが増える",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.019999999552965164,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "当たるたびに敵に与えるダメージが増える",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.05999999865889549,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダメージ増＆反動ダメージ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ダメージ増＆反動ダメージ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "まひorやけどorこおり",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10000000149011612,
+  "m_spStat": 63
+ },
+ {
+  "m_description": "まひorやけどorこおり",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.30000001192092896,
+  "m_spStat": 63
+ },
+ {
+  "m_description": "ダメージ増＆反動ダメージ＆まひ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.18000000715255737,
+  "m_spStat": 52
+ },
+ {
+  "m_description": "ダメージ増＆反動ダメージ＆まひ",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.5400000214576721,
+  "m_spStat": 52
+ },
+ {
+  "m_description": "仲間回復",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.017000000923871994,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "仲間回復",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.050999999046325684,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "はやわざ強化（技インターバル減・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.03999999910593033,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "はやわざ強化（技インターバル減・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.11999999731779099,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ためアップ強化（ノックバックなし・ダメージ増・タメ時間増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.10999999940395355,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ためアップ強化（ノックバックなし・ダメージ増・タメ時間増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.33000001311302185,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ロングレンジ強化（離れて攻撃・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.009999999776482582,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ロングレンジ強化（離れて攻撃・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.029999999329447746,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ショートレンジ強化（ノックバックなし・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.07999999821186066,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ショートレンジ強化（ノックバックなし・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.23999999463558197,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タフネス強化(HP自動回復)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.012000000104308128,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "タフネス強化(HP自動回復)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.035999998450279236,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ホーミング技強化(ホーミング性能アップ・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.07000000029802322,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "ホーミング技強化(ホーミング性能アップ・ダメージ増）",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20999999344348907,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSはやわざ(はやわざ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSはやわざ(はやわざ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSためアップ(ためアップ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSためアップ(ためアップ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSロングレンジ(ロングレンジ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSロングレンジ(ロングレンジ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSショートレンジ(ショートレンジ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSショートレンジ(ショートレンジ狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSタフネス(タフネス狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.20000000298023224,
+  "m_spStat": 0
+ },
+ {
+  "m_description": "VSタフネス(タフネス狙い・ダメージ増)",
+  "m_weight": 0,
+  "m_ratioRare": 0.0,
+  "m_ratioSuperRare": 0.0,
+  "m_value": 0.6000000238418579,
+  "m_spStat": 0
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "m_isGeneration": 0,
+  "m_name": "未設定",
+  "m_detail": "(未設定)",
+  "m_chihoName": ""
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ポケモン赤緑",
+  "m_detail": "ポケットモンスター 赤緑",
+  "m_chihoName": "カントー"
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ポケモン金銀",
+  "m_detail": "ポケットモンスター 金銀",
+  "m_chihoName": "ジョウト"
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ルビー・サファイア",
+  "m_detail": "ポケットモンスター ルビー・サファイア",
+  "m_chihoName": "ホウエン"
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ダイヤモンド・パール",
+  "m_detail": "ポケットモンスター ダイヤモンド・パール",
+  "m_chihoName": "シンオウ"
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ブラック・ホワイト",
+  "m_detail": "ポケットモンスター ブラック・ホワイト",
+  "m_chihoName": "イッシュ"
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ポケモンXY",
+  "m_detail": "ポケットモンスター XY",
+  "m_chihoName": "カロス"
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "サン・ムーン",
+  "m_detail": "ポケットモンスター サン・ムーン",
+  "m_chihoName": "アローラ"
+ },
+ {
+  "m_isGeneration": 0,
+  "m_name": "(この中では)このゲームが初めて",
+  "m_detail": "このゲームが初めて",
+  "m_chihoName": ""
+ },
+ {
+  "m_isGeneration": 1,
+  "m_name": "ソード・シールド",
+  "m_detail": "ポケットモンスター ソード・シールド",
+  "m_chihoName": "ガラル"
+ }
+]

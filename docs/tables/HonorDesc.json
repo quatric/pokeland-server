@@ -1,0 +1,67 @@
+[
+ {
+  "m_title": "",
+  "m_paramType": 0,
+  "m_category": ""
+ },
+ {
+  "m_title": "新米冒険者",
+  "m_paramType": 0,
+  "m_category": ""
+ },
+ {
+  "m_title": "{0}調査員",
+  "m_paramType": 1,
+  "m_category": "ポケモン調査員"
+ },
+ {
+  "m_title": "究極の調査員",
+  "m_paramType": 0,
+  "m_category": ""
+ },
+ {
+  "m_title": "{0}コレクター",
+  "m_paramType": 1,
+  "m_category": "ポケモンコレクター"
+ },
+ {
+  "m_title": "究極のコレクター",
+  "m_paramType": 0,
+  "m_category": ""
+ },
+ {
+  "m_title": "{0}マスター",
+  "m_paramType": 1,
+  "m_category": "ポケモンマスター"
+ },
+ {
+  "m_title": "究極のマスター",
+  "m_paramType": 0,
+  "m_category": ""
+ },
+ {
+  "m_title": "歴戦の猛者",
+  "m_paramType": 0,
+  "m_category": ""
+ },
+ {
+  "m_title": "L{0}杯の覇者",
+  "m_paramType": 1,
+  "m_category": "バトルロイヤルの覇者"
+ },
+ {
+  "m_title": "L{0}杯ルーキー",
+  "m_paramType": 1,
+  "m_category": "バトルロイヤルルーキー"
+ },
+ {
+  "m_title": "L{0}コレクター",
+  "m_paramType": 2,
+  "m_category": "海域の冒険王"
+ },
+ {
+  "m_title": "Lポケモンコレクター",
+  "m_paramType": 0,
+  "m_category": "世界の冒険王"
+ }
+]

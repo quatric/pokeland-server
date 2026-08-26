@@ -1,0 +1,134 @@
+[
+ {
+  "m_idStr": "NONE",
+  "m_assetName": "",
+  "m_addVolume": 0.0,
+  "m_loop": 0
+ },
+ {
+  "m_idStr": "STAGE_FOREST",
+  "m_assetName": "stage_forest",
+  "m_addVolume": -0.4000000059604645,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "STAGE_ICE_MOUNTAIN",
+  "m_assetName": "stage_ice_mountain",
+  "m_addVolume": -0.4000000059604645,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "STAGE_DASHBGM5",
+  "m_assetName": "dashbgm5_loop",
+  "m_addVolume": -0.3700000047683716,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "BOSS",
+  "m_assetName": "BGM_BOSS",
+  "m_addVolume": -0.04699999839067459,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "BOSS2",
+  "m_assetName": "boss4",
+  "m_addVolume": -0.3540000021457672,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "MUSIC04",
+  "m_assetName": "music04",
+  "m_addVolume": -0.24400000274181366,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "MUSIC06",
+  "m_assetName": "music06",
+  "m_addVolume": -0.38600000739097595,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "YOUWIN",
+  "m_assetName": "BGM_YOUWIN_loop",
+  "m_addVolume": -0.3499999940395355,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "LOSE",
+  "m_assetName": "BGM_LOSE",
+  "m_addVolume": -0.4410000145435333,
+  "m_loop": 0
+ },
+ {
+  "m_idStr": "BATTLE_ROYALE",
+  "m_assetName": "battle_royal6",
+  "m_addVolume": -0.4000000059604645,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "RAN_BR_CLEAR",
+  "m_assetName": "BGM_RESULT_BATTLEROYAL_loop",
+  "m_addVolume": -0.4090000092983246,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "FIELD1",
+  "m_assetName": "field1_2_r8b",
+  "m_addVolume": -0.4000000059604645,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "BEFORE_BATTLEROYAL",
+  "m_assetName": "BGM_BEFORE_BATTLEROYAL_loop_short",
+  "m_addVolume": -0.20000000298023224,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "MUSIC24",
+  "m_assetName": "music24",
+  "m_addVolume": -0.5590000152587891,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "POKELAND_MUSIC02",
+  "m_assetName": "pokeland_music02",
+  "m_addVolume": -0.6499999761581421,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "ITEM",
+  "m_assetName": "item",
+  "m_addVolume": -0.6000000238418579,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "KIRAKIRA",
+  "m_assetName": "wind_chime_normalize_cn5",
+  "m_addVolume": -0.8999999761581421,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "FANFARE_BIG",
+  "m_assetName": "FANFARE_BIG_speed",
+  "m_addVolume": -0.24400000274181366,
+  "m_loop": 0
+ },
+ {
+  "m_idStr": "POKELAND_MUSIC02_ORIGIN",
+  "m_assetName": "pokeland_music02_origin",
+  "m_addVolume": -0.6499999761581421,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "MEWTWO_THEME",
+  "m_assetName": "BGM_MEWTWO_THEME_loop",
+  "m_addVolume": -0.05999999865889549,
+  "m_loop": 1
+ },
+ {
+  "m_idStr": "COMPETITION_BATTLE_ROYALE",
+  "m_assetName": "team_battle",
+  "m_addVolume": -0.4000000059604645,
+  "m_loop": 1
+ }
+]

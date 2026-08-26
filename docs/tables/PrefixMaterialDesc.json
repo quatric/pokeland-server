@@ -1,0 +1,2279 @@
+[
+ {
+  "m_name": "",
+  "m_sortOrder": 0,
+  "m_assetBundleID": 0,
+  "m_assetName": "",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "マルチ強化キット",
+  "m_sortOrder": 1,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_MULTI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ディフェンスの強化キット",
+  "m_sortOrder": 2,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_ARMOR_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "タフネスの強化キット",
+  "m_sortOrder": 3,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_HP_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "はやわざの強化キット",
+  "m_sortOrder": 4,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_ATTACKSPEED_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ノーマルわざプラスの強化キット",
+  "m_sortOrder": 5,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_NORMAL_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "かくとうわざプラスの強化キット",
+  "m_sortOrder": 6,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_BATTLE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ひこうわざプラスの強化キット",
+  "m_sortOrder": 7,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_HIKOU_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "どくわざプラスの強化キット",
+  "m_sortOrder": 8,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POISON_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "じめんわざプラスの強化キット",
+  "m_sortOrder": 9,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_JIMEN_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "いわわざプラスの強化キット",
+  "m_sortOrder": 10,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_IWA_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "むしわざプラスの強化キット",
+  "m_sortOrder": 11,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_MUSHI_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ゴーストわざプラスの強化キット",
+  "m_sortOrder": 12,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_GHOST_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "はがねわざプラスの強化キット",
+  "m_sortOrder": 13,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_METAL_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ほのおわざプラスの強化キット",
+  "m_sortOrder": 14,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_FIRE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "みずわざプラスの強化キット",
+  "m_sortOrder": 15,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_WATER_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "くさわざプラスの強化キット",
+  "m_sortOrder": 16,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_KUSA_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "でんきわざプラスの強化キット",
+  "m_sortOrder": 17,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_ELECTRIC_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "エスパーわざプラスの強化キット",
+  "m_sortOrder": 18,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "こおりわざプラスの強化キット",
+  "m_sortOrder": 19,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_KOORI_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ドラゴンわざプラスの強化キット",
+  "m_sortOrder": 20,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_DRAGON_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "あくわざプラスの強化キット",
+  "m_sortOrder": 21,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_AKU_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "フェアリーわざプラスの強化キット",
+  "m_sortOrder": 22,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_FAIRY_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ノーマルわざアップの強化キット",
+  "m_sortOrder": 23,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_NORMAL_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "かくとうわざアップの強化キット",
+  "m_sortOrder": 24,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_BATTLE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ひこうわざアップの強化キット",
+  "m_sortOrder": 25,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_HIKOU_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "どくわざアップの強化キット",
+  "m_sortOrder": 26,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POISON_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "じめんわざアップの強化キット",
+  "m_sortOrder": 27,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_JIMEN_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "いわわざアップの強化キット",
+  "m_sortOrder": 28,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_IWA_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "むしわざアップの強化キット",
+  "m_sortOrder": 29,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_MUSHI_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ゴーストわざアップの強化キット",
+  "m_sortOrder": 30,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_GHOST_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "はがねわざアップの強化キット",
+  "m_sortOrder": 31,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_METAL_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ほのおわざアップの強化キット",
+  "m_sortOrder": 32,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_FIRE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "みずわざアップの強化キット",
+  "m_sortOrder": 33,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_WATER_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "くさわざアップの強化キット",
+  "m_sortOrder": 34,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_KUSA_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "でんきわざアップの強化キット",
+  "m_sortOrder": 35,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_ELECTRIC_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "エスパーわざアップの強化キット",
+  "m_sortOrder": 36,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "こおりわざアップの強化キット",
+  "m_sortOrder": 37,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_KOORI_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ドラゴンわざアップの強化キット",
+  "m_sortOrder": 38,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_DRAGON_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "あくわざアップの強化キット",
+  "m_sortOrder": 39,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_AKU_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "フェアリーわざアップの強化キット",
+  "m_sortOrder": 40,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_FAIRY_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_41",
+  "m_sortOrder": 41,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "クリティカルの強化キット",
+  "m_sortOrder": 42,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_CRITICAL_RATE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ノーマルわざスマッシュの強化キット",
+  "m_sortOrder": 43,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_NORMAL_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "かくとうわざスマッシュの強化キット",
+  "m_sortOrder": 44,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_BATTLE_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ひこうわざスマッシュの強化キット",
+  "m_sortOrder": 45,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_HIKOU_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "どくわざスマッシュの強化キット",
+  "m_sortOrder": 46,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POISON_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "じめんわざスマッシュの強化キット",
+  "m_sortOrder": 47,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_JIMEN_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "いわわざスマッシュの強化キット",
+  "m_sortOrder": 48,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_IWA_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "むしわざスマッシュの強化キット",
+  "m_sortOrder": 49,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_MUSHI_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ゴーストわざスマッシュの強化キット",
+  "m_sortOrder": 50,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_GHOST_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "はがねわざスマッシュの強化キット",
+  "m_sortOrder": 51,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_METAL_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ほのおわざスマッシュの強化キット",
+  "m_sortOrder": 52,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_FIRE_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "みずわざスマッシュの強化キット",
+  "m_sortOrder": 53,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_WATER_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "くさわざスマッシュの強化キット",
+  "m_sortOrder": 54,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_KUSA_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "でんきわざスマッシュの強化キット",
+  "m_sortOrder": 55,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_ELECTRIC_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "エスパーわざスマッシュの強化キット",
+  "m_sortOrder": 56,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "こおりわざスマッシュの強化キット",
+  "m_sortOrder": 57,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_KOORI_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ドラゴンわざスマッシュの強化キット",
+  "m_sortOrder": 58,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_DRAGON_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "あくわざスマッシュの強化キット",
+  "m_sortOrder": 59,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_AKU_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "フェアリーわざスマッシュの強化キット",
+  "m_sortOrder": 60,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_FAIRY_SMASH",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ためアップの強化キット",
+  "m_sortOrder": 61,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "オートの強化キット",
+  "m_sortOrder": 62,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_AUTO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "アタックプラスの強化キット",
+  "m_sortOrder": 63,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_BP_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ロングレンジの強化キット",
+  "m_sortOrder": 64,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_LONG_RANGE",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ショートレンジの強化キット",
+  "m_sortOrder": 65,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SHORT_RANGE",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ミュウツープラスの強化キット",
+  "m_sortOrder": 66,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 150,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "150_U_00"
+ },
+ {
+  "m_name": "グソクムシャプラスの強化キット",
+  "m_sortOrder": 67,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 768,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "768_U_00"
+ },
+ {
+  "m_name": "フシギバナプラスの強化キット",
+  "m_sortOrder": 68,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 3,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "003_M_00"
+ },
+ {
+  "m_name": "リザードンプラスの強化キット",
+  "m_sortOrder": 69,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 6,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "006_U_00"
+ },
+ {
+  "m_name": "カメックスプラスの強化キット",
+  "m_sortOrder": 70,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 9,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "009_U_00"
+ },
+ {
+  "m_name": "ゲッコウガプラスの強化キット",
+  "m_sortOrder": 71,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 658,
+  "m_piiIconAssetBundleID": 38,
+  "m_piiIconAssetName": "658_U_00"
+ },
+ {
+  "m_name": "DUMMY_72",
+  "m_sortOrder": 72,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_73",
+  "m_sortOrder": 73,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_74",
+  "m_sortOrder": 74,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_75",
+  "m_sortOrder": 75,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_76",
+  "m_sortOrder": 76,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_77",
+  "m_sortOrder": 77,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_78",
+  "m_sortOrder": 78,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_79",
+  "m_sortOrder": 79,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_80",
+  "m_sortOrder": 80,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_81",
+  "m_sortOrder": 81,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_82",
+  "m_sortOrder": 82,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_83",
+  "m_sortOrder": 83,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_84",
+  "m_sortOrder": 84,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_85",
+  "m_sortOrder": 85,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_86",
+  "m_sortOrder": 86,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_87",
+  "m_sortOrder": 87,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_88",
+  "m_sortOrder": 88,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_89",
+  "m_sortOrder": 89,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_90",
+  "m_sortOrder": 90,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_91",
+  "m_sortOrder": 91,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_92",
+  "m_sortOrder": 92,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_93",
+  "m_sortOrder": 93,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_94",
+  "m_sortOrder": 94,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_95",
+  "m_sortOrder": 95,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_96",
+  "m_sortOrder": 96,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_97",
+  "m_sortOrder": 97,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_98",
+  "m_sortOrder": 98,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_TAME_DAMAGE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPアシストパワーの強化キット",
+  "m_sortOrder": 175,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_ASISUTOPAWAA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPぎんいろのかぜの強化キット",
+  "m_sortOrder": 176,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_GINIRONOKAZE",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPかえんほうしゃの強化キット",
+  "m_sortOrder": 101,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KAENHOUSYA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPうずしおの強化キット",
+  "m_sortOrder": 102,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_UZUSIO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPボルテッカーの強化キット",
+  "m_sortOrder": 103,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_BORUTEKKAA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPはっぱカッターの強化キット",
+  "m_sortOrder": 104,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HAPPAKATTAA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPばくれつパンチの強化キット",
+  "m_sortOrder": 105,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_BAKURETUPANTI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPだいばくはつの強化キット",
+  "m_sortOrder": 106,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DAIBAKUHATU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPヘドロウェーブの強化キット",
+  "m_sortOrder": 107,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HEDOROWHEEBU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPつばさでうつの強化キット",
+  "m_sortOrder": 108,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_TUBASADEUTU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPサイコキネシスの強化キット",
+  "m_sortOrder": 109,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SAIKOKINESISU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPマグニチュードの強化キット",
+  "m_sortOrder": 110,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MAGUNITYUUDO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPシグナルビームの強化キット",
+  "m_sortOrder": 111,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SIGUNARUBIIMU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPロックブラストの強化キット",
+  "m_sortOrder": 112,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_ROKKUBURASUTO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPれいとうビームの強化キット",
+  "m_sortOrder": 113,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_REITOUBIIMU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPこおりのつぶての強化キット",
+  "m_sortOrder": 114,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KOORINOTUBUTE",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPドラゴンダイブの強化キット",
+  "m_sortOrder": 115,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DORAGONDAIBU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPかみくだくの強化キット",
+  "m_sortOrder": 116,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KAMIKUDAKU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPラスターカノンの強化キット",
+  "m_sortOrder": 117,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_RASUTAAKANON",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPムーンフォースの強化キット",
+  "m_sortOrder": 118,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MUUNFOOSU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPチャームボイスの強化キット",
+  "m_sortOrder": 119,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_TYAAMUBOISU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPめざましビンタの強化キット",
+  "m_sortOrder": 120,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MEZAMASIBINTA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPサイコカッターの強化キット",
+  "m_sortOrder": 121,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SAIKOKATTAA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPだいちのちからの強化キット",
+  "m_sortOrder": 122,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DAITINOTIKARA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPシャドーボールの強化キット",
+  "m_sortOrder": 123,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SYADOOBOORU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPクロスチョップの強化キット",
+  "m_sortOrder": 124,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KUROSUTYOPPU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPなみのりの強化キット",
+  "m_sortOrder": 125,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_NAMINORI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPみずのはどうの強化キット",
+  "m_sortOrder": 126,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MIZUNOHADOU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPスパークの強化キット",
+  "m_sortOrder": 127,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SUPAAKU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPリーフブレードの強化キット",
+  "m_sortOrder": 128,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_RIIHUBUREEDO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPきりさくの強化キット",
+  "m_sortOrder": 129,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KIRISAKU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPどろばくだんの強化キット",
+  "m_sortOrder": 130,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DOROBAKUDAN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPヘドロこうげきの強化キット",
+  "m_sortOrder": 131,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HEDOROKOUGEKI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPじごくぐるまの強化キット",
+  "m_sortOrder": 132,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_ZIGOKUGURUMA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPでんこうせっかの強化キット",
+  "m_sortOrder": 133,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DENKOUSEKKA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPエナジーボールの強化キット",
+  "m_sortOrder": 134,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_ENAZIIBOORU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPほのおのキバの強化キット",
+  "m_sortOrder": 135,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HONOONOKIBA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPマジカルシャインの強化キット",
+  "m_sortOrder": 136,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MAZIKARUSYAIN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPサイコショックの強化キット",
+  "m_sortOrder": 137,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SAIKOSYOKKU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPドリルくちばしの強化キット",
+  "m_sortOrder": 138,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DORIRUKUTIBASI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPシャドーパンチの強化キット",
+  "m_sortOrder": 139,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SYADOOPANTI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPであいがしらの強化キット",
+  "m_sortOrder": 140,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DEAIGASIRA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPワイルドボルトの強化キット",
+  "m_sortOrder": 141,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_WAIRUDOBORUTO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPいわなだれの強化キット",
+  "m_sortOrder": 142,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_IWANADARE",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPトライアタックの強化キット",
+  "m_sortOrder": 143,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_TORAIATAKKU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPとっしんの強化キット",
+  "m_sortOrder": 144,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_TOSSIN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPだくりゅうの強化キット",
+  "m_sortOrder": 145,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DAKURYUU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPほうでんの強化キット",
+  "m_sortOrder": 146,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HOUDEN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPふんえんの強化キット",
+  "m_sortOrder": 147,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HUNEN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPあくのはどうの強化キット",
+  "m_sortOrder": 148,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_AKUNOHADOU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPドラゴンクローの強化キット",
+  "m_sortOrder": 149,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DORAGONKUROO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPドラゴンハンマーの強化キット",
+  "m_sortOrder": 150,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DORAGONHANMAA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPアームハンマーの強化キット",
+  "m_sortOrder": 151,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_AAMUHANMAA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPメガホーンの強化キット",
+  "m_sortOrder": 152,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MEGAHOON",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPアクアテールの強化キット",
+  "m_sortOrder": 153,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_AKUATEERU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPみずしゅりけんの強化キット",
+  "m_sortOrder": 154,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MIZUSYURIKEN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPシザークロスの強化キット",
+  "m_sortOrder": 155,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SIZAAKUROSU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPドレインキッスの強化キット",
+  "m_sortOrder": 156,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DOREINKISSU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPのしかかりの強化キット",
+  "m_sortOrder": 157,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_NOSIKAKARI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPナイトバーストの強化キット",
+  "m_sortOrder": 158,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_NAITOBAASUTO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPかみなりの強化キット",
+  "m_sortOrder": 159,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KAMINARI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPコメットパンチの強化キット",
+  "m_sortOrder": 160,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KOMETTOPANTI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPゴッドバードの強化キット",
+  "m_sortOrder": 161,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_GODDOBAADO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPストーンエッジの強化キット",
+  "m_sortOrder": 162,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SUTOONEZZI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPマジカルリーフの強化キット",
+  "m_sortOrder": 163,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MAZIKARURIIHU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPじしんの強化キット",
+  "m_sortOrder": 164,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_ZISIN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPアクアジェットの強化キット",
+  "m_sortOrder": 165,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_AKUAJETTO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPオーバーヒートの強化キット",
+  "m_sortOrder": 166,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_OOBAAHIITO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPもろはのずつきの強化キット",
+  "m_sortOrder": 167,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_MOROHANOZUTUKI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPかげうちの強化キット",
+  "m_sortOrder": 168,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_KAGEUTI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPふぶきの強化キット",
+  "m_sortOrder": 169,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HUBUKI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPアイアンヘッドの強化キット",
+  "m_sortOrder": 170,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_AIANHEDDO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPベノムショックの強化キット",
+  "m_sortOrder": 171,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_BENOMUSYOKKU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPぼうふうの強化キット",
+  "m_sortOrder": 172,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_BOUHUU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPばかぢからの強化キット",
+  "m_sortOrder": 173,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_BAKADIKARA",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPげきりんの強化キット",
+  "m_sortOrder": 174,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_GEKIRIN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ライチュウプラスの強化キット",
+  "m_sortOrder": 69,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 26,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "026_U_01"
+ },
+ {
+  "m_name": "ジュナイパープラスの強化キット",
+  "m_sortOrder": 66,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 724,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "724_U_00"
+ },
+ {
+  "m_name": "ガオガエンプラスの強化キット",
+  "m_sortOrder": 68,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 727,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "727_U_00"
+ },
+ {
+  "m_name": "アシレーヌプラスの強化キット",
+  "m_sortOrder": 70,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 730,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "730_U_00"
+ },
+ {
+  "m_name": "ドヒドイデプラスの強化キット",
+  "m_sortOrder": 67,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 748,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "748_U_00"
+ },
+ {
+  "m_name": "ハガネールプラスの強化キット",
+  "m_sortOrder": 69,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 208,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "208_M_00"
+ },
+ {
+  "m_name": "カイリキープラスの強化キット",
+  "m_sortOrder": 66,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 68,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "068_U_00"
+ },
+ {
+  "m_name": "ライコウプラスの強化キット",
+  "m_sortOrder": 68,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 243,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "243_U_00"
+ },
+ {
+  "m_name": "スイクンプラスの強化キット",
+  "m_sortOrder": 70,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 245,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "245_U_00"
+ },
+ {
+  "m_name": "ルギアプラスの強化キット",
+  "m_sortOrder": 67,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 249,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "249_U_00"
+ },
+ {
+  "m_name": "ペルシアンプラスの強化キット",
+  "m_sortOrder": 71,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 53,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "053_U_01"
+ },
+ {
+  "m_name": "ドデカバシプラスの強化キット",
+  "m_sortOrder": 72,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 733,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "733_U_00"
+ },
+ {
+  "m_name": "ルガルガンプラスの強化キット",
+  "m_sortOrder": 73,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 745,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "745_U_00"
+ },
+ {
+  "m_name": "シルヴァディプラスの強化キット",
+  "m_sortOrder": 74,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 773,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "773_U_00"
+ },
+ {
+  "m_name": "マッシブーンプラスの強化キット",
+  "m_sortOrder": 75,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 794,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "794_U_00"
+ },
+ {
+  "m_name": "SPさばきのつぶての強化キット",
+  "m_sortOrder": 180,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SABAKINOTUBUTE",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPはどうだんの強化キット",
+  "m_sortOrder": 181,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_HADOUDAN",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPせいなるほのおの強化キット",
+  "m_sortOrder": 177,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SEINARUHONOO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "キュウコンプラスの強化キット",
+  "m_sortOrder": 76,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 38,
+  "m_piiIconAssetBundleID": 39,
+  "m_piiIconAssetName": "038_U_01"
+ },
+ {
+  "m_name": "ガブリアスプラスの強化キット",
+  "m_sortOrder": 77,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 445,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "445_F_00"
+ },
+ {
+  "m_name": "ドクロッグプラスの強化キット",
+  "m_sortOrder": 78,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 454,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "454_M_00"
+ },
+ {
+  "m_name": "サザンドラプラスの強化キット",
+  "m_sortOrder": 79,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 635,
+  "m_piiIconAssetBundleID": 37,
+  "m_piiIconAssetName": "635_U_00"
+ },
+ {
+  "m_name": "ジガルデプラスの強化キット",
+  "m_sortOrder": 80,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 718,
+  "m_piiIconAssetBundleID": 38,
+  "m_piiIconAssetName": "718_U_00"
+ },
+ {
+  "m_name": "ラグラージプラスの強化キット",
+  "m_sortOrder": 81,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 260,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "260_U_00"
+ },
+ {
+  "m_name": "バシャーモプラスの強化キット",
+  "m_sortOrder": 82,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 257,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "257_M_00"
+ },
+ {
+  "m_name": "バタフリープラスの強化キット",
+  "m_sortOrder": 83,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 12,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "012_M_00"
+ },
+ {
+  "m_name": "ラティアスプラスの強化キット",
+  "m_sortOrder": 84,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 380,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "380_U_00"
+ },
+ {
+  "m_name": "ジュカインプラスの強化キット",
+  "m_sortOrder": 85,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 254,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "254_U_00"
+ },
+ {
+  "m_name": "メガニウムプラスの強化キット",
+  "m_sortOrder": 86,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 154,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "154_F_00"
+ },
+ {
+  "m_name": "バクフーンプラスの強化キット",
+  "m_sortOrder": 87,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 157,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "157_U_00"
+ },
+ {
+  "m_name": "オーダイルプラスの強化キット",
+  "m_sortOrder": 88,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 160,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "160_U_00"
+ },
+ {
+  "m_name": "デンリュウプラスの強化キット",
+  "m_sortOrder": 89,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 181,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "181_U_00"
+ },
+ {
+  "m_name": "バンギラスプラスの強化キット",
+  "m_sortOrder": 90,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 248,
+  "m_piiIconAssetBundleID": 34,
+  "m_piiIconAssetName": "248_U_00"
+ },
+ {
+  "m_name": "SPガリョウテンセイの強化キット",
+  "m_sortOrder": 178,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_GARYOUTENSEI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPサイコブーストの強化キット",
+  "m_sortOrder": 179,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_SAIKOBUUSUTO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ニドキングプラスの強化キット",
+  "m_sortOrder": 91,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 34,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "034_U_00"
+ },
+ {
+  "m_name": "ニョロボンプラスの強化キット",
+  "m_sortOrder": 92,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 62,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "062_U_00"
+ },
+ {
+  "m_name": "フリーザープラスの強化キット",
+  "m_sortOrder": 93,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 144,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "144_U_00"
+ },
+ {
+  "m_name": "サンダープラスの強化キット",
+  "m_sortOrder": 94,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 145,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "145_U_00"
+ },
+ {
+  "m_name": "ファイヤープラスの強化キット",
+  "m_sortOrder": 95,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 146,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "146_U_00"
+ },
+ {
+  "m_name": "カイリュープラスの強化キット",
+  "m_sortOrder": 96,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 149,
+  "m_piiIconAssetBundleID": 33,
+  "m_piiIconAssetName": "149_U_00"
+ },
+ {
+  "m_name": "SPあおいほのおの強化キット",
+  "m_sortOrder": 182,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_AOIHONOO",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "SPらいげきの強化キット",
+  "m_sortOrder": 183,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_RAIGEKI",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "ラティオスプラスの強化キット",
+  "m_sortOrder": 97,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 381,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "381_U_00"
+ },
+ {
+  "m_name": "カイオーガプラスの強化キット",
+  "m_sortOrder": 98,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 382,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "382_U_00"
+ },
+ {
+  "m_name": "グラードンプラスの強化キット",
+  "m_sortOrder": 99,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 383,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "383_U_00"
+ },
+ {
+  "m_name": "レックウザプラスの強化キット",
+  "m_sortOrder": 100,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 384,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "384_U_00"
+ },
+ {
+  "m_name": "デオキシスプラスの強化キット",
+  "m_sortOrder": 101,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 386,
+  "m_piiIconAssetBundleID": 35,
+  "m_piiIconAssetName": "386_U_00"
+ },
+ {
+  "m_name": "SPデスウイングの強化キット",
+  "m_sortOrder": 184,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_SP_DESUUINGU",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "レントラープラスの強化キット",
+  "m_sortOrder": 102,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 405,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "405_M_00"
+ },
+ {
+  "m_name": "ルカリオプラスの強化キット",
+  "m_sortOrder": 104,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 448,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "448_U_00"
+ },
+ {
+  "m_name": "ドサイドンプラスの強化キット",
+  "m_sortOrder": 103,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 464,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "464_F_00"
+ },
+ {
+  "m_name": "シェイミプラスの強化キット",
+  "m_sortOrder": 105,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 492,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "492_U_01"
+ },
+ {
+  "m_name": "アルセウスプラスの強化キット",
+  "m_sortOrder": 106,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 493,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "493_U_00"
+ },
+ {
+  "m_name": "ジバコイルプラスの強化キット",
+  "m_sortOrder": 107,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 462,
+  "m_piiIconAssetBundleID": 36,
+  "m_piiIconAssetName": "462_U_00"
+ },
+ {
+  "m_name": "キュレムプラスの強化キット",
+  "m_sortOrder": 108,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 646,
+  "m_piiIconAssetBundleID": 37,
+  "m_piiIconAssetName": "646_U_00"
+ },
+ {
+  "m_name": "マフォクシープラスの強化キット",
+  "m_sortOrder": 109,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 655,
+  "m_piiIconAssetBundleID": 38,
+  "m_piiIconAssetName": "655_U_00"
+ },
+ {
+  "m_name": "ガメノデスプラスの強化キット",
+  "m_sortOrder": 110,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 689,
+  "m_piiIconAssetBundleID": 38,
+  "m_piiIconAssetName": "689_U_00"
+ },
+ {
+  "m_name": "ヌメルゴンプラスの強化キット",
+  "m_sortOrder": 111,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 706,
+  "m_piiIconAssetBundleID": 38,
+  "m_piiIconAssetName": "706_U_00"
+ },
+ {
+  "m_name": "DUMMY_234",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_235",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_236",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_237",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_238",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_239",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_240",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_241",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_242",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_243",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_244",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_245",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_246",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_247",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_248",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_249",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_250",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_251",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ },
+ {
+  "m_name": "DUMMY_252",
+  "m_sortOrder": 999,
+  "m_assetBundleID": 6,
+  "m_assetName": "IconEqbit_POKE_PLUS",
+  "m_monsNo": 0,
+  "m_piiIconAssetBundleID": 0,
+  "m_piiIconAssetName": ""
+ }
+]

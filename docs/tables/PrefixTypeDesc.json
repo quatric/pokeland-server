@@ -1,0 +1,23 @@
+[
+ {
+  "m_name": "",
+  "m_dropSE": 0,
+  "m_dropEffectID": 0,
+  "m_sortOrder": 4,
+  "m_additionNum": 0
+ },
+ {
+  "m_name": "レア",
+  "m_dropSE": 289,
+  "m_dropEffectID": 780,
+  "m_sortOrder": 2,
+  "m_additionNum": 0
+ },
+ {
+  "m_name": "スーパーレア",
+  "m_dropSE": 290,
+  "m_dropEffectID": 781,
+  "m_sortOrder": 1,
+  "m_additionNum": 1
+ }
+]

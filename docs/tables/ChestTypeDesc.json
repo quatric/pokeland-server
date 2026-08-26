@@ -1,0 +1,2238 @@
+[
+ {
+  "m_evedefID": 0,
+  "m_chestRarity": 0
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 4
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 4
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 4
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 2,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 3,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 5,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 6,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 7,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 8,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 9,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 10,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 11,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 12,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 14,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 15,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 17,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 10
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 18,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 19,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 20,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 21,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 22,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 11
+ },
+ {
+  "m_evedefID": 23,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 24,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 12
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 13
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 1,
+  "m_chestRarity": 14
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 33,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 34,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 38,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 39,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 41,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 42,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 43,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 44,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 53,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 54,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 55,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 56,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 57,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 9
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 7
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 8
+ },
+ {
+  "m_evedefID": 58,
+  "m_chestRarity": 9
+ }
+]

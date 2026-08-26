@@ -1,0 +1,134 @@
+[
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": ""
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "テスト"
+ },
+ {
+  "m_paramType": [
+   4
+  ],
+  "m_message": "スタンプカード{0}日目のプレゼントです"
+ },
+ {
+  "m_paramType": [
+   1
+  ],
+  "m_message": "{0}に発生した不具合のお詫びです"
+ },
+ {
+  "m_paramType": [
+   1
+  ],
+  "m_message": "{0}に行ったメンテナンスのお詫びです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "マイニンテンドーのギフトです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "所持数オーバーのためプレゼントボックスに送られました"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "受け取り期限を過ぎたためプレゼントボックスに送られました"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "1周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "2周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "3周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "4周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "5周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "6周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "7周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "8周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "9周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "10周年プレゼントです"
+ },
+ {
+  "m_paramType": [
+   5
+  ],
+  "m_message": "{0}ダウンロード突破記念プレゼントです"
+ },
+ {
+  "m_paramType": [
+   6
+  ],
+  "m_message": "{0}のランキング{1}位の報酬です"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "冒険者協会からのプレゼントです"
+ },
+ {
+  "m_paramType": [
+   0
+  ],
+  "m_message": "ポケダイヤマイレージのプレゼントです"
+ }
+]

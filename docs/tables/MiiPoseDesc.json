@@ -1,0 +1,68 @@
+[
+ {
+  "m_assetBundleID": 0,
+  "m_basename": "",
+  "m_animationClipName": "",
+  "m_name": ""
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Bow",
+  "m_name": "おじぎ"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Jump",
+  "m_name": "ジャンプ"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Kiss",
+  "m_name": "チュー"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Lie",
+  "m_name": "横になる"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Pointing",
+  "m_name": "指差す"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Right Hand",
+  "m_name": "手を上げる"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Sit",
+  "m_name": "座る"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Stand",
+  "m_name": "立ってる"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Supine",
+  "m_name": "仰向け"
+ },
+ {
+  "m_assetBundleID": 17,
+  "m_basename": "Mii_Pose",
+  "m_animationClipName": "Yankee Sitting",
+  "m_name": "ヤンキー座り"
+ }
+]
