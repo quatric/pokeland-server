@@ -1,0 +1,14 @@
+# Game content - never distributed with this repository.
+apk/
+ipa/
+cdn/
+build/
+docs/tables/
+
+# Working data
+out/
+.venv/
+
+# Build output
+**/bin/
+**/obj/

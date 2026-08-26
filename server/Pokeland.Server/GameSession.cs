@@ -1,0 +1,48 @@
+#nullable disable
+using System.Collections.Concurrent;
+
+namespace Pokeland.Server;
+
+/// <summary>One logged-in client. Handed to every endpoint handler.</summary>
+public sealed class GameSession
+{
+    public string SessionId { get; init; }
+    public string BaaSUserId { get; init; }
+    public string Market { get; set; }
+    public string AppVer { get; set; }
+    public string AssetVer { get; set; }
+    public int TimeZoneOffsetMinutes { get; set; }
+
+    /// <summary>
+    /// Mirrors <c>Uskumru.Proto.Base.Req.Rev</c>. The client sends the revision it
+    /// last saw and refuses the response as an <c>UskumruRevMismatch</c> if the
+    /// server's view has moved on unexpectedly, so it has to be tracked per session.
+    /// </summary>
+    public int Rev;
+
+    public DateTime LastSeenUtc { get; set; } = DateTime.UtcNow;
+}
+
+public sealed class SessionStore
+{
+    private readonly ConcurrentDictionary<string, GameSession> _sessions = new();
+
+    public GameSession Create(string baasUserId)
+    {
+        var s = new GameSession
+        {
+            SessionId = Guid.NewGuid().ToString("N"),
+            BaaSUserId = baasUserId ?? "anonymous",
+        };
+        _sessions[s.SessionId] = s;
+        return s;
+    }
+
+    public GameSession Get(string sessionId)
+    {
+        if (string.IsNullOrEmpty(sessionId)) return null;
+        if (!_sessions.TryGetValue(sessionId, out var s)) return null;
+        s.LastSeenUtc = DateTime.UtcNow;
+        return s;
+    }
+}
