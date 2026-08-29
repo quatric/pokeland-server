@@ -34,11 +34,17 @@ public sealed class LoginHandler : IEndpointHandler
         // AutoRes deltas only ever *update* an existing Uskumru.Cache box - the
         // client's own decompiled Cache.ProcessRes<object> reads the current
         // Cache.MyUserProfileBox (etc.) and throws if it is null; it never
-        // constructs one. Boxes are built exactly once, by
-        // Uskumru.Cache..ctor(Reset, myBaaSUserId), which is what a fresh client
-        // (no local save) calls using this response's "Reset" field - not the
-        // AutoRes/"A" pipeline. So the one-time full snapshot has to travel here,
-        // not as an AutoRes.
+        // constructs one. Uskumru.Cache..ctor(Reset, myBaaSUserId) is the only
+        // code that builds a box, from a Reset object, and its one caller is a
+        // generic response-handling coroutine (Uskumru.ClientTask.<iWait>d__12).
+        // Sending a fully populated Reset here is what retail's shape implies
+        // and is a real improvement regardless - but on-device testing (Aug 29
+        // 2026) still shows Cache.MyUserProfileBox null and the Camp scene
+        // NRE'ing on first login, so whatever actually decides "call the
+        // Reset-taking ctor vs. just read the existing Cache" has NOT been
+        // confirmed to be "this response has a Reset[]". Needs live
+        // instrumentation (Frida) against the running client to pin down,
+        // not more static reading of the generic-shared IL2CPP bytes.
         var reset = new Reset
         {
             SupportNumber = 0,
