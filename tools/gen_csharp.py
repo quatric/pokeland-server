@@ -5,9 +5,10 @@ Source of truth is the Il2CppDumper output of jp.pokemon.pokemonscrambleSP 1.6.0
 Base classes are resolved by *field offset* rather than by the dumper's flattened
 declaration text, which loses the namespace of same-named bases (`Req : Req`).
 """
+import os
 import json, os, re, keyword
 
-BASE = '/Volumes/SSD/larsen/pokeland'
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC  = json.load(open(BASE + '/out/spec/protocol.json'))
 GAME = open(BASE + '/out/dump/game.cs').read()
 OUT  = BASE + '/server/Pokeland.Protocol/Generated'

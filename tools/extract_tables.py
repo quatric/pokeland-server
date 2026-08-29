@@ -14,7 +14,7 @@ import sys
 
 import UnityPy
 
-ROOT = '/Volumes/SSD/larsen/pokeland'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUNDLE = sys.argv[1] if len(sys.argv) > 1 else (
     ROOT + '/cdn/pokeland/1.6.0/740e9608db30b5f19e739442a779e2e2/iOS/tables')
 OUTDIR = sys.argv[2] if len(sys.argv) > 2 else ROOT + '/docs/tables'

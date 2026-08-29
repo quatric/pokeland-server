@@ -20,7 +20,7 @@
 #
 # Usage: fetch_cdn.sh [assetver] [delay-seconds]
 set -u
-ROOT=/Volumes/SSD/larsen/pokeland
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 CDX=$ROOT/out/cdn_cdx_digest.txt
 DEST=$ROOT/cdn
 VER="${1:-1.6.0}"

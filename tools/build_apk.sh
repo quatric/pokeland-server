@@ -16,8 +16,9 @@
 #        build_apk.sh http://192.168.1.50:5199      # real device on the LAN
 set -euo pipefail
 
-ROOT=/Volumes/SSD/larsen/pokeland
-SRC_APK="${POKELAND_APK:-/Volumes/SSD/larsen/Downloads/jp.pokemon.pokemonscrambleSP_1.6.0-1060009_minAPI19(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk}"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# Path to an unmodified 1.6.0 APK. Not distributed with this repository.
+SRC_APK="${POKELAND_APK:-$ROOT/apk/pokemonscrambleSP-1.6.0.apk}"
 BASE="${1:?usage: build_apk.sh <base-url> [out.apk]}"
 OUT="${2:-$ROOT/build/pokeland-1.6.0-patched.apk}"
 
@@ -33,7 +34,11 @@ KEYSTORE=$ROOT/build/debug.keystore
 STORE_PASS=pokeland
 STAGE=$ROOT/build/stage
 
-[ -f "$SRC_APK" ] || { echo "source APK not found: $SRC_APK" >&2; exit 1; }
+if [ ! -f "$SRC_APK" ]; then
+  echo "source APK not found: $SRC_APK" >&2
+  echo "set POKELAND_APK to an unmodified jp.pokemon.pokemonscrambleSP 1.6.0 APK" >&2
+  exit 1
+fi
 mkdir -p "$ROOT/build" "$STAGE/assets/bin/Data/Managed/Metadata"
 
 echo "==> patching metadata URLs -> $BASE"

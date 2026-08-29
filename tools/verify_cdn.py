@@ -14,7 +14,7 @@ import hashlib
 import os
 import sys
 
-ROOT = '/Volumes/SSD/larsen/pokeland'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CDX = f'{ROOT}/out/cdn_cdx_digest.txt'
 
 

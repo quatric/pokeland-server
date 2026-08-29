@@ -1,5 +1,6 @@
+import os
 import re, json, os
-BASE='/Volumes/SSD/larsen/pokeland'
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 src=open(BASE+'/out/dump/game.cs').read()
 blocks=re.split(r'(?m)^// Namespace: ', src)
 types={}
