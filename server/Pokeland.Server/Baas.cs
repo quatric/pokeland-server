@@ -80,7 +80,7 @@ public static class Baas
                     ["links"] = new JObject(),
                 },
                 ["accessToken"] = Token(userId, "access"),
-                ["idToken"] = Token(userId, "id"),
+                ["idToken"] = IdToken(userId, deviceId, now),
                 ["expiresIn"] = 86400,
                 ["sessionId"] = Guid.NewGuid().ToString("N"),
                 ["market"] = "GOOGLE",
@@ -132,9 +132,9 @@ public static class Baas
     }
 
     /// <summary>
-    /// An opaque bearer token. Retail issued a signed JWT; nothing in the client
-    /// inspects it, it is only echoed back in the Authorization header, so an
-    /// unforgeable-looking random string is enough for a private deployment.
+    /// An opaque bearer token. Only echoed back in the Authorization header,
+    /// so an unforgeable-looking random string is enough for a private
+    /// deployment. Unlike idToken, nothing on the client parses this one.
     /// </summary>
     private static string Token(string userId, string kind)
     {
@@ -142,4 +142,37 @@ public static class Baas
         return Convert.ToBase64String(Encoding.UTF8.GetBytes(raw))
             .TrimEnd('=').Replace('+', '-').Replace('/', '_');
     }
+
+    /// <summary>
+    /// idToken is NOT opaque - NPFBaaSUserIdToken..ctor (decompiled) splits it
+    /// as a JWT and JsonUtility.FromJson's the header and payload segments
+    /// into NPFBaaSUserIdTokenHeader/Payload. Those two classes' field sets
+    /// are the contract; the signature segment is never verified client-side
+    /// (no crypto call in the ctor), so it can be anything JWT-shaped.
+    /// </summary>
+    private static string IdToken(string userId, string deviceId, DateTimeOffset now)
+    {
+        var header = new JObject
+        {
+            ["alg"] = "none",
+            ["jku"] = "",
+            ["kid"] = "",
+        };
+        var payload = new JObject
+        {
+            ["exp"] = now.AddDays(1).ToUnixTimeSeconds(),
+            ["sub"] = userId,
+            ["aud"] = "pokeland",
+            ["iss"] = "pokeland-revival",
+            ["bs_did"] = deviceId,
+            ["jti"] = Guid.NewGuid().ToString("N"),
+            ["typ"] = "id",
+            ["iat"] = now.ToUnixTimeSeconds(),
+        };
+        return $"{B64(header)}.{B64(payload)}.";
+    }
+
+    private static string B64(JObject obj) =>
+        Convert.ToBase64String(Encoding.UTF8.GetBytes(obj.ToString(Newtonsoft.Json.Formatting.None)))
+            .TrimEnd('=').Replace('+', '-').Replace('/', '_');
 }

@@ -133,6 +133,8 @@ public sealed class LoginHandler : IEndpointHandler
         return new Pokeland.Protocol.Login.Res
         {
             SessionID = session.SessionId,
+            Rev = 0,
+            UTCStr = utcNow,
 
             // The client builds its whole local Cache from this on a fresh
             // install - see the comment above. One element is a full snapshot,
