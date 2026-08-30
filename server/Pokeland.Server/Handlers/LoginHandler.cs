@@ -109,6 +109,21 @@ public sealed class LoginHandler : IEndpointHandler
                 DiscoveredVec = Array.Empty<byte>(),
                 CapturedVec = Array.Empty<byte>(),
             },
+            // Scenes.Camp.CampPiis.iMain reads Cache.PlayerPPE.PdecoID with no
+            // null check, and an empty roster leaves PlayerPPE null - so this
+            // NREs in Camp. Tried populating one starter PPE three different
+            // ways (BasePPE packs its fields into a positional int[12] "X"
+            // rather than named JSON properties - see BasePPE.Index in the
+            // client dump); all three reproducibly hang the client immediately
+            // after Login instead of fixing the NRE. Decompiling Cache..ctor
+            // (0xdf6858) shows it's fully synchronous with no loops - not the
+            // hang site - and per Frida instrumentation earlier this session it
+            // never even fires regardless of Reset contents. The real
+            // Cache-population path is likely Cache.ProcessRes<object> reading
+            // the "A" (AutoRes[]) array via Login.Res's four IAutoRes
+            // interfaces, not Reset at all - GameDispatcher always sends A
+            // empty. Needs that path traced properly before touching PPEs
+            // again; see memory for the full three-attempt writeup.
             PPEs = new List<PPE>(),
             PaidPPEStoreSize = 0,
             Stages = new List<Stage>(),
