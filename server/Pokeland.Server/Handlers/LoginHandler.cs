@@ -37,14 +37,11 @@ public sealed class LoginHandler : IEndpointHandler
         // constructs one. Uskumru.Cache..ctor(Reset, myBaaSUserId) is the only
         // code that builds a box, from a Reset object, and its one caller is a
         // generic response-handling coroutine (Uskumru.ClientTask.<iWait>d__12).
-        // Sending a fully populated Reset here is what retail's shape implies
-        // and is a real improvement regardless - but on-device testing (Aug 29
-        // 2026) still shows Cache.MyUserProfileBox null and the Camp scene
-        // NRE'ing on first login, so whatever actually decides "call the
-        // Reset-taking ctor vs. just read the existing Cache" has NOT been
-        // confirmed to be "this response has a Reset[]". Needs live
-        // instrumentation (Frida) against the running client to pin down,
-        // not more static reading of the generic-shared IL2CPP bytes.
+        //
+        // Confirmed via Ghidra decompile of that coroutine (Aug 30 2026): it
+        // gates the whole response-processing branch on `Res.Rev != 0` and
+        // silently no-ops otherwise - having a populated Reset[] was never
+        // the missing piece, a zero Rev was. See GameSession.Rev.
         var reset = new Reset
         {
             SupportNumber = 0,
@@ -133,12 +130,13 @@ public sealed class LoginHandler : IEndpointHandler
         return new Pokeland.Protocol.Login.Res
         {
             SessionID = session.SessionId,
-            Rev = 0,
             UTCStr = utcNow,
 
             // The client builds its whole local Cache from this on a fresh
             // install - see the comment above. One element is a full snapshot,
-            // not "which subsystems to wipe".
+            // not "which subsystems to wipe". GameDispatcher.StampEnvelope fills
+            // in Rev from session.Rev (starts at 1) - see GameSession.Rev for why
+            // that has to be nonzero or the client drops this whole payload.
             Reset = new[] { reset },
         };
     }

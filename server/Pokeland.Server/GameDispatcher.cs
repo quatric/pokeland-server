@@ -109,6 +109,14 @@ public sealed class GameDispatcher
             FillEmptyCollections(res);
         }
 
+        // Login runs with session == null (no SessionID to look up yet) since
+        // it's the one endpoint that creates the session rather than being
+        // handed an existing one. Its Res carries the fresh SessionID, so look
+        // the session back up through that before stamping - otherwise every
+        // Login response stamps Rev as 0 from a null session, which the client
+        // reads as "nothing to apply" and silently drops the whole payload.
+        session ??= ctx.Sessions.Get(res.GetType().GetProperty("SessionID")?.GetValue(res) as string);
+
         StampEnvelope(res, session);
         return new Result(Json.Serialize(res), StatusCodes.Status200OK);
     }

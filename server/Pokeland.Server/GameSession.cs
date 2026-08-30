@@ -17,8 +17,15 @@ public sealed class GameSession
     /// Mirrors <c>Uskumru.Proto.Base.Req.Rev</c>. The client sends the revision it
     /// last saw and refuses the response as an <c>UskumruRevMismatch</c> if the
     /// server's view has moved on unexpectedly, so it has to be tracked per session.
+    ///
+    /// It also gates whether the client processes the response body at all: the
+    /// decompiled <c>ClientTask.&lt;iWait&gt;d__12.MoveNext</c> only runs the
+    /// Cache-update path when <c>Res.Rev != 0</c> - a value of 0 is read as "no
+    /// change, nothing to apply" and the entire Reset/AutoRes payload is silently
+    /// dropped. Starts at 1, not 0, so the very first Login response is not mistaken
+    /// for a no-op.
     /// </summary>
-    public int Rev;
+    public int Rev = 1;
 
     public DateTime LastSeenUtc { get; set; } = DateTime.UtcNow;
 }
