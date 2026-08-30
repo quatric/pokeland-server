@@ -116,6 +116,19 @@ def main():
             grew = size / max(os.path.getsize(src), 1)
             print(f'ok    {name}  {n} tex  {size:,} B  ({grew:.2f}x)  {time.time()-t0:.1f}s')
             ok += 1
+
+            # Unity names an AssetBundle's root manifest after the folder it
+            # was built into ("iOS", here) - target_platform is patched
+            # correctly above, but the file itself is still named "iOS" in
+            # the Android tree. The client requests it by platform name
+            # (<AssetVer>/Android/Android), so the converted root manifest
+            # also needs to be duplicated under that name.
+            if name == os.path.basename(SRC_ROOT):
+                root_dst = os.path.join(DST_ROOT, os.path.basename(DST_ROOT))
+                if force or not os.path.exists(root_dst):
+                    import shutil
+                    shutil.copyfile(dst, root_dst)
+                    print(f'ok    {os.path.basename(DST_ROOT)}  (root manifest, copied from {name})')
         except Exception as e:
             print(f'FAIL  {name}: {type(e).__name__}: {e}')
             failed += 1

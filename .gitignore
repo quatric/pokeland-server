@@ -4,6 +4,8 @@ ipa/
 cdn/
 build/
 docs/tables/
+out/dump/
+out/dex/
 
 # Working data
 out/
@@ -12,3 +14,7 @@ out/
 # Build output
 **/bin/
 **/obj/
+
+# RE tooling downloads
+tools/Il2CppDumper/
+tools/il2cppdumper.zip

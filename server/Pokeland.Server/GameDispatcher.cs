@@ -1,4 +1,5 @@
 #nullable disable
+using System.Collections.Generic;
 using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -105,10 +106,47 @@ public sealed class GameDispatcher
             // client keeps running instead of dropping into its error flow.
             _log.LogWarning("{Endpoint}: no handler, returning empty envelope", endpoint);
             res = Activator.CreateInstance(pair.Res);
+            FillEmptyCollections(res);
         }
 
         StampEnvelope(res, session);
         return new Result(Json.Serialize(res), StatusCodes.Status200OK);
+    }
+
+    /// <summary>
+    /// The client foreaches every List/array field it reads without a null check,
+    /// so an empty envelope with `null` collections crashes it the moment it opens
+    /// a scene that touches one. Recursively swap nulls for empty instances instead.
+    /// </summary>
+    private static void FillEmptyCollections(object obj, HashSet<object> seen = null)
+    {
+        if (obj is null) return;
+        seen ??= new HashSet<object>(ReferenceEqualityComparer.Instance);
+        if (!seen.Add(obj)) return;
+
+        foreach (var prop in obj.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
+        {
+            if (!prop.CanRead || !prop.CanWrite || prop.GetIndexParameters().Length > 0) continue;
+            var type = prop.PropertyType;
+            var value = prop.GetValue(obj);
+
+            if (value is null)
+            {
+                if (type.IsArray)
+                    prop.SetValue(obj, Array.CreateInstance(type.GetElementType(), 0));
+                else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>))
+                    prop.SetValue(obj, Activator.CreateInstance(type));
+                continue;
+            }
+
+            if (value is string) continue;
+            if (type.Namespace?.StartsWith("Pokeland.Protocol") != true) continue;
+
+            if (value is System.Collections.IEnumerable seq)
+                foreach (var item in seq) FillEmptyCollections(item, seen);
+            else
+                FillEmptyCollections(value, seen);
+        }
     }
 
     /// <summary>Fills the fields every response shares (<c>Uskumru.Proto.Base.BaseRes</c>).</summary>

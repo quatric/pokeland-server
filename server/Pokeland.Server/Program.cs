@@ -20,6 +20,13 @@ var sessions = app.Services.GetRequiredService<SessionStore>();
 var dispatcher = app.Services.GetRequiredService<GameDispatcher>();
 var ctx = new DispatchContext { Sessions = sessions, Config = config, Log = log };
 
+app.Use(async (http, next) =>
+{
+    await next();
+    log.LogInformation("{Method} {Path}{Query} -> {Status}",
+        http.Request.Method, http.Request.Path, http.Request.QueryString, http.Response.StatusCode);
+});
+
 // ---------------------------------------------------------------- bootstrap
 // GET /pre/AppManifest?market=GOOGLE&magic=<constant>
 // The very first request the client makes. It answers "for your AppVer, which
@@ -52,7 +59,7 @@ app.MapGet("/pre/AppManifest", (HttpContext http) =>
 // ------------------------------------------------------------------- the API
 // POST /{version}/game - every one of the 61 endpoints goes through here; which
 // one is named by the "Endpoint" field inside the body.
-app.MapPost("/{version}/game", async (string version, HttpContext http) =>
+var gameHandler = async (string version, HttpContext http) =>
 {
     if (version != config.ApiVersion)
     {
@@ -89,6 +96,20 @@ app.MapPost("/{version}/game", async (string version, HttpContext http) =>
             }),
             "application/json", statusCode: StatusCodes.Status503ServiceUnavailable);
     }
+};
+
+app.MapPost("/{version}/game", gameHandler);
+app.MapPost("/{version}/game/{endpoint}", async (string version, string endpoint, HttpContext http) =>
+{
+    // Some client builds put the endpoint name in the URL instead of the
+    // body's "Endpoint" field. Normalize by injecting it before dispatch.
+    using var reader = new StreamReader(http.Request.Body);
+    var body = await reader.ReadToEndAsync();
+    var obj = Newtonsoft.Json.Linq.JObject.Parse(string.IsNullOrWhiteSpace(body) ? "{}" : body);
+    obj["Endpoint"] = endpoint;
+    http.Request.Body = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(obj.ToString(Newtonsoft.Json.Formatting.None)));
+    http.Request.Body.Position = 0;
+    return await gameHandler(version, http);
 });
 
 // -------------------------------------------------------------------- BaaS
