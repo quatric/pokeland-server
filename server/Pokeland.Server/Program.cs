@@ -5,6 +5,7 @@ using Pokeland.Server;
 using Pokeland.Server.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.AddSimpleConsole(o => o.TimestampFormat = "HH:mm:ss.fff ");
 
 var config = new ServerConfig();
 builder.Configuration.GetSection("Pokeland").Bind(config);

@@ -1,5 +1,6 @@
 #nullable disable
 using Pokeland.Protocol;
+using Pokeland.Server;
 
 namespace Pokeland.Server.Handlers;
 
@@ -29,7 +30,7 @@ public sealed class LoginHandler : IEndpointHandler
             "login: market={Market} appVer={AppVer} assetVer={AssetVer} tz={Tz} -> session {Session}",
             req.Market, req.AppVer, req.AssetVer, req.TZOffsetMin, session.SessionId);
 
-        var utcNow = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+        var utcNow = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
 
         // AutoRes deltas only ever *update* an existing Uskumru.Cache box - the
         // client's own decompiled Cache.ProcessRes<object> reads the current
@@ -111,20 +112,58 @@ public sealed class LoginHandler : IEndpointHandler
             },
             // Scenes.Camp.CampPiis.iMain reads Cache.PlayerPPE.PdecoID with no
             // null check, and an empty roster leaves PlayerPPE null - so this
-            // NREs in Camp. Tried populating one starter PPE three different
-            // ways (BasePPE packs its fields into a positional int[12] "X"
-            // rather than named JSON properties - see BasePPE.Index in the
-            // client dump); all three reproducibly hang the client immediately
-            // after Login instead of fixing the NRE. Decompiling Cache..ctor
-            // (0xdf6858) shows it's fully synchronous with no loops - not the
-            // hang site - and per Frida instrumentation earlier this session it
-            // never even fires regardless of Reset contents. The real
-            // Cache-population path is likely Cache.ProcessRes<object> reading
-            // the "A" (AutoRes[]) array via Login.Res's four IAutoRes
-            // interfaces, not Reset at all - GameDispatcher always sends A
-            // empty. Needs that path traced properly before touching PPEs
-            // again; see memory for the full three-attempt writeup.
-            PPEs = new List<PPE>(),
+            // NREs in Camp. FOUND (2026-08-31): the wire BasePPE.Index/PPE.Index
+            // enums are literal DATA in the IL2CPP dump (out/dump/dump.cs, search
+            // "private enum BasePPE.Index" and "private enum PPE.Index"), not
+            // something that needs decompiling - four prior attempts missed this
+            // because they were RE'ing getter *code* instead of just reading the
+            // enum constants already sitting in the dump. Authoritative X[21]
+            // layout: 0 Rnd, 1 PokedexID(=MonsNo), 2 IsRareColor, 3 ParaSex,
+            // 4 Level, 5 ApOffset, 6 PdecoID, 7 PiiGrade, 8 SocketCount,
+            // 9 SpSocketCount, 10 Waza0, 11 Waza1, 12 PPEId_Low, 13 PPEId_High
+            // (PPEId packed as two ints, low then high), 14 PartyMember,
+            // 15 EvedefID, 16 IsFavorite, 17 AddLevelCount,
+            // 18 AddNormalSocketCount, 19 GotUTC_Low, 20 GotUTC_High. The old
+            // "int[12]" claim was wrong (12 is just BasePPE's own sub-length;
+            // PPE.Index continues 12-20 for a total of 21 = PPE.E).
+            // PartyMember.IsPlayer=1 is almost certainly the flag
+            // Cache.PlayerPPE filters the roster on (PartyMember.NONE=0 would
+            // leave it unset) - set on this starter PPE. `N` maps to the
+            // client's [Required] Nickname property, so it must be non-null -
+            // a null/absent Nickname is a plausible cause of the previous
+            // "hangs after Login with no exception" regressions (silent
+            // required-field validation failure during deserialization).
+            PPEs = new List<PPE>
+            {
+                new PPE
+                {
+                    N = "Bulbasaur",
+                    X = new[]
+                    {
+                        /* 0  Rnd                */ 12345,
+                        /* 1  PokedexID (MonsNo)  */ 1,     // HUSIGIDANE / Bulbasaur
+                        /* 2  IsRareColor         */ 0,
+                        /* 3  ParaSex             */ 0,     // MALE
+                        /* 4  Level               */ 5,
+                        /* 5  ApOffset            */ 0,
+                        /* 6  PdecoID             */ 0,     // NONE
+                        /* 7  PiiGrade            */ 1,
+                        /* 8  SocketCount         */ 0,
+                        /* 9  SpSocketCount       */ 0,
+                        /* 10 Waza0               */ 0,     // NONE
+                        /* 11 Waza1               */ 0,     // NONE
+                        /* 12 PPEId_Low           */ 1,
+                        /* 13 PPEId_High          */ 0,
+                        /* 14 PartyMember         */ 1,     // IsPlayer
+                        /* 15 EvedefID            */ 0,     // NONE
+                        /* 16 IsFavorite          */ 0,
+                        /* 17 AddLevelCount       */ 0,
+                        /* 18 AddNormalSocketCount*/ 0,
+                        /* 19 GotUTC_Low          */ 0,
+                        /* 20 GotUTC_High         */ 0,
+                    },
+                },
+            },
             PaidPPEStoreSize = 0,
             Stages = new List<Stage>(),
             TotalSec = 0,
@@ -139,7 +178,19 @@ public sealed class LoginHandler : IEndpointHandler
                 WaitingSKUIDs = new List<SKUID>(),
             },
             PurchaseProcessing = Bool.False,
-            SeldomInfo = new SeldomInfoUser(),
+            // SeldomInfoBox.IsEndOfService/IsEndOfShop test whether the client's
+            // country/market code appears in these filter strings - leaving them
+            // null (the default) made every CCmCode match, which is what kept
+            // showing the "End of Service Info" dialog on every screen
+            // regardless of a live-code Frida hook forcing the check methods to
+            // return false (a second, unhooked inlined call site was reading
+            // this data directly). Empty strings mean "nothing is filtered".
+            SeldomInfo = new SeldomInfoUser
+            {
+                EulaRev = 1,
+                EndOfServiceCCmFilter = "",
+                EndOfShopCCmFilter = "",
+            },
         };
 
         return new Pokeland.Protocol.Login.Res

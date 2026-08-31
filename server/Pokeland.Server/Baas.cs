@@ -56,7 +56,10 @@ public static class Baas
             log.LogInformation("baas/{Kind}: device={Device} user={User} new={New}",
                 kind, deviceId, userId, isNew);
 
-            var now = DateTimeOffset.UtcNow;
+            // Must agree with the device clock (rolled back to dodge the client's
+            // EOS check) or the SDK's own timestamp/expiry validation flags this
+            // token as untrusted - see PokelandClock.
+            var now = PokelandClock.UtcNowOffset;
             var res = new JObject
             {
                 ["user"] = new JObject
@@ -118,9 +121,17 @@ public static class Baas
 
         app.MapGet("/core/v1/users", () => Results.Content("[]", "application/json"));
 
-        // Analytics sinks - accept and discard.
+        // Analytics sinks - accept and discard. The client hits both a
+        // "core" and a "bigdata" prefix for the same events/config calls
+        // (observed live: repeated GET /bigdata/v1/analytics/events/config
+        // 404-looping forever post-Terms-of-Use, apparently blocking the
+        // startup sequence from proceeding since it never got an
+        // acceptable response) - register both.
         app.MapPost("/core/v1/analytics/events", () => Results.Ok());
         app.MapGet("/core/v1/analytics/events/config",
+            () => Results.Content("{}", "application/json"));
+        app.MapPost("/bigdata/v1/analytics/events", () => Results.Ok());
+        app.MapGet("/bigdata/v1/analytics/events/config",
             () => Results.Content("{}", "application/json"));
     }
 

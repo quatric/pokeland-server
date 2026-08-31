@@ -163,13 +163,43 @@ public sealed class GameDispatcher
         if (res is not Pokeland.Protocol.Base.BaseRes b) return;
         b.Rev = session?.Rev ?? 0;
         // The client parses UTCStr with DateTime.Parse and uses it to drive every
-        // timed system (stamina, chests, events), so it must be a real UTC stamp.
-        b.UTCStr = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+        // timed system (stamina, chests, events), so it must be a real UTC stamp -
+        // but it must also agree with the device's own clock, which a live
+        // deployment has to keep rolled back to before 2020-07-22 to dodge the
+        // client's hardcoded End-of-Service gate. Handing back the real (2026)
+        // wall clock here while the device thinks it's 2020 produces a clock
+        // mismatch the client flags as "Unable to connect" right after Login -
+        // see Server.PokelandClock.
+        b.UTCStr = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
         b.A ??= Array.Empty<AutoRes>();
     }
 }
 
 public sealed class BadRequestException(string message) : Exception(message);
+
+// Unity's JsonUtility (used by the client) has no base64 special-case for byte[] -
+// it expects a plain JSON array of numbers. Newtonsoft's default byte[] converter
+// writes base64 strings instead, which JsonUtility rejects with "Unexpected node type."
+public sealed class ByteArrayAsNumberArrayConverter : JsonConverter
+{
+    public override bool CanConvert(Type objectType) => objectType == typeof(byte[]);
+
+    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+    {
+        var bytes = (byte[])value;
+        if (bytes is null) { writer.WriteNull(); return; }
+        writer.WriteStartArray();
+        foreach (var b in bytes) writer.WriteValue(b);
+        writer.WriteEndArray();
+    }
+
+    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+    {
+        if (reader.TokenType == JsonToken.Null) return null;
+        var list = serializer.Deserialize<List<byte>>(reader);
+        return list?.ToArray() ?? Array.Empty<byte>();
+    }
+}
 
 public static class Json
 {
@@ -178,6 +208,7 @@ public static class Json
         NullValueHandling = NullValueHandling.Ignore,
         MissingMemberHandling = MissingMemberHandling.Ignore,
         DateParseHandling = DateParseHandling.None,
+        Converters = { new ByteArrayAsNumberArrayConverter() },
     };
 
     public static readonly JsonSerializer Serializer = JsonSerializer.Create(Settings);
