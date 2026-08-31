@@ -12,6 +12,7 @@ builder.Configuration.GetSection("Pokeland").Bind(config);
 builder.Services.AddSingleton(config);
 builder.Services.AddSingleton<SessionStore>();
 builder.Services.AddSingleton<IEndpointHandler, LoginHandler>();
+builder.Services.AddSingleton<IEndpointHandler, GetEndOfServiceInfosHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();
