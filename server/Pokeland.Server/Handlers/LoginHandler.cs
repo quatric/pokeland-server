@@ -45,7 +45,11 @@ public sealed class LoginHandler : IEndpointHandler
         // the missing piece, a zero Rev was. See GameSession.Rev.
         var reset = new Reset
         {
-            SupportNumber = 0,
+            // 0 tells the client no player ID has been issued yet, which pops a
+            // "Player ID Registration" overlay on top of the ready-to-play dialog
+            // and stalls boot - hand back a stable 12-digit ID (like the retail
+            // support number) derived from the session instead.
+            SupportNumber = 100000000000L + (long)((uint)session.SessionId.GetHashCode() % 900000000000L),
             Money = 1000,
             DiamondFree = 0,
             DiamondPaid = 0,
@@ -72,10 +76,27 @@ public sealed class LoginHandler : IEndpointHandler
             GUPs = new List<GuestUserProfileSerialized>(),
             Honors = new Honors { IDs = new List<HonorID>(), Params = new List<int>() },
             Islands = new List<Island>(),
+            // FOUND (2026-08-31, headless Ghidra decompile of CampStampCard.
+            // <iHandleLoginBonus>d__2.MoveNext, RVA 0xF25A00): that state
+            // machine unconditionally dereferences Cache.LoginBonusBox.
+            // LastResult ("if (*(long*)(lbb+0x20) == 0) throw" - offset 0x20
+            // in LoginBonusBox is exactly m_lastResult) with no null guard.
+            // LoginBonusBox is only built with a non-null m_lastResult when
+            // the wire LastResult_CStop flags enum is nonzero (its only
+            // defined values are GiftDiamond=4/GiftMoney=2/DiscardTicket=8 -
+            // 0 reads as "no result" and the client's own ctor skips
+            // allocating the LastResult box for it). Leaving CStop at its
+            // Reset default of 0 is exactly what was crashing
+            // CampPageMain.SetupAfterLogin right after Login. Send a token
+            // GiftMoney result so a LastResult box always exists on first
+            // login, matching what live retail almost certainly did (a
+            // day-1 login bonus payout).
             LoginBonusInfo = new LoginBonusInfo
             {
                 LastDailyProcessUTCStr = utcNow,
                 TotalLoginDays = 1,
+                LastResult_CStop = LoginBonusCStopResult.GiftMoney,
+                LastResult_DiffMoney = 100,
             },
             MissionSummary = new MissionSummary
             {
