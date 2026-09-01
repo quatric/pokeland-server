@@ -54,4 +54,14 @@ public sealed class ServerConfig
     /// EndOfServiceCCmFilter note in LoginHandler.
     /// </summary>
     public string Country { get; set; } = "US";
+
+    /// <summary>
+    /// The event the server advertises as currently running. The client keys a
+    /// lot of its Globe/Camp UI off this: <c>Intermission</c> (16) makes it show
+    /// "We're getting ready for the next investigation", <c>Tutorial</c> (1)
+    /// takes the tutorial branch. Whatever is set here must also appear in the
+    /// Login Reset's Evedefs and EventScheduleSet lists - see LoginHandler.
+    /// </summary>
+    public Pokeland.Protocol.EvedefID CurrentEvedefID { get; set; }
+        = Pokeland.Protocol.EvedefID.Tutorial;
 }

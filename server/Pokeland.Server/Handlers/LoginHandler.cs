@@ -95,7 +95,7 @@ public sealed class LoginHandler : IEndpointHandler
             // Current. Intermission is the honest description of a server with
             // no event scheduled, and it takes the branch that hides the banner
             // without needing an Evedef to exist at all.
-            EvedefSummary = new EvedefSummary { CurrentEvedefID = EvedefID.Intermission },
+            EvedefSummary = new EvedefSummary { CurrentEvedefID = ctx.Config.CurrentEvedefID },
             Eqbits = new List<Eqbit>(),
             Equnits = new List<Equnit>(),
             PaidNormalEqunitStoreSize = 0,
@@ -113,7 +113,7 @@ public sealed class LoginHandler : IEndpointHandler
             {
                 new Evedef
                 {
-                    EvedefID = EvedefID.Intermission,
+                    EvedefID = ctx.Config.CurrentEvedefID,
                     PokedexSummary = new PokedexSummary
                     {
                         DiscoveredVec = Array.Empty<byte>(),
@@ -131,7 +131,7 @@ public sealed class LoginHandler : IEndpointHandler
                 {
                     new EvedefSchedule
                     {
-                        EvedefID = EvedefID.Intermission,
+                        EvedefID = ctx.Config.CurrentEvedefID,
                         // An intermission has no advertised end; park every date
                         // far enough out that nothing expires mid-session.
                         EndUTCStr = farFuture,
@@ -152,7 +152,33 @@ public sealed class LoginHandler : IEndpointHandler
             Evepots = new List<Evepot>(),
             GUPs = new List<GuestUserProfileSerialized>(),
             Honors = new Honors { IDs = new List<HonorID>(), Params = new List<int>() },
-            Islands = new List<Island>(),
+            // FOUND (2026-09-01, headless Ghidra decompile of
+            // Camp.<iTutorial_BeforeFadeIn_AfterLogin>d__30.MoveNext, RVA
+            // 0xECCD1C): once CurrentEvedefID is Tutorial the client takes the
+            // tutorial branch, and if DoneFlag[2] is still clear it does
+            //
+            //     island = Cache.IslandBox.GetIslands(EvedefID.Tutorial)
+            //                  .First(i => i.IslandID == 1);
+            //     stage  = Cache.StageBox.GetStages(island.IslandCode)
+            //                  .GetStages(StageType 2).First();
+            //
+            // with no guard for an empty sequence, so shipping no Islands/Stages
+            // NREs the moment the tutorial starts. IslandDesc.json[1] is "_Tut"
+            // (islandType 1) and StageDesc.json[1] is the table's only
+            // m_isTutorial record - and its m_stageType is 2, exactly the type
+            // the decompile filters on. So the tutorial is island 1, stage 1.
+            Islands = new List<Island>
+            {
+                new Island
+                {
+                    IslandCode = Codes.Island(ctx.Config.CurrentEvedefID, islandID: 1),
+                    State = IslandState.Ready,
+                    AnimState = IslandAnimState.NextReady,
+                    CreatedUTCStr = utcNow,
+                    X = 0,
+                    Y = 0,
+                },
+            },
             // FOUND (2026-08-31, headless Ghidra decompile of CampStampCard.
             // <iHandleLoginBonus>d__2.MoveNext, RVA 0xF25A00): that state
             // machine unconditionally dereferences Cache.LoginBonusBox.
@@ -263,7 +289,25 @@ public sealed class LoginHandler : IEndpointHandler
                 },
             },
             PaidPPEStoreSize = 0,
-            Stages = new List<Stage>(),
+            Stages = new List<Stage>
+            {
+                new Stage
+                {
+                    StageCode = Codes.Stage(ctx.Config.CurrentEvedefID, islandID: 1, stageID: 1),
+                    State = StageState.Ready,
+                    PokedexSummary = new PokedexSummary
+                    {
+                        DiscoveredVec = Array.Empty<byte>(),
+                        CapturedVec = Array.Empty<byte>(),
+                    },
+                    CollectionRewarded = Bool.False,
+                    ClearCount = 0,
+                    JissionStates = new List<JissionState>(),
+                    Bosses = new List<PokedexID>(),
+                    Capturables = new List<PokedexID>(),
+                    Prizes = new List<PokedexID>(),
+                },
+            },
             TotalSec = 0,
             Chests = new List<Chest>(),
             Pdecos = new List<Pdeco>(),
