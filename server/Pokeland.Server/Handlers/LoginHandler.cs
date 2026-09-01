@@ -31,6 +31,7 @@ public sealed class LoginHandler : IEndpointHandler
             req.Market, req.AppVer, req.AssetVer, req.TZOffsetMin, session.SessionId);
 
         var utcNow = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+        var farFuture = PokelandClock.UtcNow.AddYears(10).ToString("yyyy-MM-ddTHH:mm:ssZ");
 
         // AutoRes deltas only ever *update* an existing Uskumru.Cache box - the
         // client's own decompiled Cache.ProcessRes<object> reads the current
@@ -99,8 +100,55 @@ public sealed class LoginHandler : IEndpointHandler
             Equnits = new List<Equnit>(),
             PaidNormalEqunitStoreSize = 0,
             PaidSpEqunitStoreSize = 0,
-            Evedefs = new List<Evedef>(),
-            EventScheduleSet = new EventScheduleSet { Evedefs = new List<EvedefSchedule>() },
+            // The Globe scene needs the current event to actually exist, not just
+            // to be named: Scenes.Globe.Globe.RefreshEvedefView (RVA 0xF6BC58)
+            // does `Cache.EvedefBox.Get(Param.EvedefID).EndUTC` with no null
+            // guard, so an EvedefSummary.CurrentEvedefID with no matching Evedef
+            // in this list NREs as soon as Camp hands off to Globe. Ship the one
+            // Intermission entry to match, plus its schedule - Evedef.EndUTC
+            // reads through to the EvedefSchedule with the same ID, so the two
+            // lists have to agree. EvedefDesc.json confirms Intermission is a
+            // real, ordinary event definition (type 1), not a sentinel.
+            Evedefs = new List<Evedef>
+            {
+                new Evedef
+                {
+                    EvedefID = EvedefID.Intermission,
+                    PokedexSummary = new PokedexSummary
+                    {
+                        DiscoveredVec = Array.Empty<byte>(),
+                        CapturedVec = Array.Empty<byte>(),
+                    },
+                    ChstgStageCode = Array.Empty<StageCodeX>(),
+                    IsVisited = Bool.False,
+                    PierreCountAdded = Bool.False,
+                    LastBattleUTCStr = utcNow,
+                },
+            },
+            EventScheduleSet = new EventScheduleSet
+            {
+                Evedefs = new List<EvedefSchedule>
+                {
+                    new EvedefSchedule
+                    {
+                        EvedefID = EvedefID.Intermission,
+                        // An intermission has no advertised end; park every date
+                        // far enough out that nothing expires mid-session.
+                        EndUTCStr = farFuture,
+                        RedeemEndUTCStr = farFuture,
+                        PickUpBeginUTCStr = utcNow,
+                        PickUpEndUTCStr = farFuture,
+                        RankingFixedEndUTCStr = farFuture,
+                        PokedexDist = new EvedefPokedexDistribution
+                        {
+                            AttrPWTs = new List<PokeWazaType>(),
+                            Counts = new List<int>(),
+                            PokedexIDs = new List<PokedexID>(),
+                            MinIslandRankIDs = new List<IslandRankID>(),
+                        },
+                    },
+                },
+            },
             Evepots = new List<Evepot>(),
             GUPs = new List<GuestUserProfileSerialized>(),
             Honors = new Honors { IDs = new List<HonorID>(), Params = new List<int>() },
