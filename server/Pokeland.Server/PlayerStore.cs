@@ -24,6 +24,29 @@ public sealed class Player
     public HashSet<int> DoneFlags { get; set; } = new();
 
     /// <summary>
+    /// Flags the client can only earn through a flow this server does not
+    /// implement yet, and which gate progress until they are set.
+    ///
+    /// FirstChallengeDone (3): CampPageMain.iMessageTryBtnChallenge (RVA
+    /// 0xF21C08) is a hard gate - while flag 3 is clear it shows "I would
+    /// like you to check your challenges before you go on an adventure" and
+    /// refuses the Globe transition, so tapping the globe at Camp just
+    /// replays the message. The client only sets flag 3 after a mission
+    /// reward is actually redeemed (MissionSelector.iMessageFirstChallengeDone),
+    /// which needs the ReceiveMissionRewards endpoint. Seed it until that
+    /// exists, or the game cannot leave Camp at all.
+    /// </summary>
+    private static readonly int[] SeedFlags = { 3 };
+
+    /// <summary>Adds any missing <see cref="SeedFlags"/>; true if it changed.</summary>
+    public bool ApplySeedFlags()
+    {
+        bool changed = false;
+        foreach (var f in SeedFlags) changed |= DoneFlags.Add(f);
+        return changed;
+    }
+
+    /// <summary>
     /// Packs <see cref="DoneFlags"/> into the little-endian bit vector
     /// <c>DoneFlagBox</c> indexes by DoneFlag value. Sized for the largest
     /// member of the enum (163) so a read cannot run off the end even for
@@ -67,6 +90,7 @@ public sealed class PlayerStore
             _player = null;
         }
         _player ??= new Player();
+        if (_player.ApplySeedFlags()) Save();
     }
 
     public Player Current { get { lock (_gate) return _player; } }
