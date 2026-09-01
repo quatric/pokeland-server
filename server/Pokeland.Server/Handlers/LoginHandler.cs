@@ -268,10 +268,13 @@ public sealed class LoginHandler : IEndpointHandler
                         /* 1  PokedexID (MonsNo)  */ 1,     // HUSIGIDANE / Bulbasaur
                         /* 2  IsRareColor         */ 0,
                         /* 3  ParaSex             */ 0,     // MALE
-                        /* 4  Level               */ 5,
-                        /* 5  ApOffset            */ 0,
+                        // Level 5 at the lowest grade and with no moves cannot
+                        // kill a single Rattata before the stage timer runs
+                        // out - the tutorial run always ended in "Try again?".
+                        /* 4  Level               */ 50,
+                        /* 5  ApOffset            */ 100,
                         /* 6  PdecoID             */ 0,     // NONE
-                        /* 7  PiiGrade            */ 1,
+                        /* 7  PiiGrade            */ 5,
                         /* 8  SocketCount         */ 0,
                         /* 9  SpSocketCount       */ 0,
                         /* 10 Waza0               */ 0,     // NONE
