@@ -79,7 +79,16 @@ public sealed class StartStageHandler : IEndpointHandler
                         MonsNoRaw = new short[] { 19, 19, 19, 19 },
                         FormNoRaw = new short[] { 0, 0, 0, 0 },
                         PopNumRaw = new byte[] { 1, 1, 1, 1 },
-                        HpScaleRaw = new float[] { 0.5f, 0.5f, 0.5f, 0.5f },
+                        // Enemy HP is scaled right down. This is not
+                        // cosmetic tuning: at the retail-ish 0.5 the starter
+                        // could not kill a single Rattata, so every locator's
+                        // spawn group stayed alive, the route stayed blocked
+                        // (the Pokemon only walks toward *nearby* opponents,
+                        // so a live crowd pins it in place) and the run always
+                        // timed out. With this the roster actually thins and
+                        // the route can be walked to the arena. Real HP curves
+                        // live in the unextracted stage data - a separate job.
+                        HpScaleRaw = new float[] { 0.01f, 0.01f, 0.01f, 0.01f },
                         ApScaleRaw = new float[] { 0.25f, 0.25f, 0.25f, 0.25f },
                         DpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
                         WazaIDRaw = new short[] { 0, 0, 0, 0 },
@@ -96,12 +105,12 @@ public sealed class StartStageHandler : IEndpointHandler
                     .Select(_ => new EnemyBossDesc
                     {
                         TapAttackDamageRatio = 1f,
-                        OffenseBreakTapAttackNum = 3,
+                        OffenseBreakTapAttackNum = 1,
                         WazaPattern = 0,
                         OffenseWaza1BeforeTime = 1f,
                         OffenseWaza2BeforeTime = 1f,
-                        DefenseTime = 3f,
-                        DefenseBreakHpRatio = 0.5f,
+                        DefenseTime = 0f,
+                        DefenseBreakHpRatio = 1f,
                         DefenseBreakRecoverSpeedCoef = 1f,
                         DefenseAttackDamageScale = 1f,
                         SummonGuardNum = 0,
