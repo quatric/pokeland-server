@@ -112,6 +112,11 @@ var gameHandler = async (string version, HttpContext http) =>
     try
     {
         var result = dispatcher.Dispatch(body, ctx);
+        // Wire trace. The client reports nothing when it silently rejects a
+        // response - no exception, no retry - so the only way to tell a bad
+        // payload from a stalled coroutine is to read both halves of the
+        // exchange afterwards. Off unless POKELAND_WIRE_DIR is set.
+        WireTrace.Write(body, result.Body);
         return Results.Content(result.Body, "application/json", statusCode: result.StatusCode);
     }
     catch (BadRequestException e)
