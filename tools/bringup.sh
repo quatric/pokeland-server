@@ -39,6 +39,8 @@ grep -n 'RealAnchor = new' "$REPO/server/Pokeland.Server/PokelandClock.cs"
 echo "== restarting server"
 lsof -ti tcp:5199 | while read -r p; do kill -9 "$p"; done || true
 cd "$REPO/server/Pokeland.Server"
+rm -rf "${POKELAND_WIRE_DIR:=/private/tmp/pokeland-wire}"
+export POKELAND_WIRE_DIR
 nohup dotnet run --urls http://0.0.0.0:5199 > /private/tmp/pokeland-server.log 2>&1 &
 for _ in $(seq 30); do
     grep -q "Now listening" /private/tmp/pokeland-server.log && break
