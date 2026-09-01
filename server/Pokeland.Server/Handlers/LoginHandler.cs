@@ -64,8 +64,37 @@ public sealed class LoginHandler : IEndpointHandler
                 PopupAnnouncementIds = Array.Empty<int>(),
             },
             ChestSummary = new ChestSummary { StoreSize = 3 },
-            DoneFlagSummary = new DoneFlagSummary { DoneFlagVec = Array.Empty<byte>() },
-            EvedefSummary = new EvedefSummary(),
+            // DoneFlagBox indexes this bit vector by DoneFlag, whose largest
+            // member is 163, so give it enough zero bytes to cover the whole
+            // enum rather than an empty array a read could run off the end of.
+            // Every flag starts clear, which is what a brand new account is.
+            DoneFlagSummary = new DoneFlagSummary { DoneFlagVec = new byte[(163 / 8) + 1] },
+            // FOUND (2026-09-01, headless Ghidra decompile of
+            // CampPageMain.SetupAfterLogin, RVA 0xF1D7FC - the earlier decompiles
+            // of it used a bare toAddr(rva) and so disassembled an unrelated
+            // function; this project's image base is 0x100000, see
+            // ~/ghidra_scripts/CheckBase.java). Its first block is:
+            //
+            //     if (m_eventBanner != null) {
+            //         var eb = Cache.EvedefBox;
+            //         if (!eb.IsTutorial) {
+            //             if (!eb.IsIntermission) {
+            //                 m_eventBanner.SetActive(true);
+            //                 m_eventTimer.UTC = eb.Current.EndUTC;   // <-- NRE
+            //             } else m_eventBanner.SetActive(false);
+            //         } else m_eventBanner.SetActive(false);
+            //     }
+            //
+            // IsTutorial and IsIntermission just test CurrentEvedefID against
+            // EvedefID.Tutorial (1) and EvedefID.Intermission (16), and Current
+            // is a dictionary lookup of that same ID in the (empty) Evedefs
+            // list. Leaving CurrentEvedefID at its default of NONE (0) means
+            // neither guard fires, so the client walks into the "an event is
+            // running, show its countdown" branch and dereferences a null
+            // Current. Intermission is the honest description of a server with
+            // no event scheduled, and it takes the branch that hides the banner
+            // without needing an Evedef to exist at all.
+            EvedefSummary = new EvedefSummary { CurrentEvedefID = EvedefID.Intermission },
             Eqbits = new List<Eqbit>(),
             Equnits = new List<Equnit>(),
             PaidNormalEqunitStoreSize = 0,
