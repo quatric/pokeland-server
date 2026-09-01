@@ -13,6 +13,7 @@ builder.Services.AddSingleton(config);
 builder.Services.AddSingleton<SessionStore>();
 builder.Services.AddSingleton<IEndpointHandler, LoginHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetEndOfServiceInfosHandler>();
+builder.Services.AddSingleton<IEndpointHandler, StartStageHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();

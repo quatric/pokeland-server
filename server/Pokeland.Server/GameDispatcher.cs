@@ -106,8 +106,18 @@ public sealed class GameDispatcher
             // client keeps running instead of dropping into its error flow.
             _log.LogWarning("{Endpoint}: no handler, returning empty envelope", endpoint);
             res = Activator.CreateInstance(pair.Res);
-            FillEmptyCollections(res);
         }
+
+        // Null-fill every response, not just the unimplemented ones. A real
+        // handler is just as likely to leave an envelope field null - the
+        // response types are wide and mostly optional-looking - and the client
+        // is no more tolerant of it there. StartStage was the case that showed
+        // this: the handler filled in everything the endpoint is *about* (a
+        // habitat map full of enemies) but left the inherited `A` (AutoRes[])
+        // and CommitNonActiveSec at null, and the client parked forever inside
+        // iRequestTask's continuation - no exception, no error dialog, just a
+        // tutorial coroutine that never resumed and a fade that never lifted.
+        FillEmptyCollections(res);
 
         // Login runs with session == null (no SessionID to look up yet) since
         // it's the one endpoint that creates the session rather than being
