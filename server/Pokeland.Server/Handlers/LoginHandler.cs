@@ -68,8 +68,11 @@ public sealed class LoginHandler : IEndpointHandler
             // DoneFlagBox indexes this bit vector by DoneFlag, whose largest
             // member is 163, so give it enough zero bytes to cover the whole
             // enum rather than an empty array a read could run off the end of.
-            // Every flag starts clear, which is what a brand new account is.
-            DoneFlagSummary = new DoneFlagSummary { DoneFlagVec = new byte[(163 / 8) + 1] },
+            // Flags come from the persisted account rather than being zeroed:
+            // the client keeps no progress of its own, so handing back a clear
+            // vector here is what replayed the tutorial (and the birthday gate)
+            // on every single launch.
+            DoneFlagSummary = new DoneFlagSummary { DoneFlagVec = ctx.Players.Current.ToDoneFlagVec() },
             // FOUND (2026-09-01, headless Ghidra decompile of
             // CampPageMain.SetupAfterLogin, RVA 0xF1D7FC - the earlier decompiles
             // of it used a bare toAddr(rva) and so disassembled an unrelated
