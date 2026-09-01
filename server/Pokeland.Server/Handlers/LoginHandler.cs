@@ -18,6 +18,21 @@ public sealed class LoginHandler : IEndpointHandler
     /// </summary>
     private static readonly int[] IslandBossMonsNo = { 0, 20, 20, 2, 8, 5, 26 };
 
+    /// <summary>
+    /// MissionDesc.json rows making up MissionGroup.TUTORIAL (1) and
+    /// MissionGroup.DAILY (2). MissionID is the row index.
+    /// </summary>
+    private static readonly int[] StarterMissionIDs =
+        { 1, 6, 7, 8, 12, 14, 17, 71, 72, 73, 74, 75 };
+
+    private static MissionSummary BuildMissions(string utcNow) => new MissionSummary
+    {
+        DailyUTCStr = utcNow,
+        IDs = StarterMissionIDs.Select(id => (MissionID)id).ToList(),
+        Progresses = StarterMissionIDs.Select(_ => 0).ToList(),
+        States = StarterMissionIDs.Select(_ => MissionState.InProgress).ToList(),
+    };
+
     public object Handle(object request, GameSession _, DispatchContext ctx)
     {
         var req = (Pokeland.Protocol.Login.Req)request;
@@ -36,7 +51,6 @@ public sealed class LoginHandler : IEndpointHandler
             req.Market, req.AppVer, req.AssetVer, req.TZOffsetMin, session.SessionId);
 
         var utcNow = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
-        var farFuture = PokelandClock.UtcNow.AddYears(10).ToString("yyyy-MM-ddTHH:mm:ssZ");
 
         // AutoRes deltas only ever *update* an existing Uskumru.Cache box - the
         // client's own decompiled Cache.ProcessRes<object> reads the current
@@ -128,35 +142,19 @@ public sealed class LoginHandler : IEndpointHandler
                         CapturedVec = Array.Empty<byte>(),
                     },
                     ChstgStageCode = Array.Empty<StageCodeX>(),
-                    IsVisited = Bool.False,
+                    // The Globe replays the whole event-change cutscene
+                    // ("research finished" -> professor -> "You've arrived at
+                    // Charizard Sea!") every time it is entered while
+                    // Evedef.IsVisited is false, and lands the player back at
+                    // Camp instead of letting any Globe button through. Mark
+                    // the current event as already visited so the Globe is
+                    // interactive.
+                    IsVisited = Bool.True,
                     PierreCountAdded = Bool.False,
                     LastBattleUTCStr = utcNow,
                 },
             },
-            EventScheduleSet = new EventScheduleSet
-            {
-                Evedefs = new List<EvedefSchedule>
-                {
-                    new EvedefSchedule
-                    {
-                        EvedefID = ctx.Config.CurrentEvedefID,
-                        // An intermission has no advertised end; park every date
-                        // far enough out that nothing expires mid-session.
-                        EndUTCStr = farFuture,
-                        RedeemEndUTCStr = farFuture,
-                        PickUpBeginUTCStr = utcNow,
-                        PickUpEndUTCStr = farFuture,
-                        RankingFixedEndUTCStr = farFuture,
-                        PokedexDist = new EvedefPokedexDistribution
-                        {
-                            AttrPWTs = new List<PokeWazaType>(),
-                            Counts = new List<int>(),
-                            PokedexIDs = new List<PokedexID>(),
-                            MinIslandRankIDs = new List<IslandRankID>(),
-                        },
-                    },
-                },
-            },
+            EventScheduleSet = Events.Schedule(ctx.Config.CurrentEvedefID),
             Evepots = new List<Evepot>(),
             GUPs = new List<GuestUserProfileSerialized>(),
             Honors = new Honors { IDs = new List<HonorID>(), Params = new List<int>() },
@@ -226,13 +224,17 @@ public sealed class LoginHandler : IEndpointHandler
                 LastResult_CStop = LoginBonusCStopResult.GiftMoney,
                 LastResult_DiffMoney = 100,
             },
-            MissionSummary = new MissionSummary
-            {
-                DailyUTCStr = utcNow,
-                IDs = new List<MissionID>(),
-                Progresses = new List<int>(),
-                States = new List<MissionState>(),
-            },
+            // The Camp gate "I would like you to check your challenges before
+            // you go on an adventure" (Camp.iMessageCheckChallenge, RVA
+            // 0xECBA48) parks the player at Camp - tapping the globe replays
+            // the message instead of loading the Globe - until the challenge
+            // screen has actually been used, and with an empty MissionSummary
+            // that screen opens as a blank card with nothing to redeem. Ship
+            // the real mission set so the list has content: MissionDesc.json
+            // rows 1/6/7/8/12/14/17 are the whole MissionGroup.TUTORIAL (1)
+            // set and 71..75 are MissionGroup.DAILY (2). All start
+            // InProgress at 0 - a fresh account has done none of them.
+            MissionSummary = BuildMissions(utcNow),
             MyslandSummary = new MyslandSummary
             {
                 Favorite = Array.Empty<IslandCodeX>(),
@@ -397,6 +399,19 @@ public sealed class LoginHandler : IEndpointHandler
                 EndOfShopCCmFilter = "",
             },
         };
+
+        // The one mysland, shipped with the rest of the world rather than only
+        // in the FindMysland response - see World for why the AutoRes route is
+        // not trustworthy for it. Its Stage rides along so it is enterable, but
+        // deliberately NOT an Island: the Globe's island scroll list is the
+        // journey run, and feeding a mysland code into it throws a
+        // NullReferenceException out of GlobeIslandView.RefreshAll. A mysland
+        // describes itself (name, boss, position) through the Mysland record.
+        reset.Myslands.Add(World.Mysland(ctx.Config.CurrentEvedefID));
+        reset.Stages = reset.Stages
+            .Append(World.Stage(ctx.Config.CurrentEvedefID))
+            .ToList();
+
 
         return new Pokeland.Protocol.Login.Res
         {

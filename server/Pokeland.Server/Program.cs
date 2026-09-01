@@ -18,6 +18,7 @@ builder.Services.AddSingleton(new PlayerStore(
 builder.Services.AddSingleton<IEndpointHandler, LoginHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetEndOfServiceInfosHandler>();
 builder.Services.AddSingleton<IEndpointHandler, StartStageHandler>();
+builder.Services.AddSingleton<IEndpointHandler, FindMyslandHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();
