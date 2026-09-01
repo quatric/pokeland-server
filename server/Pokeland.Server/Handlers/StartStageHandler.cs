@@ -68,14 +68,19 @@ public sealed class StartStageHandler : IEndpointHandler
                     {
                         EnemyType = type,
                         // Rattata - a plain early-route Pokemon, no form variants.
+                        // One spawn per slot, at reduced attack and health:
+                        // every advent type is populated, so a retail-sized
+                        // PopNum stacks a dozen groups onto one short route
+                        // and the tutorial Pokemon is overrun before it
+                        // reaches the arena.
                         // Four identical slots rather than one: iBossProc
                         // walks these arrays past index 0, so a single-slot
                         // roster runs off the end of MonsNoAccessor.
                         MonsNoRaw = new short[] { 19, 19, 19, 19 },
                         FormNoRaw = new short[] { 0, 0, 0, 0 },
-                        PopNumRaw = new byte[] { 3, 3, 3, 3 },
-                        HpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
-                        ApScaleRaw = new float[] { 1f, 1f, 1f, 1f },
+                        PopNumRaw = new byte[] { 1, 1, 1, 1 },
+                        HpScaleRaw = new float[] { 0.5f, 0.5f, 0.5f, 0.5f },
+                        ApScaleRaw = new float[] { 0.25f, 0.25f, 0.25f, 0.25f },
                         DpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
                         WazaIDRaw = new short[] { 0, 0, 0, 0 },
                         WazaID2 = 0,
