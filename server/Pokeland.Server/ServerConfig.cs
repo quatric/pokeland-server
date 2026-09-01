@@ -47,4 +47,11 @@ public sealed class ServerConfig
 
     /// <summary>Local directory mirroring the CDN tree (contains a "pokeland" folder).</summary>
     public string CdnRoot { get; set; } = "../../cdn";
+
+    /// <summary>
+    /// Two-letter country handed back by pokemon-webapi's estimate_country. The
+    /// client turns this into its CCmCode, which drives region gating - see the
+    /// EndOfServiceCCmFilter note in LoginHandler.
+    /// </summary>
+    public string Country { get; set; } = "US";
 }

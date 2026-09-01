@@ -19,9 +19,17 @@ import sys
 # constant-folds `BaseURL + "/" + Version + "/game"` into its own literal, so
 # "https://prd.app.pokeland.jp/1.600/game" exists alongside the bare host and
 # both have to be redirected.
+# pokemon-webapi.appspot.com is the client's *other* backend, separate from the
+# game API. Its /api/location/v1/estimate_country call happens during bootstrap,
+# before Login, and the country it returns feeds the CCmCode that
+# SeldomInfoBox.IsEndOfService filters on. Leaving it pointed at the dead retail
+# host meant the first thing the client did on boot was an HTTPS request that
+# could never succeed, which surfaced as "Unable to connect to the server"
+# (Error ID U-DA39A3) with the game never reaching /pre/AppManifest at all.
 HOSTS = (
     'https://prd.app.pokeland.jp',
     'https://dl.app.pokeland.jp',
+    'https://pokemon-webapi.appspot.com',
 )
 
 
