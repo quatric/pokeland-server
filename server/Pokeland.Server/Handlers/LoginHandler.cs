@@ -13,6 +13,11 @@ public sealed class LoginHandler : IEndpointHandler
 {
     public string Endpoint => "Login";
 
+    /// <summary>
+    /// m_islandMonsNo from IslandDesc.json rows 0..6, indexed by IslandID.
+    /// </summary>
+    private static readonly int[] IslandBossMonsNo = { 0, 20, 20, 2, 8, 5, 26 };
+
     public object Handle(object request, GameSession _, DispatchContext ctx)
     {
         var req = (Pokeland.Protocol.Login.Req)request;
@@ -312,11 +317,30 @@ public sealed class LoginHandler : IEndpointHandler
                 },
             },
             PaidPPEStoreSize = 0,
-            Stages = new List<Stage>
-            {
-                new Stage
+            // FOUND (2026-09-01, headless Ghidra decompile of
+            // GlobeIslandView.RefreshAll, RVA 0xED44C0): it does
+            //
+            //     var sii = Cache.StageBox.GetStages(m_island.IslandCode);
+            //     var stages = sii.GetStages(IsMysland(code) ? Mysland : Journey);
+            //
+            // and null-checks the StageBox but NOT the StagesInIsland that
+            // GetStages returns. StageBox groups the wire Stages by the island
+            // packed into each StageCode, so an island with no stages at all
+            // yields null there and RefreshAll NREs - which is what was hanging
+            // the Globe on its loading spinner, once per island, from
+            // CategorizedScrollList.Reload -> GlobeIslandItem.UpdateData.
+            //
+            // So every island shipped in Islands above needs at least one
+            // stage. StageDesc.json is indexed by StageID globally (not per
+            // island) and rows 1..6 are exactly a journey run: m_stageType 2
+            // with m_targetCP climbing 100/100/130/180/230/300, row 1 being the
+            // m_isTutorial one. Line stage N up with island N.
+            Stages = Enumerable
+                .Range(1, 6)
+                .Select(id => new Stage
                 {
-                    StageCode = Codes.Stage(ctx.Config.CurrentEvedefID, islandID: 1, stageID: 1),
+                    StageCode = Codes.Stage(
+                        ctx.Config.CurrentEvedefID, islandID: id, stageID: id),
                     State = StageState.Ready,
                     PokedexSummary = new PokedexSummary
                     {
@@ -325,12 +349,28 @@ public sealed class LoginHandler : IEndpointHandler
                     },
                     CollectionRewarded = Bool.False,
                     ClearCount = 0,
-                    JissionStates = new List<JissionState>(),
-                    Bosses = new List<PokedexID>(),
+                    // IslandDesc.m_jissionID is a fixed 3-slot array and the
+                    // client zips it with this list by index
+                    // (JissionValue.IndexInIslandDesc), so a short list makes
+                    // GlobeIslandView.RefreshAll throw ArgumentOutOfRange out of
+                    // List<JissionState>.get_Item. Always ship all three.
+                    JissionStates = Enumerable
+                        .Repeat(JissionState.NotAchieved, 3)
+                        .ToList(),
+                    // GlobeIslandView.RefreshAll (RVA 0xED44C0) reads
+                    // stage.Boss for the island's pii icon, and Stage.get_Boss
+                    // (RVA 0xFA8390) is just m_bosses[0] with no emptiness
+                    // guard - so an empty Bosses list throws
+                    // ArgumentOutOfRangeException out of List<T>.get_Item,
+                    // inlined into RefreshAll's own frame. Ship the island's
+                    // own boss: PokedexID is the PiiDesc row index, which for
+                    // form 0 equals m_Monsno, and IslandDesc.json rows 1..6
+                    // give m_islandMonsNo 20/20/2/8/5/26.
+                    Bosses = new List<PokedexID> { (PokedexID)IslandBossMonsNo[id] },
                     Capturables = new List<PokedexID>(),
                     Prizes = new List<PokedexID>(),
-                },
-            },
+                })
+                .ToList(),
             TotalSec = 0,
             Chests = new List<Chest>(),
             Pdecos = new List<Pdeco>(),

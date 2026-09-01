@@ -61,7 +61,16 @@ public sealed class ServerConfig
     /// "We're getting ready for the next investigation", <c>Tutorial</c> (1)
     /// takes the tutorial branch. Whatever is set here must also appear in the
     /// Login Reset's Evedefs and EventScheduleSet lists - see LoginHandler.
+    ///
+    /// This is deliberately NOT Tutorial. The Globe loads the running event's
+    /// main-Pokemon illustration by name, and EvedefDesc.json gives Tutorial an
+    /// empty m_mainPokemonIllustAssetName (every real event has
+    /// "IllustMainPokemon"); the evedef/tut bundle has no such asset either.
+    /// Advertising Tutorial therefore throws "ArgumentException: The input
+    /// asset name cannot be empty" on entering the Globe, and every island then
+    /// NullReferences its way into an untextured magenta quad that swallows
+    /// taps - which looks like missing island art and is not.
     /// </summary>
     public Pokeland.Protocol.EvedefID CurrentEvedefID { get; set; }
-        = Pokeland.Protocol.EvedefID.Tutorial;
+        = Pokeland.Protocol.EvedefID._1;
 }

@@ -12,12 +12,23 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 AVD=${AVD:-pokeland30}
 # swiftshader_indirect spews "Failed to find ColorBuffer" and takes the emulator
-# down every so often, but it is still the only mode that renders this game:
-# under -gpu host the emulator advertises a GL profile the shipped shader
-# bundles have no variants for ("Desired shader compiler platform 9 is not
-# available in shader blob") and the game runs invisibly behind a frozen title
-# screen - which looks exactly like a server hang and is not one. Keep
-# swiftshader and just re-run this script when the emulator dies.
+# down every so often, but it is still the best mode for this game. Keep it and
+# just re-run this script when the emulator dies.
+#
+# "Desired shader compiler platform 9 is not available in shader blob" is NOT
+# specific to -gpu host - it fires under swiftshader too, and it is survivable.
+# Platform 9 is GLES3Plus, and every shader in the retail CDN bundles carries
+# only platforms 5 (GLES2, verified by decompressing a blob to "#version 100")
+# and 14 (Metal). The APK meanwhile declares m_GraphicsAPIs = [21, 11] =
+# Vulkan, GLES3, and its built-in shaders are {9, 18}. So a GLES3 context takes
+# the GLES2 bundle blobs for most shaders and only a handful fall through to
+# magenta - which is why the globe island renders magenta.
+#
+# Do NOT "fix" this by forcing GLES2 with `-feature -GLESDynamicVersion`. That
+# does work (ro.opengles.version drops to 131072 and Unity switches to asking
+# for platform 5), but the APK's own built-ins have no GLES2 variant, so the
+# entire screen turns magenta instead of just the island. GLES3 is the strictly
+# better of the two.
 GPU=${GPU:-swiftshader_indirect}
 
 if ! adb shell true >/dev/null 2>&1; then
