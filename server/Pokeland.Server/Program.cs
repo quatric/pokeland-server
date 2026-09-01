@@ -29,6 +29,37 @@ app.Use(async (http, next) =>
         http.Request.Method, http.Request.Path, http.Request.QueryString, http.Response.StatusCode);
 });
 
+// ------------------------------------------------------------ pokemon-webapi
+// The client has a second backend, pokemon-webapi.appspot.com, separate from
+// the game API. LocationChecker hits estimate_country during boot - before
+// Login - and the country it returns becomes the CCmCode that
+// SeldomInfoBox.IsEndOfService filters on. Until tools/patch_metadata.py
+// learned to redirect this host too, boot died here on an HTTPS request to a
+// host that no longer exists, which the client reported as "Unable to connect
+// to the server" (Error ID U-DA39A3) without ever reaching /pre/AppManifest.
+// The client probes with GET during bootstrap but does the real lookup with
+// POST, so both verbs have to answer. A 405 on the POST reads to the client as
+// a failed country lookup and stalls boot before it ever asks for AppManifest.
+app.MapMethods("/api/location/v1/estimate_country", new[] { "GET", "POST" }, (HttpContext http) =>
+{
+    log.LogInformation("estimate_country -> {Country}", config.Country);
+    return Results.Json(new
+    {
+        country = config.Country,
+        countryCode = config.Country,
+        result = config.Country,
+        ResultValue = config.Country,
+    });
+});
+
+// The profanity filter for user-entered names. Nothing is rejected: the retail
+// word list is not part of the client, and an empty rejectedBy means "clean".
+app.MapGet("/api/badword/v1/check_word", () => Results.Json(new
+{
+    result = "OK",
+    rejectedBy = "",
+}));
+
 // ---------------------------------------------------------------- bootstrap
 // GET /pre/AppManifest?market=GOOGLE&magic=<constant>
 // The very first request the client makes. It answers "for your AppVer, which
