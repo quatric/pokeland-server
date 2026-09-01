@@ -37,7 +37,7 @@ public static class PokelandClock
     // updated (and the device re-synced) together - see
     // tools/sync_device_clock.sh, which prints the exact `adb shell date`
     // invocation and the RealAnchor line to paste in here.
-    private static readonly DateTime RealAnchor = new(2026, 9, 1, 13, 27, 1, DateTimeKind.Utc);
+    private static readonly DateTime RealAnchor = new(2026, 9, 1, 13, 35, 2, DateTimeKind.Utc);
 
     public static DateTime UtcNow => DeviceEpoch + (DateTime.UtcNow - RealAnchor);
     public static DateTimeOffset UtcNowOffset => new(UtcNow, TimeSpan.Zero);

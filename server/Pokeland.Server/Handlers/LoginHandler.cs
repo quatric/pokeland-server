@@ -170,18 +170,35 @@ public sealed class LoginHandler : IEndpointHandler
             // (islandType 1) and StageDesc.json[1] is the table's only
             // m_isTutorial record - and its m_stageType is 2, exactly the type
             // the decompile filters on. So the tutorial is island 1, stage 1.
-            Islands = new List<Island>
-            {
-                new Island
+            //
+            // Island 1 alone is not enough to give the Globe anything to draw.
+            // IslandDesc.json[1] ("_Tut") has m_journeyDispProgressOrder -1 -
+            // the tutorial island is deliberately hidden from the Globe - so
+            // shipping only it renders an empty sky with the balloon floating
+            // in it. The journey islands the Globe actually lays out are
+            // IslandDesc.json[2..6] ("_1".."_5"), whose display orders are 1..5.
+            // Ship the tutorial island (the tutorial branch still looks it up
+            // by IslandID == 1) plus that run, spaced along Y so they do not
+            // all stack on the origin.
+            Islands = Enumerable
+                .Range(1, 6)
+                .Select(id => new Island
                 {
-                    IslandCode = Codes.Island(ctx.Config.CurrentEvedefID, islandID: 1),
+                    IslandCode = Codes.Island(ctx.Config.CurrentEvedefID, islandID: id),
                     State = IslandState.Ready,
-                    AnimState = IslandAnimState.NextReady,
+                    // The first journey island is the one to fly to; the rest
+                    // are still ahead of the player.
+                    AnimState = id switch
+                    {
+                        1 => IslandAnimState.Done,
+                        2 => IslandAnimState.NextReady,
+                        _ => IslandAnimState.Future,
+                    },
                     CreatedUTCStr = utcNow,
                     X = 0,
-                    Y = 0,
-                },
-            },
+                    Y = (id - 1) * 100f,
+                })
+                .ToList(),
             // FOUND (2026-08-31, headless Ghidra decompile of CampStampCard.
             // <iHandleLoginBonus>d__2.MoveNext, RVA 0xF25A00): that state
             // machine unconditionally dereferences Cache.LoginBonusBox.
