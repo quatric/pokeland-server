@@ -25,6 +25,11 @@ namespace Pokeland.Server.Handlers;
 /// </summary>
 public sealed class StartStageHandler : IEndpointHandler
 {
+    private static readonly EnemyType[] EnemyTypes =
+    {
+        EnemyType.NORMAL, EnemyType.BOSS,
+    };
+
     private static readonly AdventType[] AdventTypes =
     {
         AdventType.FIXED, AdventType.POP, AdventType.POP_GROUND,
@@ -51,28 +56,61 @@ public sealed class StartStageHandler : IEndpointHandler
             {
                 StageCode = req.StageCode,
                 IslandRankID = IslandRankID._1,
-                // One entry per AdventType. A Locator asks for the descs
-                // matching its own advent type and then picks one at random;
-                // when nothing matches it indexes an empty array and
-                // Locator.iEnemyProc throws IndexOutOfRangeException every
-                // frame, so every type a stage can place has to be covered.
-                EnemyDescs = AdventTypes.Select(advent => new EnemyDesc
-                {
-                    EnemyType = EnemyType.NORMAL,
-                    // Rattata - a plain early-route Pokemon, no form variants.
-                    MonsNoRaw = new short[] { 19 },
-                    FormNoRaw = new short[] { 0 },
-                    PopNumRaw = new byte[] { 3 },
-                    HpScaleRaw = new float[] { 1f },
-                    ApScaleRaw = new float[] { 1f },
-                    DpScaleRaw = new float[] { 1f },
-                    WazaIDRaw = new short[] { 0 },
-                    WazaID2 = 0,
-                    Prize = false,
-                    Ratio = 1f,
-                    AdventType = advent,
-                }).ToList(),
-                EnemyBossDescs = new List<EnemyBossDesc>(),
+                // One entry per (enemy type, advent type) pair. A Locator
+                // filters the roster down to its own advent type and then
+                // picks one at random; when nothing matches it indexes an
+                // empty array and Locator.iEnemyProc throws
+                // IndexOutOfRangeException every frame. BOSS is here as well
+                // as NORMAL because the arena at the end of a route is a boss
+                // locator and goes through iBossProc.
+                EnemyDescs = EnemyTypes
+                    .SelectMany(type => AdventTypes.Select(advent => new EnemyDesc
+                    {
+                        EnemyType = type,
+                        // Rattata - a plain early-route Pokemon, no form variants.
+                        // Four identical slots rather than one: iBossProc
+                        // walks these arrays past index 0, so a single-slot
+                        // roster runs off the end of MonsNoAccessor.
+                        MonsNoRaw = new short[] { 19, 19, 19, 19 },
+                        FormNoRaw = new short[] { 0, 0, 0, 0 },
+                        PopNumRaw = new byte[] { 3, 3, 3, 3 },
+                        HpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
+                        ApScaleRaw = new float[] { 1f, 1f, 1f, 1f },
+                        DpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
+                        WazaIDRaw = new short[] { 0, 0, 0, 0 },
+                        WazaID2 = 0,
+                        Prize = false,
+                        Ratio = 1f,
+                        AdventType = advent,
+                    }))
+                    .ToList(),
+                // Boss behaviour profiles, paired to EnemyDescs by index, so
+                // this list has to be the same length as that one.
+                EnemyBossDescs = Enumerable
+                    .Range(0, EnemyTypes.Length * AdventTypes.Length)
+                    .Select(_ => new EnemyBossDesc
+                    {
+                        TapAttackDamageRatio = 1f,
+                        OffenseBreakTapAttackNum = 3,
+                        WazaPattern = 0,
+                        OffenseWaza1BeforeTime = 1f,
+                        OffenseWaza2BeforeTime = 1f,
+                        DefenseTime = 3f,
+                        DefenseBreakHpRatio = 0.5f,
+                        DefenseBreakRecoverSpeedCoef = 1f,
+                        DefenseAttackDamageScale = 1f,
+                        SummonGuardNum = 0,
+                        AfterSummonTime = 1f,
+                        TossinDamageScale = 1f,
+                        TossinAimPlayerAfterCamera = false,
+                        HukitobasiDamageScale = 1f,
+                        LeaveTime = 10f,
+                        ForwardSpeedCoef = 1f,
+                        ActionPattern = 0,
+                        EscortFormationType = 0,
+                        EscortFormationAngle = 0f,
+                    })
+                    .ToList(),
                 MaxDropMoney = 100,
                 MaxDropPierreCount = 0,
                 DropChestTypeID = 0,
