@@ -1,5 +1,6 @@
 #nullable disable
 using System.Collections.Generic;
+using System.Linq;
 using Pokeland.Protocol;
 
 namespace Pokeland.Server.Handlers;
@@ -17,13 +18,21 @@ namespace Pokeland.Server.Handlers;
 /// The <c>*Raw</c> arrays on EnemyDesc are parallel per-spawn-slot arrays -
 /// index N of MonsNoRaw/FormNoRaw/PopNumRaw/HpScaleRaw/... all describe the
 /// same spawn - so they must be the same length or the client indexes off the
-/// end. This deliberately ships one modest spawn group: enough for the tutorial
-/// stage to be playable and for EndStage to have something to report, without
-/// pretending to reproduce the retail spawn tables (those live in the
-/// unextracted stage data and are a separate job).
+/// end. This deliberately ships one modest spawn group per advent type: enough
+/// for the tutorial stage to be playable and for EndStage to have something to
+/// report, without pretending to reproduce the retail spawn tables (those live
+/// in the unextracted stage data and are a separate job).
 /// </summary>
 public sealed class StartStageHandler : IEndpointHandler
 {
+    private static readonly AdventType[] AdventTypes =
+    {
+        AdventType.FIXED, AdventType.POP, AdventType.POP_GROUND,
+        AdventType.POP_SKY, AdventType.POP_WARP, AdventType.YARARE,
+        AdventType.FALL, AdventType.SURROUND, AdventType.POP_FOREST,
+        AdventType.POP_CAVE, AdventType.POP_GRASSLAND, AdventType.POP_BEACH,
+    };
+
     public string Endpoint => "StartStage";
 
     public object Handle(object request, GameSession session, DispatchContext ctx)
@@ -42,25 +51,27 @@ public sealed class StartStageHandler : IEndpointHandler
             {
                 StageCode = req.StageCode,
                 IslandRankID = IslandRankID._1,
-                EnemyDescs = new List<EnemyDesc>
+                // One entry per AdventType. A Locator asks for the descs
+                // matching its own advent type and then picks one at random;
+                // when nothing matches it indexes an empty array and
+                // Locator.iEnemyProc throws IndexOutOfRangeException every
+                // frame, so every type a stage can place has to be covered.
+                EnemyDescs = AdventTypes.Select(advent => new EnemyDesc
                 {
-                    new EnemyDesc
-                    {
-                        EnemyType = EnemyType.NORMAL,
-                        // Rattata - a plain early-route Pokemon, no form variants.
-                        MonsNoRaw = new short[] { 19 },
-                        FormNoRaw = new short[] { 0 },
-                        PopNumRaw = new byte[] { 3 },
-                        HpScaleRaw = new float[] { 1f },
-                        ApScaleRaw = new float[] { 1f },
-                        DpScaleRaw = new float[] { 1f },
-                        WazaIDRaw = new short[] { 0 },
-                        WazaID2 = 0,
-                        Prize = false,
-                        Ratio = 1f,
-                        AdventType = AdventType.POP,
-                    },
-                },
+                    EnemyType = EnemyType.NORMAL,
+                    // Rattata - a plain early-route Pokemon, no form variants.
+                    MonsNoRaw = new short[] { 19 },
+                    FormNoRaw = new short[] { 0 },
+                    PopNumRaw = new byte[] { 3 },
+                    HpScaleRaw = new float[] { 1f },
+                    ApScaleRaw = new float[] { 1f },
+                    DpScaleRaw = new float[] { 1f },
+                    WazaIDRaw = new short[] { 0 },
+                    WazaID2 = 0,
+                    Prize = false,
+                    Ratio = 1f,
+                    AdventType = advent,
+                }).ToList(),
                 EnemyBossDescs = new List<EnemyBossDesc>(),
                 MaxDropMoney = 100,
                 MaxDropPierreCount = 0,
