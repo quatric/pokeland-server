@@ -21,6 +21,7 @@ public interface IEndpointHandler
 public sealed class DispatchContext
 {
     public SessionStore Sessions { get; init; }
+    public PlayerStore Players { get; init; }
     public ServerConfig Config { get; init; }
     public ILogger Log { get; init; }
 }
@@ -94,6 +95,21 @@ public sealed class GameDispatcher
                 Reason = UnauthorizedReason.InvalidSession,
             }), StatusCodes.Status401Unauthorized);
         }
+
+        // SetDoneFlag arrives two ways and both have to be caught here rather
+        // than in a handler: as its own endpoint, and piggybacked onto any
+        // other request (every Uskumru.Proto.BaseDF.Req carries a SetDoneFlag
+        // field). Read off the raw JObject rather than the typed request,
+        // because the two paths do not share a base class - SetDoneFlag.Req
+        // derives from Base.Req and so has no SetDoneFlag property of its own,
+        // which a typed `is BaseDF.Req` check silently misses.
+        // Dropping these is what replayed the tutorial on every launch: the
+        // client keeps no progress and believes whatever Login hands back.
+        var diff = raw["SetDoneFlag"]?["DoneFlagDiff"]?.ToObject<DoneFlagDiff>(Json.Serializer);
+        if (diff is not null && ctx.Players.Apply(diff))
+            _log.LogInformation("{Endpoint}: DoneFlag +[{On}] -[{Off}]", endpoint,
+                string.Join(",", diff.Ons ?? new List<DoneFlag>()),
+                string.Join(",", diff.Offs ?? new List<DoneFlag>()));
 
         object res;
         if (_handlers.TryGetValue(endpoint, out var handler))

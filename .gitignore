@@ -18,3 +18,5 @@ out/
 # RE tooling downloads
 tools/Il2CppDumper/
 tools/il2cppdumper.zip
+# Local account save produced by PlayerStore.
+server/Pokeland.Server/player.json

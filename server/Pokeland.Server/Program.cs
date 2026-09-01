@@ -11,6 +11,10 @@ var config = new ServerConfig();
 builder.Configuration.GetSection("Pokeland").Bind(config);
 builder.Services.AddSingleton(config);
 builder.Services.AddSingleton<SessionStore>();
+// Account progress that has to survive a restart. Path is overridable so a
+// throwaway bring-up run can be pointed at a scratch save.
+builder.Services.AddSingleton(new PlayerStore(
+    Environment.GetEnvironmentVariable("POKELAND_SAVE") ?? "player.json"));
 builder.Services.AddSingleton<IEndpointHandler, LoginHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetEndOfServiceInfosHandler>();
 builder.Services.AddSingleton<IEndpointHandler, StartStageHandler>();
@@ -21,7 +25,8 @@ var app = builder.Build();
 var log = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger("Pokeland");
 var sessions = app.Services.GetRequiredService<SessionStore>();
 var dispatcher = app.Services.GetRequiredService<GameDispatcher>();
-var ctx = new DispatchContext { Sessions = sessions, Config = config, Log = log };
+var players = app.Services.GetRequiredService<PlayerStore>();
+var ctx = new DispatchContext { Sessions = sessions, Players = players, Config = config, Log = log };
 
 app.Use(async (http, next) =>
 {
