@@ -22,16 +22,30 @@ public sealed class LoginHandler : IEndpointHandler
     /// MissionDesc.json rows making up MissionGroup.TUTORIAL (1) and
     /// MissionGroup.DAILY (2). MissionID is the row index.
     /// </summary>
-    private static readonly int[] StarterMissionIDs =
-        { 1, 6, 7, 8, 12, 14, 17, 71, 72, 73, 74, 75 };
-
-    private static MissionSummary BuildMissions(string utcNow) => new MissionSummary
+    /// <summary>
+    /// The mission list as the account currently stands. Progress is whatever
+    /// the client last reported through RecordMissions, and the state follows
+    /// from it: paid missions are Redeemed, finished-but-unpaid ones are
+    /// CanRedeem (which is what puts the badge on the challenge board), the
+    /// rest are still InProgress. The three lists are index-paired.
+    /// </summary>
+    private static MissionSummary BuildMissions(string utcNow, Player player)
     {
-        DailyUTCStr = utcNow,
-        IDs = StarterMissionIDs.Select(id => (MissionID)id).ToList(),
-        Progresses = StarterMissionIDs.Select(_ => 0).ToList(),
-        States = StarterMissionIDs.Select(_ => MissionState.InProgress).ToList(),
-    };
+        var ids = Missions.IDs.ToList();
+        var progresses = ids
+            .Select(id => player.MissionProgress.TryGetValue(id, out var p) ? p : 0)
+            .ToList();
+        return new MissionSummary
+        {
+            DailyUTCStr = utcNow,
+            IDs = ids.Select(id => (MissionID)id).ToList(),
+            Progresses = progresses,
+            States = ids.Zip(progresses, (id, p) =>
+                player.RedeemedMissions.Contains(id) ? MissionState.Redeemed
+                : Missions.IsComplete(id, p) ? MissionState.CanRedeem
+                : MissionState.InProgress).ToList(),
+        };
+    }
 
     public object Handle(object request, GameSession _, DispatchContext ctx)
     {
@@ -73,7 +87,7 @@ public sealed class LoginHandler : IEndpointHandler
             // From the persisted account, not a constant: money a run
             // banked through EndStage has to still be there next launch.
             Money = ctx.Players.Current.Money,
-            DiamondFree = 0,
+            DiamondFree = ctx.Players.Current.DiamondFree,
             DiamondPaid = 0,
             DiamondConsumed = 0,
             DiamondConsumedExtra = 0,
@@ -236,7 +250,7 @@ public sealed class LoginHandler : IEndpointHandler
             // rows 1/6/7/8/12/14/17 are the whole MissionGroup.TUTORIAL (1)
             // set and 71..75 are MissionGroup.DAILY (2). All start
             // InProgress at 0 - a fresh account has done none of them.
-            MissionSummary = BuildMissions(utcNow),
+            MissionSummary = BuildMissions(utcNow, ctx.Players.Current),
             MyslandSummary = new MyslandSummary
             {
                 Favorite = Array.Empty<IslandCodeX>(),
