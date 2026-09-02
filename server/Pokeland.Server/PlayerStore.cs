@@ -665,6 +665,29 @@ public sealed class PlayerStore
         Save();
     }
 
+    /// <summary>
+    /// Releases owned PPEs (Goodbye's GoodbyePPEIds) - refuses to remove the
+    /// fixed starter Id=1, the same protection every other per-PPE method
+    /// above gives it, since Login always rebuilds it regardless of
+    /// OwnedPPEs. Any equnit mounted to a released PPE is unmounted rather
+    /// than left dangling on a PPEId that no longer exists.
+    /// </summary>
+    public void RemovePPEs(IEnumerable<long> ppeIds)
+    {
+        var ids = new HashSet<long>(ppeIds);
+        ids.Remove(1);
+        lock (_gate)
+        {
+            _player.OwnedPPEs.RemoveAll(p => ids.Contains(p.Id));
+            _player.PdecoMounts.Keys.Where(ids.Contains).ToList().ForEach(k => _player.PdecoMounts.Remove(k));
+            _player.PPEAddLevels.Keys.Where(ids.Contains).ToList().ForEach(k => _player.PPEAddLevels.Remove(k));
+            _player.PPEAddNormalSockets.Keys.Where(ids.Contains).ToList().ForEach(k => _player.PPEAddNormalSockets.Remove(k));
+            foreach (var equnit in _player.Equnits)
+                if (ids.Contains(equnit.MountedPPEId)) equnit.MountedPPEId = 0;
+        }
+        Save();
+    }
+
     /// <summary>Spends one utensil of the given kind. Returns false if none
     /// are in stock.</summary>
     public bool SpendUtensil(Pokeland.Protocol.UtensilID id)

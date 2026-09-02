@@ -4,13 +4,17 @@ using Pokeland.Protocol;
 namespace Pokeland.Server.Handlers;
 
 /// <summary>
-/// PPE (equipment) goodbye - the equipment system doesn't exist on this
-/// server yet, so there's nothing to remove; just ack.
+/// Releases PPEs (GoodbyePPEIds) - see PlayerStore.RemovePPEs, which also
+/// unmounts any equnit that was mounted to a released PPE.
 /// </summary>
 public sealed class GoodbyeHandler : IEndpointHandler
 {
     public string Endpoint => "Goodbye";
 
     public object Handle(object request, GameSession session, DispatchContext ctx)
-        => new Pokeland.Protocol.Goodbye.Res();
+    {
+        var req = (Pokeland.Protocol.Goodbye.Req)request;
+        ctx.Players.RemovePPEs(req.GoodbyePPEIds);
+        return new Pokeland.Protocol.Goodbye.Res();
+    }
 }
