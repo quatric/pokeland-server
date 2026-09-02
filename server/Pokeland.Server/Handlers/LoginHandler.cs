@@ -228,12 +228,7 @@ public sealed class LoginHandler : IEndpointHandler
                 LastVisited = Array.Empty<IslandCodeX>(),
             },
             Myslands = new List<Mysland>(),
-            MyUserProfile = new MyUserProfile
-            {
-                Nickname = "Trainer",
-                MiiCoreData = Array.Empty<byte>(),
-                LatLng = new float[] { 0, 0 },
-            },
+            MyUserProfile = UserProfiles.Current(),
             PokedexDetails = new PokedexDetails
             {
                 EvedefIDs = new List<EvedefID>(),
