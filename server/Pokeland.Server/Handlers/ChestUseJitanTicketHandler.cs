@@ -3,11 +3,19 @@ using Pokeland.Protocol;
 
 namespace Pokeland.Server.Handlers;
 
-/// <summary>Speeds up a chest unlock with a ticket. Chests unimplemented; ack.</summary>
+/// <summary>
+/// Spends a Jitan ticket to finish a chest's unlock timer immediately (see
+/// PlayerStore.UseJitanTicket). Does not open the chest - the client still
+/// calls OpenChest separately once the wait reads as satisfied.
+/// </summary>
 public sealed class ChestUseJitanTicketHandler : IEndpointHandler
 {
     public string Endpoint => "ChestUseJitanTicket";
 
     public object Handle(object request, GameSession session, DispatchContext ctx)
-        => new Pokeland.Protocol.ChestUseJitanTicket.Res();
+    {
+        var req = (Pokeland.Protocol.ChestUseJitanTicket.Req)request;
+        ctx.Players.UseJitanTicket(req.ChestId);
+        return new Pokeland.Protocol.ChestUseJitanTicket.Res();
+    }
 }

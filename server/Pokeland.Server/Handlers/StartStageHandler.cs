@@ -171,7 +171,14 @@ public sealed class StartStageHandler : IEndpointHandler
                     .ToList(),
                 MaxDropMoney = 100,
                 MaxDropPierreCount = 0,
-                DropChestTypeID = 0,
+                // TutorialCopper1 - the one chest type this server actually
+                // has a payout for (PlayerStore.PendingChest, money-only: a
+                // real item chest needs the still-un-RE'd equnit wire layout).
+                // Offering it on every stage means every clear can produce a
+                // GotChest=true EndStage.Req, giving Chest*/OpenChest
+                // something real to open instead of being permanently
+                // unreachable dead endpoints.
+                DropChestTypeID = ChestTypeID.TutorialCopper1,
                 IsSubscriptionDropActive = Bool.False,
                 IsSubscriptionUnlockActive = Bool.False,
                 IsFeverStage = Bool.False,
