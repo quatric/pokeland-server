@@ -25,6 +25,9 @@ builder.Services.AddSingleton<IEndpointHandler, ListMissionsHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetMyUserProfileHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetArrivedGiftsHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetSeldomInfoHandler>();
+builder.Services.AddSingleton<IEndpointHandler, SetDoneFlagHandler>();
+builder.Services.AddSingleton<IEndpointHandler, RecordMissionsHandler>();
+builder.Services.AddSingleton<IEndpointHandler, SetMyUserProfileHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();

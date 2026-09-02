@@ -32,6 +32,14 @@ public sealed class Player
     public int Money { get; set; } = 1000;
 
     /// <summary>
+    /// Trainer name, set via SetMyUserProfile. Login and GetMyUserProfile both
+    /// read it back through UserProfiles.Current() so a renamed trainer stays
+    /// renamed after a restart.
+    /// </summary>
+    [JsonProperty("Nickname")]
+    public string Nickname { get; set; } = "Trainer";
+
+    /// <summary>
     /// Times each stage has been cleared, keyed by the stage's wire code
     /// joined with commas. The client keeps no progress of its own - it takes
     /// ClearCount straight from the Stage record Login and EndStage hand it -
@@ -142,6 +150,15 @@ public sealed class PlayerStore
             File.WriteAllText(tmp, JsonConvert.SerializeObject(_player, Formatting.Indented));
             File.Move(tmp, _path, overwrite: true);
         }
+    }
+
+    /// <summary>Applies one <c>SetMyUserProfile</c> update and persists it.</summary>
+    public bool ApplyProfile(Pokeland.Protocol.MyUserProfile profile)
+    {
+        if (profile?.Nickname is null || profile.Nickname == _player.Nickname) return false;
+        lock (_gate) _player.Nickname = profile.Nickname;
+        Save();
+        return true;
     }
 
     /// <summary>Applies one <c>SetDoneFlag</c> diff and persists it.</summary>
