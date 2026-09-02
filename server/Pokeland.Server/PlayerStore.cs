@@ -136,6 +136,28 @@ public sealed class Player
     public string DailyDiamondBonusLastClaimUtcDate { get; set; }
 
     /// <summary>
+    /// The set01 BonusSet / set03 MasiMasi bundles' "+1 gear-processing
+    /// slot" buff. There is no slot-limited crafting queue in this server
+    /// for an extra slot to attach to (equnit upgrades are already instant
+    /// and unlimited, see UpgradeEqunit), so this is improvised as "gear
+    /// processing is free" for the window instead - UpgradeEqunit waives
+    /// its diamond cost entirely while PokelandClock.UtcNow is before this.
+    /// </summary>
+    [JsonProperty("FreeUpgradeExpiresUtc")]
+    public DateTime? FreeUpgradeExpiresUtc { get; set; }
+
+    /// <summary>
+    /// Guards the set01 BonusSet's one-time "限定のミラーギア" (limited
+    /// Mirror Gear) bonus so a repeat/overlapping set01 purchase doesn't
+    /// duplicate it. There's no "Mirror" UnitPrefix in the RE'd enum (see
+    /// GameTypes.g.cs), so ActivatePurchase improvises it as a distinctive,
+    /// maxed-out HYPER_HP_PLUS equnit marked as a favorite - a flavor
+    /// stand-in for the real cosmetic, not an RE'd fact.
+    /// </summary>
+    [JsonProperty("GrantedMirrorGear")]
+    public bool GrantedMirrorGear { get; set; }
+
+    /// <summary>
     /// Consumable utensils bought via BuyUtensil (JitanTicket and friends),
     /// keyed by UtensilID. Login reports these back and ChestUseJitanTicket
     /// spends one - real inventory, not an ack-only stub.
@@ -693,7 +715,15 @@ public sealed class PlayerStore
         lock (_gate)
         {
             var equnit = _player.Equnits.FirstOrDefault(e => e.Id == equnitId);
-            int cost = EqunitUpgradePriceDiamond * steps;
+            // set01 BonusSet / set03 MasiMasi's "+1 gear-processing slot"
+            // buff (see ActivatePurchase/FreeUpgradeExpiresUtc) has no queue
+            // or slot-count in this server to add a slot to - upgrades are
+            // already unlimited and simultaneous. Improvised as "gear
+            // processing goes for free" instead for its duration, which is
+            // at least in the spirit of "upgrade more, worry about it less"
+            // the real buff was going for.
+            bool free = _player.FreeUpgradeExpiresUtc is DateTime freeUntil && PokelandClock.UtcNow < freeUntil;
+            int cost = free ? 0 : EqunitUpgradePriceDiamond * steps;
             int have = _player.DiamondFree + _player.DiamondPaid;
             ok = equnit != null && have >= cost && equnit.PrefixGrade + steps <= MaxPrefixGrade;
             if (ok)
@@ -955,19 +985,21 @@ public sealed class PlayerStore
     /// immediately and for free. Returns 0 diamonds for an unknown/no-grant
     /// SKU rather than fabricating an amount.
     ///
-    /// Of the three bundle buffs, two get modeled here because they map onto
-    /// systems this server actually has:
+    /// All four bundle buffs are modeled here, two onto systems this server
+    /// already has and two improvised (see their own doc comments):
     ///  - set02 ZakuZaku (m_subscriptionType Drop): DropBonusExpiresUtc,
     ///    read by StartStageHandler to triple the offered PPE drops.
     ///  - set04 TokuToku (m_subscriptionType LoginBonus): the "80 diamonds/
     ///    day for 30 days" window, claimed once per UTC date by
     ///    ClaimDailyDiamondBonus on Login.
-    /// set01 BonusSet and set03 MasiMasi (m_subscriptionType Unlock, "+1
-    /// gear-processing slot") are left unmodeled: gear (equnit) upgrades in
-    /// this server are instant (see UpgradeEqunit) rather than going through
-    /// any queued/slot-limited crafting system, so there is nothing for an
-    /// extra slot to actually do. A second overlapping grant of the same
-    /// buff extends rather than replaces the existing window.
+    ///  - set01 BonusSet / set03 MasiMasi (m_subscriptionType Unlock, "+1
+    ///    gear-processing slot"): improvised as free equnit upgrades for the
+    ///    window, see Player.FreeUpgradeExpiresUtc/UpgradeEqunit.
+    ///  - set01 BonusSet only, one-time: the "限定のミラーギア" (limited
+    ///    Mirror Gear) bonus, improvised as a maxed-out favorited equnit,
+    ///    see Player.GrantedMirrorGear.
+    /// A second overlapping grant of a timed buff extends rather than
+    /// replaces the existing window.
     /// </summary>
     public int ActivatePurchase(long magic, Pokeland.Protocol.SKUID skuId)
     {
@@ -987,6 +1019,25 @@ public sealed class PlayerStore
             {
                 var baseline = _player.DailyDiamondBonusExpiresUtc is DateTime d && d > now ? d : now;
                 _player.DailyDiamondBonusExpiresUtc = baseline.AddMinutes(43200);
+            }
+            else if (skuId == Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set01
+                || skuId == Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set03)
+            {
+                int minutes = skuId == Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set01 ? 1440 : 4320;
+                var baseline = _player.FreeUpgradeExpiresUtc is DateTime d && d > now ? d : now;
+                _player.FreeUpgradeExpiresUtc = baseline.AddMinutes(minutes);
+
+                if (skuId == Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set01 && !_player.GrantedMirrorGear)
+                {
+                    _player.GrantedMirrorGear = true;
+                    _player.Equnits.Add(new OwnedEqunit
+                    {
+                        Id = _player.NextEqunitId++,
+                        UnitPrefix = (int)Pokeland.Protocol.UnitPrefix.HYPER_HP_PLUS,
+                        PrefixGrade = MaxPrefixGrade,
+                        IsFavorite = true,
+                    });
+                }
             }
         }
         Save();
