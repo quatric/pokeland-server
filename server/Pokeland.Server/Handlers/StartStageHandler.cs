@@ -1,4 +1,5 @@
 #nullable disable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Pokeland.Protocol;
@@ -18,10 +19,15 @@ namespace Pokeland.Server.Handlers;
 /// The <c>*Raw</c> arrays on EnemyDesc are parallel per-spawn-slot arrays -
 /// index N of MonsNoRaw/FormNoRaw/PopNumRaw/HpScaleRaw/... all describe the
 /// same spawn - so they must be the same length or the client indexes off the
-/// end. This deliberately ships one modest spawn group per advent type: enough
-/// for the tutorial stage to be playable and for EndStage to have something to
-/// report, without pretending to reproduce the retail spawn tables (those live
-/// in the unextracted stage data and are a separate job).
+/// end. This ships one modest spawn group per advent type, keyed off the
+/// island the request's StageCode actually names (via World.IslandBossMonsNo,
+/// the same table Login already advertises on the Globe) rather than the
+/// single hardcoded Rattata encounter every stage used to get - so the six
+/// journey stages are six different, progressively tougher fights instead of
+/// one stage replayed under six different island skins. Still not the retail
+/// spawn tables (those live in the unextracted stage data and are a separate
+/// job), just enough variety and difficulty curve for the journey run to be a
+/// journey rather than a loop.
 /// </summary>
 public sealed class StartStageHandler : IEndpointHandler
 {
@@ -48,6 +54,26 @@ public sealed class StartStageHandler : IEndpointHandler
             "StartStage: mode={Mode} stageCode=[{Code}]",
             req.Mode,
             req.StageCode == null ? "" : string.Join(",", req.StageCode));
+
+        // req.StageCode is packed by Codes.Stage as [evedefID, myslandId,
+        // islandID, stageID], so index 2 says which of the six journey
+        // islands (or the World mysland, islandID 46) this run is against.
+        // Before this, every stage played the identical fixed Rattata
+        // encounter regardless of StageCode - there was exactly one stage's
+        // worth of real content behind six different Globe entries. Look the
+        // boss up the same way Login already advertises it on the Globe
+        // (World.IslandBossMonsNo) so a run actually fights the island's own
+        // Pokemon, and scale it up per island so later islands are a real
+        // (if coarse) step up rather than window dressing.
+        int islandID = req.StageCode != null && req.StageCode.Length > 2
+            ? (int)req.StageCode[2]
+            : 0;
+        short bossMonsNo = (short)(islandID >= 1 && islandID < World.IslandBossMonsNo.Length
+            ? World.IslandBossMonsNo[islandID]
+            : 19); // Rattata fallback for the tutorial/mysland stage.
+        int tier = Math.Clamp(islandID, 1, 6);
+        float hpScale = 0.01f * tier;
+        float apScale = 0.2f + 0.05f * tier;
 
         return new Pokeland.Protocol.StartStage.Res
         {
@@ -76,7 +102,7 @@ public sealed class StartStageHandler : IEndpointHandler
                         // Four identical slots rather than one: iBossProc
                         // walks these arrays past index 0, so a single-slot
                         // roster runs off the end of MonsNoAccessor.
-                        MonsNoRaw = new short[] { 19, 19, 19, 19 },
+                        MonsNoRaw = new[] { bossMonsNo, bossMonsNo, bossMonsNo, bossMonsNo },
                         FormNoRaw = new short[] { 0, 0, 0, 0 },
                         PopNumRaw = new byte[] { 1, 1, 1, 1 },
                         // Enemy HP is scaled right down. This is not
@@ -88,8 +114,10 @@ public sealed class StartStageHandler : IEndpointHandler
                         // timed out. With this the roster actually thins and
                         // the route can be walked to the arena. Real HP curves
                         // live in the unextracted stage data - a separate job.
-                        HpScaleRaw = new float[] { 0.01f, 0.01f, 0.01f, 0.01f },
-                        ApScaleRaw = new float[] { 0.25f, 0.25f, 0.25f, 0.25f },
+                        // hpScale/apScale climb with the island tier (1..6) so
+                        // the six journey stages are not identical encounters.
+                        HpScaleRaw = new[] { hpScale, hpScale, hpScale, hpScale },
+                        ApScaleRaw = new[] { apScale, apScale, apScale, apScale },
                         DpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
                         WazaIDRaw = new short[] { 0, 0, 0, 0 },
                         WazaID2 = 0,

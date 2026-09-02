@@ -16,7 +16,6 @@ public sealed class LoginHandler : IEndpointHandler
     /// <summary>
     /// m_islandMonsNo from IslandDesc.json rows 0..6, indexed by IslandID.
     /// </summary>
-    private static readonly int[] IslandBossMonsNo = { 0, 20, 20, 2, 8, 5, 26 };
 
     public object Handle(object request, GameSession _, DispatchContext ctx)
     {
@@ -371,7 +370,7 @@ public sealed class LoginHandler : IEndpointHandler
                     // own boss: PokedexID is the PiiDesc row index, which for
                     // form 0 equals m_Monsno, and IslandDesc.json rows 1..6
                     // give m_islandMonsNo 20/20/2/8/5/26.
-                    Bosses = new List<PokedexID> { (PokedexID)IslandBossMonsNo[id] },
+                    Bosses = new List<PokedexID> { (PokedexID)World.IslandBossMonsNo[id] },
                     Capturables = new List<PokedexID>(),
                     Prizes = new List<PokedexID>(),
                 })

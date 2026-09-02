@@ -45,6 +45,13 @@ public static class World
     /// names its boss in the Mysland record instead.</summary>
     private const int BossMonsNo = 20;
 
+    /// <summary>IslandDesc.json rows 1..6 ("_Tut", "_1".."_5") m_islandMonsNo,
+    /// index 0 unused so journey island IDs (1-based) index straight in.
+    /// Shared with StartStageHandler so a stage's actual spawn roster matches
+    /// the boss the Globe already advertises for that island, instead of every
+    /// stage playing the same fixed tutorial encounter.</summary>
+    public static readonly int[] IslandBossMonsNo = { 0, 20, 20, 2, 8, 5, 26 };
+
     /// <summary>Where it sits on the globe. Fixed, because Login has to be able
     /// to describe it without knowing where anyone tapped.</summary>
     private const float X = 0.0f;
