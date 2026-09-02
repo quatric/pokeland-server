@@ -70,7 +70,9 @@ public sealed class LoginHandler : IEndpointHandler
             // and stalls boot - hand back a stable 12-digit ID (like the retail
             // support number) derived from the session instead.
             SupportNumber = 100000000000L + (long)((uint)session.SessionId.GetHashCode() % 900000000000L),
-            Money = 1000,
+            // From the persisted account, not a constant: money a run
+            // banked through EndStage has to still be there next launch.
+            Money = ctx.Players.Current.Money,
             DiamondFree = 0,
             DiamondPaid = 0,
             DiamondConsumed = 0,
