@@ -36,14 +36,14 @@ public sealed class EndStageHandler : IEndpointHandler
         // on the other five.
         var islandID = session.CurrentIslandID;
         var stage = islandID is >= 1 and <= 6
-            ? World.JourneyStage(ctx.Config.CurrentEvedefID, islandID.Value)
-            : World.Stage(EvedefID._1);
+            ? World.JourneyStage(ctx.Config.CurrentEvedefID, islandID.Value, ctx.Players.Current)
+            : World.Stage(EvedefID._1, ctx.Players.Current);
         var cleared = req.BattleResult == BattleResult.Clear;
 
         int clearCount = 0;
         if (cleared)
         {
-            var key = string.Join(",", stage.StageCode.Select(c => (long)c));
+            var key = World.StageKey(stage.StageCode);
             clearCount = ctx.Players.RecordClear(key, req.GotMoney);
         }
 

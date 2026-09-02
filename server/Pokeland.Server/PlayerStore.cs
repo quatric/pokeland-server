@@ -48,6 +48,13 @@ public sealed class Player
     [JsonProperty("StageClears")]
     public Dictionary<string, int> StageClears { get; set; } = new();
 
+    /// <summary>Stages (World.StageKey) whose all-equnit-drop collection
+    /// reward has been claimed via SetStageCollectionCompleted - read back
+    /// by World.Stage/JourneyStage as Stage.CollectionRewarded so a claimed
+    /// stage doesn't report itself as unclaimed again after a relaunch.</summary>
+    [JsonProperty("StageCollectionRewarded")]
+    public HashSet<string> StageCollectionRewarded { get; set; } = new();
+
     /// <summary>
     /// PPEs earned past the fixed Login starter - one per cleared-stage
     /// PPEUpdate. Login appends these to the wire PPEs list so a caught
@@ -529,6 +536,21 @@ public sealed class PlayerStore
         }
         Save();
         return count;
+    }
+
+    /// <summary>Marks a stage's all-equnit-drop collection reward claimed
+    /// (SetStageCollectionCompleted) so Stage.CollectionRewarded reports True
+    /// from then on. Returns false (and does not re-save) if it was already
+    /// marked, the same idempotent shape RedeemMissions uses.</summary>
+    public bool MarkCollectionRewarded(string stageKey)
+    {
+        bool added;
+        lock (_gate)
+        {
+            added = _player.StageCollectionRewarded.Add(stageKey);
+        }
+        if (added) Save();
+        return added;
     }
 
     /// <summary>Converts a run's offered drop into a persisted, owned PPE and
