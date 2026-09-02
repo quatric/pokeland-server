@@ -45,6 +45,7 @@ public sealed class GameSession
     public long? OfferedPPEDropId { get; set; }
     public int OfferedMonsNo { get; set; }
     public int OfferedLevel { get; set; }
+    public int OfferedGrade { get; set; }
 }
 
 public sealed class SessionStore
