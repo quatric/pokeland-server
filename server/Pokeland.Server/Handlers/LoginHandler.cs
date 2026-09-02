@@ -36,6 +36,7 @@ public sealed class LoginHandler : IEndpointHandler
         ctx.Players.EnsureStarterEqunits();
         ctx.Players.AdvanceWelcalCalendar();
         ctx.Players.ClaimDailyDiamondBonus();
+        var loginBonus = ctx.Players.ClaimLoginBonus();
         ctx.Players.ResetDailyMissions();
         ctx.Players.GrantWelcomeGiftIfNeeded();
         session.AssetVer = req.AssetVer;
@@ -239,13 +240,19 @@ public sealed class LoginHandler : IEndpointHandler
             // CampPageMain.SetupAfterLogin right after Login. Send a token
             // GiftMoney result so a LastResult box always exists on first
             // login, matching what live retail almost certainly did (a
-            // day-1 login bonus payout).
+            // day-1 login bonus payout). Now a real per-account streak: it
+            // advances and actually pays out (Money/DiamondFree) through
+            // ctx.Players.ClaimLoginBonus once per UTC date, instead of
+            // reporting the same token GiftMoney/100 result on every login.
             LoginBonusInfo = new LoginBonusInfo
             {
                 LastDailyProcessUTCStr = utcNow,
-                TotalLoginDays = 1,
-                LastResult_CStop = LoginBonusCStopResult.GiftMoney,
-                LastResult_DiffMoney = 100,
+                TotalLoginDays = loginBonus.TotalDays,
+                StampCardDays = (StampCardDays)loginBonus.StampDay,
+                LastResult_StampCardDays = (StampCardDays)loginBonus.StampDay,
+                LastResult_CStop = (LoginBonusCStopResult)loginBonus.CStop,
+                LastResult_DiffMoney = loginBonus.DiffMoney,
+                LastResult_DiffDiamond = loginBonus.DiffDiamond,
             },
             // The Camp gate "I would like you to check your challenges before
             // you go on an adventure" (Camp.iMessageCheckChallenge, RVA

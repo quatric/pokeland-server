@@ -221,6 +221,26 @@ public sealed class Player
     [JsonProperty("WelcalLastRedeemedUtcStr")]
     public string WelcalLastRedeemedUtcStr { get; set; }
 
+    /// <summary>CampStampCard's own login streak (LoginHandler's
+    /// LoginBonusInfo), distinct from the Welcal calendar above - the client
+    /// crashes in CampStampCard.iHandleLoginBonus without a non-null
+    /// LastResult, so this has to advance and actually pay out on every new
+    /// UTC date rather than being the hardcoded token GiftMoney/100 Login
+    /// used to send on every single login. StampDay cycles 1-7 and wraps;
+    /// TotalDays is a plain lifetime counter, uncapped.</summary>
+    [JsonProperty("LoginBonusTotalDays")]
+    public int LoginBonusTotalDays { get; set; }
+    [JsonProperty("LoginBonusStampDay")]
+    public int LoginBonusStampDay { get; set; }
+    [JsonProperty("LoginBonusLastClaimUtcDate")]
+    public string LoginBonusLastClaimUtcDate { get; set; }
+    [JsonProperty("LoginBonusLastCStop")]
+    public int LoginBonusLastCStop { get; set; }
+    [JsonProperty("LoginBonusLastDiffMoney")]
+    public int LoginBonusLastDiffMoney { get; set; }
+    [JsonProperty("LoginBonusLastDiffDiamond")]
+    public int LoginBonusLastDiffDiamond { get; set; }
+
     /// <summary>Extra levels bought onto a PPE via AddPPELevel, keyed by
     /// PPEId - wire PPE.X[17] AddLevelCount (see LoginHandler's PPE.Index
     /// layout comment). Spends one UtensilID.AddPPELevel ticket per level.</summary>
@@ -1409,6 +1429,57 @@ public sealed class PlayerStore
             if (_player.WelcalUnlockedDay < 7) _player.WelcalUnlockedDay++;
         }
         Save();
+    }
+
+    /// <summary>CampStampCard's 7-day reward cycle: day 1/3/5/7 pay
+    /// diamonds, day 2/4/6 pay money, escalating slightly across the week
+    /// then wrapping. Index matches Player.LoginBonusStampDay (1-7).</summary>
+    private static readonly (int Diamond, int Money)[] LoginBonusCalendar =
+    {
+        (0, 0),      // index 0 unused - days are 1-based
+        (10, 0),     // day 1
+        (0, 100),    // day 2
+        (20, 0),     // day 3
+        (0, 200),    // day 4
+        (30, 0),     // day 5
+        (0, 300),    // day 6
+        (50, 500),   // day 7: both, capstone
+    };
+
+    /// <summary>Advances and pays out the CampStampCard login bonus once per
+    /// UTC date - same once-per-date gate as AdvanceWelcalCalendar/
+    /// ClaimDailyDiamondBonus - and returns the current streak/last-result
+    /// state either way, since LoginHandler ships LoginBonusInfo on every
+    /// Login regardless of whether today's already been claimed.</summary>
+    public (int TotalDays, int StampDay, int CStop, int DiffMoney, int DiffDiamond) ClaimLoginBonus()
+    {
+        var today = PokelandClock.UtcNow.ToString("yyyy-MM-dd");
+        bool claimed = false;
+        lock (_gate)
+        {
+            if (_player.LoginBonusLastClaimUtcDate != today)
+            {
+                claimed = true;
+                _player.LoginBonusLastClaimUtcDate = today;
+                _player.LoginBonusTotalDays++;
+                _player.LoginBonusStampDay = _player.LoginBonusStampDay >= 7 ? 1 : _player.LoginBonusStampDay + 1;
+
+                var (diamond, money) = LoginBonusCalendar[_player.LoginBonusStampDay];
+                _player.DiamondFree += diamond;
+                _player.Money += money;
+                _player.LoginBonusLastDiffDiamond = diamond;
+                _player.LoginBonusLastDiffMoney = money;
+                _player.LoginBonusLastCStop = (int)(diamond > 0
+                    ? Pokeland.Protocol.LoginBonusCStopResult.GiftDiamond
+                    : Pokeland.Protocol.LoginBonusCStopResult.GiftMoney);
+            }
+        }
+        if (claimed) Save();
+        lock (_gate)
+        {
+            return (_player.LoginBonusTotalDays, _player.LoginBonusStampDay, _player.LoginBonusLastCStop,
+                _player.LoginBonusLastDiffMoney, _player.LoginBonusLastDiffDiamond);
+        }
     }
 
     /// <summary>
