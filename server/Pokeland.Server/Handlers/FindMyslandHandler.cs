@@ -46,7 +46,7 @@ public sealed class FindMyslandHandler : IEndpointHandler
             {
                 new AutoRes
                 {
-                    UpdatedMyslands = new List<Mysland> { World.Mysland(req.EvedefID) },
+                    UpdatedMyslands = new List<Mysland> { World.Mysland(req.EvedefID, ctx.Players.Current.MyslandName ?? "Sunny Isle") },
                 // Globe.iMyslandFinderFound does Cache.IslandBox.Get(code) and
                 // dereferences it unguarded. The record cannot ride along in
                 // Login's Reset: the Globe scene builds its journey island list
