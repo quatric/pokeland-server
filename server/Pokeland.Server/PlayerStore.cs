@@ -106,6 +106,19 @@ public sealed class Player
     [JsonProperty("PdecoMounts")]
     public Dictionary<long, int> PdecoMounts { get; set; } = new();
 
+    /// <summary>Extra levels bought onto a PPE via AddPPELevel, keyed by
+    /// PPEId - wire PPE.X[17] AddLevelCount (see LoginHandler's PPE.Index
+    /// layout comment). Spends one UtensilID.AddPPELevel ticket per level.</summary>
+    [JsonProperty("PPEAddLevels")]
+    public Dictionary<long, int> PPEAddLevels { get; set; } = new();
+
+    /// <summary>Extra equipment sockets bought onto a PPE via
+    /// AddNormalSocketCount, keyed by PPEId - wire PPE.X[18]
+    /// AddNormalSocketCount. Spends one UtensilID.AddNormalEqunitSocket
+    /// ticket per socket.</summary>
+    [JsonProperty("PPEAddNormalSockets")]
+    public Dictionary<long, int> PPEAddNormalSockets { get; set; } = new();
+
     /// <summary>Extra inventory slots bought via BuyStoreSize, on top of the
     /// base size Login already advertises.</summary>
     [JsonProperty("PaidPPEStoreSize")]
@@ -437,6 +450,53 @@ public sealed class PlayerStore
             {
                 if (pdecoId == Pokeland.Protocol.PdecoID.NONE) _player.PdecoMounts.Remove(ppeId);
                 else _player.PdecoMounts[ppeId] = (int)pdecoId;
+            }
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>
+    /// Spends `addLevel` AddPPELevel utensils to add that many levels to a
+    /// PPE the player owns. Returns false for an unknown PPEId, a
+    /// non-positive addLevel, or insufficient utensils in stock; nothing is
+    /// spent or persisted on failure.
+    /// </summary>
+    public bool AddPPELevel(long ppeId, int addLevel)
+    {
+        if (addLevel <= 0) return false;
+        bool ok;
+        lock (_gate)
+        {
+            _player.Utensils.TryGetValue((int)Pokeland.Protocol.UtensilID.AddPPELevel, out var have);
+            ok = (ppeId == 1 || _player.OwnedPPEs.Any(p => p.Id == ppeId)) && have >= addLevel;
+            if (ok)
+            {
+                _player.Utensils[(int)Pokeland.Protocol.UtensilID.AddPPELevel] = have - addLevel;
+                _player.PPEAddLevels[ppeId] = _player.PPEAddLevels.GetValueOrDefault(ppeId) + addLevel;
+            }
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>
+    /// Spends `count` AddNormalEqunitSocket utensils to add that many
+    /// equipment sockets to a PPE the player owns. Same failure modes as
+    /// AddPPELevel above.
+    /// </summary>
+    public bool AddNormalSocketCount(long ppeId, int count)
+    {
+        if (count <= 0) return false;
+        bool ok;
+        lock (_gate)
+        {
+            _player.Utensils.TryGetValue((int)Pokeland.Protocol.UtensilID.AddNormalEqunitSocket, out var have);
+            ok = (ppeId == 1 || _player.OwnedPPEs.Any(p => p.Id == ppeId)) && have >= count;
+            if (ok)
+            {
+                _player.Utensils[(int)Pokeland.Protocol.UtensilID.AddNormalEqunitSocket] = have - count;
+                _player.PPEAddNormalSockets[ppeId] = _player.PPEAddNormalSockets.GetValueOrDefault(ppeId) + count;
             }
         }
         if (ok) Save();
