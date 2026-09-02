@@ -31,10 +31,7 @@ public sealed class ReceiveMissionRewardsHandler : IEndpointHandler
             "ReceiveMissionRewards: asked=[{Asked}] paid=[{Paid}] diamonds={Diamonds}",
             string.Join(",", asked), string.Join(",", paid), player.DiamondFree);
 
-        var ids = Missions.IDs.ToList();
-        var progresses = ids
-            .Select(id => player.MissionProgress.TryGetValue(id, out var p) ? p : 0)
-            .ToList();
+        var utcNow = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
 
         return new Pokeland.Protocol.ReceiveMissionRewards.Res
         {
@@ -43,16 +40,7 @@ public sealed class ReceiveMissionRewardsHandler : IEndpointHandler
                 // Free and paid balances, in that order; there is no purchase
                 // flow, so the paid half is always zero.
                 DiamondFreePaid = new[] { player.DiamondFree, 0 },
-                MissionSummary = new MissionSummary
-                {
-                    DailyUTCStr = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
-                    IDs = ids.Select(id => (MissionID)id).ToList(),
-                    Progresses = progresses,
-                    States = ids.Zip(progresses, (id, p) =>
-                        player.RedeemedMissions.Contains(id) ? MissionState.Redeemed
-                        : Missions.IsComplete(id, p) ? MissionState.CanRedeem
-                        : MissionState.InProgress).ToList(),
-                },
+                MissionSummary = Missions.Summary(utcNow, player),
             } },
         };
     }
