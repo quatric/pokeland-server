@@ -49,6 +49,20 @@ public sealed class Player
     public Dictionary<string, int> StageClears { get; set; } = new();
 
     /// <summary>
+    /// PPEs earned past the fixed Login starter - one per cleared-stage
+    /// PPEUpdate. Login appends these to the wire PPEs list so a caught
+    /// Pokemon is still in the roster after a restart, since the client
+    /// keeps no roster of its own (same reasoning as StageClears above).
+    /// </summary>
+    [JsonProperty("OwnedPPEs")]
+    public List<OwnedPPE> OwnedPPEs { get; set; } = new();
+
+    /// <summary>Next id to hand out via GrantPPE. Starts past the Login
+    /// starter's hardcoded PPEId of 1.</summary>
+    [JsonProperty("NextPPEId")]
+    public long NextPPEId { get; set; } = 2;
+
+    /// <summary>
     /// Free (non-purchased) diamonds. Mission rewards land here; there is no
     /// purchase flow, so the paid balance stays zero.
     /// </summary>
@@ -109,6 +123,31 @@ public sealed class Player
         }
         return vec;
     }
+}
+
+/// <summary>
+/// A PPE earned during a run, in the minimal form Login needs to rebuild the
+/// wire <c>PPE</c> record (see BasePPE.Index/PPE.Index in out/dump/dump.cs).
+/// No equipment/socket fields - StartStage's drops never carry equipment
+/// (BasePPEAndEqunits.Equnits, X[12..23], is still un-RE'd), so there is
+/// nothing to persist there yet.
+/// </summary>
+public sealed class OwnedPPE
+{
+    [JsonProperty("Id")]
+    public long Id { get; set; }
+    [JsonProperty("MonsNo")]
+    public int MonsNo { get; set; }
+    [JsonProperty("Level")]
+    public int Level { get; set; }
+    [JsonProperty("Grade")]
+    public int Grade { get; set; }
+    [JsonProperty("Waza0")]
+    public int Waza0 { get; set; }
+    [JsonProperty("Waza1")]
+    public int Waza1 { get; set; }
+    [JsonProperty("Nickname")]
+    public string Nickname { get; set; }
 }
 
 /// <summary>
@@ -240,5 +279,29 @@ public sealed class PlayerStore
         }
         Save();
         return count;
+    }
+
+    /// <summary>Converts a run's offered drop into a persisted, owned PPE and
+    /// returns its new id - the id an EndStage PPEUpdate reports back to the
+    /// client as the drop's real PPEId.</summary>
+    public OwnedPPE GrantPPE(int monsNo, int level, int grade, int waza0, int waza1, string nickname)
+    {
+        OwnedPPE ppe;
+        lock (_gate)
+        {
+            ppe = new OwnedPPE
+            {
+                Id = _player.NextPPEId++,
+                MonsNo = monsNo,
+                Level = level,
+                Grade = grade,
+                Waza0 = waza0,
+                Waza1 = waza1,
+                Nickname = nickname,
+            };
+            _player.OwnedPPEs.Add(ppe);
+        }
+        Save();
+        return ppe;
     }
 }

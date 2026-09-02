@@ -75,6 +75,21 @@ public sealed class StartStageHandler : IEndpointHandler
         float hpScale = 0.01f * tier;
         float apScale = 0.2f + 0.05f * tier;
 
+        // Offer one drop of the island's own species on every run, scaled
+        // with the same tier as the encounter, so a clear actually grows the
+        // roster instead of only paying money - previously PPEDrops/
+        // EqunitDrops were always empty and nothing was ever won. EndStage
+        // reads these session fields back to grant the drop for real on a
+        // clear; a fresh id per StartStage means an abandoned run's offer is
+        // just discarded rather than granted twice.
+        long dropId = DateTime.UtcNow.Ticks;
+        int dropLevel = 5 * tier;
+        int dropGrade = 10 * tier;
+        session.CurrentIslandID = islandID;
+        session.OfferedPPEDropId = dropId;
+        session.OfferedMonsNo = bossMonsNo;
+        session.OfferedLevel = dropLevel;
+
         return new Pokeland.Protocol.StartStage.Res
         {
             Result = StartStageResult.Success,
@@ -160,7 +175,7 @@ public sealed class StartStageHandler : IEndpointHandler
                 IsSubscriptionUnlockActive = Bool.False,
                 IsFeverStage = Bool.False,
             },
-            PPEDrops = new List<PPEDrop>(),
+            PPEDrops = new List<PPEDrop> { PPEFactory.BuildDrop(dropId, bossMonsNo, dropLevel, dropGrade, 0, 0) },
             EqunitDrops = new List<EqunitDrop>(),
             MLABaaSUserId = "",
         };

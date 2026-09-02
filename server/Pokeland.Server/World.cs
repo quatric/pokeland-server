@@ -107,6 +107,28 @@ public static class World
         Y = Y,
     };
 
+    /// <summary>One of the six journey-island stages (id 1..6), built the same
+    /// way Login ships them so EndStage can hand back an updated record that
+    /// matches what the client already has cached, instead of always
+    /// crediting the fixed mysland stage regardless of which island was
+    /// actually played.</summary>
+    public static Stage JourneyStage(EvedefID evedefID, int islandID) => new()
+    {
+        StageCode = Codes.Stage(evedefID, islandID: islandID, stageID: islandID),
+        State = StageState.Ready,
+        PokedexSummary = new PokedexSummary
+        {
+            DiscoveredVec = Array.Empty<byte>(),
+            CapturedVec = Array.Empty<byte>(),
+        },
+        CollectionRewarded = Bool.False,
+        ClearCount = 0,
+        JissionStates = Enumerable.Repeat(JissionState.NotAchieved, 3).ToList(),
+        Bosses = new List<PokedexID> { (PokedexID)IslandBossMonsNo[islandID] },
+        Capturables = new List<PokedexID>(),
+        Prizes = new List<PokedexID>(),
+    };
+
     public static Stage Stage(EvedefID evedefID) => new()
     {
         StageCode = StageCode(evedefID),
