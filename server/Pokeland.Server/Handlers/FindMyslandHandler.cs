@@ -47,6 +47,13 @@ public sealed class FindMyslandHandler : IEndpointHandler
                 new AutoRes
                 {
                     UpdatedMyslands = new List<Mysland> { World.Mysland(req.EvedefID) },
+                // Globe.iMyslandFinderFound does Cache.IslandBox.Get(code) and
+                // dereferences it unguarded. The record cannot ride along in
+                // Login's Reset: the Globe scene builds its journey island list
+                // from IslandBox at setup and GlobeIslandView.RefreshAll NREs on
+                // a mysland row. Delivering it here puts it in the cache after
+                // that setup has already run.
+                UpdatedIslands  = new List<Island>  { World.Island(req.EvedefID, DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ")) },
                     UpdatedStages = new List<Stage> { World.Stage(req.EvedefID) },
                 },
             },

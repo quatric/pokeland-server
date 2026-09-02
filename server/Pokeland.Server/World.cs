@@ -30,12 +30,19 @@ public static class World
     /// <c>(emisCode &amp; 0x3FFFFFC0000000) != 0</c>.</summary>
     public const int MyslandId = 1;
 
-    /// <summary>Visual/terrain identity, an IslandDesc.json row. Row 2 ("_1") is
-    /// the first ordinary journey island; row 1 is the tutorial island, which is
-    /// deliberately hidden from the Globe.</summary>
-    public const int IslandID = 2;
+    /// <summary>Visual/terrain identity, an IslandDesc.json row. It has to be a
+    /// row with m_islandType 2 - an actual mysland - and not a journey island:
+    /// GlobeMyslandFinder.iFind reads the row's m_star to pick which of its
+    /// AnimHash_Star states to play, then waits for the animator to reach
+    /// AnimHash_Done. Journey rows carry m_star 0, there is no star-0 state, so
+    /// the found animation never starts and the finder hangs forever with a
+    /// blank result card. Row 46 ("Mysland_1_1") is the first ordinary mysland:
+    /// m_star 2, m_myslandChartType 10, m_groundType 3 - the same ground the
+    /// stage below is built on.</summary>
+    public const int IslandID = 46;
 
-    /// <summary>IslandDesc.json row 2's m_islandMonsNo.</summary>
+    /// <summary>Mysland rows carry no m_islandMonsNo of their own - a mysland
+    /// names its boss in the Mysland record instead.</summary>
     private const int BossMonsNo = 20;
 
     /// <summary>Where it sits on the globe. Fixed, because Login has to be able
@@ -61,6 +68,23 @@ public static class World
         Nickname = "Trainer",
         MiiCoreData = Array.Empty<byte>(),
         LatLng = new float[] { 0, 0 },
+    };
+
+    /// <summary>The mysland needs an Island record of its own, keyed by the same
+    /// island code as the Mysland. Globe.iMyslandFinderFound (RVA 0xF7BD50) does
+    /// <c>Cache.IslandBox.Get(mysland.IslandCode)</c> and dereferences the result
+    /// with no null guard; the NullReferenceException is swallowed by the
+    /// coroutine's catch handler, so a missing record shows up as the finder
+    /// simply doing nothing after the found animation - no StartStage, no error.
+    /// </summary>
+    public static Island Island(EvedefID evedefID, string createdUTC) => new()
+    {
+        IslandCode = IslandCode(evedefID),
+        State = IslandState.Ready,
+        AnimState = IslandAnimState.Done,
+        CreatedUTCStr = createdUTC,
+        X = X,
+        Y = Y,
     };
 
     public static Stage Stage(EvedefID evedefID) => new()
