@@ -55,7 +55,7 @@ public sealed class EndStageHandler : IEndpointHandler
         {
             var granted = ctx.Players.GrantPPE(
                 session.OfferedMonsNo, session.OfferedLevel,
-                grade: 10, waza0: 0, waza1: 0, nickname: null);
+                grade: session.OfferedGrade, waza0: 0, waza1: 0, nickname: null);
             ppeUpdates.Add(new PPEUpdate
             {
                 PPEDropId = dropId,

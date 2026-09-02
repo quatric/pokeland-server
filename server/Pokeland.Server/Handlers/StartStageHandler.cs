@@ -89,6 +89,7 @@ public sealed class StartStageHandler : IEndpointHandler
         session.OfferedPPEDropId = dropId;
         session.OfferedMonsNo = bossMonsNo;
         session.OfferedLevel = dropLevel;
+        session.OfferedGrade = dropGrade;
 
         return new Pokeland.Protocol.StartStage.Res
         {
