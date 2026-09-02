@@ -1,5 +1,6 @@
 #nullable disable
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -125,6 +126,34 @@ public sealed class GameDispatcher
             if (ctx.Players.ApplyMissions(ids, progresses))
                 _log.LogInformation("{Endpoint}: mission progress {Progress}", endpoint,
                     string.Join(",", ids.Zip(progresses, (i, p) => $"{i}:{p}")));
+        }
+
+        // CommitUpdatedPPE/CommitUpdatedEqunit ride on every CommitHome.
+        // BaseAutoReq-derived Req (CommitHome, EndStage, SetCurrentEvent) the
+        // same way SetDoneFlag/RecordMissions ride on BaseDF.Req - read off
+        // the raw JObject so this catches all three without each handler
+        // duplicating the logic. Both fields are full current-state
+        // snapshots (the client always sends its whole favorite/party set),
+        // not incremental toggles.
+        var ppeCommit = raw["CommitUpdatedPPE"];
+        if (ppeCommit is not null)
+        {
+            var favIds = ppeCommit["UpdatedPPEFavidValues"]?.ToObject<List<long>>(Json.Serializer);
+            var partyIds = ppeCommit["PartyPPEIds"]?.ToObject<List<long>>(Json.Serializer);
+            var nicknames = ppeCommit["UpdatedPPENicknames"]?.ToObject<List<PPENickname>>(Json.Serializer);
+            if (ctx.Players.ApplyPPECommit(
+                    favIds is null ? null : new HashSet<long>(favIds),
+                    partyIds is null ? null : new HashSet<long>(partyIds),
+                    nicknames?.Select(n => (n.PPEId, n.Nickname)).ToList()))
+                _log.LogInformation("{Endpoint}: PPE favorites/party/nicknames updated", endpoint);
+        }
+
+        var equnitCommit = raw["CommitUpdatedEqunit"];
+        if (equnitCommit is not null)
+        {
+            var favIds = equnitCommit["UpdatedEqunitFavidValues"]?.ToObject<List<long>>(Json.Serializer);
+            if (favIds is not null && ctx.Players.ApplyEqunitCommit(new HashSet<long>(favIds)))
+                _log.LogInformation("{Endpoint}: equnit favorites updated", endpoint);
         }
 
         object res;

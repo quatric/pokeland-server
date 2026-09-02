@@ -327,7 +327,8 @@ public sealed class LoginHandler : IEndpointHandler
                 PPEFactory.BuildPPE(p.Id, p.MonsNo, p.Level, p.Grade, p.Waza0, p.Waza1, p.Nickname ?? "",
                     ctx.Players.Current.PdecoMounts.GetValueOrDefault(p.Id),
                     ctx.Players.Current.PPEAddLevels.GetValueOrDefault(p.Id),
-                    ctx.Players.Current.PPEAddNormalSockets.GetValueOrDefault(p.Id))))
+                    ctx.Players.Current.PPEAddNormalSockets.GetValueOrDefault(p.Id),
+                    p.IsPartyMember, p.IsFavorite)))
             .ToList(),
             PaidPPEStoreSize = ctx.Players.Current.PaidPPEStoreSize,
             // FOUND (2026-09-01, headless Ghidra decompile of
