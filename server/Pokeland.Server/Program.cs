@@ -124,6 +124,20 @@ app.MapGet("/api/badword/v1/check_word", () => Results.Json(new
     rejectedBy = "",
 }));
 
+// ---------------------------------------------------------------------- VCM
+// A third backend (Virtual Currency Marketplace - the IAP/bundle catalog),
+// hit right after a stage clear's DoDailyProcess to populate the post-clear
+// special-offer screen. These three routes were entirely unhandled before -
+// not even a stub - so the client got a bare ASP.NET 404 instead of JSON, and
+// the offer screen hung forever with no error and no way back to Camp,
+// blocking all further play after the very first stage clear. The actual
+// bundle-catalog schema is unknown (no decompiled reference for this host),
+// but an empty list is the universally-safe "nothing for sale" answer for a
+// catalog endpoint, and unblocks the screen instead of hanging it.
+app.MapGet("/vcm/v1/markets/{market}/bundles", () => Results.Json(Array.Empty<object>()));
+app.MapGet("/vcm/v1/markets/{market}/promo_bundles", () => Results.Json(Array.Empty<object>()));
+app.MapGet("/vcm/v1/users/{userId}/markets/{market}/transaction_histories", () => Results.Json(Array.Empty<object>()));
+
 // ---------------------------------------------------------------- bootstrap
 // GET /pre/AppManifest?market=GOOGLE&magic=<constant>
 // The very first request the client makes. It answers "for your AppVer, which
