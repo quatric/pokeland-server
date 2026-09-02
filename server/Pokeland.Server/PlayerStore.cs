@@ -580,13 +580,14 @@ public sealed class PlayerStore
     /// <summary>
     /// Diamond price per BuyUnit. docs/tables/UtensilDesc.json (extracted
     /// from the real asset bundle) shows m_priceDiamond is 0 for every
-    /// utensil - they're IAP/event-granted, not diamond-purchasable in
-    /// retail - so this flat placeholder only exists to keep the BuyUtensil
-    /// endpoint exercising something non-trivial in absence of a real SKU
-    /// flow. m_maxCount, in contrast, is real retail data and is enforced
-    /// below.
+    /// utensil - retail sells these through IAP/event grants, not diamonds -
+    /// so 0 here is real retail data, not a placeholder. It used to be an
+    /// invented flat 10 instead; that only ever amounted to an artificial
+    /// paywall in a revival that already hands out diamonds for free (see
+    /// PlayerStore.PurchaseSkuGrants), so it's now the real number.
+    /// m_maxCount is likewise real retail data and is enforced below.
     /// </summary>
-    private const int UtensilPriceDiamond = 10;
+    private const int UtensilPriceDiamond = 0;
 
     /// <summary>Real retail per-utensil stack caps (UtensilDesc.m_maxCount),
     /// indexed by UtensilID - see docs/tables/UtensilDesc.json.</summary>
@@ -848,8 +849,17 @@ public sealed class PlayerStore
         return ok;
     }
 
-    /// <summary>Diamond price per store-size BuyUnit - see UtensilPriceDiamond
-    /// for why this is a placeholder rather than extracted retail data.</summary>
+    /// <summary>
+    /// Diamond price per store-size BuyUnit. docs/tables/CategorySizeDesc.json
+    /// only names the size tiers (XS..XL), not a cost curve, so unlike
+    /// UtensilPriceDiamond (real retail data: 0) there is no extracted number
+    /// to use here. This is diamonds, not a real-money IAP - a revival making
+    /// its shop free doesn't also need every in-game currency sink to be
+    /// free, or nothing would ever cost anything - so this stays an
+    /// improvised flat price, same as it always was, just documented as
+    /// improvised rather than mislabeled a "placeholder" implying a real
+    /// number exists to replace it with.
+    /// </summary>
     private const int StoreSizePriceDiamond = 20;
 
     /// <summary>
