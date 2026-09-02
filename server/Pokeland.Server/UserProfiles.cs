@@ -10,9 +10,9 @@ namespace Pokeland.Server;
 /// </summary>
 public static class UserProfiles
 {
-    public static MyUserProfile Current() => new()
+    public static MyUserProfile Current(Player player) => new()
     {
-        Nickname = "Trainer",
+        Nickname = player.Nickname,
         MiiCoreData = System.Array.Empty<byte>(),
         LatLng = new float[] { 0, 0 },
     };

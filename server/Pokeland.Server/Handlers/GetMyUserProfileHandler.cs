@@ -21,7 +21,7 @@ public sealed class GetMyUserProfileHandler : IEndpointHandler
         return new Pokeland.Protocol.GetMyUserProfile.Res
         {
             UTCStr = utcNow,
-            A = new[] { new AutoRes { UpdatedMyUserProfile = UserProfiles.Current() } },
+            A = new[] { new AutoRes { UpdatedMyUserProfile = UserProfiles.Current(ctx.Players.Current) } },
         };
     }
 }
