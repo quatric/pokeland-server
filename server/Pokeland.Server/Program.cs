@@ -23,6 +23,8 @@ builder.Services.AddSingleton<IEndpointHandler, EndStageHandler>();
 builder.Services.AddSingleton<IEndpointHandler, ReceiveMissionRewardsHandler>();
 builder.Services.AddSingleton<IEndpointHandler, ListMissionsHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetMyUserProfileHandler>();
+builder.Services.AddSingleton<IEndpointHandler, GetArrivedGiftsHandler>();
+builder.Services.AddSingleton<IEndpointHandler, GetSeldomInfoHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();

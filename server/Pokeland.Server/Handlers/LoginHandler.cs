@@ -372,19 +372,7 @@ public sealed class LoginHandler : IEndpointHandler
                 WaitingSKUIDs = new List<SKUID>(),
             },
             PurchaseProcessing = Bool.False,
-            // SeldomInfoBox.IsEndOfService/IsEndOfShop test whether the client's
-            // country/market code appears in these filter strings - leaving them
-            // null (the default) made every CCmCode match, which is what kept
-            // showing the "End of Service Info" dialog on every screen
-            // regardless of a live-code Frida hook forcing the check methods to
-            // return false (a second, unhooked inlined call site was reading
-            // this data directly). Empty strings mean "nothing is filtered".
-            SeldomInfo = new SeldomInfoUser
-            {
-                EulaRev = 1,
-                EndOfServiceCCmFilter = "",
-                EndOfShopCCmFilter = "",
-            },
+            SeldomInfo = SeldomInfos.Current(),
         };
 
         // The one mysland, shipped with the rest of the world rather than only
