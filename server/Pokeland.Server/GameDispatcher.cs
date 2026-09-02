@@ -111,6 +111,22 @@ public sealed class GameDispatcher
                 string.Join(",", diff.Ons ?? new List<DoneFlag>()),
                 string.Join(",", diff.Offs ?? new List<DoneFlag>()));
 
+        // RecordMissions rides along the same way SetDoneFlag does - it is a
+        // field on every BaseDF.Req as well as an endpoint of its own - and is
+        // read off the raw JObject for the same reason. The client counts
+        // mission progress locally and only ever reports the running totals
+        // here, so dropping these means every mission sits at zero forever and
+        // nothing ever becomes redeemable.
+        var commit = raw["RecordMissions"]?["MissionCommit"];
+        if (commit is not null)
+        {
+            var ids = commit["IDs"]?.ToObject<List<int>>(Json.Serializer);
+            var progresses = commit["Progresses"]?.ToObject<List<int>>(Json.Serializer);
+            if (ctx.Players.ApplyMissions(ids, progresses))
+                _log.LogInformation("{Endpoint}: mission progress {Progress}", endpoint,
+                    string.Join(",", ids.Zip(progresses, (i, p) => $"{i}:{p}")));
+        }
+
         object res;
         if (_handlers.TryGetValue(endpoint, out var handler))
         {

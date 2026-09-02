@@ -1,5 +1,6 @@
 #nullable disable
 using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace Pokeland.Server;
@@ -38,6 +39,28 @@ public sealed class Player
     /// </summary>
     [JsonProperty("StageClears")]
     public Dictionary<string, int> StageClears { get; set; } = new();
+
+    /// <summary>
+    /// Free (non-purchased) diamonds. Mission rewards land here; there is no
+    /// purchase flow, so the paid balance stays zero.
+    /// </summary>
+    [JsonProperty("DiamondFree")]
+    public int DiamondFree { get; set; }
+
+    /// <summary>
+    /// Per-mission progress as last reported by the client's RecordMissions
+    /// commit, keyed by MissionID. The client counts progress locally and
+    /// hands over the running totals; the server keeps them so a mission is
+    /// not back to zero after a restart.
+    /// </summary>
+    [JsonProperty("MissionProgress")]
+    public Dictionary<int, int> MissionProgress { get; set; } = new();
+
+    /// <summary>Missions already paid out. Redeeming is the one step the
+    /// client must not be trusted with, so this is what stops a reward being
+    /// collected twice.</summary>
+    [JsonProperty("RedeemedMissions")]
+    public HashSet<int> RedeemedMissions { get; set; } = new();
 
     /// <summary>
     /// Flags the client can only earn through a flow this server does not
@@ -135,6 +158,54 @@ public sealed class PlayerStore
         }
         if (changed) Save();
         return changed;
+    }
+
+    /// <summary>
+    /// Merges a RecordMissions commit. Progress is taken as the high-water
+    /// mark rather than assigned: the commits are cumulative counters the
+    /// client resends, and an in-flight request that lost a race must not walk
+    /// a finished mission backwards. Returns true if anything moved.
+    /// </summary>
+    public bool ApplyMissions(IReadOnlyList<int> ids, IReadOnlyList<int> progresses)
+    {
+        if (ids is null || progresses is null) return false;
+        bool changed = false;
+        lock (_gate)
+        {
+            for (int i = 0; i < ids.Count && i < progresses.Count; i++)
+            {
+                _player.MissionProgress.TryGetValue(ids[i], out var have);
+                if (progresses[i] <= have) continue;
+                _player.MissionProgress[ids[i]] = progresses[i];
+                changed = true;
+            }
+        }
+        if (changed) Save();
+        return changed;
+    }
+
+    /// <summary>
+    /// Pays out the named missions, skipping any that are unfinished or
+    /// already redeemed. Returns the ids actually paid.
+    /// </summary>
+    public List<int> RedeemMissions(IEnumerable<int> ids)
+    {
+        var paid = new List<int>();
+        lock (_gate)
+        {
+            foreach (var id in ids ?? Enumerable.Empty<int>())
+            {
+                if (_player.RedeemedMissions.Contains(id)) continue;
+                _player.MissionProgress.TryGetValue(id, out var progress);
+                if (!Missions.IsComplete(id, progress)) continue;
+                if (!Missions.TryGet(id, out var desc)) continue;
+                _player.RedeemedMissions.Add(id);
+                _player.DiamondFree += desc.Diamonds;
+                paid.Add(id);
+            }
+        }
+        if (paid.Count > 0) Save();
+        return paid;
     }
 
     /// <summary>Records a stage clear and any money it paid out; returns the
