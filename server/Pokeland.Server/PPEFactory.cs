@@ -34,10 +34,11 @@ public static class PPEFactory
 
     /// <summary>Builds an owned PPE (21 ints: base 12 + PPEId/PartyMember/
     /// EvedefID/IsFavorite/AddLevelCount/AddNormalSocketCount/GotUTC).</summary>
-    public static PPE BuildPPE(long ppeId, int monsNo, int level, int grade, int waza0, int waza1, string nickname)
+    public static PPE BuildPPE(long ppeId, int monsNo, int level, int grade, int waza0, int waza1, string nickname, int pdecoId = 0)
     {
         var x = new int[21];
         BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
+        x[6] = pdecoId;                            // PdecoID, from Player.PdecoMounts
         x[12] = (int)(ppeId & 0xFFFFFFFF);        // PPEId_Low
         x[13] = (int)(ppeId >> 32);                // PPEId_High
         x[14] = 0;                                  // PartyMember
