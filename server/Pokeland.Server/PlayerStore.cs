@@ -92,17 +92,27 @@ public sealed class Player
     public Dictionary<long, PendingChest> Chests { get; set; } = new();
 
     /// <summary>
-    /// Free (non-purchased) diamonds. Mission rewards land here; there is no
-    /// purchase flow, so the paid balance stays zero.
+    /// Free (non-purchased) diamonds. Mission/Welcal rewards land here.
     /// </summary>
     [JsonProperty("DiamondFree")]
     public int DiamondFree { get; set; }
 
-    /// <summary>Purchased diamonds. There is no real-money purchase flow, so
-    /// this only ever moves via BuyUtensil/BuyStoreSize spending it down
-    /// after free diamonds run out - it stays zero otherwise.</summary>
+    /// <summary>
+    /// Purchased diamonds. This is a revival with no real-money store behind
+    /// it and no intent to add one - PurchaseActivate grants a SKU's real
+    /// docs/tables/SKUDesc.json diamond amount for free the moment it's
+    /// "bought" (see PlayerStore.PurchaseSkuGrants) rather than talking to
+    /// any payment processor, so every IAP in the shop is just a free
+    /// diamond claim now.
+    /// </summary>
     [JsonProperty("DiamondPaid")]
     public int DiamondPaid { get; set; }
+
+    /// <summary>Magic (PurchaseBegin/Activate/End's correlation token) to
+    /// the SKUID it was opened for, so PurchaseEnd - which carries no SKUID
+    /// of its own, only Magic - knows what to report as processed.</summary>
+    [JsonProperty("PendingPurchases")]
+    public Dictionary<long, int> PendingPurchases { get; set; } = new();
 
     /// <summary>
     /// Consumable utensils bought via BuyUtensil (JitanTicket and friends),
@@ -883,6 +893,78 @@ public sealed class PlayerStore
             foreach (var id in chestIds) _player.Chests.Remove(id);
         }
         Save();
+    }
+
+    /// <summary>
+    /// The real paid-diamond amount each SKU grants, straight off
+    /// docs/tables/SKUDesc.json (m_title's "ポケダイヤ（N個）"/m_detail's
+    /// "有償...ダイヤがN個もらえます" counts) - stone01-06 are the plain
+    /// diamond packs, set01-04 are bundles that include diamonds alongside a
+    /// time-limited subscription buff (extra PPE-store slots, a temporary
+    /// gear-socket, a daily diamond drip) this server doesn't model, so only
+    /// their diamond portion is granted. This is a revival with no real
+    /// store and no plan to build one, so every SKU here is a free grant
+    /// rather than an actual purchase - see Player.DiamondPaid.
+    /// </summary>
+    private static readonly Dictionary<Pokeland.Protocol.SKUID, int> PurchaseSkuGrants = new()
+    {
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_stone01] = 100,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_stone02] = 300,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_stone03] = 1000,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_stone04] = 2500,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_stone05] = 4000,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_stone06] = 7000,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set01] = 400,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set02] = 400,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set03] = 600,
+        [Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set04] = 800,
+    };
+
+    /// <summary>Opens a purchase flow - just remembers which SKU this Magic
+    /// token is for, since PurchaseEnd needs to report it back later but
+    /// carries no SKUID of its own.</summary>
+    public void BeginPurchase(long magic, Pokeland.Protocol.SKUID skuId)
+    {
+        lock (_gate) _player.PendingPurchases[magic] = (int)skuId;
+        Save();
+    }
+
+    /// <summary>
+    /// "Activates" a purchase - with no payment processor to hand off to,
+    /// this is where the SKU's diamonds actually land, immediately and for
+    /// free. Returns 0 for an unknown/no-grant SKU (the two non-stone/set
+    /// SKUIDs and anything not opened via BeginPurchase) rather than
+    /// fabricating an amount.
+    /// </summary>
+    public int ActivatePurchase(long magic, Pokeland.Protocol.SKUID skuId)
+    {
+        int amount = PurchaseSkuGrants.GetValueOrDefault(skuId);
+        lock (_gate)
+        {
+            if (amount > 0) _player.DiamondPaid += amount;
+            _player.PendingPurchases[magic] = (int)skuId;
+        }
+        Save();
+        return amount;
+    }
+
+    /// <summary>Finishes a purchase flow by Magic, reporting back the SKUID
+    /// that was opened for it (PurchaseEnd.Req carries no SKUID of its own -
+    /// see Player.PendingPurchases) and forgetting the pending entry.</summary>
+    public Pokeland.Protocol.SKUID? EndPurchase(long magic)
+    {
+        Pokeland.Protocol.SKUID? sku;
+        lock (_gate)
+        {
+            if (_player.PendingPurchases.TryGetValue(magic, out var id))
+            {
+                sku = (Pokeland.Protocol.SKUID)id;
+                _player.PendingPurchases.Remove(magic);
+            }
+            else sku = null;
+        }
+        Save();
+        return sku;
     }
 
     /// <summary>

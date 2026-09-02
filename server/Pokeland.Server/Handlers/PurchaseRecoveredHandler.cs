@@ -4,7 +4,10 @@ using Pokeland.Protocol;
 
 namespace Pokeland.Server.Handlers;
 
-/// <summary>Recovers a previously-interrupted IAP. No real store backend exists.</summary>
+/// <summary>Recovers a previously-interrupted IAP. Every purchase now
+/// completes synchronously in PurchaseActivate (see PlayerStore.
+/// ActivatePurchase), so there is never anything left mid-flight to
+/// recover - an empty list is correct, not a stub.</summary>
 public sealed class PurchaseRecoveredHandler : IEndpointHandler
 {
     public string Endpoint => "PurchaseRecovered";
