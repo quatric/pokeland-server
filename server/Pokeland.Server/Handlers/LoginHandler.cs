@@ -65,11 +65,7 @@ public sealed class LoginHandler : IEndpointHandler
             IsGiftArrived = Bool.False,
             Exp = 0,
             GuestTotalVisitCount = 0,
-            AnnouncementState = new AnnouncementState
-            {
-                EmergencyInfoAnnouncementIds = Array.Empty<int>(),
-                PopupAnnouncementIds = Array.Empty<int>(),
-            },
+            AnnouncementState = Announcements.StateFor(ctx.Players.Current.HeadMarkedAsReadAnnouncementId),
             ChestSummary = new ChestSummary { StoreSize = 3 },
             // DoneFlagBox indexes this bit vector by DoneFlag, whose largest
             // member is 163, so give it enough zero bytes to cover the whole

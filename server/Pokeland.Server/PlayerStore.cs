@@ -104,6 +104,12 @@ public sealed class Player
     [JsonProperty("PaidSpEqunitStoreSize")]
     public int PaidSpEqunitStoreSize { get; set; }
 
+    /// <summary>Highest Announcement.AnnouncementId the client has told us
+    /// (via SetAnnouncementState) it has already marked read, so the welcome
+    /// announcement in Announcements.cs doesn't keep popping up.</summary>
+    [JsonProperty("HeadMarkedAsReadAnnouncementId")]
+    public int HeadMarkedAsReadAnnouncementId { get; set; }
+
     /// <summary>
     /// Per-mission progress as last reported by the client's RecordMissions
     /// commit, keyed by MissionID. The client counts progress locally and
@@ -489,6 +495,19 @@ public sealed class PlayerStore
         }
         Save();
         return ok;
+    }
+
+    /// <summary>Persists how far the client has scrolled through the
+    /// announcement feed (SetAnnouncementState), so the welcome announcement
+    /// stops being reported as unread on future logins.</summary>
+    public void SetHeadMarkedAsReadAnnouncementId(int id)
+    {
+        lock (_gate)
+        {
+            if (id <= _player.HeadMarkedAsReadAnnouncementId) return;
+            _player.HeadMarkedAsReadAnnouncementId = id;
+        }
+        Save();
     }
 
     /// <summary>
