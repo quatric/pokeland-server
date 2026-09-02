@@ -21,6 +21,7 @@ builder.Services.AddSingleton<IEndpointHandler, StartStageHandler>();
 builder.Services.AddSingleton<IEndpointHandler, FindMyslandHandler>();
 builder.Services.AddSingleton<IEndpointHandler, EndStageHandler>();
 builder.Services.AddSingleton<IEndpointHandler, ReceiveMissionRewardsHandler>();
+builder.Services.AddSingleton<IEndpointHandler, ListMissionsHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();

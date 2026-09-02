@@ -1,6 +1,7 @@
 #nullable disable
 using System.Collections.Generic;
 using System.Linq;
+using Pokeland.Protocol;
 
 namespace Pokeland.Server;
 
@@ -47,4 +48,29 @@ public static class Missions
     /// </summary>
     public static bool IsComplete(int id, int progress) =>
         Table.TryGetValue(id, out var d) && progress >= d.Num;
+
+    /// <summary>
+    /// The mission list as the account currently stands. Progress is whatever
+    /// the client last reported through RecordMissions, and the state follows
+    /// from it: paid missions are Redeemed, finished-but-unpaid ones are
+    /// CanRedeem (which is what puts the badge on the challenge board), the
+    /// rest are still InProgress. The three lists are index-paired.
+    /// </summary>
+    public static MissionSummary Summary(string utcNow, Player player)
+    {
+        var ids = IDs.ToList();
+        var progresses = ids
+            .Select(id => player.MissionProgress.TryGetValue(id, out var p) ? p : 0)
+            .ToList();
+        return new MissionSummary
+        {
+            DailyUTCStr = utcNow,
+            IDs = ids.Select(id => (MissionID)id).ToList(),
+            Progresses = progresses,
+            States = ids.Zip(progresses, (id, p) =>
+                player.RedeemedMissions.Contains(id) ? MissionState.Redeemed
+                : IsComplete(id, p) ? MissionState.CanRedeem
+                : MissionState.InProgress).ToList(),
+        };
+    }
 }
