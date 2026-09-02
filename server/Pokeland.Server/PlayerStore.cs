@@ -363,17 +363,24 @@ public sealed class PlayerStore
     }
 
     /// <summary>
-    /// Diamond price per BuyUnit. UtensilDesc.m_priceDiamond is real retail
-    /// pricing data that lives in an unextracted asset bundle, not something
-    /// this server can read - unlike the equipment wire layout this is only
-    /// game-balance data, not a format that risks an index-out-of-range
-    /// crash if guessed, so a flat placeholder price is fine here.
+    /// Diamond price per BuyUnit. docs/tables/UtensilDesc.json (extracted
+    /// from the real asset bundle) shows m_priceDiamond is 0 for every
+    /// utensil - they're IAP/event-granted, not diamond-purchasable in
+    /// retail - so this flat placeholder only exists to keep the BuyUtensil
+    /// endpoint exercising something non-trivial in absence of a real SKU
+    /// flow. m_maxCount, in contrast, is real retail data and is enforced
+    /// below.
     /// </summary>
     private const int UtensilPriceDiamond = 10;
 
+    /// <summary>Real retail per-utensil stack caps (UtensilDesc.m_maxCount),
+    /// indexed by UtensilID - see docs/tables/UtensilDesc.json.</summary>
+    private static readonly int[] UtensilMaxCount = { 0, 10, 999, 999 };
+
     /// <summary>
     /// Buys utensils by spending diamonds (free balance first, then paid).
-    /// Returns false if the player can't afford it; nothing is charged or
+    /// Returns false if the player can't afford it, or if the purchase
+    /// would exceed the utensil's retail stack cap; nothing is charged or
     /// granted on failure.
     /// </summary>
     public bool BuyUtensil(Pokeland.Protocol.UtensilID id, int count)
@@ -384,13 +391,14 @@ public sealed class PlayerStore
         {
             int cost = UtensilPriceDiamond * count;
             int have = _player.DiamondFree + _player.DiamondPaid;
-            ok = have >= cost;
+            _player.Utensils.TryGetValue((int)id, out var have2);
+            int max = (int)id >= 0 && (int)id < UtensilMaxCount.Length ? UtensilMaxCount[(int)id] : int.MaxValue;
+            ok = have >= cost && have2 + count <= max;
             if (ok)
             {
                 int fromFree = Math.Min(_player.DiamondFree, cost);
                 _player.DiamondFree -= fromFree;
                 _player.DiamondPaid -= cost - fromFree;
-                _player.Utensils.TryGetValue((int)id, out var have2);
                 _player.Utensils[(int)id] = have2 + count;
             }
         }
