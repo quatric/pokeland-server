@@ -28,6 +28,9 @@ builder.Services.AddSingleton<IEndpointHandler, GetSeldomInfoHandler>();
 builder.Services.AddSingleton<IEndpointHandler, SetDoneFlagHandler>();
 builder.Services.AddSingleton<IEndpointHandler, RecordMissionsHandler>();
 builder.Services.AddSingleton<IEndpointHandler, SetMyUserProfileHandler>();
+builder.Services.AddSingleton<IEndpointHandler, GetMyslandsHandler>();
+builder.Services.AddSingleton<IEndpointHandler, GetMyslandDiscoverersHandler>();
+builder.Services.AddSingleton<IEndpointHandler, SetCurrentEventHandler>();
 builder.Services.AddSingleton<GameDispatcher>();
 
 var app = builder.Build();
