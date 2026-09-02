@@ -6,9 +6,9 @@ using Pokeland.Protocol;
 namespace Pokeland.Server.Handlers;
 
 /// <summary>
-/// Buys utensils (JitanTicket and friends) with diamonds - see
-/// PlayerStore.BuyUtensil for why the price is a flat placeholder rather than
-/// extracted retail data. Reports the new diamond balance and utensil counts
+/// Buys utensils (JitanTicket and friends) - free, matching
+/// docs/tables/UtensilDesc.json's real m_priceDiamond of 0 (see
+/// PlayerStore.UtensilPriceDiamond). Reports the new diamond balance and utensil counts
 /// back through the AutoRes side-channel on failure or success alike, so the
 /// client's own balance always matches what actually happened.
 /// </summary>
