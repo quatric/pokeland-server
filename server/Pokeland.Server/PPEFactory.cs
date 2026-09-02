@@ -63,4 +63,25 @@ public static class PPEFactory
         x[25] = (int)(dropId >> 32);
         return new PPEDrop { X = x };
     }
+
+    /// <summary>Builds an owned Equnit (BaseEqunit.Index + Equnit.Index in
+    /// out/dump/dump.cs: 4 base ints + EqunitId/PPEId/SocketNo/IsFavorite/
+    /// GotUTC, 12 total) from a PlayerStore.OwnedEqunit.</summary>
+    public static Equnit BuildEqunit(OwnedEqunit e)
+    {
+        var x = new int[12];
+        x[0] = e.UnitPrefix;
+        x[1] = e.PrefixGrade;
+        x[2] = e.PrefixAddition0;
+        x[3] = e.PrefixAddition1;
+        x[4] = (int)(e.Id & 0xFFFFFFFF);          // EqunitId_Low
+        x[5] = (int)(e.Id >> 32);                  // EqunitId_High
+        x[6] = (int)(e.MountedPPEId & 0xFFFFFFFF); // PPEId_Low
+        x[7] = (int)(e.MountedPPEId >> 32);        // PPEId_High
+        x[8] = e.MountedSocketNo;                  // SocketNo
+        x[9] = e.IsFavorite ? 1 : 0;                // IsFavorite
+        x[10] = 0;                                  // GotUTC_Low
+        x[11] = 0;                                  // GotUTC_High
+        return new Equnit { X = x };
+    }
 }
