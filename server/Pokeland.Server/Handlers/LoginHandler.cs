@@ -313,8 +313,8 @@ public sealed class LoginHandler : IEndpointHandler
                         /* 14 PartyMember         */ 1,     // IsPlayer
                         /* 15 EvedefID            */ 0,     // NONE
                         /* 16 IsFavorite          */ 0,
-                        /* 17 AddLevelCount       */ 0,
-                        /* 18 AddNormalSocketCount*/ 0,
+                        /* 17 AddLevelCount       */ ctx.Players.Current.PPEAddLevels.GetValueOrDefault(1),
+                        /* 18 AddNormalSocketCount*/ ctx.Players.Current.PPEAddNormalSockets.GetValueOrDefault(1),
                         /* 19 GotUTC_Low          */ 0,
                         /* 20 GotUTC_High         */ 0,
                     },
@@ -322,7 +322,9 @@ public sealed class LoginHandler : IEndpointHandler
             }
             .Concat(ctx.Players.Current.OwnedPPEs.Select(p =>
                 PPEFactory.BuildPPE(p.Id, p.MonsNo, p.Level, p.Grade, p.Waza0, p.Waza1, p.Nickname ?? "",
-                    ctx.Players.Current.PdecoMounts.GetValueOrDefault(p.Id))))
+                    ctx.Players.Current.PdecoMounts.GetValueOrDefault(p.Id),
+                    ctx.Players.Current.PPEAddLevels.GetValueOrDefault(p.Id),
+                    ctx.Players.Current.PPEAddNormalSockets.GetValueOrDefault(p.Id))))
             .ToList(),
             PaidPPEStoreSize = ctx.Players.Current.PaidPPEStoreSize,
             // FOUND (2026-09-01, headless Ghidra decompile of
