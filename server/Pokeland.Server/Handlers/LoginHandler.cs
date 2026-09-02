@@ -30,6 +30,7 @@ public sealed class LoginHandler : IEndpointHandler
         session.AppVer = req.AppVer;
 
         ctx.Players.EnsureStarterEqunits();
+        ctx.Players.AdvanceWelcalCalendar();
         session.AssetVer = req.AssetVer;
         session.TimeZoneOffsetMinutes = req.TZOffsetMin;
 
@@ -397,7 +398,7 @@ public sealed class LoginHandler : IEndpointHandler
             Utensils = ctx.Players.Current.Utensils
                 .Select(kv => new Utensil { UtensilID = (UtensilID)kv.Key, Count = kv.Value })
                 .ToList(),
-            Welcals = new List<Welcal>(),
+            Welcals = new List<Welcal> { ctx.Players.BuildWelcalWireState() },
             Subscription = new Subscription
             {
                 UnlockSKUIDs = new List<SKUID>(),

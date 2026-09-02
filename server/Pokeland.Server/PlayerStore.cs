@@ -123,6 +123,27 @@ public sealed class Player
     [JsonProperty("PdecoMounts")]
     public Dictionary<long, int> PdecoMounts { get; set; } = new();
 
+    /// <summary>
+    /// Welcome Calendar (login-streak) progress, picking WelcalID.BOSP -
+    /// docs/tables/WelcalStepDesc.json's rows 1-7 - as the one campaign
+    /// treated as permanently "running" (see WelcalCalendar). No calendar
+    /// data survives telling us which of the four campaigns retail actually
+    /// had live, so this is a deliberate choice rather than an RE'd fact:
+    /// BOSP is WelcalID 1, the lowest/base entry, and its rewards are the
+    /// least demanding (money/diamond/one starter-tier Pokemon) of the four.
+    /// UnlockedDay advances by one on the first Login of each new UTC date,
+    /// capped at 7; RedeemedDays tracks which of those days already paid out
+    /// so a step can't be claimed twice.
+    /// </summary>
+    [JsonProperty("WelcalUnlockedDay")]
+    public int WelcalUnlockedDay { get; set; }
+    [JsonProperty("WelcalLastAdvanceUtcDate")]
+    public string WelcalLastAdvanceUtcDate { get; set; }
+    [JsonProperty("WelcalRedeemedDays")]
+    public HashSet<int> WelcalRedeemedDays { get; set; } = new();
+    [JsonProperty("WelcalLastRedeemedUtcStr")]
+    public string WelcalLastRedeemedUtcStr { get; set; }
+
     /// <summary>Extra levels bought onto a PPE via AddPPELevel, keyed by
     /// PPEId - wire PPE.X[17] AddLevelCount (see LoginHandler's PPE.Index
     /// layout comment). Spends one UtensilID.AddPPELevel ticket per level.</summary>
@@ -839,5 +860,99 @@ public sealed class PlayerStore
         }
         Save();
         return granted;
+    }
+
+    /// <summary>
+    /// A 7-day login-streak calendar for WelcalID.BOSP (Diamond, Money,
+    /// MonsNo, UnitPrefix, PrefixGrade - 0 means "nothing of that kind this
+    /// day"). No retail calendar data survives telling us which of the four
+    /// WelcalID campaigns was actually live or what it paid out (see
+    /// Player.WelcalUnlockedDay), so rather than reproducing
+    /// WelcalStepDesc.json's real BOSP rows verbatim (an odd mix - two empty
+    /// days, oversized diamond only on day 1), this is a plain hand-designed
+    /// escalating calendar: small currency early, one piece of equipment
+    /// midweek, and a Pokemon plus a diamond bonus as the day-7 capstone -
+    /// the shape every mobile login calendar of this era used.
+    /// </summary>
+    private static readonly (int Diamond, int Money, int MonsNo, int UnitPrefix, int PrefixGrade)[] WelcalCalendar =
+    {
+        (0, 0, 0, 0, 0),           // index 0 unused - days are 1-based
+        (50, 0, 0, 0, 0),          // day 1: 50 diamonds
+        (0, 500, 0, 0, 0),         // day 2: 500 money
+        (100, 0, 0, 0, 0),         // day 3: 100 diamonds
+        (0, 0, 0, (int)Pokeland.Protocol.UnitPrefix.HP_PLUS, 0),   // day 4: an equnit
+        (0, 1500, 0, 0, 0),        // day 5: 1500 money
+        (200, 0, 0, 0, 0),         // day 6: 200 diamonds
+        (500, 0, 25, 0, 0),        // day 7: 500 diamonds + Pikachu
+    };
+
+    /// <summary>Unlocks the next Welcal day on the first Login of a new UTC
+    /// date, capped at the calendar's 7 days.</summary>
+    public void AdvanceWelcalCalendar()
+    {
+        var today = PokelandClock.UtcNow.ToString("yyyy-MM-dd");
+        lock (_gate)
+        {
+            if (_player.WelcalLastAdvanceUtcDate == today) return;
+            _player.WelcalLastAdvanceUtcDate = today;
+            if (_player.WelcalUnlockedDay < 7) _player.WelcalUnlockedDay++;
+        }
+        Save();
+    }
+
+    /// <summary>
+    /// Redeems one BOSP calendar day. Returns null if the requested step
+    /// isn't a BOSP day (1-7), isn't unlocked yet, or was already redeemed.
+    /// Rewards land the same way GrantPPE/OpenChest already do - Money/
+    /// DiamondFree directly, a real OwnedPPE for a MonsNo reward, a real
+    /// OwnedEqunit for an equipment reward.
+    /// </summary>
+    public (int Diamond, int Money, OwnedPPE PPE, OwnedEqunit Equnit)? RedeemWelcal(Pokeland.Protocol.WelcalStepID stepId)
+    {
+        int day = (int)stepId;
+        if (day is < 1 or > 7) return null;
+        var reward = WelcalCalendar[day];
+        (int, int, OwnedPPE, OwnedEqunit)? result;
+        lock (_gate)
+        {
+            if (day > _player.WelcalUnlockedDay || !_player.WelcalRedeemedDays.Add(day))
+            {
+                result = null;
+            }
+            else
+            {
+                _player.DiamondFree += reward.Diamond;
+                _player.Money += reward.Money;
+                _player.WelcalLastRedeemedUtcStr = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
+                OwnedPPE ppe = null;
+                if (reward.MonsNo != 0)
+                    ppe = GrantPPE(reward.MonsNo, level: 1, grade: 100, waza0: 0, waza1: 0, nickname: null);
+                OwnedEqunit equnit = null;
+                if (reward.UnitPrefix != 0)
+                {
+                    equnit = new OwnedEqunit { Id = _player.NextEqunitId++, UnitPrefix = reward.UnitPrefix, PrefixGrade = reward.PrefixGrade };
+                    _player.Equnits.Add(equnit);
+                }
+                result = (reward.Diamond, reward.Money, ppe, equnit);
+            }
+        }
+        Save();
+        return result;
+    }
+
+    /// <summary>Builds the Welcal record Login reports for BOSP, reflecting
+    /// the player's current calendar progress.</summary>
+    public Pokeland.Protocol.Welcal BuildWelcalWireState()
+    {
+        lock (_gate)
+        {
+            int dayDone = _player.WelcalRedeemedDays.Count == 0 ? 0 : _player.WelcalRedeemedDays.Max();
+            return new Pokeland.Protocol.Welcal
+            {
+                WelcalID = Pokeland.Protocol.WelcalID.BOSP,
+                DayDone = dayDone,
+                LastRedeemedUTCStr = _player.WelcalLastRedeemedUtcStr,
+            };
+        }
     }
 }
