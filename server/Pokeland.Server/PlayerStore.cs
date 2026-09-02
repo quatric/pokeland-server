@@ -867,6 +867,25 @@ public sealed class PlayerStore
     }
 
     /// <summary>
+    /// Drops chest entries the client no longer needs to hear about -
+    /// GoodbyeChests' GoodbyeChestIds (discarded unopened) and GetChestIds
+    /// (already opened and its reward collected) end up at the same place:
+    /// once a chest leaves Player.Chests, GetOrAddChest just treats a later
+    /// reference to the same ChestId as a brand new chest, which is correct
+    /// for both cases - a discarded chest was never opened, and a collected
+    /// one has nothing left to grant.
+    /// </summary>
+    public void RemoveChests(IEnumerable<long> chestIds)
+    {
+        if (chestIds is null) return;
+        lock (_gate)
+        {
+            foreach (var id in chestIds) _player.Chests.Remove(id);
+        }
+        Save();
+    }
+
+    /// <summary>
     /// A 7-day login-streak calendar for WelcalID.BOSP (Diamond, Money,
     /// MonsNo, UnitPrefix, PrefixGrade - 0 means "nothing of that kind this
     /// day"). No retail calendar data survives telling us which of the four
