@@ -304,8 +304,13 @@ public sealed class LoginHandler : IEndpointHandler
                         /* 7  PiiGrade            */ 5,
                         /* 8  SocketCount         */ 0,
                         /* 9  SpSocketCount       */ 0,
-                        /* 10 Waza0               */ 0,     // NONE
-                        /* 11 Waza1               */ 0,     // NONE
+                        // A PPE with no moves auto-attacks for nothing, so a
+                        // level-50 Bulbasaur still lost every campaign stage.
+                        // PiiDesc row 1 (HUSIGIDANE) names the species' own
+                        // moves: m_zakoWaza/m_rivalWaza/m_bossWaza = 27 and
+                        // m_bossWaza2 = 90.
+                        /* 10 Waza0               */ 27,
+                        /* 11 Waza1               */ 90,
                         /* 12 PPEId_Low           */ 1,
                         /* 13 PPEId_High          */ 0,
                         /* 14 PartyMember         */ 1,     // IsPlayer
