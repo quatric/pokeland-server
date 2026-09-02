@@ -53,8 +53,21 @@ public static class World
     public static IslandCodeX[] IslandCode(EvedefID evedefID) =>
         Codes.Island(evedefID, IslandID, MyslandId);
 
+    /// <summary>The mysland's one stage. A Stage's StageType is not carried on
+    /// the wire - the client reads it out of the StageDesc row named by the
+    /// StageID. GlobeIslandView.RefreshAll (RVA 0xED44C0) does
+    /// <c>StageBox.GetStages(islandCode).GetStages(StageType.Campaign)
+    /// .FirstOrDefault()</c> for any island where IslandCodeEx.IsMysland is true
+    /// (journey islands take StageType.Totem instead) and then dereferences the
+    /// result, so a mysland whose only stage is not a Campaign stage black-screens
+    /// the Globe scene on entry.
+    ///
+    /// StageDesc row 1 - the obvious tutorial row - is Totem. Row 9 is the first
+    /// Campaign row whose m_groundType is 3, matching IslandDesc row 46.</summary>
+    private const int StageID = 9;
+
     public static StageCodeX[] StageCode(EvedefID evedefID) =>
-        Codes.Stage(evedefID, IslandID, stageID: 1, myslandId: MyslandId);
+        Codes.Stage(evedefID, IslandID, stageID: StageID, myslandId: MyslandId);
 
     public static Mysland Mysland(EvedefID evedefID) => new()
     {
