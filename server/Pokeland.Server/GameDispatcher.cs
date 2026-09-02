@@ -22,9 +22,13 @@ public interface IEndpointHandler
 public sealed class DispatchContext
 {
     public SessionStore Sessions { get; init; }
+    public PlayerStoreManager PlayerManager { get; init; }
     public PlayerStore Players { get; init; }
     public ServerConfig Config { get; init; }
     public ILogger Log { get; init; }
+    /// <summary>The bearer token's user id, for Login - the one request that
+    /// has no session yet to carry <see cref="GameSession.BaaSUserId"/>.</summary>
+    public string RequestBaasUserId { get; init; }
 }
 
 /// <summary>
@@ -68,7 +72,7 @@ public sealed class GameDispatcher
     /// <summary>Result of a dispatch: the JSON body plus the status the client should see.</summary>
     public readonly record struct Result(string Body, int StatusCode);
 
-    public Result Dispatch(string body, DispatchContext ctx)
+    public Result Dispatch(string body, DispatchContext ctx, string baasUserId = null)
     {
         JObject raw;
         try { raw = JObject.Parse(body); }
@@ -96,6 +100,23 @@ public sealed class GameDispatcher
                 Reason = UnauthorizedReason.InvalidSession,
             }), StatusCodes.Status401Unauthorized);
         }
+
+        // Every request after this point runs against a per-user PlayerStore
+        // resolved from the session's BaaSUserId, not the fixed instance the
+        // shared DispatchContext was built with - that instance only exists
+        // to carry Sessions/Config/Log/PlayerManager through from Program.cs.
+        // A fresh local context (rather than mutating the shared one) keeps
+        // concurrent requests for different devices from racing on which
+        // PlayerStore "ctx.Players" points at.
+        ctx = new DispatchContext
+        {
+            Sessions = ctx.Sessions,
+            PlayerManager = ctx.PlayerManager,
+            Players = ctx.PlayerManager.Get(session?.BaaSUserId ?? baasUserId),
+            Config = ctx.Config,
+            Log = ctx.Log,
+            RequestBaasUserId = baasUserId,
+        };
 
         // SetDoneFlag arrives two ways and both have to be caught here rather
         // than in a handler: as its own endpoint, and piggybacked onto any

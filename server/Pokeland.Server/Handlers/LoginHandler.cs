@@ -23,9 +23,13 @@ public sealed class LoginHandler : IEndpointHandler
         var req = (Pokeland.Protocol.Login.Req)request;
 
         // The retail server authenticated the Nintendo BaaS bearer token here. A
-        // revival deployment has no BaaS to check against, so identity comes from
-        // whatever the client presents and every login opens a fresh session.
-        var session = ctx.Sessions.Create(baasUserId: null);
+        // revival deployment has no BaaS to check against, so identity is just
+        // the device id the fake BaaS login (Baas.cs) minted and handed back
+        // in the bearer token - GameDispatcher pulled it out of the
+        // Authorization header before we ever got here. That id is also what
+        // ctx.Players (resolved before this handler ran) is keyed on, so a
+        // returning device gets its own save back instead of a fresh one.
+        var session = ctx.Sessions.Create(baasUserId: ctx.RequestBaasUserId);
         session.Market = req.Market;
         session.AppVer = req.AppVer;
 

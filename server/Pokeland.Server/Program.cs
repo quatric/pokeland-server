@@ -11,10 +11,12 @@ var config = new ServerConfig();
 builder.Configuration.GetSection("Pokeland").Bind(config);
 builder.Services.AddSingleton(config);
 builder.Services.AddSingleton<SessionStore>();
-// Account progress that has to survive a restart. Path is overridable so a
+// Account progress that has to survive a restart, one save per device/account
+// (see PlayerStoreManager) - keyed by the BaaS user id the fake login mints,
+// no real login/credential system involved. Dir is overridable so a
 // throwaway bring-up run can be pointed at a scratch save.
-builder.Services.AddSingleton(new PlayerStore(
-    Environment.GetEnvironmentVariable("POKELAND_SAVE") ?? "player.json"));
+builder.Services.AddSingleton(new PlayerStoreManager(
+    Environment.GetEnvironmentVariable("POKELAND_SAVE_DIR") ?? "players"));
 builder.Services.AddSingleton<IEndpointHandler, LoginHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetEndOfServiceInfosHandler>();
 builder.Services.AddSingleton<IEndpointHandler, StartStageHandler>();
@@ -83,8 +85,12 @@ var app = builder.Build();
 var log = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger("Pokeland");
 var sessions = app.Services.GetRequiredService<SessionStore>();
 var dispatcher = app.Services.GetRequiredService<GameDispatcher>();
-var players = app.Services.GetRequiredService<PlayerStore>();
-var ctx = new DispatchContext { Sessions = sessions, Players = players, Config = config, Log = log };
+var playerManager = app.Services.GetRequiredService<PlayerStoreManager>();
+// Players is left null here - GameDispatcher.Dispatch resolves the real
+// per-request store from the session's (or, for Login, the bearer token's)
+// BaaSUserId and builds a fresh per-request DispatchContext with it, rather
+// than this shared instance being mutated across concurrent requests.
+var ctx = new DispatchContext { Sessions = sessions, PlayerManager = playerManager, Config = config, Log = log };
 
 app.Use(async (http, next) =>
 {
@@ -186,9 +192,14 @@ var gameHandler = async (string version, HttpContext http) =>
     using var reader = new StreamReader(http.Request.Body);
     var body = await reader.ReadToEndAsync();
 
+    // Login has no session yet to carry a BaaSUserId, so the device identity
+    // has to come from the bearer token the SDK attaches to every request -
+    // Baas.Token() bakes the user id in as the first ':'-separated field.
+    var baasUserId = ExtractBaasUserId(http.Request.Headers.Authorization.ToString());
+
     try
     {
-        var result = dispatcher.Dispatch(body, ctx);
+        var result = dispatcher.Dispatch(body, ctx, baasUserId);
         // Wire trace. The client reports nothing when it silently rejects a
         // response - no exception, no retry - so the only way to tell a bad
         // payload from a stalled coroutine is to read both halves of the
@@ -266,3 +277,24 @@ app.MapGet("/_status", () => Results.Json(new
 }));
 
 app.Run();
+
+/// <summary>Pulls the BaaS user id out of the bearer header - the SDK sends
+/// Baas.IdToken(), a JWT-shaped (but unsigned) string whose payload segment
+/// carries the user id as "sub" (see NPFBaaSUserIdTokenPayload). Returns null
+/// for anything else - a missing/malformed header just falls back to the
+/// "anonymous" save.</summary>
+static string ExtractBaasUserId(string authHeader)
+{
+    if (string.IsNullOrEmpty(authHeader)) return null;
+    var token = authHeader.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase)
+        ? authHeader["Bearer ".Length..] : authHeader;
+    try
+    {
+        var payloadSegment = token.Split('.')[1];
+        var padded = payloadSegment.Replace('-', '+').Replace('_', '/');
+        padded += (padded.Length % 4) switch { 2 => "==", 3 => "=", _ => "" };
+        var raw = System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(padded));
+        return Newtonsoft.Json.Linq.JObject.Parse(raw).Value<string>("sub");
+    }
+    catch { return null; }
+}
