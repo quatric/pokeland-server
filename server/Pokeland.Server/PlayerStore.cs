@@ -81,6 +81,29 @@ public sealed class Player
     [JsonProperty("DiamondFree")]
     public int DiamondFree { get; set; }
 
+    /// <summary>Purchased diamonds. There is no real-money purchase flow, so
+    /// this only ever moves via BuyUtensil/BuyStoreSize spending it down
+    /// after free diamonds run out - it stays zero otherwise.</summary>
+    [JsonProperty("DiamondPaid")]
+    public int DiamondPaid { get; set; }
+
+    /// <summary>
+    /// Consumable utensils bought via BuyUtensil (JitanTicket and friends),
+    /// keyed by UtensilID. Login reports these back and ChestUseJitanTicket
+    /// spends one - real inventory, not an ack-only stub.
+    /// </summary>
+    [JsonProperty("Utensils")]
+    public Dictionary<int, int> Utensils { get; set; } = new();
+
+    /// <summary>Extra inventory slots bought via BuyStoreSize, on top of the
+    /// base size Login already advertises.</summary>
+    [JsonProperty("PaidPPEStoreSize")]
+    public int PaidPPEStoreSize { get; set; }
+    [JsonProperty("PaidNormalEqunitStoreSize")]
+    public int PaidNormalEqunitStoreSize { get; set; }
+    [JsonProperty("PaidSpEqunitStoreSize")]
+    public int PaidSpEqunitStoreSize { get; set; }
+
     /// <summary>
     /// Per-mission progress as last reported by the client's RecordMissions
     /// commit, keyed by MissionID. The client counts progress locally and
@@ -331,6 +354,91 @@ public sealed class PlayerStore
         }
         Save();
         return ppe;
+    }
+
+    /// <summary>
+    /// Diamond price per BuyUnit. UtensilDesc.m_priceDiamond is real retail
+    /// pricing data that lives in an unextracted asset bundle, not something
+    /// this server can read - unlike the equipment wire layout this is only
+    /// game-balance data, not a format that risks an index-out-of-range
+    /// crash if guessed, so a flat placeholder price is fine here.
+    /// </summary>
+    private const int UtensilPriceDiamond = 10;
+
+    /// <summary>
+    /// Buys utensils by spending diamonds (free balance first, then paid).
+    /// Returns false if the player can't afford it; nothing is charged or
+    /// granted on failure.
+    /// </summary>
+    public bool BuyUtensil(Pokeland.Protocol.UtensilID id, int count)
+    {
+        if (count <= 0) return false;
+        bool ok;
+        lock (_gate)
+        {
+            int cost = UtensilPriceDiamond * count;
+            int have = _player.DiamondFree + _player.DiamondPaid;
+            ok = have >= cost;
+            if (ok)
+            {
+                int fromFree = Math.Min(_player.DiamondFree, cost);
+                _player.DiamondFree -= fromFree;
+                _player.DiamondPaid -= cost - fromFree;
+                _player.Utensils.TryGetValue((int)id, out var have2);
+                _player.Utensils[(int)id] = have2 + count;
+            }
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>Spends one utensil of the given kind. Returns false if none
+    /// are in stock.</summary>
+    public bool SpendUtensil(Pokeland.Protocol.UtensilID id)
+    {
+        bool ok;
+        lock (_gate)
+        {
+            ok = _player.Utensils.TryGetValue((int)id, out var have) && have > 0;
+            if (ok) _player.Utensils[(int)id] = have - 1;
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>Diamond price per store-size BuyUnit - see UtensilPriceDiamond
+    /// for why this is a placeholder rather than extracted retail data.</summary>
+    private const int StoreSizePriceDiamond = 20;
+
+    /// <summary>
+    /// Buys inventory expansion in up to three categories at once (PPE,
+    /// normal equnit, sp equnit), charging diamonds per BuyUnit requested.
+    /// All-or-nothing: returns false and charges nothing if the combined cost
+    /// can't be covered.
+    /// </summary>
+    public bool BuyStoreSize(int ppeUnits, int normalEqunitUnits, int spEqunitUnits)
+    {
+        ppeUnits = Math.Max(0, ppeUnits);
+        normalEqunitUnits = Math.Max(0, normalEqunitUnits);
+        spEqunitUnits = Math.Max(0, spEqunitUnits);
+        bool ok;
+        lock (_gate)
+        {
+            int cost = StoreSizePriceDiamond * (ppeUnits + normalEqunitUnits + spEqunitUnits);
+            int have = _player.DiamondFree + _player.DiamondPaid;
+            ok = cost > 0 && have >= cost;
+            if (ok)
+            {
+                int fromFree = Math.Min(_player.DiamondFree, cost);
+                _player.DiamondFree -= fromFree;
+                _player.DiamondPaid -= cost - fromFree;
+                _player.PaidPPEStoreSize += ppeUnits;
+                _player.PaidNormalEqunitStoreSize += normalEqunitUnits;
+                _player.PaidSpEqunitStoreSize += spEqunitUnits;
+            }
+        }
+        if (ok) Save();
+        return ok;
     }
 
     /// <summary>The real unlock wait - short, since TutorialCopper1 (the only

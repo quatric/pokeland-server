@@ -1,4 +1,5 @@
 #nullable disable
+using System.Linq;
 using Pokeland.Protocol;
 using Pokeland.Server;
 
@@ -58,7 +59,7 @@ public sealed class LoginHandler : IEndpointHandler
             // banked through EndStage has to still be there next launch.
             Money = ctx.Players.Current.Money,
             DiamondFree = ctx.Players.Current.DiamondFree,
-            DiamondPaid = 0,
+            DiamondPaid = ctx.Players.Current.DiamondPaid,
             DiamondConsumed = 0,
             DiamondConsumedExtra = 0,
             IsGiftArrived = Bool.False,
@@ -106,8 +107,8 @@ public sealed class LoginHandler : IEndpointHandler
             EvedefSummary = new EvedefSummary { CurrentEvedefID = ctx.Config.CurrentEvedefID },
             Eqbits = new List<Eqbit>(),
             Equnits = new List<Equnit>(),
-            PaidNormalEqunitStoreSize = 0,
-            PaidSpEqunitStoreSize = 0,
+            PaidNormalEqunitStoreSize = ctx.Players.Current.PaidNormalEqunitStoreSize,
+            PaidSpEqunitStoreSize = ctx.Players.Current.PaidSpEqunitStoreSize,
             // The Globe scene needs the current event to actually exist, not just
             // to be named: Scenes.Globe.Globe.RefreshEvedefView (RVA 0xF6BC58)
             // does `Cache.EvedefBox.Get(Param.EvedefID).EndUTC` with no null
@@ -326,7 +327,7 @@ public sealed class LoginHandler : IEndpointHandler
             .Concat(ctx.Players.Current.OwnedPPEs.Select(p =>
                 PPEFactory.BuildPPE(p.Id, p.MonsNo, p.Level, p.Grade, p.Waza0, p.Waza1, p.Nickname ?? "")))
             .ToList(),
-            PaidPPEStoreSize = 0,
+            PaidPPEStoreSize = ctx.Players.Current.PaidPPEStoreSize,
             // FOUND (2026-09-01, headless Ghidra decompile of
             // GlobeIslandView.RefreshAll, RVA 0xED44C0): it does
             //
@@ -384,7 +385,9 @@ public sealed class LoginHandler : IEndpointHandler
             TotalSec = 0,
             Chests = new List<Chest>(),
             Pdecos = new List<Pdeco>(),
-            Utensils = new List<Utensil>(),
+            Utensils = ctx.Players.Current.Utensils
+                .Select(kv => new Utensil { UtensilID = (UtensilID)kv.Key, Count = kv.Value })
+                .ToList(),
             Welcals = new List<Welcal>(),
             Subscription = new Subscription
             {
