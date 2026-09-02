@@ -25,6 +25,19 @@ namespace Pokeland.Server;
 /// </summary>
 public static class World
 {
+    /// <summary>The key PlayerStore.StageClears/StageCollectionRewarded index
+    /// by - a stage's StageCode array flattened to a comma-joined string, the
+    /// same shape EndStageHandler always used before this was pulled out to
+    /// be shared with the Stage builders below.</summary>
+    public static string StageKey(IEnumerable<StageCodeX> stageCode) =>
+        string.Join(",", stageCode.Select(c => (long)c));
+
+    private static int ClearCountFor(Player player, IEnumerable<StageCodeX> stageCode) =>
+        player != null && player.StageClears.TryGetValue(StageKey(stageCode), out var n) ? n : 0;
+
+    private static bool IsCollectionRewarded(Player player, IEnumerable<StageCodeX> stageCode) =>
+        player != null && player.StageCollectionRewarded.Contains(StageKey(stageCode));
+
     /// <summary>Nonzero myslandId is the entire definition of "this is a mysland":
     /// <c>EnumEmisCode.IsMysland</c> (RVA 0x129751C) is just
     /// <c>(emisCode &amp; 0x3FFFFFC0000000) != 0</c>.</summary>
@@ -111,35 +124,40 @@ public static class World
     /// way Login ships them so EndStage can hand back an updated record that
     /// matches what the client already has cached, instead of always
     /// crediting the fixed mysland stage regardless of which island was
-    /// actually played.</summary>
-    public static Stage JourneyStage(EvedefID evedefID, int islandID) => new()
+    /// actually played. ClearCount/State/CollectionRewarded are read back
+    /// from the persisted account (via <paramref name="player"/>) rather than
+    /// always starting fresh, so a stage cleared in an earlier session does
+    /// not report itself as Ready/uncleared again after a relaunch.</summary>
+    public static Stage JourneyStage(EvedefID evedefID, int islandID, Player player = null) => new()
     {
         StageCode = Codes.Stage(evedefID, islandID: islandID, stageID: islandID),
-        State = StageState.Ready,
+        State = ClearCountFor(player, Codes.Stage(evedefID, islandID: islandID, stageID: islandID)) > 0
+            ? StageState.Cleared : StageState.Ready,
         PokedexSummary = new PokedexSummary
         {
             DiscoveredVec = Array.Empty<byte>(),
             CapturedVec = Array.Empty<byte>(),
         },
-        CollectionRewarded = Bool.False,
-        ClearCount = 0,
+        CollectionRewarded = IsCollectionRewarded(player, Codes.Stage(evedefID, islandID: islandID, stageID: islandID))
+            ? Bool.True : Bool.False,
+        ClearCount = ClearCountFor(player, Codes.Stage(evedefID, islandID: islandID, stageID: islandID)),
         JissionStates = Enumerable.Repeat(JissionState.NotAchieved, 3).ToList(),
         Bosses = new List<PokedexID> { (PokedexID)IslandBossMonsNo[islandID] },
         Capturables = new List<PokedexID>(),
         Prizes = new List<PokedexID>(),
     };
 
-    public static Stage Stage(EvedefID evedefID) => new()
+    public static Stage Stage(EvedefID evedefID, Player player = null) => new()
     {
         StageCode = StageCode(evedefID),
-        State = StageState.Ready,
+        State = ClearCountFor(player, StageCode(evedefID)) > 0 ? StageState.Cleared : StageState.Ready,
         PokedexSummary = new PokedexSummary
         {
             DiscoveredVec = Array.Empty<byte>(),
             CapturedVec = Array.Empty<byte>(),
         },
-        CollectionRewarded = Bool.False,
-        ClearCount = 0,
+        CollectionRewarded = IsCollectionRewarded(player, StageCode(evedefID)) ? Bool.True : Bool.False,
+        ClearCount = ClearCountFor(player, StageCode(evedefID)),
         // IslandDesc.m_jissionID is a fixed 3-slot array the client zips with
         // this list by index, so it always has three entries.
         JissionStates = Enumerable.Repeat(JissionState.NotAchieved, 3).ToList(),

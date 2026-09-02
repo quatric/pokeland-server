@@ -54,7 +54,7 @@ public sealed class FindMyslandHandler : IEndpointHandler
                 // a mysland row. Delivering it here puts it in the cache after
                 // that setup has already run.
                 UpdatedIslands  = new List<Island>  { World.Island(req.EvedefID, DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ")) },
-                    UpdatedStages = new List<Stage> { World.Stage(req.EvedefID) },
+                    UpdatedStages = new List<Stage> { World.Stage(req.EvedefID, ctx.Players.Current) },
                 },
             },
         };

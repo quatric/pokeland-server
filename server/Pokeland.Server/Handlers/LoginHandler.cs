@@ -351,41 +351,17 @@ public sealed class LoginHandler : IEndpointHandler
             // island) and rows 1..6 are exactly a journey run: m_stageType 2
             // with m_targetCP climbing 100/100/130/180/230/300, row 1 being the
             // m_isTutorial one. Line stage N up with island N.
+            // World.JourneyStage builds the identical Stage (same
+            // Codes.Stage/JissionStates/Bosses shape formerly inlined here -
+            // see its own doc comment for the GlobeIslandView crash notes
+            // that shape works around) and now also reads ClearCount/State/
+            // CollectionRewarded back from the persisted account, so a stage
+            // already cleared in an earlier session reports itself correctly
+            // on this and every later Login instead of resetting to
+            // Ready/ClearCount 0 every relaunch.
             Stages = Enumerable
                 .Range(1, 6)
-                .Select(id => new Stage
-                {
-                    StageCode = Codes.Stage(
-                        ctx.Config.CurrentEvedefID, islandID: id, stageID: id),
-                    State = StageState.Ready,
-                    PokedexSummary = new PokedexSummary
-                    {
-                        DiscoveredVec = Array.Empty<byte>(),
-                        CapturedVec = Array.Empty<byte>(),
-                    },
-                    CollectionRewarded = Bool.False,
-                    ClearCount = 0,
-                    // IslandDesc.m_jissionID is a fixed 3-slot array and the
-                    // client zips it with this list by index
-                    // (JissionValue.IndexInIslandDesc), so a short list makes
-                    // GlobeIslandView.RefreshAll throw ArgumentOutOfRange out of
-                    // List<JissionState>.get_Item. Always ship all three.
-                    JissionStates = Enumerable
-                        .Repeat(JissionState.NotAchieved, 3)
-                        .ToList(),
-                    // GlobeIslandView.RefreshAll (RVA 0xED44C0) reads
-                    // stage.Boss for the island's pii icon, and Stage.get_Boss
-                    // (RVA 0xFA8390) is just m_bosses[0] with no emptiness
-                    // guard - so an empty Bosses list throws
-                    // ArgumentOutOfRangeException out of List<T>.get_Item,
-                    // inlined into RefreshAll's own frame. Ship the island's
-                    // own boss: PokedexID is the PiiDesc row index, which for
-                    // form 0 equals m_Monsno, and IslandDesc.json rows 1..6
-                    // give m_islandMonsNo 20/20/2/8/5/26.
-                    Bosses = new List<PokedexID> { (PokedexID)World.IslandBossMonsNo[id] },
-                    Capturables = new List<PokedexID>(),
-                    Prizes = new List<PokedexID>(),
-                })
+                .Select(id => World.JourneyStage(ctx.Config.CurrentEvedefID, id, ctx.Players.Current))
                 .ToList(),
             TotalSec = 0,
             Chests = new List<Chest>(),
@@ -421,7 +397,7 @@ public sealed class LoginHandler : IEndpointHandler
         // describes itself (name, boss, position) through the Mysland record.
         reset.Myslands.Add(World.Mysland(ctx.Config.CurrentEvedefID, ctx.Players.Current.MyslandName ?? "Sunny Isle"));
         reset.Stages = reset.Stages
-            .Append(World.Stage(ctx.Config.CurrentEvedefID))
+            .Append(World.Stage(ctx.Config.CurrentEvedefID, ctx.Players.Current))
             .ToList();
 
 
