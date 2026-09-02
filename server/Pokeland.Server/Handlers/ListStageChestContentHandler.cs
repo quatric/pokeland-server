@@ -1,4 +1,6 @@
 #nullable disable
+using System;
+using System.Linq;
 using System.Collections.Generic;
 using Pokeland.Protocol;
 
@@ -6,9 +8,9 @@ namespace Pokeland.Server.Handlers;
 
 /// <summary>
 /// Stage-clear chest/equnit preview. Every stage offers TutorialCopper1 (see
-/// StartStageHandler), so HaveChest is honestly true; the equnit lists stay
-/// empty since this server has no item chest content (PPEFactory's
-/// equipment-layout note).
+/// StartStageHandler), so HaveChest is honestly true; StageEqunits mirrors
+/// the uniform UnitPrefix pool PlayerStore.OpenChest actually draws from
+/// (see GetChestContentRatioHandler) rather than reporting an empty list.
 /// </summary>
 public sealed class ListStageChestContentHandler : IEndpointHandler
 {
@@ -19,6 +21,6 @@ public sealed class ListStageChestContentHandler : IEndpointHandler
         {
             HaveChest = Pokeland.Protocol.Bool.True,
             NotableSpEqunits = new List<UnitPrefix>(),
-            StageEqunits = new List<UnitPrefix>(),
+            StageEqunits = Enum.GetValues<UnitPrefix>().Where(p => p != UnitPrefix.NONE).ToList(),
         };
 }

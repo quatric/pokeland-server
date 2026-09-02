@@ -10,9 +10,10 @@ namespace Pokeland.Server;
 /// so every caller that builds a PPE by hand needs this same packing -
 /// LoginHandler's hardcoded starter, StartStageHandler's offered drop, and
 /// LoginHandler's replay of previously-granted PPEs all go through here.
-/// Equipment (BasePPEAndEqunits.Equnits, X[12..23]) is always zeroed - that
-/// layout is still un-reverse-engineered and no drop this server makes
-/// carries equipment yet.
+/// PPEDrop's embedded BasePPEAndEqunits.Equnits (X[12..23]) is always
+/// zeroed: that field turned out to be a stage-offered drop's own inline
+/// stat-roll preview, not where owned equipment lives - see BuildEqunit
+/// below for the real, separate Equnit entity this server does implement.
 /// </summary>
 public static class PPEFactory
 {
