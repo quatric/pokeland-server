@@ -24,6 +24,22 @@ public sealed class Player
     public HashSet<int> DoneFlags { get; set; } = new();
 
     /// <summary>
+    /// Wallet. Login seeds the Cache from here rather than from a constant, so
+    /// money a run actually earned is still there after a restart.
+    /// </summary>
+    [JsonProperty("Money")]
+    public int Money { get; set; } = 1000;
+
+    /// <summary>
+    /// Times each stage has been cleared, keyed by the stage's wire code
+    /// joined with commas. The client keeps no progress of its own - it takes
+    /// ClearCount straight from the Stage record Login and EndStage hand it -
+    /// so this is the only copy.
+    /// </summary>
+    [JsonProperty("StageClears")]
+    public Dictionary<string, int> StageClears { get; set; } = new();
+
+    /// <summary>
     /// Flags the client can only earn through a flow this server does not
     /// implement yet, and which gate progress until they are set.
     ///
@@ -119,5 +135,22 @@ public sealed class PlayerStore
         }
         if (changed) Save();
         return changed;
+    }
+
+    /// <summary>Records a stage clear and any money it paid out; returns the
+    /// stage's new total clear count.</summary>
+    public int RecordClear(string stageKey, int money)
+    {
+        int count;
+        lock (_gate)
+        {
+            _player.StageClears.TryGetValue(stageKey, out count);
+            _player.StageClears[stageKey] = ++count;
+            // Money is clamped at zero rather than trusted outright: GotMoney
+            // is a client-reported figure.
+            _player.Money += money > 0 ? money : 0;
+        }
+        Save();
+        return count;
     }
 }
