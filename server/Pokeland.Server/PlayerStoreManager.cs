@@ -27,6 +27,25 @@ public sealed class PlayerStoreManager
         return _stores.GetOrAdd(id, CreateStore);
     }
 
+    /// <summary>
+    /// Every other real account this server knows about, id + save. Scans the
+    /// save directory rather than just <see cref="_stores"/> so a player who
+    /// isn't currently logged in still shows up on rankings/guest lists - the
+    /// whole point of these being "multiplayer" now that each device has its
+    /// own save (see PlayerStoreManager's class doc), not just whoever else
+    /// happens to be connected at this exact moment.
+    /// </summary>
+    public IEnumerable<(string Id, Player Player)> AllOthers(string excludeId)
+    {
+        excludeId ??= "anonymous";
+        foreach (var path in Directory.EnumerateFiles(_dir, "*.json"))
+        {
+            var id = Path.GetFileNameWithoutExtension(path);
+            if (id == excludeId) continue;
+            yield return (id, Get(id).Current);
+        }
+    }
+
     private PlayerStore CreateStore(string id)
     {
         var path = Path.Combine(_dir, $"{id}.json");
