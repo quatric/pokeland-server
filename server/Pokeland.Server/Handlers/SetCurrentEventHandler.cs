@@ -6,10 +6,9 @@ namespace Pokeland.Server.Handlers;
 /// <summary>
 /// Fired when the client enters or leaves an event/island (the Globe's
 /// per-mysland "you are here" marker). The CommitUpdatedEqunit/
-/// CommitUpdatedPPE payloads that ride along describe equipment/PPE systems
-/// this server doesn't implement yet, so there's nothing to persist here
-/// beyond the ack the empty-envelope stub already gave - this just answers
-/// without the "no handler" warning.
+/// CommitUpdatedPPE payloads that ride along are applied generically by
+/// GameDispatcher (same pattern as SetDoneFlag/RecordMissions) before this
+/// handler ever runs, so there's nothing left to do here beyond the ack.
 /// </summary>
 public sealed class SetCurrentEventHandler : IEndpointHandler
 {

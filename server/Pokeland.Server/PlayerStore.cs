@@ -257,6 +257,10 @@ public sealed class OwnedPPE
     public int Waza1 { get; set; }
     [JsonProperty("Nickname")]
     public string Nickname { get; set; }
+    [JsonProperty("IsFavorite")]
+    public bool IsFavorite { get; set; }
+    [JsonProperty("IsPartyMember")]
+    public bool IsPartyMember { get; set; }
 }
 
 /// <summary>
@@ -938,6 +942,62 @@ public sealed class PlayerStore
         }
         Save();
         return result;
+    }
+
+    /// <summary>
+    /// Applies a CommitUpdatedPPE.AutoReq (rides on CommitHome/EndStage/
+    /// SetCurrentEvent - any Req deriving from CommitHome.BaseAutoReq): the
+    /// full current favorite-set and party-set (snapshots, not toggles - the
+    /// client always sends its whole current selection) plus any renamed
+    /// PPEs. Returns true if anything actually changed, so callers can skip
+    /// a log line/Save on a no-op commit.
+    /// </summary>
+    public bool ApplyPPECommit(HashSet<long> favoriteIds, HashSet<long> partyIds, List<(long Id, string Nickname)> nicknames)
+    {
+        bool changed = false;
+        lock (_gate)
+        {
+            foreach (var p in _player.OwnedPPEs)
+            {
+                if (favoriteIds != null)
+                {
+                    bool fav = favoriteIds.Contains(p.Id);
+                    if (p.IsFavorite != fav) { p.IsFavorite = fav; changed = true; }
+                }
+                if (partyIds != null)
+                {
+                    bool party = partyIds.Contains(p.Id);
+                    if (p.IsPartyMember != party) { p.IsPartyMember = party; changed = true; }
+                }
+            }
+            if (nicknames != null)
+            {
+                foreach (var (id, nickname) in nicknames)
+                {
+                    var p = _player.OwnedPPEs.FirstOrDefault(o => o.Id == id);
+                    if (p != null && p.Nickname != nickname) { p.Nickname = nickname; changed = true; }
+                }
+            }
+        }
+        if (changed) Save();
+        return changed;
+    }
+
+    /// <summary>Applies a CommitUpdatedEqunit.AutoReq's favorite-set snapshot.</summary>
+    public bool ApplyEqunitCommit(HashSet<long> favoriteIds)
+    {
+        if (favoriteIds is null) return false;
+        bool changed = false;
+        lock (_gate)
+        {
+            foreach (var e in _player.Equnits)
+            {
+                bool fav = favoriteIds.Contains(e.Id);
+                if (e.IsFavorite != fav) { e.IsFavorite = fav; changed = true; }
+            }
+        }
+        if (changed) Save();
+        return changed;
     }
 
     /// <summary>Builds the Welcal record Login reports for BOSP, reflecting

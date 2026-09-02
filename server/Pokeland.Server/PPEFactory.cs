@@ -36,16 +36,16 @@ public static class PPEFactory
     /// <summary>Builds an owned PPE (21 ints: base 12 + PPEId/PartyMember/
     /// EvedefID/IsFavorite/AddLevelCount/AddNormalSocketCount/GotUTC).</summary>
     public static PPE BuildPPE(long ppeId, int monsNo, int level, int grade, int waza0, int waza1, string nickname,
-        int pdecoId = 0, int addLevel = 0, int addNormalSocket = 0)
+        int pdecoId = 0, int addLevel = 0, int addNormalSocket = 0, bool isPartyMember = false, bool isFavorite = false)
     {
         var x = new int[21];
         BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
         x[6] = pdecoId;                            // PdecoID, from Player.PdecoMounts
         x[12] = (int)(ppeId & 0xFFFFFFFF);        // PPEId_Low
         x[13] = (int)(ppeId >> 32);                // PPEId_High
-        x[14] = 0;                                  // PartyMember
+        x[14] = isPartyMember ? 1 : 0;               // PartyMember, from Player.OwnedPPE.IsPartyMember
         x[15] = 0;                                  // EvedefID
-        x[16] = 0;                                  // IsFavorite
+        x[16] = isFavorite ? 1 : 0;                  // IsFavorite, from Player.OwnedPPE.IsFavorite
         x[17] = addLevel;                           // AddLevelCount, from Player.PPEAddLevels
         x[18] = addNormalSocket;                    // AddNormalSocketCount, from Player.PPEAddNormalSockets
         x[19] = 0;                                  // GotUTC_Low
