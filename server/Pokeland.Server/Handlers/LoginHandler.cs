@@ -229,14 +229,21 @@ public sealed class LoginHandler : IEndpointHandler
             },
             Myslands = new List<Mysland>(),
             MyUserProfile = UserProfiles.Current(ctx.Players.Current),
+            // Record the starter in the dex ledger with a MaxPlainBP past the
+            // island `_1` gate (TotemChallengingConditionType.BP, threshold
+            // 100 per IslandDesc.m_journeyCondParam) - an empty ledger here
+            // is why a maxed-out starter still couldn't clear the gate: the
+            // client's journey check (Evedef.GetJourneyCondMaxBP(PiiBox))
+            // reads this recorded max, not just the live PPE, and a species
+            // never listed here reads as 0 no matter how strong its PPE is.
             PokedexDetails = new PokedexDetails
             {
-                EvedefIDs = new List<EvedefID>(),
-                PokedexIDs = new List<PokedexID>(),
-                MaxPlainBPs = new List<int>(),
-                DefeatedCounts = new List<int>(),
-                CapturedCounts = new List<int>(),
-                CapturedSexVecs = new List<int>(),
+                EvedefIDs = new List<EvedefID> { (EvedefID)0 },
+                PokedexIDs = new List<PokedexID> { (PokedexID)1 },
+                MaxPlainBPs = new List<int> { 999 },
+                DefeatedCounts = new List<int> { 1 },
+                CapturedCounts = new List<int> { 1 },
+                CapturedSexVecs = new List<int> { 0 },
             },
             PokedexSummary = new PokedexSummary
             {
@@ -280,10 +287,19 @@ public sealed class LoginHandler : IEndpointHandler
                         // Level 5 at the lowest grade and with no moves cannot
                         // kill a single Rattata before the stage timer runs
                         // out - the tutorial run always ended in "Try again?".
-                        /* 4  Level               */ 50,
+                        // Bumped to the practical caps (Level 100, PiiGrade
+                        // 100/EnumPiiGrade.EndID-1) so GetJourneyCondMaxBP's
+                        // client-side BP formula clears the BP>=100 gate on
+                        // island `_1` - the exact CalcPlainBP/CalcBP formula
+                        // lives in native code (PPEBattleUtil, RVA range
+                        // 0xBB5xxx-0xBB6xxx) and hasn't been decompiled, so
+                        // this maximizes every input CalcBP is known to read
+                        // (Level, PiiGrade, moves) rather than proving a
+                        // specific number clears the threshold.
+                        /* 4  Level               */ 100,
                         /* 5  ApOffset            */ 100,
                         /* 6  PdecoID             */ 0,     // NONE
-                        /* 7  PiiGrade            */ 5,
+                        /* 7  PiiGrade            */ 100,
                         /* 8  SocketCount         */ 0,
                         /* 9  SpSocketCount       */ 0,
                         // A PPE with no moves auto-attacks for nothing, so a
