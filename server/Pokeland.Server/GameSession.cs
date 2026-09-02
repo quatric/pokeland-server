@@ -28,6 +28,23 @@ public sealed class GameSession
     public int Rev = 1;
 
     public DateTime LastSeenUtc { get; set; } = DateTime.UtcNow;
+
+    /// <summary>
+    /// The island a StartStage most recently sent an <c>MHM</c> for, so
+    /// EndStage (whose Req carries no StageCode at all - see
+    /// EndStage.g.cs) knows which stage's ClearCount to bump instead of
+    /// always crediting the fixed mysland stage.
+    /// </summary>
+    public int? CurrentIslandID { get; set; }
+
+    /// <summary>
+    /// The PPEDrop id StartStage most recently offered for this run, paired
+    /// with the species/level it described, so EndStage can convert it into
+    /// a real owned PPE on a clear without re-deriving what was offered.
+    /// </summary>
+    public long? OfferedPPEDropId { get; set; }
+    public int OfferedMonsNo { get; set; }
+    public int OfferedLevel { get; set; }
 }
 
 public sealed class SessionStore

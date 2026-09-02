@@ -272,6 +272,9 @@ public sealed class LoginHandler : IEndpointHandler
             // a null/absent Nickname is a plausible cause of the previous
             // "hangs after Login with no exception" regressions (silent
             // required-field validation failure during deserialization).
+            // Starter plus every PPE a stage clear has granted since - Login
+            // is the only place a restarted client learns its roster again,
+            // since it keeps none of its own (PlayerStore.Player.OwnedPPEs).
             PPEs = new List<PPE>
             {
                 new PPE
@@ -319,7 +322,10 @@ public sealed class LoginHandler : IEndpointHandler
                         /* 20 GotUTC_High         */ 0,
                     },
                 },
-            },
+            }
+            .Concat(ctx.Players.Current.OwnedPPEs.Select(p =>
+                PPEFactory.BuildPPE(p.Id, p.MonsNo, p.Level, p.Grade, p.Waza0, p.Waza1, p.Nickname ?? "")))
+            .ToList(),
             PaidPPEStoreSize = 0,
             // FOUND (2026-09-01, headless Ghidra decompile of
             // GlobeIslandView.RefreshAll, RVA 0xED44C0): it does
