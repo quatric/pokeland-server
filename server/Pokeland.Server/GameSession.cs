@@ -1,5 +1,6 @@
 #nullable disable
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace Pokeland.Server;
 
@@ -38,14 +39,14 @@ public sealed class GameSession
     public int? CurrentIslandID { get; set; }
 
     /// <summary>
-    /// The PPEDrop id StartStage most recently offered for this run, paired
-    /// with the species/level it described, so EndStage can convert it into
-    /// a real owned PPE on a clear without re-deriving what was offered.
+    /// The PPEDrop(s) StartStage most recently offered for this run, paired
+    /// with the species/level each one described, so EndStage can convert
+    /// them into real owned PPEs on a clear without re-deriving what was
+    /// offered. Normally just one entry; the set02 ZakuZaku purchase's
+    /// temporary Drop-subscription buff (see PlayerStore.ActivatePurchase/
+    /// DropBonusExpiresUtc) doubles this to three for its duration.
     /// </summary>
-    public long? OfferedPPEDropId { get; set; }
-    public int OfferedMonsNo { get; set; }
-    public int OfferedLevel { get; set; }
-    public int OfferedGrade { get; set; }
+    public List<(long DropId, int MonsNo, int Level, int Grade)> OfferedDrops { get; set; } = new();
 }
 
 public sealed class SessionStore

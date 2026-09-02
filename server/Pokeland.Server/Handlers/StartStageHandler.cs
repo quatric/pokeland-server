@@ -82,14 +82,19 @@ public sealed class StartStageHandler : IEndpointHandler
         // reads these session fields back to grant the drop for real on a
         // clear; a fresh id per StartStage means an abandoned run's offer is
         // just discarded rather than granted twice.
-        long dropId = DateTime.UtcNow.Ticks;
         int dropLevel = 5 * tier;
         int dropGrade = 10 * tier;
         session.CurrentIslandID = islandID;
-        session.OfferedPPEDropId = dropId;
-        session.OfferedMonsNo = bossMonsNo;
-        session.OfferedLevel = dropLevel;
-        session.OfferedGrade = dropGrade;
+
+        // The set02 ZakuZaku purchase's temporary Drop-subscription buff
+        // (see PlayerStore.ActivatePurchase/DropBonusExpiresUtc) triples the
+        // offered drop count for its duration - "2 more PPE slots on stage
+        // clear" per its SKUDesc.json blurb, on top of the usual one.
+        int dropCount = ctx.Players.Current.DropBonusExpiresUtc is DateTime bonusUntil
+            && PokelandClock.UtcNow < bonusUntil ? 3 : 1;
+        session.OfferedDrops = Enumerable.Range(0, dropCount)
+            .Select(_ => (DropId: DateTime.UtcNow.Ticks + Random.Shared.Next(1000), MonsNo: (int)bossMonsNo, Level: dropLevel, Grade: dropGrade))
+            .ToList();
 
         return new Pokeland.Protocol.StartStage.Res
         {
@@ -183,7 +188,9 @@ public sealed class StartStageHandler : IEndpointHandler
                 IsSubscriptionUnlockActive = Bool.False,
                 IsFeverStage = Bool.False,
             },
-            PPEDrops = new List<PPEDrop> { PPEFactory.BuildDrop(dropId, bossMonsNo, dropLevel, dropGrade, 0, 0) },
+            PPEDrops = session.OfferedDrops
+                .Select(d => PPEFactory.BuildDrop(d.DropId, d.MonsNo, d.Level, d.Grade, 0, 0))
+                .ToList(),
             EqunitDrops = new List<EqunitDrop>(),
             MLABaaSUserId = "",
         };

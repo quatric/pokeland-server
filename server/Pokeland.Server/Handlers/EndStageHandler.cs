@@ -47,23 +47,27 @@ public sealed class EndStageHandler : IEndpointHandler
             clearCount = ctx.Players.RecordClear(key, req.GotMoney);
         }
 
-        // Convert the drop StartStage offered into a real, persisted PPE.
-        // OfferedPPEDropId is cleared either way so an abandoned/lost run
-        // cannot be replayed to grant the same drop twice.
+        // Convert the drop(s) StartStage offered into real, persisted PPEs -
+        // normally one, three during the set02 ZakuZaku Drop-subscription
+        // buff (see StartStageHandler). OfferedDrops is cleared either way
+        // so an abandoned/lost run cannot be replayed to grant them twice.
         var ppeUpdates = new List<PPEUpdate>();
-        if (cleared && session.OfferedPPEDropId is long dropId)
+        if (cleared)
         {
-            var granted = ctx.Players.GrantPPE(
-                session.OfferedMonsNo, session.OfferedLevel,
-                grade: session.OfferedGrade, waza0: 0, waza1: 0, nickname: null);
-            ppeUpdates.Add(new PPEUpdate
+            foreach (var drop in session.OfferedDrops)
             {
-                PPEDropId = dropId,
-                PPEId = granted.Id,
-                EqunitIds = new List<long>(),
-            });
+                var granted = ctx.Players.GrantPPE(
+                    drop.MonsNo, drop.Level,
+                    grade: drop.Grade, waza0: 0, waza1: 0, nickname: null);
+                ppeUpdates.Add(new PPEUpdate
+                {
+                    PPEDropId = drop.DropId,
+                    PPEId = granted.Id,
+                    EqunitIds = new List<long>(),
+                });
+            }
         }
-        session.OfferedPPEDropId = null;
+        session.OfferedDrops = new();
 
         ctx.Log.LogInformation(
             "EndStage: result={Result} island={Island} money=+{Money} pierres={Pierres} dps={Dps} " +

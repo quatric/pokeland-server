@@ -115,6 +115,27 @@ public sealed class Player
     public Dictionary<long, int> PendingPurchases { get; set; } = new();
 
     /// <summary>
+    /// The set02 ZakuZaku bundle's temporary "2 extra PPE slots on stage
+    /// clear" buff - see PlayerStore.PurchaseSkuGrants/ActivatePurchase.
+    /// While PokelandClock.UtcNow is before this, StartStageHandler offers
+    /// three PPEDrops per run instead of one.
+    /// </summary>
+    [JsonProperty("DropBonusExpiresUtc")]
+    public DateTime? DropBonusExpiresUtc { get; set; }
+
+    /// <summary>
+    /// The set04 TokuToku bundle's "80 free diamonds every day for 30 days"
+    /// buff. DailyDiamondBonusLastClaimUtcDate gates it to once per UTC
+    /// date, the same pattern WelcalLastAdvanceUtcDate uses for the
+    /// calendar; ClaimDailyDiamondBonus grants it on Login while
+    /// DailyDiamondBonusExpiresUtc hasn't passed.
+    /// </summary>
+    [JsonProperty("DailyDiamondBonusExpiresUtc")]
+    public DateTime? DailyDiamondBonusExpiresUtc { get; set; }
+    [JsonProperty("DailyDiamondBonusLastClaimUtcDate")]
+    public string DailyDiamondBonusLastClaimUtcDate { get; set; }
+
+    /// <summary>
     /// Consumable utensils bought via BuyUtensil (JitanTicket and friends),
     /// keyed by UtensilID. Login reports these back and ChestUseJitanTicket
     /// spends one - real inventory, not an ack-only stub.
@@ -900,11 +921,10 @@ public sealed class PlayerStore
     /// docs/tables/SKUDesc.json (m_title's "ポケダイヤ（N個）"/m_detail's
     /// "有償...ダイヤがN個もらえます" counts) - stone01-06 are the plain
     /// diamond packs, set01-04 are bundles that include diamonds alongside a
-    /// time-limited subscription buff (extra PPE-store slots, a temporary
-    /// gear-socket, a daily diamond drip) this server doesn't model, so only
-    /// their diamond portion is granted. This is a revival with no real
-    /// store and no plan to build one, so every SKU here is a free grant
-    /// rather than an actual purchase - see Player.DiamondPaid.
+    /// time-limited subscription buff keyed by m_subscriptionType. This is a
+    /// revival with no real store and no plan to build one, so every SKU
+    /// here is a free grant rather than an actual purchase - see
+    /// Player.DiamondPaid and ActivatePurchase for the buffs.
     /// </summary>
     private static readonly Dictionary<Pokeland.Protocol.SKUID, int> PurchaseSkuGrants = new()
     {
@@ -931,10 +951,23 @@ public sealed class PlayerStore
 
     /// <summary>
     /// "Activates" a purchase - with no payment processor to hand off to,
-    /// this is where the SKU's diamonds actually land, immediately and for
-    /// free. Returns 0 for an unknown/no-grant SKU (the two non-stone/set
-    /// SKUIDs and anything not opened via BeginPurchase) rather than
-    /// fabricating an amount.
+    /// this is where the SKU's diamonds and any bundle buff actually land,
+    /// immediately and for free. Returns 0 diamonds for an unknown/no-grant
+    /// SKU rather than fabricating an amount.
+    ///
+    /// Of the three bundle buffs, two get modeled here because they map onto
+    /// systems this server actually has:
+    ///  - set02 ZakuZaku (m_subscriptionType Drop): DropBonusExpiresUtc,
+    ///    read by StartStageHandler to triple the offered PPE drops.
+    ///  - set04 TokuToku (m_subscriptionType LoginBonus): the "80 diamonds/
+    ///    day for 30 days" window, claimed once per UTC date by
+    ///    ClaimDailyDiamondBonus on Login.
+    /// set01 BonusSet and set03 MasiMasi (m_subscriptionType Unlock, "+1
+    /// gear-processing slot") are left unmodeled: gear (equnit) upgrades in
+    /// this server are instant (see UpgradeEqunit) rather than going through
+    /// any queued/slot-limited crafting system, so there is nothing for an
+    /// extra slot to actually do. A second overlapping grant of the same
+    /// buff extends rather than replaces the existing window.
     /// </summary>
     public int ActivatePurchase(long magic, Pokeland.Protocol.SKUID skuId)
     {
@@ -943,9 +976,46 @@ public sealed class PlayerStore
         {
             if (amount > 0) _player.DiamondPaid += amount;
             _player.PendingPurchases[magic] = (int)skuId;
+
+            var now = PokelandClock.UtcNow;
+            if (skuId == Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set02)
+            {
+                var baseline = _player.DropBonusExpiresUtc is DateTime d && d > now ? d : now;
+                _player.DropBonusExpiresUtc = baseline.AddMinutes(4320);
+            }
+            else if (skuId == Pokeland.Protocol.SKUID.jp_pokemon_pokemonscramblesp_set04)
+            {
+                var baseline = _player.DailyDiamondBonusExpiresUtc is DateTime d && d > now ? d : now;
+                _player.DailyDiamondBonusExpiresUtc = baseline.AddMinutes(43200);
+            }
         }
         Save();
         return amount;
+    }
+
+    /// <summary>Grants the set04 TokuToku daily diamond bonus (80/day) once
+    /// per UTC date while DailyDiamondBonusExpiresUtc hasn't passed - same
+    /// once-per-date gate as AdvanceWelcalCalendar. Returns the amount
+    /// granted, or 0 if there's no active bonus or it was already claimed
+    /// today.</summary>
+    public int ClaimDailyDiamondBonus()
+    {
+        const int dailyAmount = 80;
+        var today = PokelandClock.UtcNow.ToString("yyyy-MM-dd");
+        int granted = 0;
+        lock (_gate)
+        {
+            if (_player.DailyDiamondBonusExpiresUtc is DateTime expires
+                && PokelandClock.UtcNow < expires
+                && _player.DailyDiamondBonusLastClaimUtcDate != today)
+            {
+                _player.DailyDiamondBonusLastClaimUtcDate = today;
+                _player.DiamondFree += dailyAmount;
+                granted = dailyAmount;
+            }
+        }
+        if (granted > 0) Save();
+        return granted;
     }
 
     /// <summary>Finishes a purchase flow by Magic, reporting back the SKUID

@@ -31,6 +31,7 @@ public sealed class LoginHandler : IEndpointHandler
 
         ctx.Players.EnsureStarterEqunits();
         ctx.Players.AdvanceWelcalCalendar();
+        ctx.Players.ClaimDailyDiamondBonus();
         session.AssetVer = req.AssetVer;
         session.TimeZoneOffsetMinutes = req.TZOffsetMin;
 
