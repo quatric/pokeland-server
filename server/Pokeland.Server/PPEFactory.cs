@@ -59,7 +59,9 @@ public static class PPEFactory
     {
         var x = new int[26];
         BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
-        // x[12..23] left zero: Equnits, un-RE'd, no drop carries equipment yet.
+        // x[12..23] left zero: PPEDrop's own inline stat-roll preview
+        // (BaseEqunit x3 sockets, see BuildEqunit) - no drop this server
+        // makes pre-rolls one.
         x[24] = (int)(dropId & 0xFFFFFFFF);
         x[25] = (int)(dropId >> 32);
         return new PPEDrop { X = x };
