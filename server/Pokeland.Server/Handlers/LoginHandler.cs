@@ -33,6 +33,7 @@ public sealed class LoginHandler : IEndpointHandler
         ctx.Players.AdvanceWelcalCalendar();
         ctx.Players.ClaimDailyDiamondBonus();
         ctx.Players.ResetDailyMissions();
+        ctx.Players.GrantWelcomeGiftIfNeeded();
         session.AssetVer = req.AssetVer;
         session.TimeZoneOffsetMinutes = req.TZOffsetMin;
 
@@ -67,7 +68,7 @@ public sealed class LoginHandler : IEndpointHandler
             DiamondPaid = ctx.Players.Current.DiamondPaid,
             DiamondConsumed = 0,
             DiamondConsumedExtra = 0,
-            IsGiftArrived = Bool.False,
+            IsGiftArrived = ctx.Players.ArrivedGifts().Count > 0 ? Bool.True : Bool.False,
             Exp = 0,
             GuestTotalVisitCount = 0,
             AnnouncementState = Announcements.StateFor(ctx.Players.Current.HeadMarkedAsReadAnnouncementId),

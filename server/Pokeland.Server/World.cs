@@ -166,4 +166,22 @@ public static class World
         Capturables = new List<PokedexID>(),
         Prizes = new List<PokedexID>(),
     };
+
+    /// <summary>Converts a persisted GiftRecord (PlayerStore.cs) to the wire
+    /// Gift shape GetArrivedGifts/GetReceivedGifts report.</summary>
+    public static Gift Gift(GiftRecord g) => new()
+    {
+        GiftId = g.GiftId,
+        GiftTypeID = g.GiftTypeID,
+        Quantity = g.Quantity,
+        Params = g.Params,
+        BeginUTCStr = g.CreatedUtcStr,
+        EndUTCStr = null,
+        GiftMessageID = g.GiftMessageID,
+        GiftMessageParamType = GiftMessageParamType.NONE,
+        GiftMessageParam = 0,
+        Messages = g.Messages,
+        IsReceived = g.IsReceived ? Bool.True : Bool.False,
+        LastUpdatedUTCStr = g.LastUpdatedUtcStr,
+    };
 }
