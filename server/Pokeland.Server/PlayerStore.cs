@@ -95,6 +95,17 @@ public sealed class Player
     [JsonProperty("Utensils")]
     public Dictionary<int, int> Utensils { get; set; } = new();
 
+    /// <summary>
+    /// Park decoration currently mounted on each owned PPE, keyed by PPEId.
+    /// Set via PdecoMount (Scenes.Camp lets the player pick a decoration per
+    /// PPE from the Pdecos every account owns - see PdecoOwned below); wire
+    /// PPE.X[6] is PdecoID (see LoginHandler's PPE.Index layout comment), so
+    /// this dictionary is what makes a mount survive a restart instead of the
+    /// handler being a pure ack.
+    /// </summary>
+    [JsonProperty("PdecoMounts")]
+    public Dictionary<long, int> PdecoMounts { get; set; } = new();
+
     /// <summary>Extra inventory slots bought via BuyStoreSize, on top of the
     /// base size Login already advertises.</summary>
     [JsonProperty("PaidPPEStoreSize")]
@@ -400,6 +411,32 @@ public sealed class PlayerStore
                 _player.DiamondFree -= fromFree;
                 _player.DiamondPaid -= cost - fromFree;
                 _player.Utensils[(int)id] = have2 + count;
+            }
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>
+    /// Mounts (or, with PdecoID.NONE, clears) a park decoration on a PPE the
+    /// player actually owns - the starter's fixed Id=1 or one of OwnedPPEs.
+    /// Every PdecoID the enum defines counts as owned (there is no grant/shop
+    /// flow for decorations in retail's own data - PdecoDesc carries no price
+    /// fields - so gating this against an inventory would just be inventing a
+    /// restriction retail doesn't have). Returns false for an unknown PPEId or
+    /// out-of-range PdecoID; nothing is persisted on failure.
+    /// </summary>
+    public bool MountPdeco(long ppeId, Pokeland.Protocol.PdecoID pdecoId)
+    {
+        if (!Enum.IsDefined(typeof(Pokeland.Protocol.PdecoID), pdecoId)) return false;
+        bool ok;
+        lock (_gate)
+        {
+            ok = ppeId == 1 || _player.OwnedPPEs.Any(p => p.Id == ppeId);
+            if (ok)
+            {
+                if (pdecoId == Pokeland.Protocol.PdecoID.NONE) _player.PdecoMounts.Remove(ppeId);
+                else _player.PdecoMounts[ppeId] = (int)pdecoId;
             }
         }
         if (ok) Save();

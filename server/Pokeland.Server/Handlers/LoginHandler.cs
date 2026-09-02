@@ -297,7 +297,7 @@ public sealed class LoginHandler : IEndpointHandler
                         // specific number clears the threshold.
                         /* 4  Level               */ 100,
                         /* 5  ApOffset            */ 100,
-                        /* 6  PdecoID             */ 0,     // NONE
+                        /* 6  PdecoID             */ ctx.Players.Current.PdecoMounts.GetValueOrDefault(1),
                         /* 7  PiiGrade            */ 100,
                         /* 8  SocketCount         */ 0,
                         /* 9  SpSocketCount       */ 0,
@@ -321,7 +321,8 @@ public sealed class LoginHandler : IEndpointHandler
                 },
             }
             .Concat(ctx.Players.Current.OwnedPPEs.Select(p =>
-                PPEFactory.BuildPPE(p.Id, p.MonsNo, p.Level, p.Grade, p.Waza0, p.Waza1, p.Nickname ?? "")))
+                PPEFactory.BuildPPE(p.Id, p.MonsNo, p.Level, p.Grade, p.Waza0, p.Waza1, p.Nickname ?? "",
+                    ctx.Players.Current.PdecoMounts.GetValueOrDefault(p.Id))))
             .ToList(),
             PaidPPEStoreSize = ctx.Players.Current.PaidPPEStoreSize,
             // FOUND (2026-09-01, headless Ghidra decompile of
@@ -380,7 +381,15 @@ public sealed class LoginHandler : IEndpointHandler
                 .ToList(),
             TotalSec = 0,
             Chests = new List<Chest>(),
-            Pdecos = new List<Pdeco>(),
+            // PdecoDesc.json (real retail table, docs/tables/) carries no
+            // price/unlock-condition fields for any decoration, so every
+            // PdecoID the enum defines (bar NONE) is reported as owned -
+            // PdecoMount then lets Camp mount any of them per-PPE, persisted
+            // in Player.PdecoMounts.
+            Pdecos = Enum.GetValues<PdecoID>()
+                .Where(id => id != PdecoID.NONE)
+                .Select(id => new Pdeco { PdecoID = id, Count = 1 })
+                .ToList(),
             Utensils = ctx.Players.Current.Utensils
                 .Select(kv => new Utensil { UtensilID = (UtensilID)kv.Key, Count = kv.Value })
                 .ToList(),
