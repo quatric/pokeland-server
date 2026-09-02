@@ -298,6 +298,49 @@ public sealed class Player
         }
         return vec;
     }
+
+    /// <summary>
+    /// The mailbox. Real state, not the always-empty stub GetArrivedGifts/
+    /// GetReceivedGifts/ReceiveGifts used to be - see PlayerStore.GrantGift.
+    /// </summary>
+    [JsonProperty("Gifts")]
+    public List<GiftRecord> Gifts { get; set; } = new();
+
+    [JsonProperty("NextGiftId")]
+    public long NextGiftId { get; set; } = 1;
+
+    /// <summary>Guards the one-time login-welcome gift so a restart doesn't
+    /// hand it out again - same pattern as GrantedMirrorGear.</summary>
+    [JsonProperty("GrantedWelcomeGift")]
+    public bool GrantedWelcomeGift { get; set; }
+}
+
+/// <summary>
+/// A persisted mailbox entry. Mirrors the wire Gift/BaseGift shape
+/// (Proto.g.cs) closely enough that ToWire below is a straight field copy;
+/// kept as its own type rather than storing the wire Gift directly so the
+/// save file doesn't depend on protocol-generated types.
+/// </summary>
+public sealed class GiftRecord
+{
+    [JsonProperty("GiftId")]
+    public long GiftId { get; set; }
+    [JsonProperty("GiftTypeID")]
+    public Pokeland.Protocol.GiftTypeID GiftTypeID { get; set; }
+    [JsonProperty("Quantity")]
+    public int Quantity { get; set; }
+    [JsonProperty("Params")]
+    public int[] Params { get; set; } = System.Array.Empty<int>();
+    [JsonProperty("GiftMessageID")]
+    public Pokeland.Protocol.GiftMessageID GiftMessageID { get; set; }
+    [JsonProperty("Messages")]
+    public List<string> Messages { get; set; } = new();
+    [JsonProperty("CreatedUtcStr")]
+    public string CreatedUtcStr { get; set; }
+    [JsonProperty("IsReceived")]
+    public bool IsReceived { get; set; }
+    [JsonProperty("LastUpdatedUtcStr")]
+    public string LastUpdatedUtcStr { get; set; }
 }
 
 /// <summary>
@@ -551,6 +594,110 @@ public sealed class PlayerStore
         }
         if (added) Save();
         return added;
+    }
+
+    /// <summary>
+    /// Hands out a mailbox entry. The only producer today is the one-time
+    /// login-welcome gift (see GrantWelcomeGiftIfNeeded) - kept general
+    /// rather than hardcoded to that case since GetArrivedGifts/
+    /// GetReceivedGifts/ReceiveGifts already speak the general Gift shape.
+    /// </summary>
+    public void GrantGift(Pokeland.Protocol.GiftTypeID type, int quantity, Pokeland.Protocol.GiftMessageID messageId, IEnumerable<string> messages = null, int[] parameters = null)
+    {
+        lock (_gate)
+        {
+            var now = PokelandClock.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            _player.Gifts.Add(new GiftRecord
+            {
+                GiftId = _player.NextGiftId++,
+                GiftTypeID = type,
+                Quantity = quantity,
+                Params = parameters ?? System.Array.Empty<int>(),
+                GiftMessageID = messageId,
+                Messages = messages?.ToList() ?? new List<string>(),
+                CreatedUtcStr = now,
+                IsReceived = false,
+                LastUpdatedUtcStr = now,
+            });
+        }
+        Save();
+    }
+
+    /// <summary>
+    /// One-time "welcome to the revival" mailbox gift, improvised since there
+    /// is no real login-bonus gift table to extract - guarded by
+    /// Player.GrantedWelcomeGift the same way ActivatePurchase's set01 Mirror
+    /// Gear bonus is guarded by GrantedMirrorGear.
+    /// </summary>
+    public void GrantWelcomeGiftIfNeeded()
+    {
+        lock (_gate)
+        {
+            if (_player.GrantedWelcomeGift) return;
+            _player.GrantedWelcomeGift = true;
+        }
+        GrantGift(Pokeland.Protocol.GiftTypeID.Diamond, 100, Pokeland.Protocol.GiftMessageID.GeneralPurpose,
+            new[] { "Welcome to Pokeland Scramble SP!" });
+    }
+
+    /// <summary>Gifts sitting in the mailbox, not yet claimed - GetArrivedGifts.</summary>
+    public List<GiftRecord> ArrivedGifts()
+    {
+        lock (_gate)
+        {
+            return _player.Gifts.Where(g => !g.IsReceived).ToList();
+        }
+    }
+
+    /// <summary>Claim history, most recent first - GetReceivedGifts.</summary>
+    public List<GiftRecord> ReceivedGifts(int skip, int take)
+    {
+        lock (_gate)
+        {
+            return _player.Gifts.Where(g => g.IsReceived)
+                .OrderByDescending(g => g.GiftId)
+                .Skip(Math.Max(skip, 0))
+                .Take(take > 0 ? take : int.MaxValue)
+                .ToList();
+        }
+    }
+
+    /// <summary>
+    /// Claims gifts (ReceiveGifts) - applies each one's payload to the
+    /// account (Diamond/Money land directly like every other reward path in
+    /// this file; Equnit/Utensil/Eqbit/Pdeco have no real producer yet so
+    /// there's nothing that emits them to apply) and marks them received.
+    /// Returns the ids actually claimed.
+    /// </summary>
+    public List<long> ReceiveGifts(bool receiveAll, IEnumerable<long> giftIds)
+    {
+        var claimed = new List<long>();
+        lock (_gate)
+        {
+            var ids = giftIds == null ? null : new HashSet<long>(giftIds);
+            var now = PokelandClock.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            foreach (var gift in _player.Gifts)
+            {
+                if (gift.IsReceived) continue;
+                if (!receiveAll && (ids == null || !ids.Contains(gift.GiftId))) continue;
+
+                switch (gift.GiftTypeID)
+                {
+                    case Pokeland.Protocol.GiftTypeID.Diamond:
+                        _player.DiamondFree += gift.Quantity;
+                        break;
+                    case Pokeland.Protocol.GiftTypeID.Money:
+                        _player.Money += gift.Quantity;
+                        break;
+                }
+
+                gift.IsReceived = true;
+                gift.LastUpdatedUtcStr = now;
+                claimed.Add(gift.GiftId);
+            }
+        }
+        if (claimed.Count > 0) Save();
+        return claimed;
     }
 
     /// <summary>Converts a run's offered drop into a persisted, owned PPE and

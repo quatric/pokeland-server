@@ -1,15 +1,13 @@
 #nullable disable
-using System.Collections.Generic;
+using System.Linq;
 using Pokeland.Protocol;
 
 namespace Pokeland.Server.Handlers;
 
 /// <summary>
-/// The mailbox's gift-list screen (opened from Camp's gift-box icon). There's
-/// no gift-granting system yet (no friend gifts, no login-bonus gifts), so an
-/// empty list is the correct answer here, not a stub - the empty-envelope
-/// fallback answered with a null Gifts field instead of an empty one, which
-/// is the difference between "no handler" and "no gifts".
+/// The mailbox's gift-list screen (opened from Camp's gift-box icon). See
+/// PlayerStore.GrantGift/GrantWelcomeGiftIfNeeded for how a mailbox entry is
+/// created; this just reports the ones not yet claimed.
 /// </summary>
 public sealed class GetArrivedGiftsHandler : IEndpointHandler
 {
@@ -19,7 +17,7 @@ public sealed class GetArrivedGiftsHandler : IEndpointHandler
     {
         return new Pokeland.Protocol.GetArrivedGifts.Res
         {
-            Gifts = new List<Pokeland.Protocol.Gift>(),
+            Gifts = ctx.Players.ArrivedGifts().Select(World.Gift).ToList(),
         };
     }
 }
