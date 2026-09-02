@@ -267,10 +267,12 @@ public sealed class OwnedEqunit
 }
 
 /// <summary>
-/// One chest, keyed by the client's own ChestId. Money-only reward - the
-/// wire OpenChest.Res carries no equnit payload of its own (see
-/// PPEFactory's equipment-layout note), so a real per-chest item drop is
-/// blocked on the same un-RE'd BasePPEAndEqunits.Equnits layout.
+/// One chest, keyed by the client's own ChestId. Pays out its flat money
+/// amount plus one freshly-minted OwnedEqunit (grade 0, a random
+/// UnitPrefix) - OpenChest.Res itself carries no equnit payload, but the
+/// AutoRes channel other endpoints already use for diffs (EqunitsDiff) can
+/// carry the grant back, now that Equnit's wire layout is RE'd (see
+/// PPEFactory.BuildEqunit).
 /// </summary>
 public sealed class PendingChest
 {
@@ -779,17 +781,17 @@ public sealed class PlayerStore
     /// Opens a chest. Diamond/JitanTicket both skip the wait outright (this
     /// server has no real currency cost to charge for them, so treat either
     /// as a free skip rather than reject it); the plain case needs the timer
-    /// actually elapsed. Returns the money granted, or null if not unlocked
-    /// yet. Re-opening an already-opened chest reports success with 0 so a
-    /// retried request cannot mint money twice.
+    /// actually elapsed. Returns the money and equnit granted, or null if
+    /// not unlocked yet. Re-opening an already-opened chest reports success
+    /// with 0 money and no equnit so a retried request cannot mint twice.
     /// </summary>
-    public int? OpenChest(long chestId, Pokeland.Protocol.OpenChestBy by)
+    public (int Money, OwnedEqunit Equnit)? OpenChest(long chestId, Pokeland.Protocol.OpenChestBy by)
     {
-        int? granted;
+        (int, OwnedEqunit)? granted;
         lock (_gate)
         {
             var chest = GetOrAddChest(chestId);
-            if (chest.Opened) { granted = 0; }
+            if (chest.Opened) { granted = (0, null); }
             else
             {
                 bool unlocked = by != Pokeland.Protocol.OpenChestBy.@None
@@ -800,7 +802,15 @@ public sealed class PlayerStore
                 {
                     chest.Opened = true;
                     _player.Money += chest.Money;
-                    granted = chest.Money;
+                    var prefixes = Enum.GetValues<Pokeland.Protocol.UnitPrefix>()
+                        .Where(p => p != Pokeland.Protocol.UnitPrefix.NONE).ToArray();
+                    var equnit = new OwnedEqunit
+                    {
+                        Id = _player.NextEqunitId++,
+                        UnitPrefix = (int)prefixes[Random.Shared.Next(prefixes.Length)],
+                    };
+                    _player.Equnits.Add(equnit);
+                    granted = (chest.Money, equnit);
                 }
             }
         }
