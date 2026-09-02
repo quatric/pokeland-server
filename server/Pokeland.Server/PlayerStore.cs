@@ -225,6 +225,12 @@ public sealed class Player
     [JsonProperty("HeadMarkedAsReadAnnouncementId")]
     public int HeadMarkedAsReadAnnouncementId { get; set; }
 
+    /// <summary>The single mysland's player-chosen name (SetMyslandName),
+    /// or null for World.Mysland's default "Sunny Isle" - previously
+    /// accepted and acked but never actually stored.</summary>
+    [JsonProperty("MyslandName")]
+    public string MyslandName { get; set; }
+
     /// <summary>
     /// Per-mission progress as last reported by the client's RecordMissions
     /// commit, keyed by MissionID. The client counts progress locally and
@@ -239,6 +245,12 @@ public sealed class Player
     /// collected twice.</summary>
     [JsonProperty("RedeemedMissions")]
     public HashSet<int> RedeemedMissions { get; set; } = new();
+
+    /// <summary>Gates PlayerStore.ResetDailyMissions to once per UTC date -
+    /// same once-per-date pattern as WelcalLastAdvanceUtcDate/
+    /// DailyDiamondBonusLastClaimUtcDate.</summary>
+    [JsonProperty("MissionsLastResetUtcDate")]
+    public string MissionsLastResetUtcDate { get; set; }
 
     /// <summary>
     /// Flags the client can only earn through a flow this server does not
@@ -474,6 +486,32 @@ public sealed class PlayerStore
         }
         if (paid.Count > 0) Save();
         return paid;
+    }
+
+    /// <summary>
+    /// Clears MissionGroup.DAILY's progress and redeemed state once per UTC
+    /// date so the daily challenge rows are actually daily instead of a
+    /// second batch of one-time rewards that stays Redeemed forever after
+    /// the first payout. Called on Login, same spot as
+    /// AdvanceWelcalCalendar/ClaimDailyDiamondBonus. TUTORIAL rows are
+    /// untouched - Missions.DailyIDs only names the 71..75 group.
+    /// </summary>
+    public bool ResetDailyMissions()
+    {
+        var today = PokelandClock.UtcNow.ToString("yyyy-MM-dd");
+        bool changed = false;
+        lock (_gate)
+        {
+            if (_player.MissionsLastResetUtcDate == today) return false;
+            _player.MissionsLastResetUtcDate = today;
+            foreach (var id in Missions.DailyIDs)
+            {
+                changed |= _player.MissionProgress.Remove(id);
+                changed |= _player.RedeemedMissions.Remove(id);
+            }
+        }
+        if (changed) Save();
+        return changed;
     }
 
     /// <summary>Records a stage clear and any money it paid out; returns the
@@ -882,6 +920,18 @@ public sealed class PlayerStore
         {
             if (id <= _player.HeadMarkedAsReadAnnouncementId) return;
             _player.HeadMarkedAsReadAnnouncementId = id;
+        }
+        Save();
+    }
+
+    /// <summary>Persists the mysland rename SetMyslandName reports. A blank
+    /// name is stored as null so World.Mysland's default takes over rather
+    /// than the client ever seeing an empty title.</summary>
+    public void SetMyslandName(string name)
+    {
+        lock (_gate)
+        {
+            _player.MyslandName = string.IsNullOrWhiteSpace(name) ? null : name;
         }
         Save();
     }

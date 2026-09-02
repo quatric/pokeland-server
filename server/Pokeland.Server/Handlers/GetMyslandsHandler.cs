@@ -21,7 +21,7 @@ public sealed class GetMyslandsHandler : IEndpointHandler
         {
             A = new[] { new AutoRes
             {
-                UpdatedMyslands = new List<Mysland> { World.Mysland(ctx.Config.CurrentEvedefID) },
+                UpdatedMyslands = new List<Mysland> { World.Mysland(ctx.Config.CurrentEvedefID, ctx.Players.Current.MyslandName ?? "Sunny Isle") },
             } },
         };
     }

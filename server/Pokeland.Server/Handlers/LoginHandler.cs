@@ -32,6 +32,7 @@ public sealed class LoginHandler : IEndpointHandler
         ctx.Players.EnsureStarterEqunits();
         ctx.Players.AdvanceWelcalCalendar();
         ctx.Players.ClaimDailyDiamondBonus();
+        ctx.Players.ResetDailyMissions();
         session.AssetVer = req.AssetVer;
         session.TimeZoneOffsetMinutes = req.TZOffsetMin;
 
@@ -418,7 +419,7 @@ public sealed class LoginHandler : IEndpointHandler
         // journey run, and feeding a mysland code into it throws a
         // NullReferenceException out of GlobeIslandView.RefreshAll. A mysland
         // describes itself (name, boss, position) through the Mysland record.
-        reset.Myslands.Add(World.Mysland(ctx.Config.CurrentEvedefID));
+        reset.Myslands.Add(World.Mysland(ctx.Config.CurrentEvedefID, ctx.Players.Current.MyslandName ?? "Sunny Isle"));
         reset.Stages = reset.Stages
             .Append(World.Stage(ctx.Config.CurrentEvedefID))
             .ToList();

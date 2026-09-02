@@ -40,6 +40,12 @@ public static class Missions
 
     public static IEnumerable<int> IDs => Table.Keys.OrderBy(id => id);
 
+    /// <summary>MissionGroup.DAILY's ids (71..75) - the only ones
+    /// PlayerStore.ResetDailyMissions clears back to InProgress each UTC
+    /// date. The TUTORIAL rows (1/6/7/8/12/14/17) are one-time and stay
+    /// Redeemed forever once paid.</summary>
+    public static readonly IReadOnlySet<int> DailyIDs = new HashSet<int> { 71, 72, 73, 74, 75 };
+
     public static bool TryGet(int id, out Desc desc) => Table.TryGetValue(id, out desc);
 
     /// <summary>True once the client has reported enough progress for the

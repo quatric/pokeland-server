@@ -76,10 +76,10 @@ public static class World
     public static StageCodeX[] StageCode(EvedefID evedefID) =>
         Codes.Stage(evedefID, IslandID, stageID: StageID, myslandId: MyslandId);
 
-    public static Mysland Mysland(EvedefID evedefID) => new()
+    public static Mysland Mysland(EvedefID evedefID, string name = "Sunny Isle") => new()
     {
         IslandCode = IslandCode(evedefID),
-        Name = "Sunny Isle",
+        Name = name,
         DiscovererBaaSUserId = "",
         X = X,
         Y = Y,
