@@ -110,7 +110,13 @@ public sealed class LoginHandler : IEndpointHandler
             // Current. Intermission is the honest description of a server with
             // no event scheduled, and it takes the branch that hides the banner
             // without needing an Evedef to exist at all.
-            EvedefSummary = new EvedefSummary { CurrentEvedefID = ctx.Config.CurrentEvedefID },
+            EvedefSummary = new EvedefSummary
+            {
+                CurrentEvedefID = ctx.Config.CurrentEvedefID,
+                // Flat and always-refilled: there's no daily reset job in a
+                // per-device-save revival with no shared clock to gate on.
+                TmbtlDailyPlayCountLeft = 5,
+            },
             Eqbits = new List<Eqbit>(),
             Equnits = ctx.Players.Current.Equnits.Select(PPEFactory.BuildEqunit).ToList(),
             PaidNormalEqunitStoreSize = ctx.Players.Current.PaidNormalEqunitStoreSize,
@@ -146,9 +152,33 @@ public sealed class LoginHandler : IEndpointHandler
                     PierreCountAdded = Bool.False,
                     LastBattleUTCStr = utcNow,
                 },
+                // Totem Battle - a separate EvedefType (3, "team battle") from
+                // the Globe/journey content above, shipped alongside it rather
+                // than in place of it so the world event keeps working.
+                new Evedef
+                {
+                    EvedefID = Events.TmbtlEvedefID,
+                    PokedexSummary = new PokedexSummary
+                    {
+                        DiscoveredVec = Array.Empty<byte>(),
+                        CapturedVec = Array.Empty<byte>(),
+                    },
+                    ChstgStageCode = Array.Empty<StageCodeX>(),
+                    IsVisited = Bool.True,
+                    PierreCountAdded = Bool.False,
+                    LastBattleUTCStr = utcNow,
+                },
             },
-            EventScheduleSet = Events.Schedule(ctx.Config.CurrentEvedefID),
-            Evepots = new List<Evepot>(),
+            EventScheduleSet = Events.Schedule(ctx.Config.CurrentEvedefID, Events.TmbtlEvedefID),
+            Evepots = new List<Evepot>
+            {
+                new Evepot
+                {
+                    EvepotID = Events.TmbtlEvepotID,
+                    Count = ctx.Players.Current.EvepotPoints.GetValueOrDefault((int)Events.TmbtlEvepotID),
+                    TotalCount = ctx.Players.Current.EvepotPoints.GetValueOrDefault((int)Events.TmbtlEvepotID),
+                },
+            },
             GUPs = new List<GuestUserProfileSerialized>(),
             Honors = new Honors { IDs = new List<HonorID>(), Params = new List<int>() },
             // FOUND (2026-09-01, headless Ghidra decompile of

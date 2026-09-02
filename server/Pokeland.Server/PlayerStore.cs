@@ -115,6 +115,23 @@ public sealed class Player
     [JsonProperty("DiamondPaid")]
     public int DiamondPaid { get; set; }
 
+    /// <summary>
+    /// Cumulative Evepot score, keyed by (int)EvepotID - currently only
+    /// Events.TmbtlEvepotID is ever awarded into, but keyed by id rather than
+    /// a single int so a second event pot doesn't need a migration later.
+    /// </summary>
+    [JsonProperty("EvepotPoints")]
+    public Dictionary<int, int> EvepotPoints { get; set; } = new();
+
+    /// <summary>Totem Battle win/loss/draw tally, kept only for the numbers
+    /// TmbtlEnd's DefeatCount/DrawCount echo back - not otherwise scored.</summary>
+    [JsonProperty("TmbtlWins")]
+    public int TmbtlWins { get; set; }
+    [JsonProperty("TmbtlLosses")]
+    public int TmbtlLosses { get; set; }
+    [JsonProperty("TmbtlDraws")]
+    public int TmbtlDraws { get; set; }
+
     /// <summary>Magic (PurchaseBegin/Activate/End's correlation token) to
     /// the SKUID it was opened for, so PurchaseEnd - which carries no SKUID
     /// of its own, only Magic - knows what to report as processed.</summary>
@@ -722,6 +739,45 @@ public sealed class PlayerStore
         }
         Save();
         return ppe;
+    }
+
+    /// <summary>
+    /// Records one finished Totem Battle and returns the points it earned.
+    /// Participation is paid regardless of outcome (Cancel included) since the
+    /// match still happened; the win bonus only lands on TmbtlResult.Win.
+    /// </summary>
+    public Pokeland.Protocol.TmbtlEndEvepotResult ApplyTmbtlResult(Pokeland.Protocol.TmbtlResult result, int defeatCount, int drawCount)
+    {
+        const int participation = 10;
+        const int winning = 50;
+        var won = result == Pokeland.Protocol.TmbtlResult.Win;
+
+        lock (_gate)
+        {
+            switch (result)
+            {
+                case Pokeland.Protocol.TmbtlResult.Win: _player.TmbtlWins++; break;
+                case Pokeland.Protocol.TmbtlResult.Lose: _player.TmbtlLosses++; break;
+                case Pokeland.Protocol.TmbtlResult.Draw: _player.TmbtlDraws++; break;
+            }
+
+            var key = (int)Events.TmbtlEvepotID;
+            var gained = participation + (won ? winning : 0);
+            _player.EvepotPoints[key] = _player.EvepotPoints.GetValueOrDefault(key) + gained;
+        }
+        Save();
+
+        return new Pokeland.Protocol.TmbtlEndEvepotResult
+        {
+            TbpParticipationPoint = participation,
+            TbpWinningPoint = won ? winning : 0,
+            TbpBonusPoint = 0,
+            DrawCount = drawCount,
+            DefeatCount = defeatCount,
+            IsPickedUp = Pokeland.Protocol.Bool.False,
+            WinningPoint = participation + (won ? winning : 0),
+            Coeff = 1,
+        };
     }
 
     /// <summary>

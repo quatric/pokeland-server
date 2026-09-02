@@ -67,6 +67,16 @@ public static class PPEFactory
         return new PPEDrop { X = x };
     }
 
+    /// <summary>Builds a BasePPEAndEqunits entry (24 ints: base 12 + 12
+    /// zeroed equipment slots) for a roster display that isn't a real owned
+    /// PPE or a stage drop - e.g. a Totem Battle opponent's shown team.</summary>
+    public static BasePPEAndEqunits BuildBPAE(int monsNo, int level, int grade, int waza0, int waza1)
+    {
+        var x = new int[24];
+        BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
+        return new BasePPEAndEqunits { X = x };
+    }
+
     /// <summary>Builds an owned Equnit (BaseEqunit.Index + Equnit.Index in
     /// out/dump/dump.cs: 4 base ints + EqunitId/PPEId/SocketNo/IsFavorite/
     /// GotUTC, 12 total) from a PlayerStore.OwnedEqunit.</summary>

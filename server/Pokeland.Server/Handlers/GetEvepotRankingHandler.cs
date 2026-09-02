@@ -1,18 +1,25 @@
 #nullable disable
-using System.Collections.Generic;
 using Pokeland.Protocol;
 
 namespace Pokeland.Server.Handlers;
 
-/// <summary>Event-pot ranking board. No events run here yet.</summary>
+/// <summary>
+/// Totem Battle points leaderboard - the Evepot-scoped counterpart to
+/// GetRankingHandler's Pokedex-count ranking, built the same way (real
+/// cross-account data via PlayerStoreManager.AllOthers, see Tmbtl.Rankings).
+/// </summary>
 public sealed class GetEvepotRankingHandler : IEndpointHandler
 {
     public string Endpoint => "GetEvepotRanking";
 
     public object Handle(object request, GameSession session, DispatchContext ctx)
-        => new Pokeland.Protocol.GetEvepotRanking.Res
+    {
+        var rankings = Tmbtl.Rankings(session.BaaSUserId, ctx.Players.Current, ctx.PlayerManager);
+
+        return new Pokeland.Protocol.GetEvepotRanking.Res
         {
-            EvepotRankingParticipants = new List<EvepotRankingParticipant>(),
+            EvepotRankingParticipants = rankings,
             TimestampUTCStr = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"),
         };
+    }
 }
