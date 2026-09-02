@@ -63,6 +63,23 @@ public sealed class Player
     public long NextPPEId { get; set; } = 2;
 
     /// <summary>
+    /// Owned equipment (see OwnedEqunit). There is no drop/grant flow that
+    /// hands out equipment yet - EnsureStarterEqunits below grants a small
+    /// fixed set the first time a session touches this, the same bootstrap
+    /// role the hardcoded Login starter PPE plays for the roster - so
+    /// EqunitMount/EqunitUpgrade/GoodbyeEqunits have real inventory to act on
+    /// instead of always operating on an empty list.
+    /// </summary>
+    [JsonProperty("Equnits")]
+    public List<OwnedEqunit> Equnits { get; set; } = new();
+
+    [JsonProperty("NextEqunitId")]
+    public long NextEqunitId { get; set; } = 1;
+
+    [JsonProperty("StarterEqunitsGranted")]
+    public bool StarterEqunitsGranted { get; set; }
+
+    /// <summary>
     /// Chests picked up during a run (StartStage's MHM.DropChestTypeID makes
     /// this possible; the client sets EndStage.Req.GotChest and shows its own
     /// "you got a chest!" screen off locally-shipped chest content - the
@@ -193,9 +210,15 @@ public sealed class Player
 /// <summary>
 /// A PPE earned during a run, in the minimal form Login needs to rebuild the
 /// wire <c>PPE</c> record (see BasePPE.Index/PPE.Index in out/dump/dump.cs).
-/// No equipment/socket fields - StartStage's drops never carry equipment
-/// (BasePPEAndEqunits.Equnits, X[12..23], is still un-RE'd), so there is
-/// nothing to persist there yet.
+/// No equipment/socket fields - StartStage's drops never carry equipment, so
+/// there is nothing to persist there for an earned PPE itself. Equipment
+/// ownership lives separately in Player.Equnits (see OwnedEqunit below):
+/// out/dump/dump.cs's BasePPEAndEqunits.Equnits (X[12..23], 12 ints) turned
+/// out to be PPEDrop's own inline stat-roll preview (3 sockets x BaseEqunit's
+/// 4-int UnitPrefix/PrefixGrade/PrefixAddition0/1), not where an *owned*
+/// PPE's equipment lives - Equnit (out/dump/dump.cs TypeDefIndex 6305) is its
+/// own top-level entity carrying PPEId+SocketNo, mirroring how Pdecos/
+/// Utensils ride in Login's top-level lists rather than inside PPE.X.
 /// </summary>
 public sealed class OwnedPPE
 {
@@ -213,6 +236,34 @@ public sealed class OwnedPPE
     public int Waza1 { get; set; }
     [JsonProperty("Nickname")]
     public string Nickname { get; set; }
+}
+
+/// <summary>
+/// An owned piece of equipment (Equnit.Index in out/dump/dump.cs: EqunitId
+/// Low/High, PPEId Low/High, SocketNo, IsFavorite, GotUTC Low/High, riding on
+/// top of BaseEqunit.Index's UnitPrefix/PrefixGrade/PrefixAddition0/1). Mount
+/// is PPEId==0 (no PPEId 0 is ever handed out - NextPPEId starts at 2 past
+/// the starter's fixed 1) meaning unmounted, tracked here rather than in any
+/// PPE's own fields - see the OwnedPPE doc above for why.
+/// </summary>
+public sealed class OwnedEqunit
+{
+    [JsonProperty("Id")]
+    public long Id { get; set; }
+    [JsonProperty("UnitPrefix")]
+    public int UnitPrefix { get; set; }
+    [JsonProperty("PrefixGrade")]
+    public int PrefixGrade { get; set; }
+    [JsonProperty("PrefixAddition0")]
+    public int PrefixAddition0 { get; set; }
+    [JsonProperty("PrefixAddition1")]
+    public int PrefixAddition1 { get; set; }
+    [JsonProperty("MountedPPEId")]
+    public long MountedPPEId { get; set; }
+    [JsonProperty("MountedSocketNo")]
+    public int MountedSocketNo { get; set; }
+    [JsonProperty("IsFavorite")]
+    public bool IsFavorite { get; set; }
 }
 
 /// <summary>
@@ -501,6 +552,115 @@ public sealed class PlayerStore
         }
         if (ok) Save();
         return ok;
+    }
+
+    /// <summary>Highest SocketNo the wire enum defines (0/1/2 - see
+    /// out/dump/dump.cs's SocketNo), i.e. at most 3 equipment sockets per
+    /// PPE regardless of how many AddNormalSocketCount has bought.</summary>
+    private const int MaxSocketNo = 2;
+
+    /// <summary>
+    /// Grants a small fixed starter equipment set (one-time, gated by
+    /// StarterEqunitsGranted) so EqunitMount/EqunitUpgrade have real
+    /// inventory to act on - see Player.Equnits for why this bootstrap is
+    /// needed. Two basic, unmounted, grade-0 pieces, mirroring the fixed
+    /// Bulbasaur starter PPE Login already hardcodes.
+    /// </summary>
+    public void EnsureStarterEqunits()
+    {
+        lock (_gate)
+        {
+            if (_player.StarterEqunitsGranted) return;
+            _player.Equnits.Add(new OwnedEqunit { Id = _player.NextEqunitId++, UnitPrefix = (int)Pokeland.Protocol.UnitPrefix.HP_PLUS });
+            _player.Equnits.Add(new OwnedEqunit { Id = _player.NextEqunitId++, UnitPrefix = (int)Pokeland.Protocol.UnitPrefix.ARMOR_PLUS });
+            _player.StarterEqunitsGranted = true;
+        }
+        Save();
+    }
+
+    /// <summary>
+    /// Mounts an owned equnit onto one of a PPE's sockets, or unmounts it
+    /// (PPEId 0) - see OwnedEqunit for why mount state lives here rather
+    /// than on any PPE. Bumps whatever else already occupied that exact
+    /// PPEId+SocketNo back to unmounted, since the wire has no notion of two
+    /// equnits sharing a socket. Returns false for an unowned EqunitId, an
+    /// unowned target PPEId, or an out-of-range SocketNo.
+    /// </summary>
+    public bool MountEqunit(long equnitId, long ppeId, Pokeland.Protocol.SocketNo socketNo)
+    {
+        if ((int)socketNo < 0 || (int)socketNo > MaxSocketNo) return false;
+        bool ok;
+        lock (_gate)
+        {
+            var equnit = _player.Equnits.FirstOrDefault(e => e.Id == equnitId);
+            ok = equnit != null && (ppeId == 0 || ppeId == 1 || _player.OwnedPPEs.Any(p => p.Id == ppeId));
+            if (ok)
+            {
+                if (ppeId != 0)
+                {
+                    foreach (var other in _player.Equnits)
+                        if (other.Id != equnitId && other.MountedPPEId == ppeId && other.MountedSocketNo == (int)socketNo)
+                            other.MountedPPEId = 0;
+                }
+                equnit.MountedPPEId = ppeId;
+                equnit.MountedSocketNo = ppeId == 0 ? 0 : (int)socketNo;
+            }
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>Flat diamond price per PrefixGrade step - no EqunitUpgrade
+    /// cost table was extracted (docs/tables has Category/FilterType/
+    /// SortType but no per-grade cost desc), so this is a placeholder like
+    /// UtensilPriceDiamond above. UseMulti spends x10 for a x10 grade jump,
+    /// mirroring the wire field's own naming.</summary>
+    private const int EqunitUpgradePriceDiamond = 50;
+
+    /// <summary>Soft cap on PrefixGrade - PrefixGrade's wire enum runs to
+    /// 254 but that is almost certainly the raw byte range rather than a
+    /// real retail ceiling, so this stays conservative pending an extracted
+    /// cost/cap table.</summary>
+    private const int MaxPrefixGrade = 99;
+
+    /// <summary>
+    /// Upgrades an owned equnit's PrefixGrade by spending diamonds (free
+    /// balance first, then paid). Returns false for an unowned EqunitId,
+    /// insufficient diamonds, or a grade already at MaxPrefixGrade.
+    /// </summary>
+    public bool UpgradeEqunit(long equnitId, bool useMulti)
+    {
+        int steps = useMulti ? 10 : 1;
+        bool ok;
+        lock (_gate)
+        {
+            var equnit = _player.Equnits.FirstOrDefault(e => e.Id == equnitId);
+            int cost = EqunitUpgradePriceDiamond * steps;
+            int have = _player.DiamondFree + _player.DiamondPaid;
+            ok = equnit != null && have >= cost && equnit.PrefixGrade + steps <= MaxPrefixGrade;
+            if (ok)
+            {
+                int fromFree = Math.Min(_player.DiamondFree, cost);
+                _player.DiamondFree -= fromFree;
+                _player.DiamondPaid -= cost - fromFree;
+                equnit.PrefixGrade += steps;
+            }
+        }
+        if (ok) Save();
+        return ok;
+    }
+
+    /// <summary>Discards owned equnits by id (silently ignoring any id not
+    /// actually owned) - GoodbyeEqunits' "sell for nothing" flow, same
+    /// shape as GoodbyeChests.</summary>
+    public void RemoveEqunits(IEnumerable<long> equnitIds)
+    {
+        var ids = new HashSet<long>(equnitIds);
+        lock (_gate)
+        {
+            _player.Equnits.RemoveAll(e => ids.Contains(e.Id));
+        }
+        Save();
     }
 
     /// <summary>Spends one utensil of the given kind. Returns false if none

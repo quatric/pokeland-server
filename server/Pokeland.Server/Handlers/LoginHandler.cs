@@ -28,6 +28,8 @@ public sealed class LoginHandler : IEndpointHandler
         var session = ctx.Sessions.Create(baasUserId: null);
         session.Market = req.Market;
         session.AppVer = req.AppVer;
+
+        ctx.Players.EnsureStarterEqunits();
         session.AssetVer = req.AssetVer;
         session.TimeZoneOffsetMinutes = req.TZOffsetMin;
 
@@ -102,7 +104,7 @@ public sealed class LoginHandler : IEndpointHandler
             // without needing an Evedef to exist at all.
             EvedefSummary = new EvedefSummary { CurrentEvedefID = ctx.Config.CurrentEvedefID },
             Eqbits = new List<Eqbit>(),
-            Equnits = new List<Equnit>(),
+            Equnits = ctx.Players.Current.Equnits.Select(PPEFactory.BuildEqunit).ToList(),
             PaidNormalEqunitStoreSize = ctx.Players.Current.PaidNormalEqunitStoreSize,
             PaidSpEqunitStoreSize = ctx.Players.Current.PaidSpEqunitStoreSize,
             // The Globe scene needs the current event to actually exist, not just
