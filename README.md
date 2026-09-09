@@ -287,12 +287,12 @@ is the AppManifest gate, which is per-store:
 Both are configured, and AppVer `1.6.1` is mapped onto the archived 1.6.0 asset set.
 
 The available Clutch dump is decrypted (`LC_ENCRYPTION_INFO_64`, `cryptid = 0`),
-so the native client can now be patched and re-signed. Build it with a LAN-reachable
-server URL:
+so the native client can now be patched and re-signed. The production Caddy route
+is public HTTPS and proxies to the dedicated Pokeland container:
 
 ```bash
 POKELAND_IPA=/path/to/decrypted-1.6.1.ipa \
-  tools/build_ipa.sh http://192.168.1.50:5199 \
+  tools/build_ipa.sh https://prd.pokewii.net \
   build/pokeland-1.6.1-ios-patched-unsigned.ipa
 ```
 
@@ -300,8 +300,9 @@ The validated decrypted input SHA-256 is
 `3fe56397695856f97b53f5b0cb49628b0cffb74d3de941ba4ed487cd677e4a24`.
 
 The builder redirects the game API, CDN, pokemon-webapi, and embedded Nintendo
-BaaS configuration; enables BaaS HTTP; disables both retired shutdown gates; and
-hides the open-ended journey countdown. The output deliberately has its obsolete
+BaaS configuration; selects HTTP or HTTPS to match the supplied URL; disables
+both retired shutdown gates; and hides the open-ended journey countdown. The
+output deliberately has its obsolete
 App Store signatures removed. Sign it with the target device's development
 profile (AltStore, SideStore, Sideloadly, or equivalent) before installation.
 
