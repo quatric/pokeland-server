@@ -255,13 +255,8 @@ public sealed class GameDispatcher
         if (res is not Pokeland.Protocol.Base.BaseRes b) return;
         b.Rev = session?.Rev ?? 0;
         // The client parses UTCStr with DateTime.Parse and uses it to drive every
-        // timed system (stamina, chests, events), so it must be a real UTC stamp -
-        // but it must also agree with the device's own clock, which a live
-        // deployment has to keep rolled back to before 2020-07-22 to dodge the
-        // client's hardcoded End-of-Service gate. Handing back the real (2026)
-        // wall clock here while the device thinks it's 2020 produces a clock
-        // mismatch the client flags as "Unable to connect" right after Login -
-        // see Server.PokelandClock.
+        // timed system (stamina, chests, events). Use the real UTC clock so it
+        // agrees with Android and with the BaaS token timestamps.
         b.UTCStr = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
         b.A ??= Array.Empty<AutoRes>();
     }

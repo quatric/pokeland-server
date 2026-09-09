@@ -56,9 +56,8 @@ public static class Baas
             log.LogInformation("baas/{Kind}: device={Device} user={User} new={New}",
                 kind, deviceId, userId, isNew);
 
-            // Must agree with the device clock (rolled back to dodge the client's
-            // EOS check) or the SDK's own timestamp/expiry validation flags this
-            // token as untrusted - see PokelandClock.
+            // Must agree with the device clock or the SDK's timestamp/expiry
+            // validation flags this token as untrusted.
             var now = PokelandClock.UtcNowOffset;
             var res = new JObject
             {
