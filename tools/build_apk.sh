@@ -19,6 +19,10 @@
 #   * make the persisted service flag and real-clock support cutoff both return
 #     false in both IL2CPP ABIs, so neither retired gate can block a launch.
 #
+# Open-ended-event edit:
+#   * hide the Camp journey deadline badge, since the revival server advertises
+#     that event with the protocol's null (unbounded) end date.
+#
 # The GLES2 donor is not distributed here. By default it is read from
 # apk/pokeland-gles2-donor.apk; override that with POKELAND_GLES2_APK.
 #
@@ -141,7 +145,7 @@ unzip -oq "$SRC_APK" AndroidManifest.xml -d "$ORIGINAL"
 "$PYTHON_BIN" "$ROOT/tools/patch_manifest.py" \
     "$ORIGINAL/AndroidManifest.xml" "$STAGE/AndroidManifest.xml" 27
 
-echo "==> disabling retired end-of-service gates"
+echo "==> patching native client behavior"
 unzip -oq "$SRC_APK" \
     lib/arm64-v8a/libil2cpp.so lib/armeabi-v7a/libil2cpp.so -d "$ORIGINAL"
 cp -R "$ORIGINAL/lib" "$STAGE/"
@@ -210,5 +214,6 @@ echo "built: $OUT ($(du -h "$OUT" | cut -f1))"
 echo "server base baked in: $BASE"
 [ "$SKIP_GLES2" = 1 ] || echo "renderer: OpenGLES2 with complete player shader set"
 echo "end-of-service gates: disabled for arm64-v8a and armeabi-v7a"
+echo "journey event: open-ended countdown badge hidden"
 echo
 echo "install with:  adb install -r \"$OUT\""
