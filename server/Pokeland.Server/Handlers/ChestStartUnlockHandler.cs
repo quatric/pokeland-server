@@ -17,7 +17,11 @@ public sealed class ChestStartUnlockHandler : IEndpointHandler
     public object Handle(object request, GameSession session, DispatchContext ctx)
     {
         var req = (Pokeland.Protocol.ChestStartUnlock.Req)request;
+        var before = ctx.Players.DescribeChest(req.ChestId);
         var ok = ctx.Players.StartChestUnlock(req.ChestId);
+        ctx.Log.LogInformation(
+            "ChestStartUnlock: chest={ChestId} before=[{Before}] after=[{After}] ok={Ok}",
+            req.ChestId, before, ctx.Players.DescribeChest(req.ChestId), ok);
         return new Pokeland.Protocol.ChestStartUnlock.Res { Success = ok ? Bool.True : Bool.False };
     }
 }

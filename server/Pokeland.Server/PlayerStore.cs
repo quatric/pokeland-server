@@ -1322,14 +1322,34 @@ public sealed class PlayerStore
     /// for both cases - a discarded chest was never opened, and a collected
     /// one has nothing left to grant.
     /// </summary>
-    public void RemoveChests(IEnumerable<long> chestIds)
+    public List<long> RemoveChests(IEnumerable<long> chestIds)
     {
-        if (chestIds is null) return;
+        var removed = new List<long>();
+        if (chestIds is null) return removed;
         lock (_gate)
         {
-            foreach (var id in chestIds) _player.Chests.Remove(id);
+            foreach (var id in chestIds)
+                if (_player.Chests.Remove(id)) removed.Add(id);
         }
         Save();
+        return removed;
+    }
+
+    /// <summary>Ids of all persisted (uncollected) chests, for diagnostics.</summary>
+    public List<long> ChestIds()
+    {
+        lock (_gate) return _player.Chests.Keys.OrderBy(k => k).ToList();
+    }
+
+    /// <summary>One-line state of a persisted chest for diagnostics.</summary>
+    public string DescribeChest(long chestId)
+    {
+        lock (_gate)
+        {
+            if (!_player.Chests.TryGetValue(chestId, out var chest))
+                return "missing";
+            return $"opened={chest.Opened} startUnlock={chest.StartUnlockUtc?.ToString("HH:mm:ss") ?? "null"} type={chest.ChestTypeID}";
+        }
     }
 
     /// <summary>

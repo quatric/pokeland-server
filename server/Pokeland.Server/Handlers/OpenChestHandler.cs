@@ -15,7 +15,11 @@ public sealed class OpenChestHandler : IEndpointHandler
     public object Handle(object request, GameSession session, DispatchContext ctx)
     {
         var req = (Pokeland.Protocol.OpenChest.Req)request;
+        var before = ctx.Players.DescribeChest(req.ChestId);
         var granted = ctx.Players.OpenChest(req.ChestId, req.By);
+        ctx.Log.LogInformation(
+            "OpenChest: chest={ChestId} by={By} before=[{Before}] granted={Granted}",
+            req.ChestId, req.By, before, granted is not null);
 
         if (granted is not (int money, var equnit))
         {
