@@ -3,7 +3,7 @@
 #
 # The AVD crashes fairly often ("Failed to find ColorBuffer") and comes back on
 # real time, which silently re-arms the 2020-07-22 End-of-Service gate - so the
-# clock sync and the matching PokelandClock.RealAnchor edit have to happen
+# clock sync and the matching server clock environment have to be captured
 # together, every single time, before the server starts. That coupling is the
 # whole reason this script exists.
 set -euo pipefail
@@ -15,20 +15,10 @@ AVD=${AVD:-pokeland30}
 # down every so often, but it is still the best mode for this game. Keep it and
 # just re-run this script when the emulator dies.
 #
-# "Desired shader compiler platform 9 is not available in shader blob" is NOT
-# specific to -gpu host - it fires under swiftshader too, and it is survivable.
-# Platform 9 is GLES3Plus, and every shader in the retail CDN bundles carries
-# only platforms 5 (GLES2, verified by decompressing a blob to "#version 100")
-# and 14 (Metal). The APK meanwhile declares m_GraphicsAPIs = [21, 11] =
-# Vulkan, GLES3, and its built-in shaders are {9, 18}. So a GLES3 context takes
-# the GLES2 bundle blobs for most shaders and only a handful fall through to
-# magenta - which is why the globe island renders magenta.
-#
-# Do NOT "fix" this by forcing GLES2 with `-feature -GLESDynamicVersion`. That
-# does work (ro.opengles.version drops to 131072 and Unity switches to asking
-# for platform 5), but the APK's own built-ins have no GLES2 variant, so the
-# entire screen turns magenta instead of just the island. GLES3 is the strictly
-# better of the two.
+# The converted CDN bundles have GLES2 programs, while the retail player has
+# GLES3/Vulkan programs. tools/build_apk.sh resolves that mismatch statically:
+# it supplies a complete GLES2 player shader set and selects OpenGLES2. Emulator
+# flags or a runtime instrumentation hook are not required.
 GPU=${GPU:-swiftshader_indirect}
 
 if ! adb shell true >/dev/null 2>&1; then
@@ -42,15 +32,22 @@ adb root >/dev/null 2>&1 || true
 sleep 3; adb wait-for-device
 
 echo "== syncing device clock"
-anchor=$(bash "$REPO/tools/sync_device_clock.sh" | grep 'RealAnchor = new' | sed 's/^ *//')
-sed -i '' "s|.*RealAnchor = new(.*|    private static readonly DateTime $(echo "$anchor" | sed 's|.*DateTime ||')|" \
-    "$REPO/server/Pokeland.Server/PokelandClock.cs"
-grep -n 'RealAnchor = new' "$REPO/server/Pokeland.Server/PokelandClock.cs"
+clock_output=$(bash "$REPO/tools/sync_device_clock.sh")
+printf '%s\n' "$clock_output"
+POKELAND_DEVICE_EPOCH=$(printf '%s\n' "$clock_output" | sed -n 's/^POKELAND_DEVICE_EPOCH=//p')
+POKELAND_REAL_ANCHOR=$(printf '%s\n' "$clock_output" | sed -n 's/^POKELAND_REAL_ANCHOR=//p')
+[ -n "$POKELAND_DEVICE_EPOCH" ] || { echo "device epoch was not reported" >&2; exit 1; }
+[ -n "$POKELAND_REAL_ANCHOR" ] || { echo "real anchor was not reported" >&2; exit 1; }
+export POKELAND_DEVICE_EPOCH POKELAND_REAL_ANCHOR
 
 echo "== restarting server"
 lsof -ti tcp:5199 | while read -r p; do kill -9 "$p"; done || true
 cd "$REPO/server/Pokeland.Server"
-rm -rf "${POKELAND_WIRE_DIR:=/private/tmp/pokeland-wire}"
+if [ -z "${POKELAND_WIRE_DIR:-}" ]; then
+    POKELAND_WIRE_DIR=$(mktemp -d /private/tmp/pokeland-wire.XXXXXX)
+else
+    mkdir -p "$POKELAND_WIRE_DIR"
+fi
 export POKELAND_WIRE_DIR
 nohup dotnet run --urls http://0.0.0.0:5199 > /private/tmp/pokeland-server.log 2>&1 &
 for _ in $(seq 30); do
