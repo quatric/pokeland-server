@@ -1137,10 +1137,16 @@ public sealed class PlayerStore
         return ok;
     }
 
-    /// <summary>The real unlock wait - short, since TutorialCopper1 (the only
-    /// chest content this server currently offers) is a low-tier chest in
-    /// retail too.</summary>
-    private static readonly TimeSpan ChestUnlockDuration = TimeSpan.FromMinutes(1);
+    /// <summary>The unlock wait, from the retail tables: ChestRarityDesc gives
+    /// CopperTutorial (and every other basic rarity) m_unlockHours ~0.0007,
+    /// i.e. about 2.5 seconds - the tutorial ore refines almost immediately.
+    /// The server uses 2s, just under the client's own 2.52s countdown, so a
+    /// client OpenChest the moment its timer ends always finds the wait
+    /// satisfied instead of racing it. (Copper_Mysland's 0.5h applies once
+    /// that chest type exists.) The old 1-minute guess is what made "Start
+    /// Refining" look dead: the client counted down ~3s, OpenChest came back
+    /// ErrorNotYetUnlocked, and the UI never completed.</summary>
+    private static readonly TimeSpan ChestUnlockDuration = TimeSpan.FromSeconds(2);
 
     private PendingChest GetOrAddChest(long chestId)
     {
@@ -1180,37 +1186,47 @@ public sealed class PlayerStore
     }
 
     /// <summary>Wire view of every unopened persisted chest for Login's
-    /// Reset.Chests. Temporary is never reported here - that state exists
-    /// only inside the single EndStage ChestsDiff that introduces the id.
-    /// Opened entries are skipped: the client drops them via GoodbyeChests.
-    /// </summary>
+    /// Reset.Chests. Opened entries are skipped: the client drops them via
+    /// GoodbyeChests.</summary>
     public List<Pokeland.Protocol.Chest> ListChests()
+    {
+        List<long> ids;
+        lock (_gate) ids = _player.Chests.Keys.OrderBy(k => k).ToList();
+        var list = new List<Pokeland.Protocol.Chest>();
+        foreach (var id in ids)
+        {
+            var wire = BuildChestWire(id);
+            if (wire is not null) list.Add(wire);
+        }
+        return list;
+    }
+
+    /// <summary>Wire view of one persisted chest, or null if it is opened
+    /// (awaiting its Goodbye) or unknown. Temporary is never reported -
+    /// that state exists only inside the single EndStage ChestsDiff that
+    /// introduces the id.</summary>
+    public Pokeland.Protocol.Chest BuildChestWire(long chestId)
     {
         lock (_gate)
         {
-            var list = new List<Pokeland.Protocol.Chest>();
-            foreach (var kv in _player.Chests.OrderBy(kv => kv.Key))
+            if (!_player.Chests.TryGetValue(chestId, out var chest) || chest.Opened)
+                return null;
+            var unlocking = chest.StartUnlockUtc.HasValue;
+            var unlockStart = chest.StartUnlockUtc ?? DateTime.MinValue;
+            return new Pokeland.Protocol.Chest
             {
-                var chest = kv.Value;
-                if (chest.Opened) continue;
-                var unlocking = chest.StartUnlockUtc.HasValue;
-                var unlockStart = chest.StartUnlockUtc ?? DateTime.MinValue;
-                list.Add(new Pokeland.Protocol.Chest
-                {
-                    ChestId = kv.Key,
-                    State = unlocking
-                        ? Pokeland.Protocol.ChestState.Unlocking
-                        : Pokeland.Protocol.ChestState.Locked,
-                    StageCode = chest.StageCode,
-                    IslandRankID = Pokeland.Protocol.IslandRankID._1,
-                    ChestTypeID = chest.ChestTypeID,
-                    UsedJitanTicketCount = 0,
-                    UnlockUTCStr = unlocking
-                        ? (unlockStart + ChestUnlockDuration).ToString("yyyy-MM-ddTHH:mm:ssZ")
-                        : null,
-                });
-            }
-            return list;
+                ChestId = chestId,
+                State = unlocking
+                    ? Pokeland.Protocol.ChestState.Unlocking
+                    : Pokeland.Protocol.ChestState.Locked,
+                StageCode = chest.StageCode,
+                IslandRankID = Pokeland.Protocol.IslandRankID._1,
+                ChestTypeID = chest.ChestTypeID,
+                UsedJitanTicketCount = 0,
+                UnlockUTCStr = unlocking
+                    ? (unlockStart + ChestUnlockDuration).ToString("yyyy-MM-ddTHH:mm:ssZ")
+                    : null,
+            };
         }
     }
 
