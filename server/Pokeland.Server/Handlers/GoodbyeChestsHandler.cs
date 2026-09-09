@@ -16,8 +16,13 @@ public sealed class GoodbyeChestsHandler : IEndpointHandler
     public object Handle(object request, GameSession session, DispatchContext ctx)
     {
         var req = (Pokeland.Protocol.GoodbyeChests.Req)request;
-        ctx.Players.RemoveChests((req.GoodbyeChestIds ?? Enumerable.Empty<long>())
-            .Concat(req.GetChestIds ?? Enumerable.Empty<long>()));
+        var goodbye = req.GoodbyeChestIds ?? Enumerable.Empty<long>();
+        var got = req.GetChestIds ?? Enumerable.Empty<long>();
+        var removed = ctx.Players.RemoveChests(goodbye.Concat(got));
+        ctx.Log.LogInformation(
+            "GoodbyeChests: goodbye=[{Goodbye}] got=[{Got}] removed=[{Removed}] remaining=[{Remaining}]",
+            string.Join(",", goodbye), string.Join(",", got),
+            string.Join(",", removed), string.Join(",", ctx.Players.ChestIds()));
         return new Pokeland.Protocol.GoodbyeChests.Res();
     }
 }
