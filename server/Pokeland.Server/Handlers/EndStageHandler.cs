@@ -69,11 +69,31 @@ public sealed class EndStageHandler : IEndpointHandler
         }
         session.OfferedDrops = new();
 
+        // A collected stage chest must be inserted into the cache by this
+        // response. BattleResult.iMain counts the collected mineral before it
+        // sends EndStage, then enumerates the new cache chests afterwards. If
+        // those counts differ it indexes past its ModelType list and the result
+        // coroutine dies with ArgumentOutOfRangeException on both platforms.
+        Chest grantedChest = null;
+        if (cleared && req.GotChest == Bool.True)
+        {
+            grantedChest = new Chest
+            {
+                ChestId = ctx.Players.GrantChest(),
+                State = ChestState.Locked,
+                StageCode = stage.StageCode,
+                IslandRankID = IslandRankID._1,
+                ChestTypeID = ChestTypeID.TutorialCopper1,
+                UsedJitanTicketCount = 0,
+            };
+        }
+
         ctx.Log.LogInformation(
             "EndStage: result={Result} island={Island} money=+{Money} pierres={Pierres} dps={Dps} " +
-            "clearCount={Count} wallet={Wallet} grantedPPE={Granted}",
+            "clearCount={Count} wallet={Wallet} grantedPPE={GrantedPPE} chest={Chest}",
             req.BattleResult, islandID, req.GotMoney, req.GotPierreCount, req.DPS,
-            clearCount, ctx.Players.Current.Money, ppeUpdates.Count > 0);
+            clearCount, ctx.Players.Current.Money, ppeUpdates.Count > 0,
+            grantedChest?.ChestId);
 
         if (cleared)
         {
@@ -92,6 +112,16 @@ public sealed class EndStageHandler : IEndpointHandler
                     {
                         Money = new[] { ctx.Players.Current.Money },
                         UpdatedStages = new List<Stage> { stage },
+                        ValidFields = grantedChest is null
+                            ? 0
+                            : AutoResValidField.ChestsDiff,
+                        ChestsDiff = grantedChest is null
+                            ? null
+                            : new ChestsDiff
+                            {
+                                UpdatedChests = new List<Chest> { grantedChest },
+                                RemovedChestIds = new List<long>(),
+                            },
                     } }
                 : null,
         };
