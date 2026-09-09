@@ -1314,22 +1314,32 @@ public sealed class PlayerStore
     }
 
     /// <summary>
-    /// Drops chest entries the client no longer needs to hear about -
-    /// GoodbyeChests' GoodbyeChestIds (discarded unopened) and GetChestIds
-    /// (already opened and its reward collected) end up at the same place:
-    /// once a chest leaves Player.Chests, GetOrAddChest just treats a later
-    /// reference to the same ChestId as a brand new chest, which is correct
-    /// for both cases - a discarded chest was never opened, and a collected
-    /// one has nothing left to grant.
+    /// Drops chest entries the client is done with. The two id lists have
+    /// different semantics, and conflating them orphaned the refinery
+    /// tutorial's ore: EndStage grants the stage pickup as Temporary, the
+    /// client confirms receipt with GetChestIds=[id] seconds later, and a
+    /// blind delete left ChestStartUnlock/OpenChest with nothing to work on
+    /// (the ore could neither refine nor be deleted afterwards).
+    ///
+    /// GoodbyeChestIds (discarded unopened) always drops the entry.
+    /// GetChestIds ("I got these") is sent both when the result-screen chest
+    /// moves into the refinery (receipt confirmation - the entry must SURVIVE
+    /// as Locked/Unlocking) and when an opened chest's reward is collected.
+    /// So a GetChestIds entry is dropped only once it was actually opened.
     /// </summary>
-    public List<long> RemoveChests(IEnumerable<long> chestIds)
+    public List<long> RemoveChests(IEnumerable<long> goodbyeIds, IEnumerable<long> gotIds)
     {
         var removed = new List<long>();
-        if (chestIds is null) return removed;
         lock (_gate)
         {
-            foreach (var id in chestIds)
+            foreach (var id in goodbyeIds ?? Enumerable.Empty<long>())
                 if (_player.Chests.Remove(id)) removed.Add(id);
+            foreach (var id in gotIds ?? Enumerable.Empty<long>())
+                if (_player.Chests.TryGetValue(id, out var chest) && chest.Opened)
+                {
+                    _player.Chests.Remove(id);
+                    removed.Add(id);
+                }
         }
         Save();
         return removed;

@@ -6,8 +6,9 @@ namespace Pokeland.Server.Handlers;
 
 /// <summary>
 /// Clears chest entries the client is done with - see
-/// PlayerStore.RemoveChests for why GoodbyeChestIds (discarded unopened) and
-/// GetChestIds (opened and collected) both just drop the entry.
+/// PlayerStore.RemoveChests for why GoodbyeChestIds (discarded unopened)
+/// drops the entry while GetChestIds (confirmed into the refinery, or an
+/// opened chest's reward collected) only drops it once opened.
 /// </summary>
 public sealed class GoodbyeChestsHandler : IEndpointHandler
 {
@@ -18,7 +19,7 @@ public sealed class GoodbyeChestsHandler : IEndpointHandler
         var req = (Pokeland.Protocol.GoodbyeChests.Req)request;
         var goodbye = req.GoodbyeChestIds ?? Enumerable.Empty<long>();
         var got = req.GetChestIds ?? Enumerable.Empty<long>();
-        var removed = ctx.Players.RemoveChests(goodbye.Concat(got));
+        var removed = ctx.Players.RemoveChests(goodbye, got);
         ctx.Log.LogInformation(
             "GoodbyeChests: goodbye=[{Goodbye}] got=[{Got}] removed=[{Removed}] remaining=[{Remaining}]",
             string.Join(",", goodbye), string.Join(",", got),
