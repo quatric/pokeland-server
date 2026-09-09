@@ -41,7 +41,8 @@ echo "==> patching game, CDN, and pokemon-webapi URLs -> $BASE"
 mv "$WORK/global-metadata.dat" "$METADATA"
 
 echo "==> patching embedded Nintendo BaaS configuration"
-"$PYTHON_BIN" "$ROOT/tools/patch_ios_npf.py" "$RESOURCES" "$WORK/resources.assets" "$BASE"
+"$PYTHON_BIN" "$ROOT/tools/patch_ios_npf.py" \
+  "$RESOURCES" "$WORK/resources.assets" "$BASE" "$APP/Info.plist"
 mv "$WORK/resources.assets" "$RESOURCES"
 
 echo "==> patching native iOS client behavior"

@@ -338,10 +338,13 @@ xdelta3 -D -e -9 -S lzma -s decrypted-1.6.1.ipa \
 The validated decrypted input SHA-256 is
 `3fe56397695856f97b53f5b0cb49628b0cffb74d3de941ba4ed487cd677e4a24`.
 
-The builder redirects the game API, CDN, pokemon-webapi, and embedded Nintendo
-BaaS configuration; selects HTTP or HTTPS to match the supplied URL; disables
-both retired shutdown gates; and hides the open-ended journey countdown. The
-output deliberately has its obsolete
+The builder redirects the game API, CDN, pokemon-webapi, and both copies of the
+embedded Nintendo BaaS configuration (the Unity `npf` TextAsset and native
+`Info.plist` `NPFSettings`); selects HTTP or HTTPS to match the supplied URL;
+disables both retired shutdown gates; and hides the open-ended journey
+countdown. Synchronizing both BaaS copies prevents the native iOS SDK from
+falling back to Nintendo's retired host and reporting the generic `N-000000`
+network/clock error. The output deliberately has its obsolete
 App Store signatures removed. Sign it with the target device's development
 profile (AltStore, SideStore, Sideloadly, or equivalent) before installation.
 
