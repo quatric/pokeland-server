@@ -32,20 +32,20 @@ public static class Events
     public static EventScheduleSet Schedule(params EvedefID[] evedefIDs)
     {
         var utcNow = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
-        var farFuture = PokelandClock.UtcNow.AddYears(10).ToString("yyyy-MM-ddTHH:mm:ssZ");
 
         return new EventScheduleSet
         {
             Evedefs = evedefIDs.Select(evedefID => new EvedefSchedule
             {
                 EvedefID = evedefID,
-                // No advertised end; park every date far enough out that
-                // nothing expires mid-session.
-                EndUTCStr = farFuture,
-                RedeemEndUTCStr = farFuture,
+                // Null upper bounds are the protocol's open-ended form. The
+                // client treats them as active without inventing a ten-year
+                // countdown in Camp and Team Battle.
+                EndUTCStr = null,
+                RedeemEndUTCStr = null,
                 PickUpBeginUTCStr = utcNow,
-                PickUpEndUTCStr = farFuture,
-                RankingFixedEndUTCStr = farFuture,
+                PickUpEndUTCStr = null,
+                RankingFixedEndUTCStr = null,
                 PokedexDist = new EvedefPokedexDistribution
                 {
                     AttrPWTs = new List<PokeWazaType>(),

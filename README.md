@@ -182,6 +182,7 @@ less delta-friendly APK.
 | `assets/npf.json` | `baasHost` -> server, `useHttp` -> `true` | the NPF SDK hard-codes `https` for the Nintendo account backend *unless* this flag is set, which would otherwise force a TLS stand-in and a device-installed CA |
 | `AndroidManifest.xml` | `targetSdkVersion` 28 -> 27 | restores the permissive cleartext-HTTP default. Adding `usesCleartextTraffic` would mean inserting an AXML attribute and resizing every enclosing chunk; the SDK level is a single in-place 4-byte edit |
 | `lib/*/libil2cpp.so` | `BootUpStat.get_IsEndOfService` and `ConstBeforeAB.get_IsEndOfSupport` always return `false` | ignores both retired gates for ARM64 and ARMv7: the persisted July service-shutdown flag and the October real-clock support cutoff |
+| `lib/*/libil2cpp.so` | Camp's journey deadline badge is kept inactive | the revival event is open-ended, so the client no longer shows a fabricated ten-year countdown or an empty timer pill |
 | Unity player data | complete GLES2 shader set plus `m_GraphicsAPIs = [8]` | makes the player use the same shader compiler platform as the converted CDN bundles instead of rendering unsupported materials magenta |
 
 String literals live as (length, dataIndex) pairs over a flat blob, so a shorter

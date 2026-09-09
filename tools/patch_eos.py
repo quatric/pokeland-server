@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Disable the retired client's two end-of-service boot gates."""
+"""Patch native client behavior needed by the revival build."""
 
 from __future__ import annotations
 
@@ -10,7 +10,8 @@ from pathlib import Path
 # The client has two independent IL2CPP gates: a persisted service-shutdown flag
 # and a real-clock customer-support cutoff. Returning false from their accessors
 # also neutralizes an m_isEndOfService=true value already saved in PlayerPrefs,
-# so existing installs do not need their app data cleared.
+# so existing installs do not need their app data cleared. The third patch keeps
+# Camp's timer-only badge hidden because this revival's journey has no end date.
 PATCHES = {
     "arm64-v8a": (
         (
@@ -25,6 +26,12 @@ PATCHES = {
             bytes.fromhex("f3 0f 1e f8 fd 7b 01 a9"),
             bytes.fromhex("00 00 80 52 c0 03 5f d6"),
         ),
+        (
+            "open-ended journey deadline badge",
+            0xF1D918,
+            bytes.fromhex("e1 03 00 32"),  # mov w1, #1
+            bytes.fromhex("e1 03 1f 2a"),  # mov w1, wzr
+        ),
     ),
     "armeabi-v7a": (
         (
@@ -38,6 +45,12 @@ PATCHES = {
             0x11942C0,
             bytes.fromhex("70 4c 2d e9 10 b0 8d e2"),
             bytes.fromhex("00 00 a0 e3 1e ff 2f e1"),
+        ),
+        (
+            "open-ended journey deadline badge",
+            0x90C2E8,
+            bytes.fromhex("01 10 a0 e3"),  # mov r1, #1
+            bytes.fromhex("00 10 a0 e3"),  # mov r1, #0
         ),
     ),
 }
@@ -59,7 +72,7 @@ def patch_library(
 
     data[offset : offset + len(replacement)] = replacement
     path.write_bytes(data)
-    print(f"    {path.parent.name}: disabled {label} at 0x{offset:x}")
+    print(f"    {path.parent.name}: patched {label} at 0x{offset:x}")
 
 
 def main() -> None:
