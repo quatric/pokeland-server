@@ -241,6 +241,8 @@ public sealed class Player
     public int LoginBonusLastDiffMoney { get; set; }
     [JsonProperty("LoginBonusLastDiffDiamond")]
     public int LoginBonusLastDiffDiamond { get; set; }
+    [JsonProperty("LoginBonusLastDiffTicket")]
+    public int LoginBonusLastDiffTicket { get; set; }
 
     /// <summary>Extra levels bought onto a PPE via AddPPELevel, keyed by
     /// PPEId - wire PPE.X[17] AddLevelCount (see LoginHandler's PPE.Index
@@ -1542,27 +1544,23 @@ public sealed class PlayerStore
         Save();
     }
 
-    /// <summary>CampStampCard's 7-day reward cycle: day 1/3/5/7 pay
-    /// diamonds, day 2/4/6 pay money, escalating slightly across the week
-    /// then wrapping. Index matches Player.LoginBonusStampDay (1-7).</summary>
-    private static readonly (int Diamond, int Money)[] LoginBonusCalendar =
-    {
-        (0, 0),      // index 0 unused - days are 1-based
-        (10, 0),     // day 1
-        (0, 100),    // day 2
-        (20, 0),     // day 3
-        (0, 200),    // day 4
-        (30, 0),     // day 5
-        (0, 300),    // day 6
-        (50, 500),   // day 7: both, capstone
-    };
+    /// <summary>CampStampCard's 7-day reward cycle, straight out of
+    /// docs/tables/StampCardDesc.json: every row pays m_bonus 3 (refining
+    /// tickets - the client shows the stamp reward as tickets and the wire
+    /// carries LastResult_DiffTicket for exactly this) x m_value, which is 3
+    /// on days 1-6 and 6 on day 7. Index matches Player.LoginBonusStampDay
+    /// (1-7). This used to be an invented diamonds/money rotation with no
+    /// table basis, which is why the stamp popup showed tickets incoming but
+    /// granted 0 every time.</summary>
+    private static int LoginBonusTickets(int stampDay) =>
+        stampDay >= 7 ? 6 : 3;
 
     /// <summary>Advances and pays out the CampStampCard login bonus once per
     /// UTC date - same once-per-date gate as AdvanceWelcalCalendar/
     /// ClaimDailyDiamondBonus - and returns the current streak/last-result
     /// state either way, since LoginHandler ships LoginBonusInfo on every
     /// Login regardless of whether today's already been claimed.</summary>
-    public (int TotalDays, int StampDay, int CStop, int DiffMoney, int DiffDiamond) ClaimLoginBonus()
+    public (int TotalDays, int StampDay, int CStop, int DiffMoney, int DiffDiamond, int DiffTicket) ClaimLoginBonus()
     {
         var today = PokelandClock.UtcNow.ToString("yyyy-MM-dd");
         bool claimed = false;
@@ -1575,21 +1573,25 @@ public sealed class PlayerStore
                 _player.LoginBonusTotalDays++;
                 _player.LoginBonusStampDay = _player.LoginBonusStampDay >= 7 ? 1 : _player.LoginBonusStampDay + 1;
 
-                var (diamond, money) = LoginBonusCalendar[_player.LoginBonusStampDay];
-                _player.DiamondFree += diamond;
-                _player.Money += money;
-                _player.LoginBonusLastDiffDiamond = diamond;
-                _player.LoginBonusLastDiffMoney = money;
-                _player.LoginBonusLastCStop = (int)(diamond > 0
-                    ? Pokeland.Protocol.LoginBonusCStopResult.GiftDiamond
-                    : Pokeland.Protocol.LoginBonusCStopResult.GiftMoney);
+                // Ticket grant honoring the retail stack cap (JitanTicket max
+                // 10 - see UtensilMaxCount): a full stack means 0 granted
+                // rather than overflowing.
+                var ticketId = (int)Pokeland.Protocol.UtensilID.JitanTicket;
+                _player.Utensils.TryGetValue(ticketId, out var have);
+                int max = ticketId < UtensilMaxCount.Length ? UtensilMaxCount[ticketId] : int.MaxValue;
+                int granted = Math.Max(0, Math.Min(LoginBonusTickets(_player.LoginBonusStampDay), max - have));
+                _player.Utensils[ticketId] = have + granted;
+                _player.LoginBonusLastDiffTicket = granted;
+                _player.LoginBonusLastDiffDiamond = 0;
+                _player.LoginBonusLastDiffMoney = 0;
+                _player.LoginBonusLastCStop = (int)Pokeland.Protocol.LoginBonusCStopResult.DiscardTicket;
             }
         }
         if (claimed) Save();
         lock (_gate)
         {
             return (_player.LoginBonusTotalDays, _player.LoginBonusStampDay, _player.LoginBonusLastCStop,
-                _player.LoginBonusLastDiffMoney, _player.LoginBonusLastDiffDiamond);
+                _player.LoginBonusLastDiffMoney, _player.LoginBonusLastDiffDiamond, _player.LoginBonusLastDiffTicket);
         }
     }
 
