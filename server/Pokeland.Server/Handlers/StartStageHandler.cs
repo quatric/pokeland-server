@@ -176,14 +176,15 @@ public sealed class StartStageHandler : IEndpointHandler
                     .ToList(),
                 MaxDropMoney = 100,
                 MaxDropPierreCount = 0,
-                // TutorialCopper1 - the one chest type this server actually
-                // has a payout for (PlayerStore.PendingChest: money plus a
-                // freshly-minted equnit, see PlayerStore.OpenChest). Offering
-                // it on every stage means every clear can produce a
-                // GotChest=true EndStage.Req, giving Chest*/OpenChest
-                // something real to open instead of being permanently
-                // unreachable dead endpoints.
-                DropChestTypeID = ChestTypeID.TutorialCopper1,
+                // Do not advertise a mineral until its complete retail wire
+                // lifecycle is implemented. Advertising TutorialCopper1 made
+                // the battle set DidBossDropChest/GotChest locally, but the
+                // synthetic ChestsDiff cannot yet reconstruct the exact
+                // cached mineral model BattleResult expects. Its ModelType
+                // list then contains Mineral while gotChests is empty and the
+                // result coroutine dies after showing the coin page. NONE
+                // keeps both sides at zero and lets the clear complete.
+                DropChestTypeID = ChestTypeID.NONE,
                 IsSubscriptionDropActive = Bool.False,
                 IsSubscriptionUnlockActive = Bool.False,
                 IsFeverStage = Bool.False,
