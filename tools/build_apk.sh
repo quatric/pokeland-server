@@ -39,6 +39,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 SRC_APK="${POKELAND_APK:-$ROOT/apk/pokemonscrambleSP-1.6.0.apk}"
 GLES2_APK="${POKELAND_GLES2_APK:-$ROOT/apk/pokeland-gles2-donor.apk}"
 SKIP_GLES2="${POKELAND_SKIP_GLES2:-0}"
+SKIP_MANIFEST="${POKELAND_SKIP_MANIFEST:-0}"
 BASE="${1:?usage: build_apk.sh <base-url> [out.apk]}"
 OUT="${2:-$ROOT/build/pokeland-1.6.0-patched.apk}"
 # Parts of the build run from a staging directory, so resolve a relative output
@@ -130,6 +131,7 @@ fi
 
 echo "==> patching metadata URLs -> $BASE"
 unzip -oq "$SRC_APK" assets/bin/Data/Managed/Metadata/global-metadata.dat -d "$ORIGINAL"
+mkdir -p "$STAGE/assets/bin/Data/Managed/Metadata"
 "$PYTHON_BIN" "$ROOT/tools/patch_metadata.py" \
     "$ORIGINAL/assets/bin/Data/Managed/Metadata/global-metadata.dat" \
     "$STAGE/assets/bin/Data/Managed/Metadata/global-metadata.dat" "$BASE"
@@ -140,10 +142,12 @@ unzip -oq "$SRC_APK" assets/npf.json -d "$ORIGINAL"
 "$PYTHON_BIN" "$ROOT/tools/patch_npf.py" \
     "$ORIGINAL/assets/npf.json" "$STAGE/assets/npf.json" "$BASE"
 
-echo "==> patching manifest targetSdkVersion"
-unzip -oq "$SRC_APK" AndroidManifest.xml -d "$ORIGINAL"
-"$PYTHON_BIN" "$ROOT/tools/patch_manifest.py" \
-    "$ORIGINAL/AndroidManifest.xml" "$STAGE/AndroidManifest.xml" 27
+if [ "$SKIP_MANIFEST" != 1 ]; then
+  echo "==> patching manifest targetSdkVersion"
+  unzip -oq "$SRC_APK" AndroidManifest.xml -d "$ORIGINAL"
+  "$PYTHON_BIN" "$ROOT/tools/patch_manifest.py" \
+      "$ORIGINAL/AndroidManifest.xml" "$STAGE/AndroidManifest.xml" 27
+fi
 
 echo "==> patching native client behavior"
 unzip -oq "$SRC_APK" \
@@ -155,7 +159,10 @@ echo "==> assembling APK"
 cp "$SRC_APK" "$OUT"
 # The old signature covers the files we are about to replace.
 zip -qd "$OUT" 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*.DSA' 'META-INF/MANIFEST.MF' || true
-replacements=(AndroidManifest.xml assets/npf.json)
+replacements=(assets/npf.json)
+if [ "$SKIP_MANIFEST" != 1 ]; then
+  replacements+=(AndroidManifest.xml)
+fi
 while IFS= read -r -d '' staged_file; do
   relative_path="${staged_file#"$STAGE/"}"
   if ! cmp -s "$staged_file" "$ORIGINAL/$relative_path"; then

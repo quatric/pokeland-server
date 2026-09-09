@@ -157,6 +157,16 @@ POKELAND_APK=/path/to/unmodified-1.6.0.apk \
 This diagnostic build deliberately retains the retail metadata URLs, shutdown
 gates, timer behavior, renderer, manifest, and native libraries.
 
+To retain the retail renderer and manifest while restoring the complete revival
+network, shutdown, support-date, and open-ended-timer patches:
+
+```bash
+POKELAND_APK=/path/to/unmodified-1.6.0.apk \
+POKELAND_SKIP_GLES2=1 POKELAND_SKIP_MANIFEST=1 \
+  tools/build_apk.sh https://prd.pokewii.net \
+  build/pokeland-1.6.0-android-core-patched.apk
+```
+
 For local emulator development, `tools/bringup.sh` still uses the emulator's
 host route. Release builds should use the public HTTPS origin shown above.
 `POKELAND_APK` and `POKELAND_GLES2_APK` override the two input paths.
