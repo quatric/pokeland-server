@@ -253,6 +253,7 @@ public sealed class LoginHandler : IEndpointHandler
                 LastResult_CStop = (LoginBonusCStopResult)loginBonus.CStop,
                 LastResult_DiffMoney = loginBonus.DiffMoney,
                 LastResult_DiffDiamond = loginBonus.DiffDiamond,
+                LastResult_DiffTicket = loginBonus.DiffTicket,
             },
             // The Camp gate "I would like you to check your challenges before
             // you go on an adventure" (Camp.iMessageCheckChallenge, RVA
