@@ -88,8 +88,10 @@ public sealed class Player
 
     /// <summary>
     /// Chests picked up during a run (StartStage's MHM.DropChestTypeID makes
-    /// this possible). EndStage assigns the id and sends the new locked chest
-    /// through ChestsDiff; later chest requests use that same persisted id.
+    /// this possible). EndStage assigns the id and sends the new chest once
+    /// as Temporary through ChestsDiff; later requests (Login list,
+    /// ChestStartUnlock/OpenChest) use that same persisted id, reported as
+    /// Locked/Unlocking.
     /// </summary>
     [JsonProperty("Chests")]
     public Dictionary<long, PendingChest> Chests { get; set; } = new();
@@ -458,6 +460,11 @@ public sealed class OwnedEqunit
 /// AutoRes channel other endpoints already use for diffs (EqunitsDiff) can
 /// carry the grant back, now that Equnit's wire layout is RE'd (see
 /// PPEFactory.BuildEqunit).
+///
+/// A stage pickup is sent once as <c>ChestState.Temporary</c> inside
+/// EndStage's ChestsDiff (the transient result slot BattleResult.iMain
+/// enumerates). Afterwards the same id lives here as a persistent entry
+/// and is reported as Locked/Unlocking on Login until opened or discarded.
 /// </summary>
 public sealed class PendingChest
 {
@@ -467,6 +474,10 @@ public sealed class PendingChest
     public bool Opened { get; set; }
     [JsonProperty("Money")]
     public int Money { get; set; } = 100;
+    [JsonProperty("ChestTypeID")]
+    public Pokeland.Protocol.ChestTypeID ChestTypeID { get; set; } = Pokeland.Protocol.ChestTypeID.TutorialCopper1;
+    [JsonProperty("StageCode")]
+    public Pokeland.Protocol.StageCodeX[] StageCode { get; set; }
 }
 
 /// <summary>
@@ -1139,10 +1150,14 @@ public sealed class PlayerStore
         return chest;
     }
 
-    /// <summary>Adds a newly collected locked chest and returns its stable id.
-    /// Older save files predate NextChestId, so also advance past any existing
-    /// key before allocating.</summary>
-    public long GrantChest()
+    /// <summary>Adds a newly collected chest and returns its stable id.
+    /// The id is first sent as Temporary in EndStage's ChestsDiff, then
+    /// persisted here so Login reports it as Locked/Unlocking until the
+    /// client opens or discards it. Older save files predate NextChestId,
+    /// so also advance past any existing key before allocating.</summary>
+    public long GrantChest(
+        Pokeland.Protocol.ChestTypeID chestTypeID = Pokeland.Protocol.ChestTypeID.TutorialCopper1,
+        Pokeland.Protocol.StageCodeX[] stageCode = null)
     {
         long chestId;
         lock (_gate)
@@ -1152,10 +1167,49 @@ public sealed class PlayerStore
                 : _player.Chests.Keys.Max() + 1;
             _player.NextChestId = Math.Max(_player.NextChestId, afterExisting);
             chestId = _player.NextChestId++;
-            _player.Chests[chestId] = new PendingChest();
+            _player.Chests[chestId] = new PendingChest
+            {
+                ChestTypeID = chestTypeID,
+                StageCode = stageCode,
+            };
         }
         Save();
         return chestId;
+    }
+
+    /// <summary>Wire view of every unopened persisted chest for Login's
+    /// Reset.Chests. Temporary is never reported here - that state exists
+    /// only inside the single EndStage ChestsDiff that introduces the id.
+    /// Opened entries are skipped: the client drops them via GoodbyeChests.
+    /// </summary>
+    public List<Pokeland.Protocol.Chest> ListChests()
+    {
+        lock (_gate)
+        {
+            var list = new List<Pokeland.Protocol.Chest>();
+            foreach (var kv in _player.Chests.OrderBy(kv => kv.Key))
+            {
+                var chest = kv.Value;
+                if (chest.Opened) continue;
+                var unlocking = chest.StartUnlockUtc.HasValue;
+                var unlockStart = chest.StartUnlockUtc ?? DateTime.MinValue;
+                list.Add(new Pokeland.Protocol.Chest
+                {
+                    ChestId = kv.Key,
+                    State = unlocking
+                        ? Pokeland.Protocol.ChestState.Unlocking
+                        : Pokeland.Protocol.ChestState.Locked,
+                    StageCode = chest.StageCode,
+                    IslandRankID = Pokeland.Protocol.IslandRankID._1,
+                    ChestTypeID = chest.ChestTypeID,
+                    UsedJitanTicketCount = 0,
+                    UnlockUTCStr = unlocking
+                        ? (unlockStart + ChestUnlockDuration).ToString("yyyy-MM-ddTHH:mm:ssZ")
+                        : null,
+                });
+            }
+            return list;
+        }
     }
 
     /// <summary>Starts a chest's unlock timer if it isn't running yet.

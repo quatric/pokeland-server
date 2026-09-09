@@ -4,10 +4,10 @@ using Pokeland.Protocol;
 namespace Pokeland.Server.Handlers;
 
 /// <summary>
-/// Starts a chest's unlock timer. The client mints its own ChestId when it
-/// picks one up in-stage (StartStage's MHM.DropChestTypeID makes that
-/// possible - see StartStageHandler), so the server only learns a chest
-/// exists the first time this or OpenChest is called with it; see
+/// Starts a chest's unlock timer. The server mints the ChestId in EndStage
+/// (StartStage's MHM.DropChestTypeID makes the in-stage pickup possible -
+/// see StartStageHandler) and persists it via PlayerStore.GrantChest, so by
+/// the time this runs the entry already exists; see
 /// PlayerStore.StartChestUnlock/PendingChest.
 /// </summary>
 public sealed class ChestStartUnlockHandler : IEndpointHandler
