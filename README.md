@@ -141,7 +141,7 @@ python3 -m venv .venv
 tools/build_apk.sh http://10.0.2.2:5199 build/pokeland-1.6.0-gles2.apk
 adb install -r build/pokeland-1.6.0-gles2.apk
 
-# Emulator, rolled-back clock, server, and game in one command:
+# Emulator, server, and game in one command (normal current date):
 tools/bringup.sh
 ```
 
@@ -161,10 +161,18 @@ xdelta3 -D -d -s pokemonscrambleSP-1.6.0.apk \
   pokeland-1.6.0-gles2.xdelta pokeland-1.6.0-gles2.apk
 ```
 
-The builder preserves unchanged compressed APK entries and prefers Android's
-`apksigner`; both details keep the binary patch near the size of the files that
-actually changed. It falls back to `jarsigner` when Android build tools are not
-installed, producing a valid but much less delta-friendly APK.
+Create a release delta with:
+
+```bash
+xdelta3 -D -e -9 -S lzma -s pokemonscrambleSP-1.6.0.apk \
+  pokeland-1.6.0-gles2.apk pokeland-1.6.0-gles2.xdelta
+```
+
+The builder preserves unchanged compressed APK entries. For the two native
+libraries it first proves that the original raw DEFLATE streams are reproducible,
+then replaces only those streams and runs `zipalign` when available. It prefers
+Android's `apksigner`; the `jarsigner` fallback remains valid but produces a much
+less delta-friendly APK.
 
 ### APK patches
 
@@ -173,6 +181,7 @@ installed, producing a valid but much less delta-friendly APK.
 | `global-metadata.dat` | `https://prd.app.pokeland.jp` and `https://dl.app.pokeland.jp` rewritten to the server base | the hosts are IL2CPP string literals; rewriting them in place avoids DNS interception entirely |
 | `assets/npf.json` | `baasHost` -> server, `useHttp` -> `true` | the NPF SDK hard-codes `https` for the Nintendo account backend *unless* this flag is set, which would otherwise force a TLS stand-in and a device-installed CA |
 | `AndroidManifest.xml` | `targetSdkVersion` 28 -> 27 | restores the permissive cleartext-HTTP default. Adding `usesCleartextTraffic` would mean inserting an AXML attribute and resizing every enclosing chunk; the SDK level is a single in-place 4-byte edit |
+| `lib/*/libil2cpp.so` | `BootUpStat.get_IsEndOfService` and `ConstBeforeAB.get_IsEndOfSupport` always return `false` | ignores both retired gates for ARM64 and ARMv7: the persisted July service-shutdown flag and the October real-clock support cutoff |
 | Unity player data | complete GLES2 shader set plus `m_GraphicsAPIs = [8]` | makes the player use the same shader compiler platform as the converted CDN bundles instead of rendering unsupported materials magenta |
 
 String literals live as (length, dataIndex) pairs over a flat blob, so a shorter
@@ -244,11 +253,12 @@ Stamp, Globe, Camp, and a live forest battle render without magenta. Logcat stay
 clear of `Desired shader compiler platform ... is not available` errors through
 that flow. The APK runs this way on its own; no Frida hook is needed.
 
-The client has a hard-coded 2020-07-22 end-of-service gate. `tools/bringup.sh`
-sets the emulator to 2020-06-20 and passes the matching real/device timestamps to
-the server as `POKELAND_REAL_ANCHOR` and `POKELAND_DEVICE_EPOCH`. This keeps
-client and server time moving together across server restarts without editing a
-tracked source file.
+The client has two independent shutdown checks before its first server request:
+a persisted 2020-07-22 end-of-service result and a hard-coded 2020-10-22
+customer-support cutoff. `tools/patch_eos.py` makes both IL2CPP accessors return
+`false` in both shipped Android ABIs. Android automatic time remains enabled,
+and the server returns matching real UTC timestamps; users do not need root
+access, a date rollback, cleared app data, or a runtime hook.
 
 ## iOS client
 

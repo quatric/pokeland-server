@@ -15,6 +15,10 @@
 #   * replace Resources/unity_builtin_extra with its GLES2 build;
 #   * set Unity's graphics API list to OpenGLES2.
 #
+# End-of-service edits:
+#   * make the persisted service flag and real-clock support cutoff both return
+#     false in both IL2CPP ABIs, so neither retired gate can block a launch.
+#
 # The GLES2 donor is not distributed here. By default it is read from
 # apk/pokeland-gles2-donor.apk; override that with POKELAND_GLES2_APK.
 #
@@ -72,6 +76,17 @@ if [ -z "$APKSIGNER_BIN" ]; then
   done
 fi
 
+ZIPALIGN_BIN="${POKELAND_ZIPALIGN:-$(command -v zipalign || true)}"
+if [ -z "$ZIPALIGN_BIN" ] && [ -n "$APKSIGNER_BIN" ] \
+    && [ -x "$(dirname "$APKSIGNER_BIN")/zipalign" ]; then
+  ZIPALIGN_BIN="$(dirname "$APKSIGNER_BIN")/zipalign"
+fi
+if [ -z "$ZIPALIGN_BIN" ]; then
+  for candidate in /opt/homebrew/share/android-commandlinetools/build-tools/*/zipalign; do
+    [ -x "$candidate" ] && ZIPALIGN_BIN="$candidate"
+  done
+fi
+
 KEYSTORE=$ROOT/build/debug.keystore
 STORE_PASS=pokeland
 
@@ -126,27 +141,45 @@ unzip -oq "$SRC_APK" AndroidManifest.xml -d "$ORIGINAL"
 "$PYTHON_BIN" "$ROOT/tools/patch_manifest.py" \
     "$ORIGINAL/AndroidManifest.xml" "$STAGE/AndroidManifest.xml" 27
 
+echo "==> disabling retired end-of-service gates"
+unzip -oq "$SRC_APK" \
+    lib/arm64-v8a/libil2cpp.so lib/armeabi-v7a/libil2cpp.so -d "$ORIGINAL"
+cp -R "$ORIGINAL/lib" "$STAGE/"
+"$PYTHON_BIN" "$ROOT/tools/patch_eos.py" "$STAGE/lib"
+
 echo "==> assembling APK"
 cp "$SRC_APK" "$OUT"
 # The old signature covers the files we are about to replace.
 zip -qd "$OUT" 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*.DSA' 'META-INF/MANIFEST.MF' || true
-if [ "$SKIP_GLES2" = 1 ]; then
-  ( cd "$STAGE" && zip -qX "$OUT" AndroidManifest.xml assets/npf.json \
-        assets/bin/Data/Managed/Metadata/global-metadata.dat )
-else
-  replacements=(AndroidManifest.xml assets/npf.json)
-  while IFS= read -r -d '' staged_file; do
-    relative_path="${staged_file#"$STAGE/"}"
-    if ! cmp -s "$staged_file" "$ORIGINAL/$relative_path"; then
-      replacements+=("$relative_path")
-    fi
-  done < <(find "$STAGE/assets/bin/Data" -type f -print0)
+replacements=(AndroidManifest.xml assets/npf.json)
+while IFS= read -r -d '' staged_file; do
+  relative_path="${staged_file#"$STAGE/"}"
+  if ! cmp -s "$staged_file" "$ORIGINAL/$relative_path"; then
+    replacements+=("$relative_path")
+  fi
+done < <(find "$STAGE/assets/bin/Data" -type f -print0)
 
-  echo "    updating ${#replacements[@]} changed APK entries"
-  # Preserve the source APK's compressed bytes for every unchanged entry. This
-  # keeps binary-delta patches small. -D also prevents ZIP directory records,
-  # which Unity's IL2CPP resource extractor incorrectly treats as files.
-  ( cd "$STAGE" && zip -qXD "$OUT" "${replacements[@]}" )
+echo "    updating ${#replacements[@]} changed APK entries"
+# Preserve the source APK's compressed bytes for every unchanged entry. This
+# keeps binary-delta patches small. -D also prevents ZIP directory records,
+# which Unity's IL2CPP resource extractor incorrectly treats as files.
+( cd "$STAGE" && zip -qXD "$OUT" "${replacements[@]}" )
+
+echo "==> replacing patched native libraries"
+# The retail APK's two libil2cpp streams were produced by different zlib
+# levels. Reproduce those exact source streams before replacing them so every
+# unrelated compressed byte stays untouched and release deltas remain small.
+"$PYTHON_BIN" "$ROOT/tools/replace_zip_entries.py" "$OUT" \
+    lib/arm64-v8a/libil2cpp.so "$STAGE/lib/arm64-v8a/libil2cpp.so" 6 \
+    lib/armeabi-v7a/libil2cpp.so "$STAGE/lib/armeabi-v7a/libil2cpp.so" 9
+
+if [ -n "$ZIPALIGN_BIN" ]; then
+  echo "==> aligning APK"
+  "$ZIPALIGN_BIN" -f 4 "$OUT" "$WORK/aligned.apk"
+  mv "$WORK/aligned.apk" "$OUT"
+  "$ZIPALIGN_BIN" -c 4 "$OUT"
+else
+  echo "warning: zipalign not found; APK is valid but some stored entries may be unaligned" >&2
 fi
 
 if [ ! -f "$KEYSTORE" ]; then
@@ -176,5 +209,6 @@ echo
 echo "built: $OUT ($(du -h "$OUT" | cut -f1))"
 echo "server base baked in: $BASE"
 [ "$SKIP_GLES2" = 1 ] || echo "renderer: OpenGLES2 with complete player shader set"
+echo "end-of-service gates: disabled for arm64-v8a and armeabi-v7a"
 echo
 echo "install with:  adb install -r \"$OUT\""
