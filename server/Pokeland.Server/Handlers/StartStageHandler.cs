@@ -176,15 +176,12 @@ public sealed class StartStageHandler : IEndpointHandler
                     .ToList(),
                 MaxDropMoney = 100,
                 MaxDropPierreCount = 0,
-                // Do not advertise a mineral until its complete retail wire
-                // lifecycle is implemented. Advertising TutorialCopper1 made
-                // the battle set DidBossDropChest/GotChest locally, but the
-                // synthetic ChestsDiff cannot yet reconstruct the exact
-                // cached mineral model BattleResult expects. Its ModelType
-                // list then contains Mineral while gotChests is empty and the
-                // result coroutine dies after showing the coin page. NONE
-                // keeps both sides at zero and lets the clear complete.
-                DropChestTypeID = ChestTypeID.NONE,
+                // TutorialCopper1 is inserted into the client's temporary
+                // mineral slot by EndStage. It must remain Temporary in that
+                // response; sending it as Locked makes ChestBox reject the new
+                // item and leaves BattleResult with a Mineral model but no
+                // corresponding cached chest.
+                DropChestTypeID = ChestTypeID.TutorialCopper1,
                 IsSubscriptionDropActive = Bool.False,
                 IsSubscriptionUnlockActive = Bool.False,
                 IsFeverStage = Bool.False,

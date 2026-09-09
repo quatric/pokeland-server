@@ -406,7 +406,7 @@ public sealed class LoginHandler : IEndpointHandler
                 .Select(id => World.JourneyStage(ctx.Config.CurrentEvedefID, id, ctx.Players.Current))
                 .ToList(),
             TotalSec = 0,
-            Chests = new List<Chest>(),
+            Chests = ctx.Players.ListChests(),
             // PdecoDesc.json (real retail table, docs/tables/) carries no
             // price/unlock-condition fields for any decoration, so every
             // PdecoID the enum defines (bar NONE) is reported as owned -

@@ -85,10 +85,14 @@ public sealed class EndStageHandler : IEndpointHandler
         Chest grantedChest = null;
         if (cleared && req.GotChest == Bool.True)
         {
+            var chestId = ctx.Players.GrantChest(ChestTypeID.TutorialCopper1, stage.StageCode);
             grantedChest = new Chest
             {
-                ChestId = ctx.Players.GrantChest(),
-                State = ChestState.Locked,
+                ChestId = chestId,
+                // A stage pickup enters the transient result slot first. The
+                // client promotes or discards it after the result flow; a new
+                // Locked chest is not accepted by ChestBox.UpdateImpl.
+                State = ChestState.Temporary,
                 StageCode = stage.StageCode,
                 IslandRankID = IslandRankID._1,
                 ChestTypeID = ChestTypeID.TutorialCopper1,
