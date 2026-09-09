@@ -13,7 +13,11 @@ public static class UserProfiles
     public static MyUserProfile Current(Player player) => new()
     {
         Nickname = player.Nickname,
-        MiiCoreData = System.Array.Empty<byte>(),
+        // Surface the persisted Mii blob so the trainer card and multiplayer
+        // guest profiles show the player's actual avatar. Falls back to an
+        // empty array for accounts that have never visited the auth endpoint,
+        // which is identical to the original behaviour.
+        MiiCoreData = player.MiiCoreData ?? System.Array.Empty<byte>(),
         LatLng = new float[] { 0, 0 },
     };
 }
