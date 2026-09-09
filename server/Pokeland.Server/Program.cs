@@ -122,13 +122,12 @@ app.MapMethods("/api/location/v1/estimate_country", new[] { "GET", "POST" }, (Ht
     });
 });
 
-// The profanity filter for user-entered names. Nothing is rejected: the retail
-// word list is not part of the client, and an empty rejectedBy means "clean".
-app.MapGet("/api/badword/v1/check_word", () => Results.Json(new
-{
-    result = "OK",
-    rejectedBy = "",
-}));
+// The profanity filter for user-entered names. The nickname coroutine submits
+// a POST and deserializes a top-level `results` array; a 405 or the wrong JSON
+// shape leaves both Android and iOS waiting at the post-tutorial name prompt.
+// Nothing is rejected because the retail word lists are not available.
+app.MapMethods("/api/badword/v1/check_word", new[] { "GET", "POST" },
+    () => Results.Json(new { results = Array.Empty<object>() }));
 
 // ---------------------------------------------------------------------- VCM
 // A third backend (Virtual Currency Marketplace - the IAP/bundle catalog),
