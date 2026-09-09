@@ -154,6 +154,18 @@ The validated input SHA-256 values are:
 | unmodified Android 1.6.0 APK | `235786258e02809e1f5b946c80db21dd31a7ba7e95a2ee86c1f1d196d0ffdfcb` |
 | compatible GLES2 donor APK | `5e4d87797b7d8d6febc36673c54ea2487a247df61f2d5630bc26d3a7881587ca` |
 
+An xdelta release applies only to that exact unmodified APK. Decode one with:
+
+```bash
+xdelta3 -D -d -s pokemonscrambleSP-1.6.0.apk \
+  pokeland-1.6.0-gles2.xdelta pokeland-1.6.0-gles2.apk
+```
+
+The builder preserves unchanged compressed APK entries and prefers Android's
+`apksigner`; both details keep the binary patch near the size of the files that
+actually changed. It falls back to `jarsigner` when Android build tools are not
+installed, producing a valid but much less delta-friendly APK.
+
 ### APK patches
 
 | file | change | why |

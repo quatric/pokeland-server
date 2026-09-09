@@ -58,6 +58,20 @@ for j in "${JAVA_HOME:-}" /opt/homebrew/opt/openjdk /opt/homebrew/opt/openjdk@21
 done
 [ -n "$JAVA_BIN" ] || { echo "no JDK with jarsigner found (brew install openjdk)" >&2; exit 1; }
 
+# apksigner preserves the compressed bytes of unchanged ZIP entries, unlike
+# jarsigner on this APK. That makes binary-delta distribution practical.
+APKSIGNER_BIN="${POKELAND_APKSIGNER:-$(command -v apksigner || true)}"
+if [ -z "$APKSIGNER_BIN" ] && [ -n "${ANDROID_HOME:-}" ]; then
+  for candidate in "$ANDROID_HOME"/build-tools/*/apksigner; do
+    [ -x "$candidate" ] && APKSIGNER_BIN="$candidate"
+  done
+fi
+if [ -z "$APKSIGNER_BIN" ]; then
+  for candidate in /opt/homebrew/share/android-commandlinetools/build-tools/*/apksigner; do
+    [ -x "$candidate" ] && APKSIGNER_BIN="$candidate"
+  done
+fi
+
 KEYSTORE=$ROOT/build/debug.keystore
 STORE_PASS=pokeland
 
@@ -83,11 +97,13 @@ STAGE="$WORK/stage"
 ORIGINAL="$WORK/original"
 DONOR="$WORK/donor"
 trap 'rm -rf "$WORK"' EXIT
-mkdir -p "$STAGE/assets/bin/Data/Managed/Metadata" "$ORIGINAL" "$DONOR"
+mkdir -p "$STAGE/assets" "$ORIGINAL" "$DONOR"
 
 if [ "$SKIP_GLES2" != 1 ]; then
   echo "==> extracting Unity player data"
-  unzip -oq "$SRC_APK" 'assets/bin/Data/*' -d "$STAGE"
+  unzip -oq "$SRC_APK" 'assets/bin/Data/*' -d "$ORIGINAL"
+  mkdir -p "$STAGE/assets/bin"
+  cp -R "$ORIGINAL/assets/bin/Data" "$STAGE/assets/bin/"
   unzip -oq "$GLES2_APK" 'assets/bin/Data/*' -d "$DONOR"
   "$PYTHON_BIN" "$ROOT/tools/patch_gles2.py" \
       "$DONOR/assets/bin/Data" "$STAGE/assets/bin/Data"
@@ -118,9 +134,19 @@ if [ "$SKIP_GLES2" = 1 ]; then
   ( cd "$STAGE" && zip -qX "$OUT" AndroidManifest.xml assets/npf.json \
         assets/bin/Data/Managed/Metadata/global-metadata.dat )
 else
-  # Unity's IL2CPP resource extractor treats ZIP directory records below
-  # assets/bin as files and fails before engine initialization, so -D matters.
-  ( cd "$STAGE" && zip -qXDr "$OUT" AndroidManifest.xml assets/npf.json assets/bin/Data )
+  replacements=(AndroidManifest.xml assets/npf.json)
+  while IFS= read -r -d '' staged_file; do
+    relative_path="${staged_file#"$STAGE/"}"
+    if ! cmp -s "$staged_file" "$ORIGINAL/$relative_path"; then
+      replacements+=("$relative_path")
+    fi
+  done < <(find "$STAGE/assets/bin/Data" -type f -print0)
+
+  echo "    updating ${#replacements[@]} changed APK entries"
+  # Preserve the source APK's compressed bytes for every unchanged entry. This
+  # keeps binary-delta patches small. -D also prevents ZIP directory records,
+  # which Unity's IL2CPP resource extractor incorrectly treats as files.
+  ( cd "$STAGE" && zip -qXD "$OUT" "${replacements[@]}" )
 fi
 
 if [ ! -f "$KEYSTORE" ]; then
@@ -133,9 +159,18 @@ if [ ! -f "$KEYSTORE" ]; then
 fi
 
 echo "==> signing"
-"$JAVA_BIN/jarsigner" -keystore "$KEYSTORE" -storepass "$STORE_PASS" -keypass "$STORE_PASS" \
-    -sigalg SHA256withRSA -digestalg SHA-256 "$OUT" pokeland >/dev/null
-"$JAVA_BIN/jarsigner" -verify "$OUT" >/dev/null && echo "    signature OK"
+if [ -n "$APKSIGNER_BIN" ]; then
+  "$APKSIGNER_BIN" sign --ks "$KEYSTORE" --ks-key-alias pokeland \
+      --ks-pass "pass:$STORE_PASS" --key-pass "pass:$STORE_PASS" \
+      --v1-signer-name POKELAND --v1-signing-enabled true \
+      --v2-signing-enabled false --v3-signing-enabled false \
+      --v4-signing-enabled false "$OUT"
+  "$APKSIGNER_BIN" verify "$OUT" && echo "    signature OK (apksigner, v1)"
+else
+  "$JAVA_BIN/jarsigner" -keystore "$KEYSTORE" -storepass "$STORE_PASS" -keypass "$STORE_PASS" \
+      -sigalg SHA256withRSA -digestalg SHA-256 "$OUT" pokeland >/dev/null
+  "$JAVA_BIN/jarsigner" -verify "$OUT" >/dev/null && echo "    signature OK (jarsigner, v1)"
+fi
 
 echo
 echo "built: $OUT ($(du -h "$OUT" | cut -f1))"
