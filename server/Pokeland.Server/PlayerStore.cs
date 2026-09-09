@@ -88,15 +88,14 @@ public sealed class Player
 
     /// <summary>
     /// Chests picked up during a run (StartStage's MHM.DropChestTypeID makes
-    /// this possible; the client sets EndStage.Req.GotChest and shows its own
-    /// "you got a chest!" screen off locally-shipped chest content - the
-    /// server never invents a ChestId, it only ever hears about one the first
-    /// time the client calls ChestStartUnlock/OpenChest with an id it already
-    /// decided on, so entries here are created lazily on first contact rather
-    /// than at EndStage time.
+    /// this possible). EndStage assigns the id and sends the new locked chest
+    /// through ChestsDiff; later chest requests use that same persisted id.
     /// </summary>
     [JsonProperty("Chests")]
     public Dictionary<long, PendingChest> Chests { get; set; } = new();
+
+    [JsonProperty("NextChestId")]
+    public long NextChestId { get; set; } = 1;
 
     /// <summary>
     /// Free (non-purchased) diamonds. Mission/Welcal rewards land here.
@@ -444,7 +443,7 @@ public sealed class OwnedEqunit
 }
 
 /// <summary>
-/// One chest, keyed by the client's own ChestId. Pays out its flat money
+/// One chest, keyed by the server-issued ChestId. Pays out its flat money
 /// amount plus one freshly-minted OwnedEqunit (grade 0, a random
 /// UnitPrefix) - OpenChest.Res itself carries no equnit payload, but the
 /// AutoRes channel other endpoints already use for diffs (EqunitsDiff) can
@@ -1129,6 +1128,25 @@ public sealed class PlayerStore
             _player.Chests[chestId] = chest;
         }
         return chest;
+    }
+
+    /// <summary>Adds a newly collected locked chest and returns its stable id.
+    /// Older save files predate NextChestId, so also advance past any existing
+    /// key before allocating.</summary>
+    public long GrantChest()
+    {
+        long chestId;
+        lock (_gate)
+        {
+            var afterExisting = _player.Chests.Count == 0
+                ? 1
+                : _player.Chests.Keys.Max() + 1;
+            _player.NextChestId = Math.Max(_player.NextChestId, afterExisting);
+            chestId = _player.NextChestId++;
+            _player.Chests[chestId] = new PendingChest();
+        }
+        Save();
+        return chestId;
     }
 
     /// <summary>Starts a chest's unlock timer if it isn't running yet.
