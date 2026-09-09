@@ -47,18 +47,26 @@ public sealed class EndStageHandler : IEndpointHandler
             clearCount = ctx.Players.RecordClear(key, req.GotMoney);
         }
 
-        // Convert the drop(s) StartStage offered into real, persisted PPEs -
-        // normally one, three during the set02 ZakuZaku Drop-subscription
-        // buff (see StartStageHandler). OfferedDrops is cleared either way
-        // so an abandoned/lost run cannot be replayed to grant them twice.
+        // Convert only the drops the client says it actually collected into
+        // persisted PPEs. StartStage describes possible drops, but a run can
+        // finish without taming all (or any) of them. Returning one PPEUpdate
+        // per offered drop made PiiBox.ConvertPPEDropIdToPPEId add Pokemon the
+        // result scene did not have in its local GotPPEs list; iMain then
+        // indexed its shorter ModelType list and died immediately after the
+        // coin page. PPEDropGot is positional (it contains no drop id), so it
+        // pairs with the offered list in collection order.
         var ppeUpdates = new List<PPEUpdate>();
+        var offeredDropCount = session.OfferedDrops.Count;
         if (cleared)
         {
-            foreach (var drop in session.OfferedDrops)
+            var gotDrops = req.GotPPEDrops ?? new List<PPEDropGot>();
+            for (var i = 0; i < System.Math.Min(gotDrops.Count, session.OfferedDrops.Count); i++)
             {
+                var drop = session.OfferedDrops[i];
+                var got = gotDrops[i];
                 var granted = ctx.Players.GrantPPE(
                     drop.MonsNo, drop.Level,
-                    grade: drop.Grade, waza0: 0, waza1: 0, nickname: null);
+                    grade: drop.Grade, waza0: 0, waza1: 0, nickname: got.Nickname);
                 ppeUpdates.Add(new PPEUpdate
                 {
                     PPEDropId = drop.DropId,
@@ -90,9 +98,11 @@ public sealed class EndStageHandler : IEndpointHandler
 
         ctx.Log.LogInformation(
             "EndStage: result={Result} island={Island} money=+{Money} pierres={Pierres} dps={Dps} " +
-            "clearCount={Count} wallet={Wallet} grantedPPE={GrantedPPE} chest={Chest}",
+            "clearCount={Count} wallet={Wallet} offeredPPE={OfferedPPE} gotPPE={GotPPE} " +
+            "updatedPPE={UpdatedPPE} gotChest={GotChest} chest={Chest}",
             req.BattleResult, islandID, req.GotMoney, req.GotPierreCount, req.DPS,
-            clearCount, ctx.Players.Current.Money, ppeUpdates.Count > 0,
+            clearCount, ctx.Players.Current.Money, offeredDropCount,
+            req.GotPPEDrops?.Count ?? 0, ppeUpdates.Count, req.GotChest,
             grantedChest?.ChestId);
 
         if (cleared)
