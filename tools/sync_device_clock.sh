@@ -1,6 +1,6 @@
 #!/bin/bash
 # Roll the device clock back past the client's End-of-Service cutoff, and print
-# the matching RealAnchor line for server/Pokeland.Server/PokelandClock.cs.
+# matching environment values for server/Pokeland.Server/PokelandClock.cs.
 #
 # The two have to be set together: PokelandClock derives its offset as
 # DeviceEpoch + (now - RealAnchor), so RealAnchor must be the real UTC instant
@@ -8,6 +8,7 @@
 # than to "whenever the process started" is what keeps the offset stable across
 # server restarts.
 #
+# tools/bringup.sh captures and exports the final two machine-readable lines.
 # Usage: sync_device_clock.sh [DeviceEpoch as YYYY-MM-DDTHH:MM:SSZ]
 set -euo pipefail
 
@@ -30,9 +31,6 @@ REAL_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 echo "device now: $(adb shell date -u | tr -d '\r')"
 echo "real clock at the moment of the set: $REAL_BEFORE .. $REAL_AFTER"
 echo
-echo "paste into server/Pokeland.Server/PokelandClock.cs:"
-printf '    private static readonly DateTime RealAnchor = new(%d, %d, %d, %d, %d, %d, DateTimeKind.Utc);\n' \
-    "${REAL_AFTER:0:4}" "$((10#${REAL_AFTER:5:2}))" "$((10#${REAL_AFTER:8:2}))" \
-    "$((10#${REAL_AFTER:11:2}))" "$((10#${REAL_AFTER:14:2}))" "$((10#${REAL_AFTER:17:2}))"
-printf '    private static readonly DateTime DeviceEpoch = new(%d, %d, %d, %d, %d, %d, DateTimeKind.Utc);\n' \
-    "$((10#$Y))" "$((10#$MO))" "$((10#$D))" "$((10#$H))" "$((10#$MI))" "$((10#$S))"
+echo "server clock environment:"
+printf 'POKELAND_DEVICE_EPOCH=%s\n' "$EPOCH"
+printf 'POKELAND_REAL_ANCHOR=%s\n' "$REAL_AFTER"

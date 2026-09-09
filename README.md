@@ -127,22 +127,41 @@ is not trustworthy.
 
 ## Android
 
-The Android client boots against this server with no DNS interception and no
-device-side certificate work. Three patches to the APK plus an asset conversion.
+The Android client boots against this server with no DNS interception,
+device-side certificate work, or runtime instrumentation. The build applies the
+network patches and makes the player shaders match the converted asset bundles.
 
 ```bash
-tools/build_apk.sh http://10.0.2.2:5199        # emulator -> host
-tools/build_apk.sh http://192.168.1.50:5199    # real device on the LAN
-adb install -r build/pokeland-1.6.0-patched.apk
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+
+# Put an unmodified 1.6.0 APK and the compatible GLES2 donor at these paths:
+#   apk/pokemonscrambleSP-1.6.0.apk
+#   apk/pokeland-gles2-donor.apk
+tools/build_apk.sh http://10.0.2.2:5199 build/pokeland-1.6.0-gles2.apk
+adb install -r build/pokeland-1.6.0-gles2.apk
+
+# Emulator, rolled-back clock, server, and game in one command:
+tools/bringup.sh
 ```
 
-### The three APK patches
+For a physical device on the LAN, replace `10.0.2.2` with the host's LAN
+address. `POKELAND_APK` and `POKELAND_GLES2_APK` override the two input paths.
+The validated input SHA-256 values are:
+
+| input | SHA-256 |
+|---|---|
+| unmodified Android 1.6.0 APK | `235786258e02809e1f5b946c80db21dd31a7ba7e95a2ee86c1f1d196d0ffdfcb` |
+| compatible GLES2 donor APK | `5e4d87797b7d8d6febc36673c54ea2487a247df61f2d5630bc26d3a7881587ca` |
+
+### APK patches
 
 | file | change | why |
 |---|---|---|
 | `global-metadata.dat` | `https://prd.app.pokeland.jp` and `https://dl.app.pokeland.jp` rewritten to the server base | the hosts are IL2CPP string literals; rewriting them in place avoids DNS interception entirely |
 | `assets/npf.json` | `baasHost` -> server, `useHttp` -> `true` | the NPF SDK hard-codes `https` for the Nintendo account backend *unless* this flag is set, which would otherwise force a TLS stand-in and a device-installed CA |
 | `AndroidManifest.xml` | `targetSdkVersion` 28 -> 27 | restores the permissive cleartext-HTTP default. Adding `usesCleartextTraffic` would mean inserting an AXML attribute and resizing every enclosing chunk; the SDK level is a single in-place 4-byte edit |
+| Unity player data | complete GLES2 shader set plus `m_GraphicsAPIs = [8]` | makes the player use the same shader compiler platform as the converted CDN bundles instead of rendering unsupported materials magenta |
 
 String literals live as (length, dataIndex) pairs over a flat blob, so a shorter
 replacement only needs its length field updated - nothing else in the file moves
@@ -153,6 +172,15 @@ Two `https://…pokeland.jp` strings survive in `fieldAndParameterDefaultValueDa
 Those are `const string` default-value blobs kept for reflection; the compiler
 already inlined those consts into the literals that were patched, so no traffic
 uses them.
+
+The shader problem only becomes obvious after the mostly-correct hot-air-balloon
+loading screen. The archived bundles contain GLES2 and Metal programs, but the
+retail Android player requests GLES3 or Vulkan; its embedded and built-in shaders
+also lack GLES2. Replacing only `unity_builtin_extra` therefore cannot fix the
+main game. `tools/patch_gles2.py` transplants all 14 matching embedded shaders,
+replaces the 34 built-in shaders, and selects OpenGLES2. Two Nintendo-account Mii
+preview shaders have no donor variant; they are dormant in the tested
+device-account flow.
 
 ### Asset conversion
 
@@ -199,9 +227,16 @@ digests, all 122 bundles converted (202.8 MB), every serialized file reporting
 `target_platform` 13, no PVRTC left anywhere, and all 122 served over HTTP at the
 exact sizes the regenerated manifest advertises.
 
-**Not yet done:** no Android device or emulator was available here, so this is
-verified at the protocol level - every request the client makes gets a correct
-response - not by booting the game and rendering a frame.
+This is also verified past the loading screen on an Android 11 emulator: Daily
+Stamp, Globe, Camp, and a live forest battle render without magenta. Logcat stays
+clear of `Desired shader compiler platform ... is not available` errors through
+that flow. The APK runs this way on its own; no Frida hook is needed.
+
+The client has a hard-coded 2020-07-22 end-of-service gate. `tools/bringup.sh`
+sets the emulator to 2020-06-20 and passes the matching real/device timestamps to
+the server as `POKELAND_REAL_ANCHOR` and `POKELAND_DEVICE_EPOCH`. This keeps
+client and server time moving together across server restarts without editing a
+tracked source file.
 
 ## iOS client
 

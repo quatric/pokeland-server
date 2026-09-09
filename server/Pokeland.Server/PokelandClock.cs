@@ -1,4 +1,6 @@
 #nullable disable
+using System.Globalization;
+
 namespace Pokeland.Server;
 
 /// <summary>
@@ -22,23 +24,42 @@ namespace Pokeland.Server;
 /// independent of the server process's lifetime - so every server restart
 /// silently re-zeroed the offset while the device clock had already drifted
 /// minutes ahead, reintroducing the exact clock-mismatch this class exists
-/// to prevent. Anchoring to a fixed constant instead of a runtime value
-/// keeps the offset stable across restarts, as long as the device clock was
-/// set (via `adb shell date`) to DeviceEpoch at a moment when the real clock
-/// read RealAnchor - see tools/sync_device_clock.sh.
+/// to prevent. Anchoring to values captured when the device clock is set keeps
+/// the offset stable across restarts. tools/bringup.sh obtains those values
+/// from tools/sync_device_clock.sh and exports them for this process.
 /// </summary>
 public static class PokelandClock
 {
     // 2020-06-20T20:00:00Z matches the `adb shell date 062020002020.00` used
     // to set the emulator's clock - comfortably before the 2020-07-22 EOS cutoff.
-    private static readonly DateTime DeviceEpoch = new(2020, 6, 20, 20, 0, 0, DateTimeKind.Utc);
+    private static readonly DateTime DeviceEpoch = ReadUtc(
+        "POKELAND_DEVICE_EPOCH",
+        new DateTime(2020, 6, 20, 20, 0, 0, DateTimeKind.Utc));
 
-    // The real wall-clock instant the device was set to DeviceEpoch. Must be
-    // updated (and the device re-synced) together - see
-    // tools/sync_device_clock.sh, which prints the exact `adb shell date`
-    // invocation and the RealAnchor line to paste in here.
-    private static readonly DateTime RealAnchor = new(2026, 9, 1, 16, 54, 20, DateTimeKind.Utc);
+    // Fallback matches the most recent checked-in emulator sync. Normal local
+    // operation uses the environment value emitted by sync_device_clock.sh.
+    private static readonly DateTime RealAnchor = ReadUtc(
+        "POKELAND_REAL_ANCHOR",
+        new DateTime(2026, 9, 8, 23, 1, 51, DateTimeKind.Utc));
 
     public static DateTime UtcNow => DeviceEpoch + (DateTime.UtcNow - RealAnchor);
     public static DateTimeOffset UtcNowOffset => new(UtcNow, TimeSpan.Zero);
+
+    private static DateTime ReadUtc(string variable, DateTime fallback)
+    {
+        var value = Environment.GetEnvironmentVariable(variable);
+        if (string.IsNullOrWhiteSpace(value))
+            return fallback;
+
+        if (DateTime.TryParseExact(
+                value,
+                "yyyy-MM-dd'T'HH:mm:ss'Z'",
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.AssumeUniversal | DateTimeStyles.AdjustToUniversal,
+                out var parsed))
+            return DateTime.SpecifyKind(parsed, DateTimeKind.Utc);
+
+        throw new InvalidOperationException(
+            $"{variable} must use UTC format yyyy-MM-ddTHH:mm:ssZ; got {value}");
+    }
 }
