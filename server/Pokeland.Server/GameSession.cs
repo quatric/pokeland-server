@@ -71,4 +71,26 @@ public sealed class SessionStore
         s.LastSeenUtc = DateTime.UtcNow;
         return s;
     }
+
+    /// <summary>
+    /// Re-binds a session id this store no longer knows - a server restart
+    /// wipes in-memory sessions, so any run in flight at deploy time comes
+    /// back with a dead id - to a fresh transient session for the same
+    /// device. Binding under the requested id (rather than minting a new
+    /// one) makes the client's retries converge on one session instead of
+    /// minting one per attempt. Run-scoped state (CurrentIslandID,
+    /// OfferedDrops) is gone - handlers fall back to the mysland stage and
+    /// empty drops - but wallet/chest rewards still bank instead of the
+    /// client looping on 401 forever.
+    /// </summary>
+    public GameSession Reattach(string sessionId, string baasUserId)
+    {
+        var s = new GameSession
+        {
+            SessionId = string.IsNullOrEmpty(sessionId) ? Guid.NewGuid().ToString("N") : sessionId,
+            BaaSUserId = baasUserId ?? "anonymous",
+        };
+        _sessions[s.SessionId] = s;
+        return s;
+    }
 }
