@@ -295,8 +295,7 @@ public sealed class Player
     [JsonProperty("MissionsLastResetUtcDate")]
     public string MissionsLastResetUtcDate { get; set; }
 
-    /// <summary>
-    /// Flags the client can only earn through a flow this server does not
+    /// <summary>Flags the client can only earn through a flow this server does not
     /// implement yet, and which gate progress until they are set.
     ///
     /// FirstChallengeDone (3): CampPageMain.iMessageTryBtnChallenge (RVA
@@ -309,6 +308,16 @@ public sealed class Player
     /// exists, or the game cannot leave Camp at all.
     /// </summary>
     private static readonly int[] SeedFlags = { 3 };
+
+    /// <summary>
+    /// 96-byte Wii-era <c>RFLCharData</c> Mii blob, set via the pokewii-auth
+    /// profile endpoint and surfaced through <c>MyUserProfileBox.MiiCoreData</c>
+    /// so the client's Mii renderer has real data to draw. Null on accounts that
+    /// have never visited the profile screen; the auth endpoint substitutes a
+    /// neutral "Trainer" default in that case.
+    /// </summary>
+    [JsonProperty("MiiCoreData")]
+    public byte[] MiiCoreData { get; set; }
 
     /// <summary>Adds any missing <see cref="SeedFlags"/>; true if it changed.</summary>
     public bool ApplySeedFlags()

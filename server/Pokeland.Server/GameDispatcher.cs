@@ -296,6 +296,7 @@ public static class Json
         MissingMemberHandling = MissingMemberHandling.Ignore,
         DateParseHandling = DateParseHandling.None,
         Converters = { new ByteArrayAsNumberArrayConverter() },
+        ContractResolver = new AutoResContractResolver(),
     };
 
     public static readonly JsonSerializer Serializer = JsonSerializer.Create(Settings);

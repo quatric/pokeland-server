@@ -243,6 +243,10 @@ app.MapPost("/{version}/game/{endpoint}", async (string version, string endpoint
 // before the game will call Login at all.
 app.MapBaas(log);
 
+// ----------------------------------------------------------------- Pokewii
+// Stand-in for auth.pokewii.net serving player profile and Mii avatar data.
+app.MapPokewiiAuth(playerManager, log);
+
 // --------------------------------------------------------------------- CDN
 // Stands in for dl.app.pokeland.jp. The client builds asset URLs as
 // <cdn>/pokeland/<AssetVer>/<Platform>/<bundle>, so serving the mirror tree at
