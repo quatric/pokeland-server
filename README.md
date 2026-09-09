@@ -286,18 +286,30 @@ is the AppManifest gate, which is per-store:
 
 Both are configured, and AppVer `1.6.1` is mapped onto the archived 1.6.0 asset set.
 
-**The blocker: the IPA is still FairPlay-encrypted** (`LC_ENCRYPTION_INFO_64`,
-`cryptid = 1`, 39.8 MB of `__TEXT` encrypted). That has two consequences:
+The available Clutch dump is decrypted (`LC_ENCRYPTION_INFO_64`, `cryptid = 0`),
+so the native client can now be patched and re-signed. Build it with a LAN-reachable
+server URL:
 
-1. Il2CppDumper cannot dump it — `CodeRegistration` lives in the encrypted range,
-   so the search finds plausible-looking addresses and then walks off the end of
-   the array. Only the metadata is readable.
-2. More importantly, it **cannot be sideloaded**. Re-signing requires a decrypted
-   binary, and FairPlay keys are per-Apple-ID for an app that is now delisted.
+```bash
+POKELAND_IPA=/path/to/decrypted-1.6.1.ipa \
+  tools/build_ipa.sh http://192.168.1.50:5199 \
+  build/pokeland-1.6.1-ios-patched-unsigned.ipa
+```
 
-A decrypted dump is needed — the usual route is `frida-ios-dump` or `flexdecrypt`
-on a jailbroken device that has the app installed, or finding an already-decrypted
-copy. Everything else on the iOS path is ready and waiting for that.
+The validated decrypted input SHA-256 is
+`3fe56397695856f97b53f5b0cb49628b0cffb74d3de941ba4ed487cd677e4a24`.
+
+The builder redirects the game API, CDN, pokemon-webapi, and embedded Nintendo
+BaaS configuration; enables BaaS HTTP; disables both retired shutdown gates; and
+hides the open-ended journey countdown. The output deliberately has its obsolete
+App Store signatures removed. Sign it with the target device's development
+profile (AltStore, SideStore, Sideloadly, or equivalent) before installation.
+
+This IPA cannot run in Apple's Simulator. Its executable and bundled framework
+contain only an ARM64 `iphoneos` slice; Simulator requires an `iphonesimulator`
+build even on an Apple Silicon Mac. A physical iPhone or iPad is therefore needed
+for final launch, network, and rendering verification, though not for building
+the patched IPA.
 
 ## Game data
 
