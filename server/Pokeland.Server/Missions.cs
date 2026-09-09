@@ -16,7 +16,11 @@ namespace Pokeland.Server;
 /// the wallet is the one thing the client is not allowed to decide.
 ///
 /// Rows 1/6/7/8/12/14/17 are the whole of MissionGroup.TUTORIAL (1) and 71..75
-/// are MissionGroup.DAILY (2); all twelve pay MissionBonus.DIAMOND.
+/// are MissionGroup.DAILY (2). Group 4 (same adventure board, tabID 14) holds
+/// the single-step rows 2/3/4/9 and the progressive chains 20..23 and 53..56.
+/// m_reward is the diamond count directly (71..75 pay 6/6/3/6/6, exactly their
+/// m_reward values), so every group-4 row pays 3 diamonds; Num values are
+/// straight out of docs/tables/MissionDesc.json.
 /// </summary>
 public static class Missions
 {
@@ -25,12 +29,24 @@ public static class Missions
     private static readonly Dictionary<int, Desc> Table = new()
     {
         [1] = new(1, 3),
+        [2] = new(1, 3),
+        [3] = new(1, 3),
+        [4] = new(1, 3),
         [6] = new(1, 3),
         [7] = new(1, 3),
         [8] = new(1, 3),
+        [9] = new(1, 3),
         [12] = new(1, 3),
         [14] = new(1, 3),
         [17] = new(1, 3),
+        [20] = new(5, 3),
+        [21] = new(10, 3),
+        [22] = new(50, 3),
+        [23] = new(100, 3),
+        [53] = new(10, 3),
+        [54] = new(100, 3),
+        [55] = new(1000, 3),
+        [56] = new(10000, 3),
         [71] = new(3, 6),
         [72] = new(1, 6),
         [73] = new(1, 3),
