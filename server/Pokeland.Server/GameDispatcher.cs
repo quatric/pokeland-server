@@ -92,13 +92,23 @@ public sealed class GameDispatcher
         var session = ctx.Sessions.Get(sessionId);
         if (session is null && endpoint != "Login")
         {
-            _log.LogWarning("{Endpoint}: no session for {SessionId}", endpoint, sessionId);
-            // 401 is how the client is told to reinterpret the body as
-            // Uskumru.Proto.Unauthorized.Res and bounce back to the title screen.
-            return new Result(Json.Serialize(new Pokeland.Protocol.Unauthorized.Res
+            if (string.IsNullOrEmpty(baasUserId))
             {
-                Reason = UnauthorizedReason.InvalidSession,
-            }), StatusCodes.Status401Unauthorized);
+                _log.LogWarning("{Endpoint}: no session for {SessionId}, no device id", endpoint, sessionId);
+                // 401 is how the client is told to reinterpret the body as
+                // Uskumru.Proto.Unauthorized.Res and bounce back to the title screen.
+                return new Result(Json.Serialize(new Pokeland.Protocol.Unauthorized.Res
+                {
+                    Reason = UnauthorizedReason.InvalidSession,
+                }), StatusCodes.Status401Unauthorized);
+            }
+            // Known device, unknown session: the server restarted mid-run and
+            // wiped the in-memory session. Re-attach a transient one so the
+            // in-flight request completes (degraded run state) instead of the
+            // client retrying into 401s until the player force-stops.
+            session = ctx.Sessions.Reattach(sessionId, baasUserId);
+            _log.LogWarning("{Endpoint}: unknown session {SessionId}, re-attached transient session for device",
+                endpoint, sessionId);
         }
 
         // Every request after this point runs against a per-user PlayerStore
