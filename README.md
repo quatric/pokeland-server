@@ -145,6 +145,18 @@ adb install -r build/pokeland-1.6.0-android-public.apk
 tools/bringup.sh
 ```
 
+For isolating native-patch regressions, a minimal builder changes only
+`assets/npf.json` (apart from the required replacement APK signature):
+
+```bash
+POKELAND_APK=/path/to/unmodified-1.6.0.apk \
+  tools/build_apk_npf_only.sh https://prd.pokewii.net \
+  build/pokeland-1.6.0-android-npf-only.apk
+```
+
+This diagnostic build deliberately retains the retail metadata URLs, shutdown
+gates, timer behavior, renderer, manifest, and native libraries.
+
 For local emulator development, `tools/bringup.sh` still uses the emulator's
 host route. Release builds should use the public HTTPS origin shown above.
 `POKELAND_APK` and `POKELAND_GLES2_APK` override the two input paths.
