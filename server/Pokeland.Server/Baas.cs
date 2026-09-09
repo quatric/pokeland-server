@@ -132,6 +132,51 @@ public static class Baas
         app.MapPost("/bigdata/v1/analytics/events", () => Results.Ok());
         app.MapGet("/bigdata/v1/analytics/events/config",
             () => Results.Content("{}", "application/json"));
+
+        // The NPF SDK's general profanity service is separate from the
+        // pokemon-webapi nickname endpoint. It expects the submitted array
+        // back with a validity result attached to every word.
+        app.MapPost("/audit/v1/profanity_inspect", async (HttpContext http) =>
+        {
+            using var reader = new StreamReader(http.Request.Body);
+            JArray words;
+            try { words = JArray.Parse(await reader.ReadToEndAsync()); }
+            catch { return Results.BadRequest(); }
+
+            foreach (var word in words.OfType<JObject>())
+                word["valid"] = true;
+
+            return Results.Content(words.ToString(Newtonsoft.Json.Formatting.None),
+                "application/json");
+        });
+
+        // No restored customer-support inbox exists, so there cannot be an
+        // unread support reply. The field is optional in InquiryStatusMapper,
+        // but returning it explicitly avoids stale client-side state.
+        app.MapGet("/inquiry/v1/users/{userId}", () => Results.Json(new
+        {
+            hasUnreadCsComment = false,
+        }));
+
+        // Push registration is nonessential for an offline revival. Accept a
+        // device token so registration cannot block startup; a later read gets
+        // a valid empty token instead of a 404 or an unparseable object.
+        app.MapPut("/notification/v1/push_channels/{userId}/{deviceId}",
+            () => Results.Content("{}", "application/json"));
+        app.MapGet("/notification/v1/push_channels/{userId}/{deviceId}",
+            () => Results.Json(new { deviceToken = "" }));
+
+        // Empty read models are valid according to the SDK's JSONArray
+        // mappers. They disable commerce without letting a missing retired
+        // service strand the game in a loading coroutine.
+        app.MapGet("/vcm/v1/users/{userId}/markets/{market}/wallets",
+            () => Results.Json(Array.Empty<object>()));
+        app.MapGet("/vcm/v1/users/{userId}/markets/{market}/transactions",
+            () => Results.Json(Array.Empty<object>()));
+        app.MapGet("/vcm/v1/users/{userId}/markets/{market}/transaction_histories_cached",
+            () => Results.Json(Array.Empty<object>()));
+        app.MapGet("/vcm/v1/users/{userId}/ability",
+            () => Results.Json(new { purchasable = false }));
     }
 
     /// <summary>Deterministic 32-hex id derived from the device account id.</summary>
