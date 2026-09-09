@@ -138,15 +138,16 @@ python3 -m venv .venv
 # Put an unmodified 1.6.0 APK and the compatible GLES2 donor at these paths:
 #   apk/pokemonscrambleSP-1.6.0.apk
 #   apk/pokeland-gles2-donor.apk
-tools/build_apk.sh http://10.0.2.2:5199 build/pokeland-1.6.0-gles2.apk
-adb install -r build/pokeland-1.6.0-gles2.apk
+tools/build_apk.sh https://prd.pokewii.net build/pokeland-1.6.0-android-public.apk
+adb install -r build/pokeland-1.6.0-android-public.apk
 
 # Emulator, server, and game in one command (normal current date):
 tools/bringup.sh
 ```
 
-For a physical device on the LAN, replace `10.0.2.2` with the host's LAN
-address. `POKELAND_APK` and `POKELAND_GLES2_APK` override the two input paths.
+For local emulator development, `tools/bringup.sh` still uses the emulator's
+host route. Release builds should use the public HTTPS origin shown above.
+`POKELAND_APK` and `POKELAND_GLES2_APK` override the two input paths.
 The validated input SHA-256 values are:
 
 | input | SHA-256 |
@@ -294,6 +295,22 @@ is public HTTPS and proxies to the dedicated Pokeland container:
 POKELAND_IPA=/path/to/decrypted-1.6.1.ipa \
   tools/build_ipa.sh https://prd.pokewii.net \
   build/pokeland-1.6.1-ios-patched-unsigned.ipa
+```
+
+The matching xdelta can be applied only to that exact decrypted IPA:
+
+```bash
+xdelta3 -D -d -s decrypted-1.6.1.ipa \
+  pokeland-1.6.1-ios-public.xdelta \
+  pokeland-1.6.1-ios-public-unsigned.ipa
+```
+
+Create the delta with:
+
+```bash
+xdelta3 -D -e -9 -S lzma -s decrypted-1.6.1.ipa \
+  pokeland-1.6.1-ios-public-unsigned.ipa \
+  pokeland-1.6.1-ios-public.xdelta
 ```
 
 The validated decrypted input SHA-256 is
