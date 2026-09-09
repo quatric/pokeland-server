@@ -1,4 +1,5 @@
 #nullable disable
+using System.Collections.Generic;
 using Pokeland.Protocol;
 
 namespace Pokeland.Server.Handlers;
@@ -22,6 +23,22 @@ public sealed class ChestStartUnlockHandler : IEndpointHandler
         ctx.Log.LogInformation(
             "ChestStartUnlock: chest={ChestId} before=[{Before}] after=[{After}] ok={Ok}",
             req.ChestId, before, ctx.Players.DescribeChest(req.ChestId), ok);
-        return new Pokeland.Protocol.ChestStartUnlock.Res { Success = ok ? Bool.True : Bool.False };
+        // Echo the chest back as Unlocking with its UnlockUTCStr: the
+        // refinery UI starts its countdown off this diff, and without it the
+        // tap looked completely dead.
+        var wire = ctx.Players.BuildChestWire(req.ChestId);
+        return new Pokeland.Protocol.ChestStartUnlock.Res
+        {
+            Success = ok ? Bool.True : Bool.False,
+            A = wire is null ? null : new[] { new AutoRes
+            {
+                ValidFields = AutoResValidField.ChestsDiff,
+                ChestsDiff = new ChestsDiff
+                {
+                    UpdatedChests = new List<Chest> { wire },
+                    RemovedChestIds = new List<long>(),
+                },
+            } },
+        };
     }
 }
