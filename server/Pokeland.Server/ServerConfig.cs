@@ -74,11 +74,11 @@ public sealed class ServerConfig
     public Pokeland.Protocol.EvedefID CurrentEvedefID { get; set; }
         = Pokeland.Protocol.EvedefID._1;
 
-    /// <summary>OIDC settings for the Nintendo Account link/restore flow -
-    /// see <see cref="Pokeland.Server.AuthentikClient"/> and
-    /// <see cref="Pokeland.Server.NaPortal"/>. ClientSecret is deliberately
-    /// not a config field here; it comes from the
-    /// POKELAND_AUTHENTIK_CLIENT_SECRET environment variable so it never
+    /// <summary>OIDC settings for the shared login page at
+    /// auth.pokewii.net/login - see <see cref="Pokeland.Server.AuthentikClient"/>,
+    /// <see cref="Pokeland.Server.AuthLogin"/> and <see cref="Pokeland.Server.NaPortal"/>.
+    /// ClientSecret is deliberately not a config field here; it comes from
+    /// the POKELAND_AUTHENTIK_CLIENT_SECRET environment variable so it never
     /// ends up committed alongside the (non-secret) client id.</summary>
     public AuthentikConfig Authentik { get; set; } = new();
 }
@@ -87,5 +87,5 @@ public sealed class AuthentikConfig
 {
     public string Issuer { get; set; } = "https://auth.pokewii.net";
     public string ClientId { get; set; } = "";
-    public string RedirectUri { get; set; } = "https://baas.pokewii.net/na-portal/oidc-callback";
+    public string RedirectUri { get; set; } = "https://auth.pokewii.net/login/callback";
 }

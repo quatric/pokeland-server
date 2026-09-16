@@ -258,8 +258,13 @@ app.MapPost("/{version}/game/{endpoint}", async (string version, string endpoint
 app.MapBaas(accountLinks, log);
 
 // ----------------------------------------------------------------- NaPortal
-// Nintendo Account link/restore flow, backed by Authentik.
-app.MapNaPortal(authentik, log);
+// Nintendo Account link/restore flow. Bounces to the shared login page below
+// when there's no session yet - see NaPortal.cs's class doc.
+app.MapNaPortal(log);
+
+// -------------------------------------------------------------- Auth login
+// The shared login page at auth.pokewii.net/login, backed by Authentik.
+app.MapAuthLogin(authentik, log);
 
 // ----------------------------------------------------------------- Pokewii
 // Stand-in for auth.pokewii.net serving player profile and Mii avatar data.
