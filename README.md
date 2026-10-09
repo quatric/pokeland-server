@@ -1,5 +1,7 @@
 # Pokéland revival server
 
+by quatric & BlizZar
+
 Server reimplementation for **Pokémon Scramble SP / Pokéland**
 (`jp.pokemon.pokemonscrambleSP`, JP, service ended 2020), reconstructed from the
 1.6.0 Android build and the Wayback Machine's copy of the retail CDN.
