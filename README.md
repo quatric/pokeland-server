@@ -338,6 +338,9 @@ xdelta3 -D -e -9 -S lzma -s decrypted-1.6.1.ipa \
 The validated decrypted input SHA-256 is
 `3fe56397695856f97b53f5b0cb49628b0cffb74d3de941ba4ed487cd677e4a24`.
 
+`tools/patch_ipa.py` is the standalone patcher behind that script (`--server` takes the
+origin; the game API goes to `<server>/api`, the CDN to `<server>/cdn`, pokemon-webapi to
+`<server>` and Nintendo BaaS/account to `<server>/baas`, like the Android patcher).
 The builder redirects the game API, CDN, pokemon-webapi, and both copies of the
 embedded Nintendo BaaS configuration (the Unity `npf` TextAsset and native
 `Info.plist` `NPFSettings`); selects HTTP or HTTPS to match the supplied URL;
