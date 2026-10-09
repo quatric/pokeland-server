@@ -2,7 +2,7 @@
 """Patch the decrypted Pokémon Rumble Rush / Scramble SP 1.6.1 iOS IPA, standalone.
 
     python3 tools/patch_ipa.py decrypted-1.6.1.ipa -o pokeland-1.6.1-ios-patched-unsigned.ipa \
-        --server https://prd.pokewii.net
+        --server https://pokeland.dokihan.dev
 
 One file, no checkout needed. It needs Python 3.9+ and UnityPy (`pip install UnityPy`). Every edit
 is checked against the retail bytes it expects, so another build of the game is refused rather than
@@ -158,7 +158,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("ipa", help="the decrypted (cryptid=0) iOS 1.6.1 IPA")
     ap.add_argument("-o", "--out", default="pokeland-1.6.1-ios-patched-unsigned.ipa")
-    ap.add_argument("--server", default="https://prd.pokewii.net",
+    ap.add_argument("--server", default="https://pokeland.dokihan.dev",
                     help="server base URL; /api, /cdn and /baas are under it (default %(default)s)")
     args = ap.parse_args()
 
