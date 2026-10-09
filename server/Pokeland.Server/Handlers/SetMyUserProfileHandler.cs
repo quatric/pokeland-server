@@ -17,6 +17,9 @@ public sealed class SetMyUserProfileHandler : IEndpointHandler
     {
         var req = (Pokeland.Protocol.SetMyUserProfile.Req)request;
         ctx.Players.ApplyProfile(req.MyUserProfile);
-        return new Pokeland.Protocol.SetMyUserProfile.Res();
+        return new Pokeland.Protocol.SetMyUserProfile.Res
+        {
+            A = new[] { new AutoRes { UpdatedMyUserProfile = UserProfiles.Current(ctx.Players.Current) } },
+        };
     }
 }

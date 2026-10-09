@@ -17,29 +17,45 @@ namespace Pokeland.Server;
 /// </summary>
 public static class PPEFactory
 {
-    private static int[] BaseSlots(int monsNo, int level, int grade, int waza0, int waza1) => new[]
+    public static (int Waza0, int Waza1) GetDefaultMoves(int monsNo) => monsNo switch
     {
-        /* 0  Rnd                 */ 0,
-        /* 1  PokedexID           */ monsNo,
-        /* 2  IsRareColor         */ 0,
-        /* 3  ParaSex             */ 0,
-        /* 4  Level               */ level,
-        /* 5  ApOffset            */ 0,
-        /* 6  PdecoID             */ 0,
-        /* 7  PiiGrade            */ grade,
-        /* 8  SocketCount         */ 0,
-        /* 9  SpSocketCount       */ 0,
-        /* 10 Waza0               */ waza0,
-        /* 11 Waza1               */ waza1,
+        19 => (27, 162), // Rattata: Quick Attack (star 2), Super Fang (star 2)
+        20 => (27, 162), // Raticate: Quick Attack (star 2), Super Fang (star 2)
+        2 => (22, 75),   // Ivysaur: Vine Whip (star 3), Razor Leaf (star 5)
+        8 => (55, 33),   // Wartortle: Water Gun (star 1), Tackle (star 3)
+        5 => (52, 33),   // Charmeleon: Ember (star 4), Tackle (star 3)
+        26 => (84, 85),  // Raichu: Thunder Shock (star 2), Thunderbolt (star 2)
+        16 => (33, 16),  // Pidgey: Tackle (star 3), Gust (star 3)
+        _ => (33, 27),   // Fallback: Tackle (star 3), Quick Attack (star 2)
     };
+
+    private static int[] BaseSlots(int monsNo, int level, int grade, int waza0, int waza1, int socketCount = 1)
+    {
+        var (defWaza0, defWaza1) = GetDefaultMoves(monsNo);
+        return new[]
+        {
+            /* 0  Rnd                 */ 0,
+            /* 1  PokedexID           */ monsNo,
+            /* 2  IsRareColor         */ 0,
+            /* 3  ParaSex             */ 0,
+            /* 4  Level               */ level,
+            /* 5  ApOffset            */ 0,
+            /* 6  PdecoID             */ 0,
+            /* 7  PiiGrade            */ grade,
+            /* 8  SocketCount         */ System.Math.Max(1, socketCount),
+            /* 9  SpSocketCount       */ 0,
+            /* 10 Waza0               */ waza0 != 0 ? waza0 : defWaza0,
+            /* 11 Waza1               */ waza1 != 0 ? waza1 : defWaza1,
+        };
+    }
 
     /// <summary>Builds an owned PPE (21 ints: base 12 + PPEId/PartyMember/
     /// EvedefID/IsFavorite/AddLevelCount/AddNormalSocketCount/GotUTC).</summary>
     public static PPE BuildPPE(long ppeId, int monsNo, int level, int grade, int waza0, int waza1, string nickname,
-        int pdecoId = 0, int addLevel = 0, int addNormalSocket = 0, bool isPartyMember = false, bool isFavorite = false)
+        int pdecoId = 0, int addLevel = 0, int addNormalSocket = 0, bool isPartyMember = false, bool isFavorite = false, int socketCount = 1)
     {
         var x = new int[21];
-        BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
+        BaseSlots(monsNo, level, grade, waza0, waza1, socketCount).CopyTo(x, 0);
         x[6] = pdecoId;                            // PdecoID, from Player.PdecoMounts
         x[12] = (int)(ppeId & 0xFFFFFFFF);        // PPEId_Low
         x[13] = (int)(ppeId >> 32);                // PPEId_High
@@ -55,10 +71,10 @@ public static class PPEFactory
 
     /// <summary>Builds a stage-offered PPEDrop (26 ints: base 12 + 12 zeroed
     /// equipment slots + PPEDropId low/high).</summary>
-    public static PPEDrop BuildDrop(long dropId, int monsNo, int level, int grade, int waza0, int waza1)
+    public static PPEDrop BuildDrop(long dropId, int monsNo, int level, int grade, int waza0, int waza1, int socketCount = 1)
     {
         var x = new int[26];
-        BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
+        BaseSlots(monsNo, level, grade, waza0, waza1, socketCount).CopyTo(x, 0);
         // x[12..23] left zero: PPEDrop's own inline stat-roll preview
         // (BaseEqunit x3 sockets, see BuildEqunit) - no drop this server
         // makes pre-rolls one.
@@ -70,10 +86,10 @@ public static class PPEFactory
     /// <summary>Builds a BasePPEAndEqunits entry (24 ints: base 12 + 12
     /// zeroed equipment slots) for a roster display that isn't a real owned
     /// PPE or a stage drop - e.g. a Totem Battle opponent's shown team.</summary>
-    public static BasePPEAndEqunits BuildBPAE(int monsNo, int level, int grade, int waza0, int waza1)
+    public static BasePPEAndEqunits BuildBPAE(int monsNo, int level, int grade, int waza0, int waza1, int socketCount = 1)
     {
         var x = new int[24];
-        BaseSlots(monsNo, level, grade, waza0, waza1).CopyTo(x, 0);
+        BaseSlots(monsNo, level, grade, waza0, waza1, socketCount).CopyTo(x, 0);
         return new BasePPEAndEqunits { X = x };
     }
 

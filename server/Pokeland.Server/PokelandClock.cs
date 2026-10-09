@@ -10,4 +10,5 @@ public static class PokelandClock
 {
     public static DateTime UtcNow => DateTime.UtcNow;
     public static DateTimeOffset UtcNowOffset => DateTimeOffset.UtcNow;
+    public static string UtcTodayString => UtcNow.ToString("yyyy-MM-dd");
 }

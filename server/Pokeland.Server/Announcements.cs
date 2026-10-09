@@ -20,13 +20,23 @@ public static class Announcements
         AnnouncementId = WelcomeAnnouncementId,
         SupersedingAnnouncementId = 0,
         Type = AnnouncementType.Info,
-        Title = new List<string> { "Welcome to Pokeland" },
+        Title = new List<string>
+        {
+            "fr", "Bienvenue sur Pokéland !",
+            "en", "Welcome to Pokeland!",
+            "ja", "ポケランドへようこそ！",
+        },
         Message0 = new List<string>
         {
-            "This is a fan-run revival server for Pokemon Scramble SP, " +
-            "reconstructed after the original service shut down. Some " +
-            "systems (equipment, park decorations, live events) are still " +
-            "being worked on - thanks for playing!",
+            "fr", "Bienvenue sur le serveur de renaissance pour Pokémon Rumble Rush (Pokémon Scramble SP) !\n\n" +
+                  "Certains systèmes (tournois, événements spéciaux) sont encore en cours de développement. " +
+                  "Merci de jouer et bonne aventure !",
+            "en", "This is a fan-run revival server for Pokemon Scramble SP, " +
+                  "reconstructed after the original service shut down.\n\n" +
+                  "Some systems (tournaments, live events) are still being worked on. " +
+                  "Thanks for playing and enjoy your adventure!",
+            "ja", "『ポケモンスクランブルSP』のファンサーバーへようこそ！\n\n" +
+                  "現在も開発進行中です。冒険をお楽しみください！",
         },
         Message1 = new List<string>(),
         Image = new List<string>(),

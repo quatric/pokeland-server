@@ -85,6 +85,11 @@ public sealed class StartStageHandler : IEndpointHandler
         int dropLevel = 5 * tier;
         int dropGrade = 10 * tier;
         session.CurrentIslandID = islandID;
+        session.CurrentStageCode = req.StageCode;
+
+        short minionMonsNo = (short)(bossMonsNo == 19 ? 16 : 19);
+        var bossMoves = PPEFactory.GetDefaultMoves(bossMonsNo);
+        var minionMoves = PPEFactory.GetDefaultMoves(minionMonsNo);
 
         // The set02 ZakuZaku purchase's temporary Drop-subscription buff
         // (see PlayerStore.ActivatePurchase/DropBonusExpiresUtc) triples the
@@ -93,7 +98,7 @@ public sealed class StartStageHandler : IEndpointHandler
         int dropCount = ctx.Players.Current.DropBonusExpiresUtc is DateTime bonusUntil
             && PokelandClock.UtcNow < bonusUntil ? 3 : 1;
         session.OfferedDrops = Enumerable.Range(0, dropCount)
-            .Select(_ => (DropId: DateTime.UtcNow.Ticks + Random.Shared.Next(1000), MonsNo: (int)bossMonsNo, Level: dropLevel, Grade: dropGrade))
+            .Select(_ => (DropId: DateTime.UtcNow.Ticks + Random.Shared.Next(1000), MonsNo: (int)bossMonsNo, Level: dropLevel, Grade: dropGrade, Waza0: bossMoves.Waza0, Waza1: bossMoves.Waza1))
             .ToList();
 
         return new Pokeland.Protocol.StartStage.Res
@@ -111,68 +116,76 @@ public sealed class StartStageHandler : IEndpointHandler
                 // as NORMAL because the arena at the end of a route is a boss
                 // locator and goes through iBossProc.
                 EnemyDescs = EnemyTypes
-                    .SelectMany(type => AdventTypes.Select(advent => new EnemyDesc
+                    .SelectMany(type => AdventTypes.Select(advent =>
                     {
-                        EnemyType = type,
-                        // Rattata - a plain early-route Pokemon, no form variants.
-                        // One spawn per slot, at reduced attack and health:
-                        // every advent type is populated, so a retail-sized
-                        // PopNum stacks a dozen groups onto one short route
-                        // and the tutorial Pokemon is overrun before it
-                        // reaches the arena.
-                        // Four identical slots rather than one: iBossProc
-                        // walks these arrays past index 0, so a single-slot
-                        // roster runs off the end of MonsNoAccessor.
-                        MonsNoRaw = new[] { bossMonsNo, bossMonsNo, bossMonsNo, bossMonsNo },
-                        FormNoRaw = new short[] { 0, 0, 0, 0 },
-                        PopNumRaw = new byte[] { 1, 1, 1, 1 },
-                        // Enemy HP is scaled right down. This is not
-                        // cosmetic tuning: at the retail-ish 0.5 the starter
-                        // could not kill a single Rattata, so every locator's
-                        // spawn group stayed alive, the route stayed blocked
-                        // (the Pokemon only walks toward *nearby* opponents,
-                        // so a live crowd pins it in place) and the run always
-                        // timed out. With this the roster actually thins and
-                        // the route can be walked to the arena. Real HP curves
-                        // live in the unextracted stage data - a separate job.
-                        // hpScale/apScale climb with the island tier (1..6) so
-                        // the six journey stages are not identical encounters.
-                        HpScaleRaw = new[] { hpScale, hpScale, hpScale, hpScale },
-                        ApScaleRaw = new[] { apScale, apScale, apScale, apScale },
-                        DpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
-                        WazaIDRaw = new short[] { 0, 0, 0, 0 },
-                        WazaID2 = 0,
-                        Prize = false,
-                        Ratio = 1f,
-                        AdventType = advent,
+                        short[] monsRaw;
+                        byte[] popRaw;
+                        short[] wazaRaw;
+                        short waza2;
+
+                        if (type == EnemyType.BOSS)
+                        {
+                            // Slot 0: Minion escort (4 spawns)
+                            // Slot 1: Boss (STRICTLY 1 spawn so no duplicate boss model)
+                            // Slot 2: Minion escort
+                            // Slot 3: Minion escort
+                            monsRaw = new[] { minionMonsNo, bossMonsNo, minionMonsNo, minionMonsNo };
+                            popRaw = new byte[] { 4, 1, 4, 4 };
+                            wazaRaw = new short[] { (short)minionMoves.Waza0, (short)bossMoves.Waza0, (short)minionMoves.Waza0, (short)minionMoves.Waza0 };
+                            waza2 = (short)bossMoves.Waza1;
+                        }
+                        else
+                        {
+                            monsRaw = new[] { minionMonsNo, minionMonsNo, minionMonsNo, minionMonsNo };
+                            popRaw = new byte[] { 1, 1, 1, 1 };
+                            wazaRaw = new short[] { (short)minionMoves.Waza0, (short)minionMoves.Waza0, (short)minionMoves.Waza0, (short)minionMoves.Waza0 };
+                            waza2 = 0;
+                        }
+
+                        return new EnemyDesc
+                        {
+                            EnemyType = type,
+                            MonsNoRaw = monsRaw,
+                            FormNoRaw = new short[] { 0, 0, 0, 0 },
+                            PopNumRaw = popRaw,
+                            HpScaleRaw = new[] { hpScale, hpScale, hpScale, hpScale },
+                            ApScaleRaw = new[] { apScale, apScale, apScale, apScale },
+                            DpScaleRaw = new float[] { 1f, 1f, 1f, 1f },
+                            WazaIDRaw = wazaRaw,
+                            WazaID2 = (WazaID)waza2,
+                            Prize = false,
+                            Ratio = 1f,
+                            AdventType = advent,
+                        };
                     }))
                     .ToList(),
                 // Boss behaviour profiles, paired to EnemyDescs by index, so
                 // this list has to be the same length as that one.
-                EnemyBossDescs = Enumerable
-                    .Range(0, EnemyTypes.Length * AdventTypes.Length)
-                    .Select(_ => new EnemyBossDesc
+                // ActionPattern 3210 activates:
+                // Normal (0) -> Guard shield (1) -> Minions (2) -> Charge (3).
+                EnemyBossDescs = EnemyTypes
+                    .SelectMany(type => AdventTypes.Select(advent => new EnemyBossDesc
                     {
                         TapAttackDamageRatio = 1f,
-                        OffenseBreakTapAttackNum = 1,
+                        OffenseBreakTapAttackNum = (byte)(type == EnemyType.BOSS ? 6 : 1),
                         WazaPattern = 0,
                         OffenseWaza1BeforeTime = 1f,
                         OffenseWaza2BeforeTime = 1f,
-                        DefenseTime = 0f,
-                        DefenseBreakHpRatio = 1f,
+                        DefenseTime = type == EnemyType.BOSS ? 6.0f : 0f,
+                        DefenseBreakHpRatio = type == EnemyType.BOSS ? 0.15f : 1f,
                         DefenseBreakRecoverSpeedCoef = 1f,
                         DefenseAttackDamageScale = 1f,
-                        SummonGuardNum = 0,
+                        SummonGuardNum = (byte)(type == EnemyType.BOSS ? 3 : 0),
                         AfterSummonTime = 1f,
-                        TossinDamageScale = 1f,
-                        TossinAimPlayerAfterCamera = false,
+                        TossinDamageScale = type == EnemyType.BOSS ? 1.5f : 1f,
+                        TossinAimPlayerAfterCamera = type == EnemyType.BOSS,
                         HukitobasiDamageScale = 1f,
                         LeaveTime = 10f,
                         ForwardSpeedCoef = 1f,
-                        ActionPattern = 0,
+                        ActionPattern = type == EnemyType.BOSS ? 3210UL : 0UL,
                         EscortFormationType = 0,
                         EscortFormationAngle = 0f,
-                    })
+                    }))
                     .ToList(),
                 MaxDropMoney = 100,
                 MaxDropPierreCount = 0,
@@ -187,7 +200,7 @@ public sealed class StartStageHandler : IEndpointHandler
                 IsFeverStage = Bool.False,
             },
             PPEDrops = session.OfferedDrops
-                .Select(d => PPEFactory.BuildDrop(d.DropId, d.MonsNo, d.Level, d.Grade, 0, 0))
+                .Select(d => PPEFactory.BuildDrop(d.DropId, d.MonsNo, d.Level, d.Grade, d.Waza0, d.Waza1))
                 .ToList(),
             EqunitDrops = new List<EqunitDrop>(),
             MLABaaSUserId = "",

@@ -12,5 +12,8 @@ public sealed class SetLoginBonusStateHandler : IEndpointHandler
     public string Endpoint => "SetLoginBonusState";
 
     public object Handle(object request, GameSession session, DispatchContext ctx)
-        => new Pokeland.Protocol.SetLoginBonusState.Res();
+    {
+        ctx.Players.DismissLoginBonus();
+        return new Pokeland.Protocol.SetLoginBonusState.Res();
+    }
 }

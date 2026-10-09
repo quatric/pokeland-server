@@ -187,6 +187,20 @@ public sealed class GameDispatcher
                 _log.LogInformation("{Endpoint}: equnit favorites updated", endpoint);
         }
 
+        if (session is not null)
+        {
+            int elapsed = session.Touch();
+            if (elapsed > 0 && elapsed <= 300)
+            {
+                int nonActiveSec = 0;
+                var cnas = raw["CommitNonActiveSec"];
+                if (cnas is not null)
+                    nonActiveSec = cnas["NonActiveSec"]?.ToObject<int>() ?? 0;
+                int activeSec = Math.Max(0, elapsed - nonActiveSec);
+                if (activeSec > 0) ctx.Players.AddPlayTime(activeSec);
+            }
+        }
+
         object res;
         if (_handlers.TryGetValue(endpoint, out var handler))
         {
@@ -198,6 +212,12 @@ public sealed class GameDispatcher
             // client keeps running instead of dropping into its error flow.
             _log.LogWarning("{Endpoint}: no handler, returning empty envelope", endpoint);
             res = Activator.CreateInstance(pair.Res);
+        }
+
+        var cnasProp = res.GetType().GetProperty("CommitNonActiveSec");
+        if (cnasProp != null && (raw["CommitNonActiveSec"] != null || endpoint == "CommitHome"))
+        {
+            cnasProp.SetValue(res, new Pokeland.Protocol.CommitNonActiveSec.AutoRes { TotalSec = ctx.Players.Current.TotalSec });
         }
 
         // Null-fill every response, not just the unimplemented ones. A real

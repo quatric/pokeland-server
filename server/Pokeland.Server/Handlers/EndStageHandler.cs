@@ -45,6 +45,11 @@ public sealed class EndStageHandler : IEndpointHandler
         {
             var key = World.StageKey(stage.StageCode);
             clearCount = ctx.Players.RecordClear(key, req.GotMoney);
+            if (session.CurrentStageCode != null && session.CurrentStageCode.Length >= 3)
+            {
+                var islandKey = string.Join(",", session.CurrentStageCode.Take(3).Select(c => (long)c));
+                ctx.Players.TouchLastVisited(islandKey);
+            }
         }
 
         // Convert only the drops the client says it actually collected into
@@ -66,7 +71,7 @@ public sealed class EndStageHandler : IEndpointHandler
                 var got = gotDrops[i];
                 var granted = ctx.Players.GrantPPE(
                     drop.MonsNo, drop.Level,
-                    grade: drop.Grade, waza0: 0, waza1: 0, nickname: got.Nickname);
+                    grade: drop.Grade, waza0: drop.Waza0, waza1: drop.Waza1, nickname: got.Nickname);
                 ppeUpdates.Add(new PPEUpdate
                 {
                     PPEDropId = drop.DropId,
@@ -83,7 +88,7 @@ public sealed class EndStageHandler : IEndpointHandler
         // those counts differ it indexes past its ModelType list and the result
         // coroutine dies with ArgumentOutOfRangeException on both platforms.
         Chest grantedChest = null;
-        if (cleared && req.GotChest == Bool.True)
+        if (cleared && req.GotChest == Bool.@True)
         {
             var chestId = ctx.Players.GrantChest(ChestTypeID.TutorialCopper1, stage.StageCode);
             grantedChest = new Chest
@@ -115,6 +120,13 @@ public sealed class EndStageHandler : IEndpointHandler
             stage.ClearCount = clearCount;
         }
 
+        AutoResValidField validFields = 0;
+        if (grantedChest is not null) validFields |= AutoResValidField.ChestsDiff;
+        if (ctx.Players.Current.LastVisited.Count > 0) validFields |= AutoResValidField.MyslandSummary;
+
+        var fav = ctx.Players.Current.Favorites.FirstOrDefault();
+        var last = ctx.Players.Current.LastVisited.FirstOrDefault();
+
         return new Pokeland.Protocol.EndStage.Res
         {
             PPEUpdates = ppeUpdates,
@@ -126,9 +138,18 @@ public sealed class EndStageHandler : IEndpointHandler
                     {
                         Money = new[] { ctx.Players.Current.Money },
                         UpdatedStages = new List<Stage> { stage },
-                        ValidFields = grantedChest is null
-                            ? 0
-                            : AutoResValidField.ChestsDiff,
+                        ValidFields = validFields,
+                        MyslandSummary = (validFields & AutoResValidField.MyslandSummary) != 0
+                            ? new MyslandSummary
+                            {
+                                Favorite = string.IsNullOrEmpty(fav)
+                                    ? System.Array.Empty<IslandCodeX>()
+                                    : fav.Split(',').Select(x => (IslandCodeX)long.Parse(x)).ToArray(),
+                                LastVisited = string.IsNullOrEmpty(last)
+                                    ? System.Array.Empty<IslandCodeX>()
+                                    : last.Split(',').Select(x => (IslandCodeX)long.Parse(x)).ToArray(),
+                            }
+                            : null,
                         ChestsDiff = grantedChest is null
                             ? null
                             : new ChestsDiff

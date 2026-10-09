@@ -39,14 +39,28 @@ public sealed class GameSession
     public int? CurrentIslandID { get; set; }
 
     /// <summary>
+    /// The stage code of the run currently in flight, so EndStage knows which island
+    /// was played and can update LastVisited / StageClears.
+    /// </summary>
+    public Pokeland.Protocol.StageCodeX[] CurrentStageCode { get; set; }
+
+    /// <summary>
     /// The PPEDrop(s) StartStage most recently offered for this run, paired
-    /// with the species/level each one described, so EndStage can convert
+    /// with the species/level/waza each one described, so EndStage can convert
     /// them into real owned PPEs on a clear without re-deriving what was
     /// offered. Normally just one entry; the set02 ZakuZaku purchase's
     /// temporary Drop-subscription buff (see PlayerStore.ActivatePurchase/
     /// DropBonusExpiresUtc) doubles this to three for its duration.
     /// </summary>
-    public List<(long DropId, int MonsNo, int Level, int Grade)> OfferedDrops { get; set; } = new();
+    public List<(long DropId, int MonsNo, int Level, int Grade, int Waza0, int Waza1)> OfferedDrops { get; set; } = new();
+
+    public int Touch()
+    {
+        var now = DateTime.UtcNow;
+        int elapsed = Math.Max(0, (int)(now - LastSeenUtc).TotalSeconds);
+        LastSeenUtc = now;
+        return elapsed;
+    }
 }
 
 public sealed class SessionStore
@@ -68,7 +82,6 @@ public sealed class SessionStore
     {
         if (string.IsNullOrEmpty(sessionId)) return null;
         if (!_sessions.TryGetValue(sessionId, out var s)) return null;
-        s.LastSeenUtc = DateTime.UtcNow;
         return s;
     }
 

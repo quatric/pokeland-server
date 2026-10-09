@@ -23,10 +23,21 @@ public sealed class GreetGuestUsersHandler : IEndpointHandler
             ctx.PlayerManager.AllOthers(session.BaaSUserId).Select(o => o.Id),
             System.StringComparer.Ordinal);
 
-        var greeted = (req.BaaSUserIds ?? new List<string>())
-            .Where(id => real.Contains(id))
-            .ToList();
+        var requested = req.BaaSUserIds ?? new List<string>();
+        var greeted = real.Count > 0 ? requested.Where(id => real.Contains(id)).ToList() : requested;
+        if (greeted.Count == 0 && requested.Count > 0) greeted = requested;
 
-        return new Pokeland.Protocol.GreetGuestUsers.Res { GreetedBaaSUserIds = greeted };
+        int count = greeted.Count;
+        if (count == 0 && req.Count > 0) count = req.Count;
+        if (count == 0 && req.GUPs?.Count > 0) count = req.GUPs.Count;
+        if (count == 0) count = 1;
+
+        ctx.Players.AddGuestVisits(count);
+
+        return new Pokeland.Protocol.GreetGuestUsers.Res
+        {
+            GreetedBaaSUserIds = greeted,
+            A = new[] { new AutoRes { GuestTotalVisitCount = new[] { ctx.Players.Current.GuestTotalVisitCount } } },
+        };
     }
 }

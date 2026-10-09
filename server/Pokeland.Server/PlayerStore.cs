@@ -55,6 +55,14 @@ public sealed class Player
     [JsonProperty("StageCollectionRewarded")]
     public HashSet<string> StageCollectionRewarded { get; set; } = new();
 
+    /// <summary>Favorited/locked island keys (e.g. "2,0,46").</summary>
+    [JsonProperty("Favorites")]
+    public HashSet<string> Favorites { get; set; } = new();
+
+    /// <summary>Recently visited/interacted island keys in MRU order (up to 20).</summary>
+    [JsonProperty("LastVisited")]
+    public List<string> LastVisited { get; set; } = new();
+
     /// <summary>
     /// PPEs earned past the fixed Login starter - one per cleared-stage
     /// PPEUpdate. Login appends these to the wire PPEs list so a caught
@@ -235,6 +243,8 @@ public sealed class Player
     public int LoginBonusStampDay { get; set; }
     [JsonProperty("LoginBonusLastClaimUtcDate")]
     public string LoginBonusLastClaimUtcDate { get; set; }
+    [JsonProperty("LoginBonusLastResultStampDay")]
+    public int LoginBonusLastResultStampDay { get; set; }
     [JsonProperty("LoginBonusLastCStop")]
     public int LoginBonusLastCStop { get; set; }
     [JsonProperty("LoginBonusLastDiffMoney")]
@@ -322,6 +332,42 @@ public sealed class Player
     /// </summary>
     [JsonProperty("MiiCoreData")]
     public byte[] MiiCoreData { get; set; }
+
+    [JsonProperty("TotalSec")]
+    public int TotalSec { get; set; } = 0;
+
+    [JsonProperty("GuestTotalVisitCount")]
+    public int GuestTotalVisitCount { get; set; } = 0;
+
+    [JsonProperty("Generation")]
+    public int Generation { get; set; } = 0;
+
+    [JsonProperty("HonorID")]
+    public int HonorID { get; set; } = 0;
+
+    [JsonProperty("HonorParam")]
+    public int HonorParam { get; set; } = 0;
+
+    [JsonProperty("Greeting0")]
+    public int Greeting0 { get; set; } = 0;
+
+    [JsonProperty("Greeting1")]
+    public int Greeting1 { get; set; } = 0;
+
+    [JsonProperty("GreetingParam0")]
+    public int GreetingParam0 { get; set; } = 0;
+
+    [JsonProperty("GreetingParam1")]
+    public int GreetingParam1 { get; set; } = 0;
+
+    [JsonProperty("LatLng")]
+    public float[] LatLng { get; set; } = new float[] { 0, 0 };
+
+    [JsonProperty("SealedLatLng")]
+    public bool SealedLatLng { get; set; } = false;
+
+    [JsonProperty("LangID")]
+    public int LangID { get; set; } = 0;
 
     /// <summary>Adds any missing <see cref="SeedFlags"/>; true if it changed.</summary>
     public bool ApplySeedFlags()
@@ -480,6 +526,8 @@ public sealed class PendingChest
     public Pokeland.Protocol.ChestTypeID ChestTypeID { get; set; } = Pokeland.Protocol.ChestTypeID.TutorialCopper1;
     [JsonProperty("StageCode")]
     public Pokeland.Protocol.StageCodeX[] StageCode { get; set; }
+    [JsonProperty("Accepted")]
+    public bool Accepted { get; set; } = false;
 }
 
 /// <summary>
@@ -526,10 +574,92 @@ public sealed class PlayerStore
     /// <summary>Applies one <c>SetMyUserProfile</c> update and persists it.</summary>
     public bool ApplyProfile(Pokeland.Protocol.MyUserProfile profile)
     {
-        if (profile?.Nickname is null || profile.Nickname == _player.Nickname) return false;
-        lock (_gate) _player.Nickname = profile.Nickname;
+        if (profile is null) return false;
+        bool changed = false;
+        lock (_gate)
+        {
+            if (profile.Nickname != null && profile.Nickname != _player.Nickname)
+            {
+                _player.Nickname = profile.Nickname;
+                changed = true;
+            }
+            if ((int)profile.Generation != _player.Generation)
+            {
+                _player.Generation = (int)profile.Generation;
+                changed = true;
+            }
+            if ((int)profile.HonorID != _player.HonorID)
+            {
+                _player.HonorID = (int)profile.HonorID;
+                changed = true;
+            }
+            if (profile.HonorParam != _player.HonorParam)
+            {
+                _player.HonorParam = profile.HonorParam;
+                changed = true;
+            }
+            if ((int)profile.Greeting0 != _player.Greeting0)
+            {
+                _player.Greeting0 = (int)profile.Greeting0;
+                changed = true;
+            }
+            if ((int)profile.Greeting1 != _player.Greeting1)
+            {
+                _player.Greeting1 = (int)profile.Greeting1;
+                changed = true;
+            }
+            if (profile.GreetingParam0 != _player.GreetingParam0)
+            {
+                _player.GreetingParam0 = profile.GreetingParam0;
+                changed = true;
+            }
+            if (profile.GreetingParam1 != _player.GreetingParam1)
+            {
+                _player.GreetingParam1 = profile.GreetingParam1;
+                changed = true;
+            }
+            if (profile.LatLng != null && profile.LatLng.Length == 2)
+            {
+                if (_player.LatLng == null || !_player.LatLng.SequenceEqual(profile.LatLng))
+                {
+                    _player.LatLng = (float[])profile.LatLng.Clone();
+                    changed = true;
+                }
+            }
+            bool sealedVal = profile.SealedLatLng == Pokeland.Protocol.Bool.@True;
+            if (sealedVal != _player.SealedLatLng)
+            {
+                _player.SealedLatLng = sealedVal;
+                changed = true;
+            }
+            if ((int)profile.LangID != _player.LangID)
+            {
+                _player.LangID = (int)profile.LangID;
+                changed = true;
+            }
+        }
+        if (changed) Save();
+        return changed;
+    }
+
+    public void AddPlayTime(int sec)
+    {
+        if (sec <= 0) return;
+        bool shouldSave = false;
+        lock (_gate)
+        {
+            int prev = _player.TotalSec;
+            _player.TotalSec += sec;
+            if ((_player.TotalSec / 60) > (prev / 60)) shouldSave = true;
+        }
+        if (shouldSave) Save();
+    }
+
+    public void AddGuestVisits(int count)
+    {
+        if (count <= 0) return;
+        lock (_gate) _player.GuestTotalVisitCount += count;
         Save();
-        return true;
     }
 
     /// <summary>Applies one <c>SetDoneFlag</c> diff and persists it.</summary>
@@ -1179,6 +1309,7 @@ public sealed class PlayerStore
             {
                 ChestTypeID = chestTypeID,
                 StageCode = stageCode,
+                Accepted = false,
             };
         }
         Save();
@@ -1196,16 +1327,20 @@ public sealed class PlayerStore
         foreach (var id in ids)
         {
             var wire = BuildChestWire(id);
-            if (wire is not null) list.Add(wire);
+            if (wire is not null)
+            {
+                if (wire.State == Pokeland.Protocol.ChestState.Temporary)
+                    wire.State = Pokeland.Protocol.ChestState.Locked;
+                list.Add(wire);
+            }
         }
         return list;
     }
 
     /// <summary>Wire view of one persisted chest, or null if it is opened
-    /// (awaiting its Goodbye) or unknown. Temporary is never reported -
-    /// that state exists only inside the single EndStage ChestsDiff that
-    /// introduces the id.</summary>
-    public Pokeland.Protocol.Chest BuildChestWire(long chestId)
+    /// (awaiting its Goodbye) or unknown. Returns Temporary until accepted by
+    /// GoodbyeChests.</summary>
+    public Pokeland.Protocol.Chest BuildChestWire(long chestId, bool forceTemporary = false)
     {
         lock (_gate)
         {
@@ -1216,9 +1351,11 @@ public sealed class PlayerStore
             return new Pokeland.Protocol.Chest
             {
                 ChestId = chestId,
-                State = unlocking
-                    ? Pokeland.Protocol.ChestState.Unlocking
-                    : Pokeland.Protocol.ChestState.Locked,
+                State = forceTemporary
+                    ? Pokeland.Protocol.ChestState.Temporary
+                    : unlocking
+                        ? Pokeland.Protocol.ChestState.Unlocking
+                        : (chest.Accepted ? Pokeland.Protocol.ChestState.Locked : Pokeland.Protocol.ChestState.Temporary),
                 StageCode = chest.StageCode,
                 IslandRankID = Pokeland.Protocol.IslandRankID._1,
                 ChestTypeID = chest.ChestTypeID,
@@ -1353,10 +1490,17 @@ public sealed class PlayerStore
             foreach (var id in goodbyeIds ?? Enumerable.Empty<long>())
                 if (_player.Chests.Remove(id)) removed.Add(id);
             foreach (var id in gotIds ?? Enumerable.Empty<long>())
-                if (_player.Chests.TryGetValue(id, out var chest) && chest.Opened)
+                if (_player.Chests.TryGetValue(id, out var chest))
                 {
-                    _player.Chests.Remove(id);
-                    removed.Add(id);
+                    if (chest.Opened)
+                    {
+                        _player.Chests.Remove(id);
+                        removed.Add(id);
+                    }
+                    else
+                    {
+                        chest.Accepted = true;
+                    }
                 }
         }
         Save();
@@ -1534,16 +1678,16 @@ public sealed class PlayerStore
     /// midweek, and a Pokemon plus a diamond bonus as the day-7 capstone -
     /// the shape every mobile login calendar of this era used.
     /// </summary>
-    private static readonly (int Diamond, int Money, int MonsNo, int UnitPrefix, int PrefixGrade)[] WelcalCalendar =
+    private static readonly (int Diamond, int Money, int MonsNo, int Waza0, int Waza1, int UnitPrefix, int PrefixGrade)[] WelcalCalendar =
     {
-        (0, 0, 0, 0, 0),           // index 0 unused - days are 1-based
-        (50, 0, 0, 0, 0),          // day 1: 50 diamonds
-        (0, 500, 0, 0, 0),         // day 2: 500 money
-        (100, 0, 0, 0, 0),         // day 3: 100 diamonds
-        (0, 0, 0, (int)Pokeland.Protocol.UnitPrefix.HP_PLUS, 0),   // day 4: an equnit
-        (0, 1500, 0, 0, 0),        // day 5: 1500 money
-        (200, 0, 0, 0, 0),         // day 6: 200 diamonds
-        (500, 0, 25, 0, 0),        // day 7: 500 diamonds + Pikachu
+        (0, 0, 0, 0, 0, 0, 0),                           // index 0 unused - days are 1-based
+        (300, 0, 298, 253, 253, 0, 0),                   // day 1: 300 diamonds + Ho-Oh (pokedexID 298)
+        (0, 0, 297, 203, 203, 0, 0),                     // day 2: Lugia (pokedexID 297)
+        (0, 0, 789, 401, 401, 187, 1),                   // day 3: Frogadier (pokedexID 789) + Greninja+ gear (prefix 187)
+        (100, 1000, 0, 0, 0, 0, 0),                      // day 4: diamonds + money
+        (0, 0, 790, 640, 640, 0, 0),                     // day 5: Greninja (pokedexID 790)
+        (200, 2000, 0, 0, 0, 0, 0),                      // day 6: diamonds + money
+        (500, 0, 163, 587, 587, 0, 0),                   // day 7: 500 diamonds + Mewtwo (pokedexID 163)
     };
 
     /// <summary>Unlocks the next Welcal day on the first Login of a new UTC
@@ -1576,9 +1720,9 @@ public sealed class PlayerStore
     /// ClaimDailyDiamondBonus - and returns the current streak/last-result
     /// state either way, since LoginHandler ships LoginBonusInfo on every
     /// Login regardless of whether today's already been claimed.</summary>
-    public (int TotalDays, int StampDay, int CStop, int DiffMoney, int DiffDiamond, int DiffTicket) ClaimLoginBonus()
+    public (int TotalDays, int StampDay, int LastResultStampDay, int CStop, int DiffMoney, int DiffDiamond, int DiffTicket) ClaimLoginBonus()
     {
-        var today = PokelandClock.UtcNow.ToString("yyyy-MM-dd");
+        string today = PokelandClock.UtcTodayString;
         bool claimed = false;
         lock (_gate)
         {
@@ -1589,26 +1733,37 @@ public sealed class PlayerStore
                 _player.LoginBonusTotalDays++;
                 _player.LoginBonusStampDay = _player.LoginBonusStampDay >= 7 ? 1 : _player.LoginBonusStampDay + 1;
 
-                // Ticket grant honoring the retail stack cap (JitanTicket max
-                // 10 - see UtensilMaxCount): a full stack means 0 granted
-                // rather than overflowing.
                 var ticketId = (int)Pokeland.Protocol.UtensilID.JitanTicket;
                 _player.Utensils.TryGetValue(ticketId, out var have);
-                int max = ticketId < UtensilMaxCount.Length ? UtensilMaxCount[ticketId] : int.MaxValue;
-                int granted = Math.Max(0, Math.Min(LoginBonusTickets(_player.LoginBonusStampDay), max - have));
-                _player.Utensils[ticketId] = have + granted;
-                _player.LoginBonusLastDiffTicket = granted;
+                int wanted = LoginBonusTickets(_player.LoginBonusStampDay);
+                _player.Utensils[ticketId] = have + wanted;
+                _player.LoginBonusLastDiffTicket = wanted;
                 _player.LoginBonusLastDiffDiamond = 0;
                 _player.LoginBonusLastDiffMoney = 0;
-                _player.LoginBonusLastCStop = (int)Pokeland.Protocol.LoginBonusCStopResult.DiscardTicket;
+                _player.LoginBonusLastCStop = 0;
+                _player.LoginBonusLastResultStampDay = _player.LoginBonusStampDay;
             }
         }
         if (claimed) Save();
         lock (_gate)
         {
-            return (_player.LoginBonusTotalDays, _player.LoginBonusStampDay, _player.LoginBonusLastCStop,
-                _player.LoginBonusLastDiffMoney, _player.LoginBonusLastDiffDiamond, _player.LoginBonusLastDiffTicket);
+            return (_player.LoginBonusTotalDays, _player.LoginBonusStampDay, _player.LoginBonusLastResultStampDay,
+                _player.LoginBonusLastCStop, _player.LoginBonusLastDiffMoney, _player.LoginBonusLastDiffDiamond, _player.LoginBonusLastDiffTicket);
         }
+    }
+
+    /// <summary>Clears transient login bonus fields after client acknowledgement.</summary>
+    public void DismissLoginBonus()
+    {
+        lock (_gate)
+        {
+            _player.LoginBonusLastResultStampDay = 0;
+            _player.LoginBonusLastCStop = 0;
+            _player.LoginBonusLastDiffMoney = 0;
+            _player.LoginBonusLastDiffDiamond = 0;
+            _player.LoginBonusLastDiffTicket = 0;
+        }
+        Save();
     }
 
     /// <summary>
@@ -1637,7 +1792,7 @@ public sealed class PlayerStore
                 _player.WelcalLastRedeemedUtcStr = PokelandClock.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ");
                 OwnedPPE ppe = null;
                 if (reward.MonsNo != 0)
-                    ppe = GrantPPE(reward.MonsNo, level: 1, grade: 100, waza0: 0, waza1: 0, nickname: null);
+                    ppe = GrantPPE(reward.MonsNo, level: 50, grade: 100, waza0: reward.Waza0, waza1: reward.Waza1, nickname: null);
                 OwnedEqunit equnit = null;
                 if (reward.UnitPrefix != 0)
                 {
@@ -1720,6 +1875,49 @@ public sealed class PlayerStore
                 DayDone = dayDone,
                 LastRedeemedUTCStr = _player.WelcalLastRedeemedUtcStr,
             };
+        }
+    }
+
+    public void SetFavorite(string stageKey)
+    {
+        if (string.IsNullOrEmpty(stageKey)) return;
+        lock (_gate)
+        {
+            _player.Favorites = new HashSet<string> { stageKey };
+            _player.LastVisited.Remove(stageKey);
+            _player.LastVisited.Insert(0, stageKey);
+            if (_player.LastVisited.Count > 20)
+                _player.LastVisited.RemoveRange(20, _player.LastVisited.Count - 20);
+            Save();
+        }
+    }
+
+    public void ClearFavorite()
+    {
+        lock (_gate)
+        {
+            foreach (var fav in _player.Favorites)
+            {
+                _player.LastVisited.Remove(fav);
+                _player.LastVisited.Insert(0, fav);
+            }
+            if (_player.LastVisited.Count > 20)
+                _player.LastVisited.RemoveRange(20, _player.LastVisited.Count - 20);
+            _player.Favorites.Clear();
+            Save();
+        }
+    }
+
+    public void TouchLastVisited(string stageKey)
+    {
+        if (string.IsNullOrEmpty(stageKey)) return;
+        lock (_gate)
+        {
+            _player.LastVisited.Remove(stageKey);
+            _player.LastVisited.Insert(0, stageKey);
+            if (_player.LastVisited.Count > 20)
+                _player.LastVisited.RemoveRange(20, _player.LastVisited.Count - 20);
+            Save();
         }
     }
 }

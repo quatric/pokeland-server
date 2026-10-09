@@ -1,4 +1,5 @@
 #nullable disable
+using System.Collections.Generic;
 using System.Linq;
 using Pokeland.Protocol;
 using Pokeland.Server;
@@ -75,7 +76,7 @@ public sealed class LoginHandler : IEndpointHandler
             DiamondConsumedExtra = 0,
             IsGiftArrived = ctx.Players.ArrivedGifts().Count > 0 ? Bool.True : Bool.False,
             Exp = 0,
-            GuestTotalVisitCount = 0,
+            GuestTotalVisitCount = ctx.Players.Current.GuestTotalVisitCount,
             AnnouncementState = Announcements.StateFor(ctx.Players.Current.HeadMarkedAsReadAnnouncementId),
             ChestSummary = new ChestSummary { StoreSize = 3 },
             // DoneFlagBox indexes this bit vector by DoneFlag, whose largest
@@ -181,7 +182,7 @@ public sealed class LoginHandler : IEndpointHandler
                 },
             },
             GUPs = new List<GuestUserProfileSerialized>(),
-            Honors = new Honors { IDs = new List<HonorID>(), Params = new List<int>() },
+            Honors = new Honors { IDs = Enumerable.Range(1, 12).Select(i => (HonorID)i).ToList(), Params = Enumerable.Repeat(1, 12).ToList() },
             // FOUND (2026-09-01, headless Ghidra decompile of
             // Camp.<iTutorial_BeforeFadeIn_AfterLogin>d__30.MoveNext, RVA
             // 0xECCD1C): once CurrentEvedefID is Tutorial the client takes the
@@ -249,7 +250,7 @@ public sealed class LoginHandler : IEndpointHandler
                 LastDailyProcessUTCStr = utcNow,
                 TotalLoginDays = loginBonus.TotalDays,
                 StampCardDays = (StampCardDays)loginBonus.StampDay,
-                LastResult_StampCardDays = (StampCardDays)loginBonus.StampDay,
+                LastResult_StampCardDays = (StampCardDays)loginBonus.LastResultStampDay,
                 LastResult_CStop = (LoginBonusCStopResult)loginBonus.CStop,
                 LastResult_DiffMoney = loginBonus.DiffMoney,
                 LastResult_DiffDiamond = loginBonus.DiffDiamond,
@@ -406,7 +407,7 @@ public sealed class LoginHandler : IEndpointHandler
                 .Range(1, 6)
                 .Select(id => World.JourneyStage(ctx.Config.CurrentEvedefID, id, ctx.Players.Current))
                 .ToList(),
-            TotalSec = 0,
+            TotalSec = ctx.Players.Current.TotalSec,
             Chests = ctx.Players.ListChests(),
             // PdecoDesc.json (real retail table, docs/tables/) carries no
             // price/unlock-condition fields for any decoration, so every
@@ -455,6 +456,14 @@ public sealed class LoginHandler : IEndpointHandler
             // in Rev from session.Rev (starts at 1) - see GameSession.Rev for why
             // that has to be nonzero or the client drops this whole payload.
             Reset = new[] { reset },
+            // Reset.AnnouncementState (above) tells the client an announcement
+            // exists, but the Annonces screen never issues its own network
+            // fetch to get the actual body - it just reads whatever is already
+            // cached, which is nothing unless Login itself ships it. Carry the
+            // same content GetAnnouncementsHandler would return so the screen
+            // has something to render instead of spinning on "Connexion en
+            // cours..." forever.
+            A = new[] { new AutoRes { UpdatedAnnouncements = new List<Announcement> { Announcements.Welcome } } },
         };
     }
 }

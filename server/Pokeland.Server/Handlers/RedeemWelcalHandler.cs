@@ -21,12 +21,15 @@ public sealed class RedeemWelcalHandler : IEndpointHandler
         {
             return new Pokeland.Protocol.RedeemWelcal.Res
             {
-                Success = Pokeland.Protocol.Bool.False,
-                HaveGifts = Pokeland.Protocol.Bool.False,
+                Success = Pokeland.Protocol.Bool.@False,
+                HaveGifts = Pokeland.Protocol.Bool.@False,
             };
         }
 
-        var autoRes = new AutoRes();
+        var autoRes = new AutoRes
+        {
+            UpdatedWelcals = new() { ctx.Players.BuildWelcalWireState() },
+        };
         if (diamond > 0) autoRes.DiamondFreePaid = new[] { ctx.Players.Current.DiamondFree, ctx.Players.Current.DiamondPaid };
         if (money > 0) autoRes.Money = new[] { ctx.Players.Current.Money };
         if (ppe != null)
@@ -40,8 +43,8 @@ public sealed class RedeemWelcalHandler : IEndpointHandler
 
         return new Pokeland.Protocol.RedeemWelcal.Res
         {
-            Success = Pokeland.Protocol.Bool.True,
-            HaveGifts = Pokeland.Protocol.Bool.False,
+            Success = Pokeland.Protocol.Bool.@True,
+            HaveGifts = Pokeland.Protocol.Bool.@False,
             A = new[] { autoRes },
         };
     }
