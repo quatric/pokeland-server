@@ -15,20 +15,8 @@ builder.Services.AddSingleton<SessionStore>();
 // (see PlayerStoreManager) - keyed by the BaaS user id the fake login mints,
 // no real login/credential system involved. Dir is overridable so a
 // throwaway bring-up run can be pointed at a scratch save.
-var saveDir = Environment.GetEnvironmentVariable("POKELAND_SAVE_DIR") ?? "players";
-builder.Services.AddSingleton(new PlayerStoreManager(saveDir));
-// Nintendo Account link state - see AccountLinkStore's doc comment. Lives
-// next to the per-device saves it maps into.
-builder.Services.AddSingleton(new AccountLinkStore(saveDir));
-// OIDC client for the NA link/restore flow, backed by the Authentik
-// instance at auth.pokewii.net - see AuthentikClient and NaPortal. The
-// client secret is deliberately not in appsettings.json/ServerConfig.
-builder.Services.AddSingleton(sp =>
-{
-    var cfg = sp.GetRequiredService<ServerConfig>().Authentik;
-    var clientSecret = Environment.GetEnvironmentVariable("POKELAND_AUTHENTIK_CLIENT_SECRET") ?? "";
-    return new AuthentikClient(cfg.Issuer, cfg.ClientId, clientSecret, cfg.RedirectUri);
-});
+builder.Services.AddSingleton(new PlayerStoreManager(
+    Environment.GetEnvironmentVariable("POKELAND_SAVE_DIR") ?? "players"));
 builder.Services.AddSingleton<IEndpointHandler, LoginHandler>();
 builder.Services.AddSingleton<IEndpointHandler, GetEndOfServiceInfosHandler>();
 builder.Services.AddSingleton<IEndpointHandler, StartStageHandler>();
@@ -98,8 +86,6 @@ var log = app.Services.GetRequiredService<ILoggerFactory>().CreateLogger("Pokela
 var sessions = app.Services.GetRequiredService<SessionStore>();
 var dispatcher = app.Services.GetRequiredService<GameDispatcher>();
 var playerManager = app.Services.GetRequiredService<PlayerStoreManager>();
-var accountLinks = app.Services.GetRequiredService<AccountLinkStore>();
-var authentik = app.Services.GetRequiredService<AuthentikClient>();
 // Players is left null here - GameDispatcher.Dispatch resolves the real
 // per-request store from the session's (or, for Login, the bearer token's)
 // BaaSUserId and builds a fresh per-request DispatchContext with it, rather
@@ -255,16 +241,7 @@ app.MapPost("/{version}/game/{endpoint}", async (string version, string endpoint
 // -------------------------------------------------------------------- BaaS
 // Nintendo's account backend, which the NPF SDK must authenticate against
 // before the game will call Login at all.
-app.MapBaas(accountLinks, log);
-
-// ----------------------------------------------------------------- NaPortal
-// Nintendo Account link/restore flow. Bounces to the shared login page below
-// when there's no session yet - see NaPortal.cs's class doc.
-app.MapNaPortal(log);
-
-// -------------------------------------------------------------- Auth login
-// The shared login page at auth.pokewii.net/login, backed by Authentik.
-app.MapAuthLogin(authentik, log);
+app.MapBaas(log);
 
 // ----------------------------------------------------------------- Pokewii
 // Stand-in for auth.pokewii.net serving player profile and Mii avatar data.
